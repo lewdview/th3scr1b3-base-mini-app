@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" role="img" aria-label="th3scr1b3 splash">
+  <defs>
+    <radialGradient id="pulse" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#ffd60a" />
+      <stop offset="0.6" stop-color="#ff2d55" />
+      <stop offset="1" stop-color="#0a0a0b" />
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="1200" fill="#0a0a0b" />
+  <circle cx="600" cy="600" r="380" fill="url(#pulse)" opacity="0.85" />
+  <text x="600" y="600" text-anchor="middle" font-family="Space Grotesk, Arial, sans-serif" font-size="72" fill="#faffd8">th3scr1b3</text>
+  <text x="600" y="680" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="28" fill="#ffd60a">Base Mini App</text>
+</svg>
