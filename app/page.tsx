@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useMemo, useState } from 'react';
-import { SafeArea, useMiniKit } from '@coinbase/onchainkit/minikit';
+import { useMiniKit } from '@coinbase/onchainkit/minikit';
 
 type Release = {
   id: string;
@@ -101,7 +101,7 @@ export default function HomePage() {
   const recent = sorted.slice(0, 6);
 
   return (
-    <SafeArea>
+    <div className="safe-area">
       <main>
         <div className="container">
           <section className="hero">
@@ -161,6 +161,6 @@ export default function HomePage() {
           </div>
         </div>
       </main>
-    </SafeArea>
+    </div>
   );
 }
