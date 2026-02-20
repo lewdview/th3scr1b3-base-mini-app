@@ -2,6 +2,12 @@
 
 import { useEffect, useMemo, useState } from 'react';
 import { useMiniKit } from '@coinbase/onchainkit/minikit';
+import { useAudio } from './components/AudioProvider';
+import { AlbumArt } from './components/AlbumArt';
+import { AudioPlayer } from './components/AudioPlayer';
+import { ReleaseCard } from './components/ReleaseCard';
+import { MintButton } from './components/MintButton';
+import { WalletButton } from './components/WalletButton';
 
 type Release = {
   id: string;
@@ -13,6 +19,8 @@ type Release = {
   durationFormatted?: string;
   customInfo?: string;
   videoUrl?: string;
+  storedAudioUrl?: string;
+  artworkUrl?: string;
 };
 
 type ReleaseData = {
@@ -27,10 +35,23 @@ type ContentOverride = {
 
 type ContentOverrideMap = Record<string, ContentOverride>;
 
-const MAIN_APP_URL = process.env.NEXT_PUBLIC_MAIN_APP_URL || 'https://th3scr1b3.com';
+import { MAIN_APP_URL } from './constants';
+
+const PlayIcon = () => (
+  <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+    <path d="M8 5v14l11-7z" />
+  </svg>
+);
+
+const PauseIcon = () => (
+  <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+    <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" />
+  </svg>
+);
 
 export default function HomePage() {
   const { setFrameReady } = useMiniKit();
+  const { currentTrack, isPlaying, toggle } = useAudio();
   const [releases, setReleases] = useState<Release[]>([]);
   const [loading, setLoading] = useState(true);
 
@@ -42,43 +63,25 @@ export default function HomePage() {
     let isMounted = true;
     const load = async () => {
       try {
-        const [releaseRes, overrideRes] = await Promise.all([
-          fetch('/releases.json'),
-          fetch('/content-overrides.json'),
-        ]);
+        const res = await fetch('/releases.json');
+        if (!res.ok) throw new Error('Failed to load releases');
+        const data = (await res.json()) as ReleaseData;
 
-        if (!releaseRes.ok) throw new Error('Failed to load releases');
-        const data = (await releaseRes.json()) as ReleaseData;
-        let overrides: ContentOverrideMap = {};
-
-        if (overrideRes.ok) {
-          overrides = (await overrideRes.json()) as ContentOverrideMap;
-        }
-
-        const stripHtml = (value: string) => {
-          if (typeof window === 'undefined') return value;
-          const parser = new DOMParser();
-          const doc = parser.parseFromString(value, 'text/html');
-          return doc.body.textContent || '';
-        };
-
-        const merged = (data.releases || []).map((release) => {
-          const override = overrides[String(release.day)] || overrides[`${release.day}`];
-          if (!override) return release;
-
-          const infoPlain = override.info ? stripHtml(override.info).trim() : undefined;
-
-          return {
-            ...release,
-            title: override.title || release.title,
-            description: infoPlain || release.description,
-            customInfo: override.info || release.customInfo,
-            videoUrl: override.videoUrl || release.videoUrl,
-          };
-        });
-
+        // Data is already merged and transformed by sync script
         if (isMounted) {
-          setReleases(merged);
+          const allReleases = data.releases || [];
+
+          // Gating: Only show releases released on or before today
+          const today = new Date();
+          today.setHours(23, 59, 59, 999); // Include all of today
+
+          const visibleReleases = allReleases.filter(release => {
+            const releaseDate = new Date(release.date);
+            // Parse "YYYY-MM-DD" if needed, but new Date() usually handles ISO strings well
+            return releaseDate <= today;
+          });
+
+          setReleases(visibleReleases);
         }
       } catch (err) {
         console.warn('[MiniApp] Release load failed', err);
@@ -88,9 +91,7 @@ export default function HomePage() {
     };
 
     void load();
-    return () => {
-      isMounted = false;
-    };
+    return () => { isMounted = false; };
   }, []);
 
   const sorted = useMemo(() => {
@@ -98,69 +99,84 @@ export default function HomePage() {
   }, [releases]);
 
   const latest = sorted[0];
-  const recent = sorted.slice(0, 6);
+  const isLatestPlaying =
+    currentTrack?.id === latest?.id &&
+    currentTrack?.day === latest?.day &&
+    isPlaying;
 
   return (
     <div className="safe-area">
       <main>
         <div className="container">
-          <section className="hero">
-            <span className="tag">Now Playing</span>
-            <h1>{latest ? `Day ${latest.day}: ${latest.title}` : 'Loading latest release...'}</h1>
-            <p>
-              {latest?.description ||
-                'Tap into the latest drop from the 365-day journey. Fresh audio, new data, and daily momentum.'}
-            </p>
-            <div style={{ marginTop: '16px', display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
-              <a className="button primary" href={MAIN_APP_URL} target="_blank" rel="noreferrer">
-                Open Full Experience
-              </a>
+          {/* Top Bar */}
+          <div className="top-bar">
+            <div className="app-title">th3scr1b3</div>
+            <WalletButton />
+          </div>
+
+          {/* Hero */}
+          <section className="hero animate-in">
+            <div className="hero-art-wrapper">
               {latest && (
-                <a
-                  className="button"
-                  href={`${MAIN_APP_URL}/day/${latest.day}`}
-                  target="_blank"
-                  rel="noreferrer"
+                <AlbumArt day={latest.day} mood={latest.mood} artworkUrl={latest.artworkUrl} />
+              )}
+              <div className="hero-art-overlay" />
+              {latest?.storedAudioUrl && (
+                <button
+                  className={`play-btn lg hero-play-btn ${isLatestPlaying ? 'playing' : ''}`}
+                  onClick={() => toggle(latest)}
+                  aria-label={isLatestPlaying ? 'Pause' : 'Play'}
                 >
-                  View Day {latest.day}
-                </a>
+                  {isLatestPlaying ? <PauseIcon /> : <PlayIcon />}
+                </button>
               )}
             </div>
-          </section>
 
-          <section className="card">
-            <div className="small">Recent Releases</div>
-            {loading && <p style={{ marginTop: 12, color: '#8c8fa3' }}>Loading tracks...</p>}
-            {!loading && recent.length === 0 && (
-              <p style={{ marginTop: 12, color: '#8c8fa3' }}>No releases found.</p>
-            )}
-            <div className="list">
-              {recent.map((release) => (
-                <div key={release.id} className="list-item">
-                  <div className="small">Day {release.day} · {release.date}</div>
-                  <div className="value">{release.title}</div>
-                  <div className="small" style={{ marginTop: 6 }}>
-                    {release.mood ? `${release.mood} · ` : ''}{release.durationFormatted || '—'}
-                  </div>
-                </div>
-              ))}
+            <div className="hero-content">
+              <span className="tag now-playing">▶ Now Playing</span>
+              <h1>{latest ? `Day ${latest.day}: ${latest.title}` : 'Loading...'}</h1>
+              <p>
+                {latest?.description ||
+                  'Tap into the latest drop from the 365-day journey.'}
+              </p>
+              <div className="hero-meta">
+                {latest?.mood && (
+                  <span className={`tag mood-${latest.mood}`}>{latest.mood}</span>
+                )}
+                {latest?.durationFormatted && (
+                  <span className="tag duration">{latest.durationFormatted}</span>
+                )}
+                {latest && <MintButton day={latest.day} />}
+              </div>
             </div>
           </section>
 
-          <section className="card">
-            <div className="small">Base Ready</div>
-            <h2>Built for Base Mini Apps</h2>
-            <p style={{ color: '#8c8fa3', marginTop: 8 }}>
-              This mini app is optimized for Base App + Farcaster clients. It stays lightweight, fast,
-              and focused on daily listening momentum.
+          {/* Release Grid */}
+          <div className="section-header">
+            <h2>All Releases</h2>
+            <span className="count">{sorted.length} tracks</span>
+          </div>
+
+          {loading && (
+            <p style={{ color: 'var(--muted)', textAlign: 'center', padding: '40px 0' }}>
+              Loading tracks...
             </p>
-          </section>
+          )}
+
+          <div className="release-grid">
+            {sorted.map((release) => (
+              <ReleaseCard key={`${release.id}-${release.day}`} release={release} />
+            ))}
+          </div>
 
           <div className="footer">
-            Powered by OnchainKit + MiniKit on Base.
+            Powered by OnchainKit + MiniKit on Base · <a href={MAIN_APP_URL} target="_blank" rel="noreferrer" style={{ color: 'var(--accent)' }}>Full Experience →</a>
           </div>
         </div>
       </main>
+
+      {/* Sticky Bottom Player */}
+      <AudioPlayer />
     </div>
   );
 }

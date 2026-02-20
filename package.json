@@ -11,6 +11,9 @@
   },
   "dependencies": {
     "@coinbase/onchainkit": "^0.37.8",
+    "@openzeppelin/contracts": "^5.4.0",
+    "@tanstack/react-query": "^5.90.21",
+    "dotenv": "^17.3.1",
     "next": "^14.2.5",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",

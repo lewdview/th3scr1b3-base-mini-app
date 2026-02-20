@@ -1,5 +1,4 @@
 {
-  "generatedAt": "2026-02-18T03:45:17.693Z",
   "releases": [
     {
       "id": "1768009329815-0.9765346436465157",
@@ -12,7 +11,6 @@
       "durationFormatted": "4:00",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/october/27%20-%20mylight.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/october/27%20-%20mylight.jpg",
-      "bpm": 95,
       "key": "B minor",
       "genre": [
         "Alternative",
@@ -22,7 +20,8 @@
         "Neutral",
         "Contemplative",
         "Alternative"
-      ]
+      ],
+      "tempo": 95
     },
     {
       "id": "1768009318442-0.512178763322961",
@@ -35,7 +34,6 @@
       "durationFormatted": "4:00",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/october/26%20-%20mylight.mp3",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/october/26%20-%20mylight.jpg",
-      "bpm": 95,
       "key": "B minor",
       "genre": [
         "Alternative",
@@ -45,7 +43,8 @@
         "Neutral",
         "Contemplative",
         "Alternative"
-      ]
+      ],
+      "tempo": 95
     },
     {
       "id": "1768009297366-0.7003542217326877",
@@ -58,7 +57,6 @@
       "durationFormatted": "5:13",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/october/25%20-%20lightgoesin.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/october/25%20-%20lightgoesin.jpg",
-      "bpm": 161,
       "key": "A# major",
       "genre": [
         "Alternative",
@@ -68,7 +66,8 @@
         "hopeful",
         "reflective",
         "Alternative"
-      ]
+      ],
+      "tempo": 161
     },
     {
       "id": "1768009276677-0.6609800569652848",
@@ -81,7 +80,6 @@
       "durationFormatted": "5:13",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/october/24%20-%20lightgoesin.mp3",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/october/24%20-%20lightgoesin.jpg",
-      "bpm": 161,
       "key": "A# minor",
       "genre": [
         "Alternative",
@@ -91,7 +89,8 @@
         "hopeful",
         "reflective",
         "Alternative"
-      ]
+      ],
+      "tempo": 161
     },
     {
       "id": "1768009188378-0.6049602787008569",
@@ -104,7 +103,6 @@
       "durationFormatted": "5:04",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/october/23%20-%20fml.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/october/23%20-%20fml.jpg",
-      "bpm": 161,
       "key": "B minor",
       "genre": [
         "Alternative",
@@ -113,7 +111,8 @@
       "tags": [
         "neutral",
         "Alternative"
-      ]
+      ],
+      "tempo": 161
     },
     {
       "id": "1767862623545-0.2701680824928169",
@@ -126,7 +125,6 @@
       "durationFormatted": "4:06",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/october/22%20-%20echoes.of.the.abyss.votd.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/october/22%20-%20echoes.of.the.abyss.votd.jpg",
-      "bpm": 133,
       "key": "C# major",
       "genre": [
         "Alternative",
@@ -136,7 +134,8 @@
         "introspective",
         "dark",
         "Alternative"
-      ]
+      ],
+      "tempo": 133
     },
     {
       "id": "1767581255817-0.9151736460492982",
@@ -149,7 +148,6 @@
       "durationFormatted": "4:12",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/october/21%20-%20LANDR-stay%20and%20i%20go-Balanced-Medium.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/october/21%20-%20LANDR-stay%20and%20i%20go-Balanced-Medium.jpg",
-      "bpm": 126,
       "key": "B minor",
       "genre": [
         "Alternative",
@@ -159,7 +157,8 @@
         "angry",
         "defiant",
         "Alternative"
-      ]
+      ],
+      "tempo": 126
     },
     {
       "id": "1767433546142-0.7788842707958498",
@@ -172,7 +171,6 @@
       "durationFormatted": "2:38",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/october/20%20-%20Letitgo.mp3",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/october/20%20-%20Letitgo.jpg",
-      "bpm": 178,
       "key": "C# major",
       "genre": [
         "Alternative",
@@ -182,7 +180,8 @@
         "intense",
         "frustrated",
         "Alternative"
-      ]
+      ],
+      "tempo": 178
     },
     {
       "id": "1767433281885-0.14801650372241604",
@@ -195,7 +194,6 @@
       "durationFormatted": "4:39",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/october/19%20-%20Afinesin.mp3",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/october/19%20-%20Afinesin.jpg",
-      "bpm": 178,
       "key": "C minor",
       "genre": [
         "Alternative",
@@ -205,7 +203,8 @@
         "dark",
         "introspective",
         "Alternative"
-      ]
+      ],
+      "tempo": 178
     },
     {
       "id": "1767433262350-0.24588313470425882",
@@ -218,7 +217,6 @@
       "durationFormatted": "3:07",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/october/18%20-%20Momentofexctasy.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/october/18%20-%20Momentofexctasy.jpg",
-      "bpm": 115,
       "key": "C minor",
       "genre": [
         "Alternative",
@@ -228,7 +226,8 @@
         "upbeat",
         "playful",
         "Alternative"
-      ]
+      ],
+      "tempo": 115
     },
     {
       "id": "1767433208593-0.4627491842345557",
@@ -241,7 +240,6 @@
       "durationFormatted": "4:20",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/october/17%20-%20Beat%202%20O.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/october/17%20-%20Beat%202%20O.jpg",
-      "bpm": 62,
       "key": "C minor",
       "genre": [
         "Ballad",
@@ -251,7 +249,8 @@
         "Calm",
         "Peaceful",
         "Ballad"
-      ]
+      ],
+      "tempo": 62
     },
     {
       "id": "1767433188861-0.45160148847809",
@@ -264,7 +263,6 @@
       "durationFormatted": "3:31",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/october/16%20-%20Paid%20the%20World%20Back%20Beat.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/october/16%20-%20Paid%20the%20World%20Back%20Beat.jpg",
-      "bpm": 136,
       "key": "C minor",
       "genre": [
         "Alternative",
@@ -274,7 +272,8 @@
         "Neutral",
         "Contemplative",
         "Alternative"
-      ]
+      ],
+      "tempo": 136
     },
     {
       "id": "1767433172003-0.5299991902129257",
@@ -287,7 +286,6 @@
       "durationFormatted": "2:34",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/october/15%20-%20Shawty%20Not%20a%20Hottie.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/october/15%20-%20Shawty%20Not%20a%20Hottie.jpg",
-      "bpm": 67,
       "key": "B minor",
       "genre": [
         "Ballad",
@@ -297,7 +295,8 @@
         "playful",
         "edgy",
         "Ballad"
-      ]
+      ],
+      "tempo": 67
     },
     {
       "id": "1767433153900-0.1869082872929313",
@@ -310,7 +309,6 @@
       "durationFormatted": "2:46",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/october/14%20-%20You%20Know%20You%202e.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/october/14%20-%20You%20Know%20You%202e.jpg",
-      "bpm": 133,
       "key": "C# major",
       "genre": [
         "Alternative",
@@ -320,7 +318,8 @@
         "hopeful",
         "reflective",
         "Alternative"
-      ]
+      ],
+      "tempo": 133
     },
     {
       "id": "1767433141891-0.8519320680670429",
@@ -333,7 +332,6 @@
       "durationFormatted": "3:10",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/october/13%20-%20Wrap%20That.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/october/13%20-%20Wrap%20That.jpg",
-      "bpm": 140,
       "key": "C# major",
       "genre": [
         "Alternative",
@@ -343,7 +341,8 @@
         "upbeat",
         "confident",
         "Alternative"
-      ]
+      ],
+      "tempo": 140
     },
     {
       "id": "1767433115813-0.6850906212530163",
@@ -356,7 +355,6 @@
       "durationFormatted": "6:24",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/october/12%20-%20Buck%20Im%20Here%20Yto%20Fuck.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/october/12%20-%20Buck%20Im%20Here%20Yto%20Fuck.jpg",
-      "bpm": 103,
       "key": "C minor",
       "genre": [
         "Alternative",
@@ -366,7 +364,8 @@
         "dark",
         "conflicted",
         "Alternative"
-      ]
+      ],
+      "tempo": 103
     },
     {
       "id": "1767433052640-0.3513300425208017",
@@ -379,7 +378,6 @@
       "durationFormatted": "2:39",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/october/11%20-%20Bb.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/october/11%20-%20Bb.jpg",
-      "bpm": 71,
       "key": "G major",
       "genre": [
         "Ballad",
@@ -389,7 +387,8 @@
         "reflective",
         "hopeful",
         "Ballad"
-      ]
+      ],
+      "tempo": 71
     },
     {
       "id": "1767422510774-0.6187711929669102",
@@ -402,7 +401,6 @@
       "durationFormatted": "5:28",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/october/10%20-%20Yourbody.mp3",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/october/10%20-%20Yourbody.jpg",
-      "bpm": 126,
       "key": "C major",
       "genre": [
         "Alternative",
@@ -412,7 +410,8 @@
         "sensual",
         "playful",
         "Alternative"
-      ]
+      ],
+      "tempo": 126
     },
     {
       "id": "1767422484907-0.0015201673599514187",
@@ -425,7 +424,6 @@
       "durationFormatted": "4:13",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/october/09%20-%20Life%20Succubus.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/october/09%20-%20Life%20Succubus.jpg",
-      "bpm": 144,
       "key": "C# major",
       "genre": [
         "Electronic",
@@ -435,7 +433,8 @@
         "dark",
         "melancholic",
         "Electronic"
-      ]
+      ],
+      "tempo": 144
     },
     {
       "id": "1767422468267-0.39348812581916137",
@@ -448,7 +447,6 @@
       "durationFormatted": "5:58",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/october/08%20-%20Dirt%20Road.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/october/08%20-%20Dirt%20Road.jpg",
-      "bpm": 123,
       "key": "C# major",
       "genre": [
         "Alternative",
@@ -458,7 +456,8 @@
         "dark",
         "angry",
         "Alternative"
-      ]
+      ],
+      "tempo": 123
     },
     {
       "id": "1767422452728-0.4465980136281392",
@@ -471,7 +470,6 @@
       "durationFormatted": "3:38",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/october/07%20-%20Advice%202.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/october/07%20-%20Advice%202.jpg",
-      "bpm": 92,
       "key": "B minor",
       "genre": [
         "Alternative",
@@ -481,7 +479,8 @@
         "melancholic",
         "reflective",
         "Alternative"
-      ]
+      ],
+      "tempo": 92
     },
     {
       "id": "1767422439000-0.707260471475468",
@@ -494,7 +493,6 @@
       "durationFormatted": "3:43",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/october/06%20-%20Figures.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/october/06%20-%20Figures.jpg",
-      "bpm": 167,
       "key": "C minor",
       "genre": [
         "Alternative",
@@ -504,7 +502,8 @@
         "frustrated",
         "angry",
         "Alternative"
-      ]
+      ],
+      "tempo": 167
     },
     {
       "id": "1767422418706-0.422450096046149",
@@ -517,7 +516,6 @@
       "durationFormatted": "3:56",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/october/05%20-%20Exhale.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/october/05%20-%20Exhale.jpg",
-      "bpm": 75,
       "key": "C minor",
       "genre": [
         "Ballad",
@@ -527,7 +525,8 @@
         "reflective",
         "empowering",
         "Ballad"
-      ]
+      ],
+      "tempo": 75
     },
     {
       "id": "1767422387514-0.0017746377604973551",
@@ -540,7 +539,6 @@
       "durationFormatted": "3:39",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/october/04%20-%20Missing%20You.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/october/04%20-%20Missing%20You.jpg",
-      "bpm": 77,
       "key": "C minor",
       "genre": [
         "Ballad",
@@ -550,7 +548,8 @@
         "nostalgic",
         "melancholic",
         "Ballad"
-      ]
+      ],
+      "tempo": 77
     },
     {
       "id": "1767422370900-0.1759491785772238",
@@ -563,7 +562,6 @@
       "durationFormatted": "3:57",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/october/03%20-%20It%20Wont%20Take%20Lolng.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/october/03%20-%20It%20Wont%20Take%20Lolng.jpg",
-      "bpm": 80,
       "key": "D major",
       "genre": [
         "Alternative",
@@ -573,7 +571,8 @@
         "upbeat",
         "romantic",
         "Alternative"
-      ]
+      ],
+      "tempo": 80
     },
     {
       "id": "1767422347876-0.5661231397243683",
@@ -586,7 +585,6 @@
       "durationFormatted": "4:18",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/october/02%20-%20Running.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/october/02%20-%20Running.jpg",
-      "bpm": 148,
       "key": "C minor",
       "genre": [
         "Alternative",
@@ -596,7 +594,8 @@
         "melancholic",
         "dark",
         "Alternative"
-      ]
+      ],
+      "tempo": 148
     },
     {
       "id": "1767422330579-0.07119129250935885",
@@ -609,7 +608,6 @@
       "durationFormatted": "3:29",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/october/01%20-%20Change%20Perception.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/october/01%20-%20Change%20Perception.jpg",
-      "bpm": 85,
       "key": "C# major",
       "genre": [
         "Alternative",
@@ -619,7 +617,8 @@
         "sensual",
         "intimate",
         "Alternative"
-      ]
+      ],
+      "tempo": 85
     },
     {
       "id": "1767422306241-0.6074925280782374",
@@ -632,7 +631,6 @@
       "durationFormatted": "4:08",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/september/30%20-%20Double%20Agent.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/september/30%20-%20Double%20Agent.jpg",
-      "bpm": 112,
       "key": "C minor",
       "genre": [
         "Pop",
@@ -642,7 +640,8 @@
         "angry",
         "frustrated",
         "Pop"
-      ]
+      ],
+      "tempo": 112
     },
     {
       "id": "1767422272047-0.39413971546013304",
@@ -655,7 +654,6 @@
       "durationFormatted": "6:01",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/september/29%20-%20Grenada.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/september/29%20-%20Grenada.jpg",
-      "bpm": 110,
       "key": "B minor",
       "genre": [
         "Alternative",
@@ -665,7 +663,8 @@
         "intense",
         "passionate",
         "Alternative"
-      ]
+      ],
+      "tempo": 110
     },
     {
       "id": "1767422252031-0.6863398198720813",
@@ -678,7 +677,6 @@
       "durationFormatted": "4:27",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/september/28%20-%20Bitter%20Better.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/september/28%20-%20Bitter%20Better.jpg",
-      "bpm": 117,
       "key": "A# major",
       "genre": [
         "Alternative",
@@ -688,7 +686,8 @@
         "reflective",
         "hopeful",
         "Alternative"
-      ]
+      ],
+      "tempo": 117
     },
     {
       "id": "1767422236307-0.3542406654262148",
@@ -701,7 +700,6 @@
       "durationFormatted": "2:44",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/september/27%20-%20Be%20Altm.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/september/27%20-%20Be%20Altm.jpg",
-      "bpm": 71,
       "key": "C# major",
       "genre": [
         "Ballad",
@@ -711,7 +709,8 @@
         "uplifting",
         "motivational",
         "Ballad"
-      ]
+      ],
+      "tempo": 71
     },
     {
       "id": "1767422146441-0.48401325350533664",
@@ -724,7 +723,6 @@
       "durationFormatted": "4:02",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/september/26%20-%20Get%20Oyou.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/september/26%20-%20Get%20Oyou.jpg",
-      "bpm": 178,
       "key": "B minor",
       "genre": [
         "Alternative",
@@ -734,7 +732,8 @@
         "melancholic",
         "frustrated",
         "Alternative"
-      ]
+      ],
+      "tempo": 178
     },
     {
       "id": "1767422112525-0.14114436610279835",
@@ -747,7 +746,6 @@
       "durationFormatted": "3:33",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/september/25%20-%20Message%204%20K%20Comp%20M1.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/september/25%20-%20Message%204%20K%20Comp%20M1.jpg",
-      "bpm": 117,
       "key": "D major",
       "genre": [
         "Alternative",
@@ -757,7 +755,8 @@
         "melancholic",
         "nostalgic",
         "Alternative"
-      ]
+      ],
+      "tempo": 117
     },
     {
       "id": "1767422099451-0.2968790938572895",
@@ -770,7 +769,6 @@
       "durationFormatted": "2:28",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/september/24%20-%20Ss%20Take%20One.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/september/24%20-%20Ss%20Take%20One.jpg",
-      "bpm": 105,
       "key": "C minor",
       "genre": [
         "Alternative",
@@ -780,7 +778,8 @@
         "longing",
         "intense",
         "Alternative"
-      ]
+      ],
+      "tempo": 105
     },
     {
       "id": "1767309133861-0.3150992228600331",
@@ -793,7 +792,6 @@
       "durationFormatted": "3:13",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/september/23%20-%20Mystery.mp3",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/september/23%20-%20Mystery.jpg",
-      "bpm": 152,
       "key": "C# minor",
       "genre": [
         "Alternative",
@@ -803,7 +801,8 @@
         "Neutral",
         "Contemplative",
         "Alternative"
-      ]
+      ],
+      "tempo": 152
     },
     {
       "id": "1767309098409-0.1217432440173194",
@@ -816,7 +815,6 @@
       "durationFormatted": "3:01",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/september/22%20-%20My%20Sacrifices.mp3",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/september/22%20-%20My%20Sacrifices.jpg",
-      "bpm": 63,
       "key": "C# minor",
       "genre": [
         "Ballad",
@@ -826,7 +824,8 @@
         "uplifting",
         "reflective",
         "Ballad"
-      ]
+      ],
+      "tempo": 63
     },
     {
       "id": "1767309066192-0.6097180594287179",
@@ -839,7 +838,6 @@
       "durationFormatted": "3:03",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/september/21%20-%20Poth.mp3",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/september/21%20-%20Poth.jpg",
-      "bpm": 91,
       "key": "G# major",
       "genre": [
         "Alternative",
@@ -849,7 +847,8 @@
         "reflective",
         "cautious",
         "Alternative"
-      ]
+      ],
+      "tempo": 91
     },
     {
       "id": "1767309039730-0.5522594807472927",
@@ -862,7 +861,6 @@
       "durationFormatted": "2:31",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/september/20%20-%20Riddle.mp3",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/september/20%20-%20Riddle.jpg",
-      "bpm": 128,
       "key": "A# minor",
       "genre": [
         "Alternative",
@@ -872,7 +870,8 @@
         "introspective",
         "frustrated",
         "Alternative"
-      ]
+      ],
+      "tempo": 128
     },
     {
       "id": "1767309008568-0.6241185860189014",
@@ -885,7 +884,6 @@
       "durationFormatted": "2:27",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/september/19%20-%20Save%20Tonight.mp3",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/september/19%20-%20Save%20Tonight.jpg",
-      "bpm": 75,
       "key": "C major",
       "genre": [
         "Ballad",
@@ -895,7 +893,8 @@
         "reflective",
         "intimate",
         "Ballad"
-      ]
+      ],
+      "tempo": 75
     },
     {
       "id": "1767308863997-0.6074120426665423",
@@ -908,7 +907,6 @@
       "durationFormatted": "3:07",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/september/18%20-%20Sweater.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/september/18%20-%20Sweater.jpg",
-      "bpm": 61,
       "key": "C major",
       "genre": [
         "Ballad",
@@ -918,7 +916,8 @@
         "reflective",
         "introspective",
         "Ballad"
-      ]
+      ],
+      "tempo": 61
     },
     {
       "id": "1767308846163-0.8871455517389355",
@@ -931,7 +930,6 @@
       "durationFormatted": "4:01",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/september/17%20-%20The%20End.mp3",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/september/17%20-%20The%20End.jpg",
-      "bpm": 64,
       "key": "C major",
       "genre": [
         "Ballad",
@@ -941,7 +939,8 @@
         "aggressive",
         "defiant",
         "Ballad"
-      ]
+      ],
+      "tempo": 64
     },
     {
       "id": "1767308820543-0.3575415774016584",
@@ -954,7 +953,6 @@
       "durationFormatted": "0:50",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/september/16%20-%20To%20Be%20a%20Man.mp3",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/september/16%20-%20To%20Be%20a%20Man.jpg",
-      "bpm": 66,
       "key": "D major",
       "genre": [
         "Ballad",
@@ -964,7 +962,8 @@
         "reflective",
         "introspective",
         "Ballad"
-      ]
+      ],
+      "tempo": 66
     },
     {
       "id": "1767308791429-0.6771784610773381",
@@ -977,7 +976,6 @@
       "durationFormatted": "3:56",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/september/15%20-%20World%20Ending.mp3",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/september/15%20-%20World%20Ending.jpg",
-      "bpm": 94,
       "key": "C major",
       "genre": [
         "Rock",
@@ -987,7 +985,8 @@
         "melancholic",
         "reflective",
         "Rock"
-      ]
+      ],
+      "tempo": 94
     },
     {
       "id": "1767308752037-0.4422723995720168",
@@ -1000,7 +999,6 @@
       "durationFormatted": "3:31",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/september/14%20-%20Camebackaroudnd.mp3",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/september/14%20-%20Camebackaroudnd.jpg",
-      "bpm": 128,
       "key": "C major",
       "genre": [
         "Alternative",
@@ -1010,7 +1008,8 @@
         "reflective",
         "resilient",
         "Alternative"
-      ]
+      ],
+      "tempo": 128
     },
     {
       "id": "1767071951329-0.07868175285881107",
@@ -1023,7 +1022,6 @@
       "durationFormatted": "3:16",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/september/13%20-%20LANDR%20Take%20Me%20Away%20Take%20Blenmd%20Warm%20Low.mp3",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/september/13%20-%20LANDR%20Take%20Me%20Away%20Take%20Blenmd%20Warm%20Low.jpg",
-      "bpm": 117,
       "key": "G# major",
       "genre": [
         "Alternative",
@@ -1033,7 +1031,8 @@
         "Neutral",
         "Contemplative",
         "Alternative"
-      ]
+      ],
+      "tempo": 117
     },
     {
       "id": "1767071946923-0.06402988893117967",
@@ -1046,7 +1045,6 @@
       "durationFormatted": "2:35",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/september/12%20-%20LANDR%20Crying%20Lil%20Bitch%20Balanced%20Medium%20REV.mp3",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/september/12%20-%20LANDR%20Crying%20Lil%20Bitch%20Balanced%20Medium%20REV.jpg",
-      "bpm": 83,
       "key": "G# major",
       "genre": [
         "Alternative",
@@ -1056,7 +1054,8 @@
         "Neutral",
         "Contemplative",
         "Alternative"
-      ]
+      ],
+      "tempo": 83
     },
     {
       "id": "1767071941387-0.18250192091257522",
@@ -1069,7 +1068,6 @@
       "durationFormatted": "3:41",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/september/11%20-%20LANDR%20Burning%20It%20Down%20Co%20Balanced%20Medium.mp3",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/september/11%20-%20LANDR%20Burning%20It%20Down%20Co%20Balanced%20Medium.jpg",
-      "bpm": 91,
       "key": "B minor",
       "genre": [
         "Pop",
@@ -1079,7 +1077,8 @@
         "Intense",
         "Powerful",
         "Pop"
-      ]
+      ],
+      "tempo": 91
     },
     {
       "id": "1767071937168-0.4449408871424071",
@@ -1092,7 +1091,6 @@
       "durationFormatted": "4:25",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/september/10%20-%20LANDR%20If%20You%20Leave0%20Open%20Low.mp3",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/september/10%20-%20LANDR%20If%20You%20Leave0%20Open%20Low.jpg",
-      "bpm": 120,
       "key": "C# major",
       "genre": [
         "Alternative",
@@ -1102,7 +1100,8 @@
         "Neutral",
         "Contemplative",
         "Alternative"
-      ]
+      ],
+      "tempo": 120
     },
     {
       "id": "1767071930080-0.7234403866239482",
@@ -1115,7 +1114,6 @@
       "durationFormatted": "3:15",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/september/09%20-%20LANDR%20Here%20I%20Go%20Again%201%20Warm%20High.mp3",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/september/09%20-%20LANDR%20Here%20I%20Go%20Again%201%20Warm%20High.jpg",
-      "bpm": 75,
       "key": "C major",
       "genre": [
         "Rock",
@@ -1125,7 +1123,8 @@
         "Intense",
         "Powerful",
         "Rock"
-      ]
+      ],
+      "tempo": 75
     },
     {
       "id": "1767071921743-0.5859739968724546",
@@ -1138,7 +1137,6 @@
       "durationFormatted": "4:35",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/september/08%20-%20LANDR%20Want%20It%20Any%20Other%20Way%20Open%20Low.mp3",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/september/08%20-%20LANDR%20Want%20It%20Any%20Other%20Way%20Open%20Low.jpg",
-      "bpm": 108,
       "key": "C major",
       "genre": [
         "Alternative",
@@ -1148,7 +1146,8 @@
         "Neutral",
         "Contemplative",
         "Alternative"
-      ]
+      ],
+      "tempo": 108
     },
     {
       "id": "1767071891559-0.5758124346057285",
@@ -1161,7 +1160,6 @@
       "durationFormatted": "2:17",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/september/07%20-%20LANDR%20Finding%20HOME%20Neut%20Balanced%20Medium.mp3",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/september/07%20-%20LANDR%20Finding%20HOME%20Neut%20Balanced%20Medium.jpg",
-      "bpm": 115,
       "key": "C# minor",
       "genre": [
         "Pop",
@@ -1171,7 +1169,8 @@
         "Neutral",
         "Contemplative",
         "Pop"
-      ]
+      ],
+      "tempo": 115
     },
     {
       "id": "1767071886299-0.7607622148623387",
@@ -1184,7 +1183,6 @@
       "durationFormatted": "3:15",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/september/06%20-%20LANDR%20This%20H%20Balanced%20Medium.mp3",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/september/06%20-%20LANDR%20This%20H%20Balanced%20Medium.jpg",
-      "bpm": 170,
       "key": "C# minor",
       "genre": [
         "Alternative",
@@ -1194,7 +1192,8 @@
         "Neutral",
         "Contemplative",
         "Alternative"
-      ]
+      ],
+      "tempo": 170
     },
     {
       "id": "1767071869706-0.44403900358547443",
@@ -1207,7 +1206,6 @@
       "durationFormatted": "3:32",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/september/05%20-%20LANDR%20Sweet%20You%20Warm%20Medium.mp3",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/september/05%20-%20LANDR%20Sweet%20You%20Warm%20Medium.jpg",
-      "bpm": 141,
       "key": "A# minor",
       "genre": [
         "Alternative",
@@ -1217,7 +1215,8 @@
         "romantic",
         "playful",
         "Alternative"
-      ]
+      ],
+      "tempo": 141
     },
     {
       "id": "1767071839863-0.9267452521321452",
@@ -1230,7 +1229,6 @@
       "durationFormatted": "4:57",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/september/04%20-%20Standing%20on%20E.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/september/04%20-%20Standing%20on%20E.jpg",
-      "bpm": 104,
       "key": "D major",
       "genre": [
         "Alternative",
@@ -1240,7 +1238,8 @@
         "melancholic",
         "frustrated",
         "Alternative"
-      ]
+      ],
+      "tempo": 104
     },
     {
       "id": "1767071820950-0.2077715594603896",
@@ -1253,7 +1252,6 @@
       "durationFormatted": "3:57",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/september/03%20-%20LANDR%20a%20Way%20Out%20Mas%20Balanced%20Medium.mp3",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/september/03%20-%20LANDR%20a%20Way%20Out%20Mas%20Balanced%20Medium.jpg",
-      "bpm": 78,
       "key": "C major",
       "genre": [
         "Ballad",
@@ -1263,7 +1261,8 @@
         "hopeful",
         "reflective",
         "Ballad"
-      ]
+      ],
+      "tempo": 78
     },
     {
       "id": "1767071799500-0.6652900368282738",
@@ -1276,7 +1275,6 @@
       "durationFormatted": "2:50",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/september/02%20-%20LANDR%20Smoothie%20Balanced%20Medium.mp3",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/september/02%20-%20LANDR%20Smoothie%20Balanced%20Medium.jpg",
-      "bpm": 165,
       "key": "C# minor",
       "genre": [
         "Alternative",
@@ -1286,7 +1284,8 @@
         "upbeat",
         "cheerful",
         "Alternative"
-      ]
+      ],
+      "tempo": 165
     },
     {
       "id": "1767071786337-0.2358721401477406",
@@ -1299,7 +1298,6 @@
       "durationFormatted": "3:11",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/september/01%20-%204u.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/september/01%20-%204u.jpg",
-      "bpm": 110,
       "key": "C# minor",
       "genre": [
         "Alternative",
@@ -1309,7 +1307,8 @@
         "reflective",
         "introspective",
         "Alternative"
-      ]
+      ],
+      "tempo": 110
     },
     {
       "id": "1767071765905-0.45162204141177353",
@@ -1322,7 +1321,6 @@
       "durationFormatted": "3:20",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/august/31%20-%20LANDR%20Self%20Dick%20Mas%20Balanced%20Medium.mp3",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/august/31%20-%20LANDR%20Self%20Dick%20Mas%20Balanced%20Medium.jpg",
-      "bpm": 80,
       "key": "C major",
       "genre": [
         "Alternative",
@@ -1332,7 +1330,8 @@
         "defiant",
         "empowered",
         "Alternative"
-      ]
+      ],
+      "tempo": 80
     },
     {
       "id": "1767071750179-0.4249354240461798",
@@ -1345,7 +1344,6 @@
       "durationFormatted": "2:22",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/august/30%20-%20LANDR%20Love%20for%20You%20Balanced%20Medium.mp3",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/august/30%20-%20LANDR%20Love%20for%20You%20Balanced%20Medium.jpg",
-      "bpm": 63,
       "key": "C# minor",
       "genre": [
         "Ballad",
@@ -1355,7 +1353,8 @@
         "uplifting",
         "reflective",
         "Ballad"
-      ]
+      ],
+      "tempo": 63
     },
     {
       "id": "1767071729409-0.3457349998683812",
@@ -1368,7 +1367,6 @@
       "durationFormatted": "3:54",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/august/29%20-%20LANDR%20Scars%20in%20My%20Mind%20M%20Balanced%20Medium.mp3",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/august/29%20-%20LANDR%20Scars%20in%20My%20Mind%20M%20Balanced%20Medium.jpg",
-      "bpm": 176,
       "key": "C major",
       "genre": [
         "Alternative",
@@ -1378,7 +1376,8 @@
         "melancholic",
         "dark",
         "Alternative"
-      ]
+      ],
+      "tempo": 176
     },
     {
       "id": "1767071714462-0.2682064220338287",
@@ -1391,7 +1390,6 @@
       "durationFormatted": "3:30",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/august/28%20-%20LANDR%20Childhood%20Warm%20Low.mp3",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/august/28%20-%20LANDR%20Childhood%20Warm%20Low.jpg",
-      "bpm": 62,
       "key": "D major",
       "genre": [
         "Ballad",
@@ -1401,7 +1399,8 @@
         "reflective",
         "hopeful",
         "Ballad"
-      ]
+      ],
+      "tempo": 62
     },
     {
       "id": "1767071683923-0.2873011708578046",
@@ -1414,7 +1413,6 @@
       "durationFormatted": "7:54",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/august/27%20-%20LANDR%20Hemmorage%201%20Open%20Medium.mp3",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/august/27%20-%20LANDR%20Hemmorage%201%20Open%20Medium.jpg",
-      "bpm": 141,
       "key": "C# minor",
       "genre": [
         "Alternative",
@@ -1424,7 +1422,8 @@
         "melancholic",
         "reflective",
         "Alternative"
-      ]
+      ],
+      "tempo": 141
     },
     {
       "id": "1767071658203-0.6728036081894394",
@@ -1437,7 +1436,6 @@
       "durationFormatted": "2:40",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/august/26%20-%20To%20Myself.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/august/26%20-%20To%20Myself.jpg",
-      "bpm": 165,
       "key": "C major",
       "genre": [
         "Alternative",
@@ -1447,7 +1445,8 @@
         "anxious",
         "reflective",
         "Alternative"
-      ]
+      ],
+      "tempo": 165
     },
     {
       "id": "1767071632735-0.47730165644727673",
@@ -1460,7 +1459,6 @@
       "durationFormatted": "3:11",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/august/25%20-%20LANDR%20Dance%20Floor%20Balanced%20Medium.mp3",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/august/25%20-%20LANDR%20Dance%20Floor%20Balanced%20Medium.jpg",
-      "bpm": 115,
       "key": "C# major",
       "genre": [
         "Rock",
@@ -1470,7 +1468,8 @@
         "upbeat",
         "playful",
         "Rock"
-      ]
+      ],
+      "tempo": 115
     },
     {
       "id": "1766703616087-0.9246108355998388",
@@ -1483,7 +1482,6 @@
       "durationFormatted": "4:10",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/august/24%20-%20Yourbody.mp3",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/august/24%20-%20Yourbody.jpg",
-      "bpm": 72,
       "key": "C major",
       "genre": [
         "Ballad",
@@ -1493,7 +1491,8 @@
         "passionate",
         "intense",
         "Ballad"
-      ]
+      ],
+      "tempo": 72
     },
     {
       "id": "1766703570096-0.717497561013146",
@@ -1506,7 +1505,6 @@
       "durationFormatted": "4:24",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/august/23%20-%20Tryied.mp3",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/august/23%20-%20Tryied.jpg",
-      "bpm": 148,
       "key": "C# major",
       "genre": [
         "Alternative",
@@ -1516,7 +1514,8 @@
         "reflective",
         "nostalgic",
         "Alternative"
-      ]
+      ],
+      "tempo": 148
     },
     {
       "id": "1766703552472-0.25693814030044726",
@@ -1529,7 +1528,6 @@
       "durationFormatted": "3:47",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/august/22%20-%20True%20Lies.mp3",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/august/22%20-%20True%20Lies.jpg",
-      "bpm": 97,
       "key": "D major",
       "genre": [
         "Alternative",
@@ -1539,7 +1537,8 @@
         "introspective",
         "tense",
         "Alternative"
-      ]
+      ],
+      "tempo": 97
     },
     {
       "id": "1766597550893-0.09605208568303802",
@@ -1552,7 +1551,6 @@
       "durationFormatted": "3:43",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/august/21%20-%20Sing%20to%20Me.mp3",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/august/21%20-%20Sing%20to%20Me.jpg",
-      "bpm": 134,
       "key": "A# major",
       "genre": [
         "Alternative",
@@ -1562,7 +1560,8 @@
         "upbeat",
         "cheerful",
         "Alternative"
-      ]
+      ],
+      "tempo": 134
     },
     {
       "id": "1766597490654-0.5902811035088881",
@@ -1575,7 +1574,6 @@
       "durationFormatted": "2:29",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/august/20%20-%20Starlight.mp3",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/august/20%20-%20Starlight.jpg",
-      "bpm": 137,
       "key": "C major",
       "genre": [
         "Alternative",
@@ -1585,7 +1583,8 @@
         "reflective",
         "hopeful",
         "Alternative"
-      ]
+      ],
+      "tempo": 137
     },
     {
       "id": "1766597455562-0.6301081090163028",
@@ -1598,7 +1597,6 @@
       "durationFormatted": "3:34",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/august/19%20-%20Sunset.mp3",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/august/19%20-%20Sunset.jpg",
-      "bpm": 176,
       "key": "D major",
       "genre": [
         "Alternative",
@@ -1608,7 +1606,8 @@
         "melancholic",
         "reflective",
         "Alternative"
-      ]
+      ],
+      "tempo": 176
     },
     {
       "id": "1766433142910-0.5320305441591157",
@@ -1621,7 +1620,6 @@
       "durationFormatted": "2:46",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/august/18%20-%20Diamond%20Death.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/august/18%20-%20Diamond%20Death.jpg",
-      "bpm": 156,
       "key": "C# minor",
       "genre": [
         "Alternative",
@@ -1631,7 +1629,8 @@
         "melancholic",
         "dark",
         "Alternative"
-      ]
+      ],
+      "tempo": 156
     },
     {
       "id": "1766433125677-0.19866340610141553",
@@ -1644,7 +1643,6 @@
       "durationFormatted": "2:59",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/august/17%20-%20Dont%20Ghost%20Me.mp3",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/august/17%20-%20Dont%20Ghost%20Me.jpg",
-      "bpm": 117,
       "key": "C# minor",
       "genre": [
         "Alternative",
@@ -1654,7 +1652,8 @@
         "reflective",
         "introspective",
         "Alternative"
-      ]
+      ],
+      "tempo": 117
     },
     {
       "id": "1766433092807-0.33565374118456615",
@@ -1667,7 +1666,6 @@
       "durationFormatted": "2:56",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/august/16%20-%20Dont%20Ghost%20Me.mp3",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/august/16%20-%20Dont%20Ghost%20Me.jpg",
-      "bpm": 94,
       "key": "C# minor",
       "genre": [
         "Alternative",
@@ -1677,7 +1675,8 @@
         "conflicted",
         "melancholic",
         "Alternative"
-      ]
+      ],
+      "tempo": 94
     },
     {
       "id": "1766433054937-0.8909862373308172",
@@ -1690,7 +1689,6 @@
       "durationFormatted": "4:30",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/august/15%20-%20Dreams%20Shattered.mp3",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/august/15%20-%20Dreams%20Shattered.jpg",
-      "bpm": 128,
       "key": "A# minor",
       "genre": [
         "Alternative",
@@ -1700,7 +1698,8 @@
         "melancholic",
         "frustrated",
         "Alternative"
-      ]
+      ],
+      "tempo": 128
     },
     {
       "id": "1766425156763-0.27497094166001024",
@@ -1713,7 +1712,6 @@
       "durationFormatted": "6:05",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/august/14%20-%20Brave.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/august/14%20-%20Brave.jpg",
-      "bpm": 113,
       "key": "D major",
       "genre": [
         "Alternative",
@@ -1723,7 +1721,8 @@
         "intense",
         "conflicted",
         "Alternative"
-      ]
+      ],
+      "tempo": 113
     },
     {
       "id": "1766425123567-0.8468760885325961",
@@ -1736,7 +1735,6 @@
       "durationFormatted": "3:06",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/august/13%20-%20Untied.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/august/13%20-%20Untied.jpg",
-      "bpm": 69,
       "key": "C# major",
       "genre": [
         "Ballad",
@@ -1746,7 +1744,8 @@
         "reflective",
         "urgent",
         "Ballad"
-      ]
+      ],
+      "tempo": 69
     },
     {
       "id": "1766425082479-0.505460001888077",
@@ -1759,7 +1758,6 @@
       "durationFormatted": "4:04",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/august/12%20-%20Clebit.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/august/12%20-%20Clebit.jpg",
-      "bpm": 108,
       "key": "C# major",
       "genre": [
         "Alternative",
@@ -1769,7 +1767,8 @@
         "angry",
         "frustrated",
         "Alternative"
-      ]
+      ],
+      "tempo": 108
     },
     {
       "id": "1766425068005-0.8646273666335258",
@@ -1782,7 +1781,6 @@
       "durationFormatted": "3:09",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/august/11%20-%20Darewell.mp3",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/august/11%20-%20Darewell.jpg",
-      "bpm": 112,
       "key": "C# major",
       "genre": [
         "Alternative",
@@ -1792,7 +1790,8 @@
         "melancholic",
         "reflective",
         "Alternative"
-      ]
+      ],
+      "tempo": 112
     },
     {
       "id": "1766425030659-0.35481529758089947",
@@ -1805,7 +1804,6 @@
       "durationFormatted": "3:35",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/august/10%20-%20Dark%20Thoughts.mp3",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/august/10%20-%20Dark%20Thoughts.jpg",
-      "bpm": 65,
       "key": "C# major",
       "genre": [
         "Ballad",
@@ -1815,7 +1813,8 @@
         "dark",
         "melancholic",
         "Ballad"
-      ]
+      ],
+      "tempo": 65
     },
     {
       "id": "1766401694284-0.565129690700161",
@@ -1828,7 +1827,6 @@
       "durationFormatted": "4:24",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/august/09%20-%20Awaits.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/august/09%20-%20Awaits.jpg",
-      "bpm": 77,
       "key": "C minor",
       "genre": [
         "Ballad",
@@ -1838,7 +1836,8 @@
         "reflective",
         "hopeful",
         "Ballad"
-      ]
+      ],
+      "tempo": 77
     },
     {
       "id": "1766401680214-0.3921358895560706",
@@ -1851,7 +1850,6 @@
       "durationFormatted": "3:01",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/august/08%20-%20Be%20Here%20Boo.mp3",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/august/08%20-%20Be%20Here%20Boo.jpg",
-      "bpm": 129,
       "key": "C minor",
       "genre": [
         "Alternative",
@@ -1861,7 +1859,8 @@
         "reflective",
         "frustrated",
         "Alternative"
-      ]
+      ],
+      "tempo": 129
     },
     {
       "id": "1766401619187-0.2551858137601094",
@@ -1874,7 +1873,6 @@
       "durationFormatted": "4:34",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/august/07%20-%20Benefits%20Me.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/august/07%20-%20Benefits%20Me.jpg",
-      "bpm": 78,
       "key": "B minor",
       "genre": [
         "Ballad",
@@ -1884,7 +1882,8 @@
         "reflective",
         "conflicted",
         "Ballad"
-      ]
+      ],
+      "tempo": 78
     },
     {
       "id": "1766304126800-0.8414524746372707",
@@ -1897,7 +1896,6 @@
       "durationFormatted": "4:25",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/august/06%20-%20Abandon.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/august/06%20-%20Abandon.jpg",
-      "bpm": 81,
       "key": "B minor",
       "genre": [
         "Alternative",
@@ -1907,7 +1905,8 @@
         "dark",
         "melancholic",
         "Alternative"
-      ]
+      ],
+      "tempo": 81
     },
     {
       "id": "1766301932191-0.7785674517123451",
@@ -1920,7 +1919,6 @@
       "durationFormatted": "4:22",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/august/05%20-%20ONE%20LAST%20Breath%203.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/august/05%20-%20ONE%20LAST%20Breath%203.jpg",
-      "bpm": 68,
       "key": "C# minor",
       "genre": [
         "Rock",
@@ -1930,7 +1928,8 @@
         "dark",
         "melancholic",
         "Rock"
-      ]
+      ],
+      "tempo": 68
     },
     {
       "id": "1766301898384-0.5624478431159481",
@@ -1943,7 +1942,6 @@
       "durationFormatted": "1:57",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/august/04%20-%20Can't%20Go%20Back.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/august/04%20-%20Can't%20Go%20Back.jpg",
-      "bpm": 63,
       "key": "C minor",
       "genre": [
         "Ballad",
@@ -1953,7 +1951,8 @@
         "melancholic",
         "introspective",
         "Ballad"
-      ]
+      ],
+      "tempo": 63
     },
     {
       "id": "1766301875806-0.45746293199003274",
@@ -1966,7 +1965,6 @@
       "durationFormatted": "4:46",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/august/03%20-%20Climax.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/august/03%20-%20Climax.jpg",
-      "bpm": 137,
       "key": "D major",
       "genre": [
         "Alternative",
@@ -1976,7 +1974,8 @@
         "upbeat",
         "playful",
         "Alternative"
-      ]
+      ],
+      "tempo": 137
     },
     {
       "id": "1766301854546-0.5119843253250205",
@@ -1989,7 +1988,6 @@
       "durationFormatted": "3:50",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/august/02%20-%20Cursed%202ndmix.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/august/02%20-%20Cursed%202ndmix.jpg",
-      "bpm": 170,
       "key": "A# major",
       "genre": [
         "Alternative",
@@ -1999,7 +1997,8 @@
         "reflective",
         "frustrated",
         "Alternative"
-      ]
+      ],
+      "tempo": 170
     },
     {
       "id": "1766301835887-0.7502256142367608",
@@ -2012,7 +2011,6 @@
       "durationFormatted": "3:04",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/august/01%20-%20Basic.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/august/01%20-%20Basic.jpg",
-      "bpm": 77,
       "key": "C major",
       "genre": [
         "Ballad",
@@ -2022,7 +2020,8 @@
         "cheerful",
         "affectionate",
         "Ballad"
-      ]
+      ],
+      "tempo": 77
     },
     {
       "id": "1766301818297-0.5535505315223342",
@@ -2035,7 +2034,6 @@
       "durationFormatted": "3:41",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/july/31%20-%20Backroads.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/july/31%20-%20Backroads.jpg",
-      "bpm": 91,
       "key": "C# major",
       "genre": [
         "Alternative",
@@ -2045,7 +2043,8 @@
         "melancholic",
         "nostalgic",
         "Alternative"
-      ]
+      ],
+      "tempo": 91
     },
     {
       "id": "1766301799482-0.8568384799058834",
@@ -2058,7 +2057,6 @@
       "durationFormatted": "3:20",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/july/30%20-%20Self%20Dick.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/july/30%20-%20Self%20Dick.jpg",
-      "bpm": 100,
       "key": "D major",
       "genre": [
         "Alternative",
@@ -2068,7 +2066,8 @@
         "defiant",
         "empowered",
         "Alternative"
-      ]
+      ],
+      "tempo": 100
     },
     {
       "id": "1766301776296-0.2349544303383586",
@@ -2081,7 +2080,6 @@
       "durationFormatted": "6:06",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/july/29%20-%20Sicko.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/july/29%20-%20Sicko.jpg",
-      "bpm": 97,
       "key": "C# major",
       "genre": [
         "Alternative",
@@ -2091,7 +2089,8 @@
         "melancholic",
         "frustrated",
         "Alternative"
-      ]
+      ],
+      "tempo": 97
     },
     {
       "id": "1766301757200-0.7809977321527702",
@@ -2104,7 +2103,6 @@
       "durationFormatted": "2:06",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/july/28%20-%20From%20the%20Earth%20to%20the%20Sea%20Flipped%20Mask.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/july/28%20-%20From%20the%20Earth%20to%20the%20Sea%20Flipped%20Mask.jpg",
-      "bpm": 64,
       "key": "C# major",
       "genre": [
         "Ballad",
@@ -2114,7 +2112,8 @@
         "intense",
         "yearning",
         "Ballad"
-      ]
+      ],
+      "tempo": 64
     },
     {
       "id": "1766301730557-0.4019717769000082",
@@ -2127,7 +2126,6 @@
       "durationFormatted": "7:54",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/july/27%20-%20Hemmorage.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/july/27%20-%20Hemmorage.jpg",
-      "bpm": 141,
       "key": "C# minor",
       "genre": [
         "Alternative",
@@ -2137,7 +2135,8 @@
         "melancholic",
         "reflective",
         "Alternative"
-      ]
+      ],
+      "tempo": 141
     },
     {
       "id": "1766301707029-0.45270863011069407",
@@ -2150,7 +2149,6 @@
       "durationFormatted": "2:43",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/july/26%20-%20Trip%20Into%20Background.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/july/26%20-%20Trip%20Into%20Background.jpg",
-      "bpm": 115,
       "key": "C# major",
       "genre": [
         "Alternative",
@@ -2160,7 +2158,8 @@
         "cheerful",
         "light-hearted",
         "Alternative"
-      ]
+      ],
+      "tempo": 115
     },
     {
       "id": "1766301686931-0.7377151102397415",
@@ -2173,7 +2172,6 @@
       "durationFormatted": "4:27",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/july/25%20-%20Cant%20Escape%20Mas.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/july/25%20-%20Cant%20Escape%20Mas.jpg",
-      "bpm": 134,
       "key": "C major",
       "genre": [
         "Rock",
@@ -2183,7 +2181,8 @@
         "melancholic",
         "dark",
         "Rock"
-      ]
+      ],
+      "tempo": 134
     },
     {
       "id": "1766301670394-0.9502995068062486",
@@ -2196,7 +2195,6 @@
       "durationFormatted": "2:49",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/july/24%20-%20Awe%20Ofu.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/july/24%20-%20Awe%20Ofu.jpg",
-      "bpm": 120,
       "key": "C major",
       "genre": [
         "Alternative",
@@ -2206,7 +2204,8 @@
         "romantic",
         "dreamy",
         "Alternative"
-      ]
+      ],
+      "tempo": 120
     },
     {
       "id": "1766301657229-0.6855972212380508",
@@ -2219,7 +2218,6 @@
       "durationFormatted": "3:16",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/july/23%20-%20Re.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/july/23%20-%20Re.jpg",
-      "bpm": 63,
       "key": "A# minor",
       "genre": [
         "Ballad",
@@ -2229,7 +2227,8 @@
         "reflective",
         "hopeful",
         "Ballad"
-      ]
+      ],
+      "tempo": 63
     },
     {
       "id": "1766301629790-0.3411296980130647",
@@ -2242,7 +2241,6 @@
       "durationFormatted": "4:06",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/july/22%20-%20A%20Fine%20Sin%20Remix.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/july/22%20-%20A%20Fine%20Sin%20Remix.jpg",
-      "bpm": 106,
       "key": "C major",
       "genre": [
         "Pop",
@@ -2252,7 +2250,8 @@
         "dark",
         "conflicted",
         "Pop"
-      ]
+      ],
+      "tempo": 106
     },
     {
       "id": "1766301613848-0.6774657019220851",
@@ -2265,7 +2264,6 @@
       "durationFormatted": "3:04",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/july/21%20-%20Bettersion%20of%20Me.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/july/21%20-%20Bettersion%20of%20Me.jpg",
-      "bpm": 110,
       "key": "D major",
       "genre": [
         "Pop",
@@ -2275,7 +2273,8 @@
         "hopeful",
         "intimate",
         "Pop"
-      ]
+      ],
+      "tempo": 110
     },
     {
       "id": "1766301595275-0.6657511669416161",
@@ -2288,7 +2287,6 @@
       "durationFormatted": "4:37",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/july/20%20-%20Burn%20It%20to%20the%20Ground%20Gapless.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/july/20%20-%20Burn%20It%20to%20the%20Ground%20Gapless.jpg",
-      "bpm": 91,
       "key": "D major",
       "genre": [
         "Alternative",
@@ -2298,7 +2296,8 @@
         "dark",
         "melancholic",
         "Alternative"
-      ]
+      ],
+      "tempo": 91
     },
     {
       "id": "1766301579558-0.20297063796367254",
@@ -2311,7 +2310,6 @@
       "durationFormatted": "3:09",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/july/19%20-%20Bye%20Bi.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/july/19%20-%20Bye%20Bi.jpg",
-      "bpm": 117,
       "key": "C major",
       "genre": [
         "Pop",
@@ -2321,7 +2319,8 @@
         "melancholic",
         "defiant",
         "Pop"
-      ]
+      ],
+      "tempo": 117
     },
     {
       "id": "1766301567430-0.0361258868607659",
@@ -2334,7 +2333,6 @@
       "durationFormatted": "2:10",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/july/18%20-%20Cheat%20Code.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/july/18%20-%20Cheat%20Code.jpg",
-      "bpm": 115,
       "key": "C# major",
       "genre": [
         "Rock",
@@ -2344,7 +2342,8 @@
         "upbeat",
         "energetic",
         "Rock"
-      ]
+      ],
+      "tempo": 115
     },
     {
       "id": "1766301549803-0.1436678663622829",
@@ -2357,7 +2356,6 @@
       "durationFormatted": "3:27",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/july/17%20-%20Consation%20W.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/july/17%20-%20Consation%20W.jpg",
-      "bpm": 89,
       "key": "C# major",
       "genre": [
         "Alternative",
@@ -2367,7 +2365,8 @@
         "reflective",
         "introspective",
         "Alternative"
-      ]
+      ],
+      "tempo": 89
     },
     {
       "id": "1766301536760-0.7918247501524885",
@@ -2380,7 +2379,6 @@
       "durationFormatted": "2:32",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/july/16%20-%20Pure%20Popped.mp3",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/july/16%20-%20Pure%20Popped.jpg",
-      "bpm": 71,
       "key": "C major",
       "genre": [
         "Ballad",
@@ -2390,7 +2388,8 @@
         "frustrated",
         "defiant",
         "Ballad"
-      ]
+      ],
+      "tempo": 71
     },
     {
       "id": "1766301453669-0.5300868830149831",
@@ -2403,7 +2402,6 @@
       "durationFormatted": "4:18",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/july/15%20-%20Up%20All%20Night.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/july/15%20-%20Up%20All%20Night.jpg",
-      "bpm": 63,
       "key": "C major",
       "genre": [
         "Ballad",
@@ -2413,7 +2411,8 @@
         "mysterious",
         "enigmatic",
         "Ballad"
-      ]
+      ],
+      "tempo": 63
     },
     {
       "id": "1766301433592-0.1330287679164096",
@@ -2426,7 +2425,6 @@
       "durationFormatted": "4:31",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/july/14%20-%20Devour.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/july/14%20-%20Devour.jpg",
-      "bpm": 92,
       "key": "C major",
       "genre": [
         "Alternative",
@@ -2436,7 +2434,8 @@
         "energetic",
         "intense",
         "Alternative"
-      ]
+      ],
+      "tempo": 92
     },
     {
       "id": "1766301415832-0.7068920299929639",
@@ -2449,7 +2448,6 @@
       "durationFormatted": "3:46",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/july/13%20-%20Dont%20Blame%20U.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/july/13%20-%20Dont%20Blame%20U.jpg",
-      "bpm": 94,
       "key": "D minor",
       "genre": [
         "Alternative",
@@ -2459,7 +2457,8 @@
         "hopeful",
         "uplifting",
         "Alternative"
-      ]
+      ],
+      "tempo": 94
     },
     {
       "id": "1766301394600-0.7232769461593448",
@@ -2472,7 +2471,6 @@
       "durationFormatted": "4:54",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/july/12%20-%20Entropy.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/july/12%20-%20Entropy.jpg",
-      "bpm": 83,
       "key": "C major",
       "genre": [
         "Alternative",
@@ -2482,7 +2480,8 @@
         "reflective",
         "introspective",
         "Alternative"
-      ]
+      ],
+      "tempo": 83
     },
     {
       "id": "1766301353612-0.3179233866033888",
@@ -2495,7 +2494,6 @@
       "durationFormatted": "3:30",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/july/11%20-%20Fast%20Life.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/july/11%20-%20Fast%20Life.jpg",
-      "bpm": 106,
       "key": "C# minor",
       "genre": [
         "Rock",
@@ -2505,7 +2503,8 @@
         "energetic",
         "chaotic",
         "Rock"
-      ]
+      ],
+      "tempo": 106
     },
     {
       "id": "1766301337354-0.08550212788973877",
@@ -2518,7 +2517,6 @@
       "durationFormatted": "3:36",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/july/10%20-%20Find%20Her%20Demo%20Entire%20Mix.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/july/10%20-%20Find%20Her%20Demo%20Entire%20Mix.jpg",
-      "bpm": 170,
       "key": "C major",
       "genre": [
         "Alternative",
@@ -2528,7 +2526,8 @@
         "melancholic",
         "frustrated",
         "Alternative"
-      ]
+      ],
+      "tempo": 170
     },
     {
       "id": "1766301321292-0.9318282411318448",
@@ -2541,7 +2540,6 @@
       "durationFormatted": "2:38",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/july/09%20-%20Fly%20Away%20Again.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/july/09%20-%20Fly%20Away%20Again.jpg",
-      "bpm": 102,
       "key": "C# minor",
       "genre": [
         "Alternative",
@@ -2551,7 +2549,8 @@
         "dark",
         "introspective",
         "Alternative"
-      ]
+      ],
+      "tempo": 102
     },
     {
       "id": "1766301304859-0.18329536497904853",
@@ -2564,7 +2563,6 @@
       "durationFormatted": "2:57",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/july/08%20-%20Hard%20to%20Ignore.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/july/08%20-%20Hard%20to%20Ignore.jpg",
-      "bpm": 89,
       "key": "A# major",
       "genre": [
         "Alternative",
@@ -2574,7 +2572,8 @@
         "hopeful",
         "romantic",
         "Alternative"
-      ]
+      ],
+      "tempo": 89
     },
     {
       "id": "1766301278320-0.08965137950305146",
@@ -2587,7 +2586,6 @@
       "durationFormatted": "4:40",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/july/07%20-%20If%20You%20Come%20Along.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/july/07%20-%20If%20You%20Come%20Along.jpg",
-      "bpm": 91,
       "key": "G# major",
       "genre": [
         "Rock",
@@ -2597,7 +2595,8 @@
         "romantic",
         "reflective",
         "Rock"
-      ]
+      ],
+      "tempo": 91
     },
     {
       "id": "1766301257997-0.8089073837438636",
@@ -2610,7 +2609,6 @@
       "durationFormatted": "3:02",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/july/06%20-%20Locked%20Up.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/july/06%20-%20Locked%20Up.jpg",
-      "bpm": 89,
       "key": "D major",
       "genre": [
         "Alternative",
@@ -2620,7 +2618,8 @@
         "romantic",
         "playful",
         "Alternative"
-      ]
+      ],
+      "tempo": 89
     },
     {
       "id": "1766301241618-0.6187610732767932",
@@ -2633,7 +2632,6 @@
       "durationFormatted": "3:07",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/july/05%20-%20Moment%20of%20Exctasy.mp3",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/july/05%20-%20Moment%20of%20Exctasy.jpg",
-      "bpm": 115,
       "key": "C# minor",
       "genre": [
         "Alternative",
@@ -2643,7 +2641,8 @@
         "upbeat",
         "intense",
         "Alternative"
-      ]
+      ],
+      "tempo": 115
     },
     {
       "id": "1766301221631-0.6333873921613187",
@@ -2656,7 +2655,6 @@
       "durationFormatted": "4:03",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/july/04%20-%20Monday%20Ta%20Wenday%20Ta%20Friday.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/july/04%20-%20Monday%20Ta%20Wenday%20Ta%20Friday.jpg",
-      "bpm": 63,
       "key": "A# major",
       "genre": [
         "Ballad",
@@ -2666,7 +2664,8 @@
         "upbeat",
         "confident",
         "Ballad"
-      ]
+      ],
+      "tempo": 63
     },
     {
       "id": "1766301200115-0.1665606282694484",
@@ -2679,7 +2678,6 @@
       "durationFormatted": "2:56",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/july/03%20-%20My%20Way.mp3",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/july/03%20-%20My%20Way.jpg",
-      "bpm": 77,
       "key": "C major",
       "genre": [
         "Ballad",
@@ -2689,7 +2687,8 @@
         "reflective",
         "conflicted",
         "Ballad"
-      ]
+      ],
+      "tempo": 77
     },
     {
       "id": "1766301187938-0.011749581839960999",
@@ -2702,7 +2701,6 @@
       "durationFormatted": "2:08",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/july/02%20-%20No%20Matter%20the%20Pain.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/july/02%20-%20No%20Matter%20the%20Pain.jpg",
-      "bpm": 120,
       "key": "C major",
       "genre": [
         "Rock",
@@ -2712,7 +2710,8 @@
         "reflective",
         "melancholic",
         "Rock"
-      ]
+      ],
+      "tempo": 120
     },
     {
       "id": "1766301162835-0.9696384014882666",
@@ -2725,7 +2724,6 @@
       "durationFormatted": "2:24",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/july/01%20-%20Quite%20the%20Lie%201.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/july/01%20-%20Quite%20the%20Lie%201.jpg",
-      "bpm": 80,
       "key": "C major",
       "genre": [
         "Alternative",
@@ -2735,7 +2733,8 @@
         "aggressive",
         "defiant",
         "Alternative"
-      ]
+      ],
+      "tempo": 80
     },
     {
       "id": "1766301122273-0.35118341731175395",
@@ -2748,7 +2747,6 @@
       "durationFormatted": "11:51",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/june/30%20-%20Rabbit%20Hole.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/june/30%20-%20Rabbit%20Hole.jpg",
-      "bpm": 83,
       "key": "C# minor",
       "genre": [
         "Alternative",
@@ -2758,7 +2756,8 @@
         "reflective",
         "introspective",
         "Alternative"
-      ]
+      ],
+      "tempo": 83
     },
     {
       "id": "1766301093836-0.8221192947755912",
@@ -2771,7 +2770,6 @@
       "durationFormatted": "3:32",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/june/29%20-%20She%20Said%20Lil%20Richard%20Where%20Da%20Fux%20U.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/june/29%20-%20She%20Said%20Lil%20Richard%20Where%20Da%20Fux%20U.jpg",
-      "bpm": 76,
       "key": "C# minor",
       "genre": [
         "Ballad",
@@ -2781,7 +2779,8 @@
         "upbeat",
         "excited",
         "Ballad"
-      ]
+      ],
+      "tempo": 76
     },
     {
       "id": "1766301073093-0.553487681421843",
@@ -2794,7 +2793,6 @@
       "durationFormatted": "2:42",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/june/28%20-%20St%20America.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/june/28%20-%20St%20America.jpg",
-      "bpm": 144,
       "key": "C# major",
       "genre": [
         "Electronic",
@@ -2804,7 +2802,8 @@
         "melancholic",
         "reflective",
         "Electronic"
-      ]
+      ],
+      "tempo": 144
     },
     {
       "id": "1766301050841-0.13273636388059362",
@@ -2817,7 +2816,6 @@
       "durationFormatted": "3:32",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/june/27%20-%20Undercoa%204.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/june/27%20-%20Undercoa%204.jpg",
-      "bpm": 125,
       "key": "C major",
       "genre": [
         "Alternative",
@@ -2827,7 +2825,8 @@
         "dark",
         "reflective",
         "Alternative"
-      ]
+      ],
+      "tempo": 125
     },
     {
       "id": "1766301027926-0.09469109407052367",
@@ -2840,7 +2839,6 @@
       "durationFormatted": "4:18",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/june/26%20-%20Up%20All%20Night.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/june/26%20-%20Up%20All%20Night.jpg",
-      "bpm": 63,
       "key": "C major",
       "genre": [
         "Ballad",
@@ -2850,7 +2848,8 @@
         "upbeat",
         "energetic",
         "Ballad"
-      ]
+      ],
+      "tempo": 63
     },
     {
       "id": "1766301004173-0.18275426977263232",
@@ -2863,7 +2862,6 @@
       "durationFormatted": "3:48",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/june/25%20-%20Way%20Eight%20Fore%20Dat%20Storm%20Level.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/june/25%20-%20Way%20Eight%20Fore%20Dat%20Storm%20Level.jpg",
-      "bpm": 91,
       "key": "C# minor",
       "genre": [
         "Pop",
@@ -2873,7 +2871,8 @@
         "hopeful",
         "reflective",
         "Pop"
-      ]
+      ],
+      "tempo": 91
     },
     {
       "id": "1766300976013-0.30794958571407594",
@@ -2886,7 +2885,6 @@
       "durationFormatted": "3:28",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/june/24%20-%20You%20Like%20Steve%20Earle.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/june/24%20-%20You%20Like%20Steve%20Earle.jpg",
-      "bpm": 108,
       "key": "G# minor",
       "genre": [
         "Alternative",
@@ -2896,7 +2894,8 @@
         "reflective",
         "hopeful",
         "Alternative"
-      ]
+      ],
+      "tempo": 108
     },
     {
       "id": "1766300961242-0.5543984589861648",
@@ -2909,7 +2908,6 @@
       "durationFormatted": "4:32",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/june/23%20-%20Without%20You.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/june/23%20-%20Without%20You.jpg",
-      "bpm": 72,
       "key": "C major",
       "genre": [
         "Ballad",
@@ -2919,7 +2917,8 @@
         "repetitive",
         "reflective",
         "Ballad"
-      ]
+      ],
+      "tempo": 72
     },
     {
       "id": "1766300822253-0.45895377118401637",
@@ -2932,7 +2931,6 @@
       "durationFormatted": "3:36",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/june/22%20-%20Dreams%20Again.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/june/22%20-%20Dreams%20Again.jpg",
-      "bpm": 89,
       "key": "B minor",
       "genre": [
         "Alternative",
@@ -2942,7 +2940,8 @@
         "reflective",
         "hopeful",
         "Alternative"
-      ]
+      ],
+      "tempo": 89
     },
     {
       "id": "1766300789491-0.509765737274522",
@@ -2955,7 +2954,6 @@
       "durationFormatted": "4:50",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/june/21%20-%20Pit%20What%20I%20Got.mp3",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/june/21%20-%20Pit%20What%20I%20Got.jpg",
-      "bpm": 110,
       "key": "D major",
       "genre": [
         "Alternative",
@@ -2965,7 +2963,8 @@
         "melancholic",
         "introspective",
         "Alternative"
-      ]
+      ],
+      "tempo": 110
     },
     {
       "id": "1766300761109-0.692197499353975",
@@ -2978,7 +2977,6 @@
       "durationFormatted": "2:40",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/june/20%20-%20Against%20the%20Grain.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/june/20%20-%20Against%20the%20Grain.jpg",
-      "bpm": 78,
       "key": "G# major",
       "genre": [
         "Ballad",
@@ -2988,7 +2986,8 @@
         "conflicted",
         "tense",
         "Ballad"
-      ]
+      ],
+      "tempo": 78
     },
     {
       "id": "1766300741584-0.7603826990590187",
@@ -3001,7 +3000,6 @@
       "durationFormatted": "3:35",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/june/19%20-%20Aborted.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/june/19%20-%20Aborted.jpg",
-      "bpm": 78,
       "key": "C major",
       "genre": [
         "Ballad",
@@ -3011,7 +3009,8 @@
         "dark",
         "melancholic",
         "Ballad"
-      ]
+      ],
+      "tempo": 78
     },
     {
       "id": "1766300678435-0.6808615949800052",
@@ -3024,7 +3023,6 @@
       "durationFormatted": "3:12",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/june/18%20-%20Falllin.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/june/18%20-%20Falllin.jpg",
-      "bpm": 67,
       "key": "B minor",
       "genre": [
         "Ballad",
@@ -3034,7 +3032,8 @@
         "romantic",
         "intense",
         "Ballad"
-      ]
+      ],
+      "tempo": 67
     },
     {
       "id": "1766300653177-0.699974365184157",
@@ -3047,7 +3046,6 @@
       "durationFormatted": "4:39",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/june/17%20-%20Friendzone.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/june/17%20-%20Friendzone.jpg",
-      "bpm": 144,
       "key": "B minor",
       "genre": [
         "Alternative",
@@ -3057,7 +3055,8 @@
         "reflective",
         "frustrated",
         "Alternative"
-      ]
+      ],
+      "tempo": 144
     },
     {
       "id": "1766300614779-0.09656443943832249",
@@ -3070,7 +3069,6 @@
       "durationFormatted": "3:50",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/june/16%20-%20Leave%20Me%20Dead.mp3",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/june/16%20-%20Leave%20Me%20Dead.jpg",
-      "bpm": 63,
       "key": "C major",
       "genre": [
         "Rock",
@@ -3080,7 +3078,8 @@
         "dark",
         "intense",
         "Rock"
-      ]
+      ],
+      "tempo": 63
     },
     {
       "id": "1766300594203-0.14369799165902286",
@@ -3093,7 +3092,6 @@
       "durationFormatted": "3:38",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/june/15%20-%20Odosed.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/june/15%20-%20Odosed.jpg",
-      "bpm": 61,
       "key": "C# major",
       "genre": [
         "Ballad",
@@ -3103,7 +3101,8 @@
         "dark",
         "melancholic",
         "Ballad"
-      ]
+      ],
+      "tempo": 61
     },
     {
       "id": "1766300565946-0.02681034656418957",
@@ -3116,7 +3115,6 @@
       "durationFormatted": "2:50",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/june/14%20-%20Pop.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/june/14%20-%20Pop.jpg",
-      "bpm": 108,
       "key": "C# minor",
       "genre": [
         "Rock",
@@ -3126,7 +3124,8 @@
         "upbeat",
         "party",
         "Rock"
-      ]
+      ],
+      "tempo": 108
     },
     {
       "id": "1766300459712-0.2784398085333629",
@@ -3139,7 +3138,6 @@
       "durationFormatted": "4:30",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/june/13%20-%20Shhh%20Bitch.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/june/13%20-%20Shhh%20Bitch.jpg",
-      "bpm": 63,
       "key": "C# minor",
       "genre": [
         "Ballad",
@@ -3149,7 +3147,8 @@
         "angry",
         "frustrated",
         "Ballad"
-      ]
+      ],
+      "tempo": 63
     },
     {
       "id": "1766300442478-0.12231958823960476",
@@ -3162,7 +3161,6 @@
       "durationFormatted": "3:23",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/june/12%20-%20Summers%20Ending.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/june/12%20-%20Summers%20Ending.jpg",
-      "bpm": 104,
       "key": "A# major",
       "genre": [
         "Alternative",
@@ -3172,7 +3170,8 @@
         "hopeful",
         "reflective",
         "Alternative"
-      ]
+      ],
+      "tempo": 104
     },
     {
       "id": "1766300404682-0.2492752827671021",
@@ -3185,7 +3184,6 @@
       "durationFormatted": "4:15",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/june/11%20-%20Trippie.mp3",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/june/11%20-%20Trippie.jpg",
-      "bpm": 80,
       "key": "D major",
       "genre": [
         "Alternative",
@@ -3195,7 +3193,8 @@
         "defiant",
         "aggressive",
         "Alternative"
-      ]
+      ],
+      "tempo": 80
     },
     {
       "id": "1766250309688-0.17717529681471156",
@@ -3208,7 +3207,6 @@
       "durationFormatted": "3:54",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/june/10%20-%20Scars%20in%20My%20Mind.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/june/10%20-%20Scars%20in%20My%20Mind.jpg",
-      "bpm": 78,
       "key": "C# minor",
       "genre": [
         "Ballad",
@@ -3218,7 +3216,8 @@
         "melancholic",
         "dark",
         "Ballad"
-      ]
+      ],
+      "tempo": 78
     },
     {
       "id": "1766250249714-0.006160652578582226",
@@ -3231,7 +3230,6 @@
       "durationFormatted": "6:05",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/june/09%20-%20PULSE.mp3",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/june/09%20-%20PULSE.jpg",
-      "bpm": 91,
       "key": "C# major",
       "genre": [
         "Alternative",
@@ -3241,7 +3239,8 @@
         "dark",
         "introspective",
         "Alternative"
-      ]
+      ],
+      "tempo": 91
     },
     {
       "id": "1766250235177-0.9088359681609435",
@@ -3254,7 +3253,6 @@
       "durationFormatted": "3:36",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/june/08%20-%20Prevail%20Scriber.mp3",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/june/08%20-%20Prevail%20Scriber.jpg",
-      "bpm": 165,
       "key": "D major",
       "genre": [
         "Electronic",
@@ -3264,7 +3262,8 @@
         "uplifting",
         "determined",
         "Electronic"
-      ]
+      ],
+      "tempo": 165
     },
     {
       "id": "1766250218979-0.6468282989262415",
@@ -3277,7 +3276,6 @@
       "durationFormatted": "3:41",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/june/07%20-%20Prevail.mp3",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/june/07%20-%20Prevail.jpg",
-      "bpm": 165,
       "key": "C# major",
       "genre": [
         "Alternative",
@@ -3287,7 +3285,8 @@
         "hopeful",
         "reflective",
         "Alternative"
-      ]
+      ],
+      "tempo": 165
     },
     {
       "id": "1766250202119-0.8805057451313233",
@@ -3300,7 +3299,6 @@
       "durationFormatted": "4:14",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/june/06%20-%20Poetry.mp3",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/june/06%20-%20Poetry.jpg",
-      "bpm": 91,
       "key": "A# minor",
       "genre": [
         "Alternative",
@@ -3310,7 +3308,8 @@
         "reflective",
         "introspective",
         "Alternative"
-      ]
+      ],
+      "tempo": 91
     },
     {
       "id": "1766250155583-0.8872669706033411",
@@ -3323,7 +3322,6 @@
       "durationFormatted": "3:59",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/june/05%20-%20Outlast.mp3",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/june/05%20-%20Outlast.jpg",
-      "bpm": 170,
       "key": "C# minor",
       "genre": [
         "Alternative",
@@ -3333,7 +3331,8 @@
         "determined",
         "empowering",
         "Alternative"
-      ]
+      ],
+      "tempo": 170
     },
     {
       "id": "1766250130434-0.03465688228249941",
@@ -3346,7 +3345,6 @@
       "durationFormatted": "4:12",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/june/04%20-%20ONLY%20SON.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/june/04%20-%20ONLY%20SON.jpg",
-      "bpm": 148,
       "key": "C major",
       "genre": [
         "Alternative",
@@ -3356,7 +3354,8 @@
         "cheerful",
         "uplifting",
         "Alternative"
-      ]
+      ],
+      "tempo": 148
     },
     {
       "id": "1766250102043-0.145435597836727",
@@ -3369,7 +3368,6 @@
       "durationFormatted": "3:14",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/june/03%20-%20Oldenside%20of%20You.mp3",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/june/03%20-%20Oldenside%20of%20You.jpg",
-      "bpm": 92,
       "key": "C major",
       "genre": [
         "Rock",
@@ -3379,7 +3377,8 @@
         "upbeat",
         "reflective",
         "Rock"
-      ]
+      ],
+      "tempo": 92
     },
     {
       "id": "1766250084181-0.8207160932403614",
@@ -3392,7 +3391,6 @@
       "durationFormatted": "5:05",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/june/02%20-%20Odds.mp3",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/june/02%20-%20Odds.jpg",
-      "bpm": 87,
       "key": "C major",
       "genre": [
         "Alternative",
@@ -3402,7 +3400,8 @@
         "hopeful",
         "reflective",
         "Alternative"
-      ]
+      ],
+      "tempo": 87
     },
     {
       "id": "1766250063056-0.8088415495560737",
@@ -3415,7 +3414,6 @@
       "durationFormatted": "3:50",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/june/01%20-%20No%20Place%202%20Hide.mp3",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/june/01%20-%20No%20Place%202%20Hide.jpg",
-      "bpm": 91,
       "key": "C major",
       "genre": [
         "Alternative",
@@ -3425,7 +3423,8 @@
         "melancholic",
         "reflective",
         "Alternative"
-      ]
+      ],
+      "tempo": 91
     },
     {
       "id": "1766250025355-0.9629914302208097",
@@ -3438,7 +3437,6 @@
       "durationFormatted": "4:27",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/may/31%20-%20Nick%20Snuff%20M3.mp3",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/may/31%20-%20Nick%20Snuff%20M3.jpg",
-      "bpm": 161,
       "key": "C major",
       "genre": [
         "Alternative",
@@ -3448,7 +3446,8 @@
         "melancholic",
         "dark",
         "Alternative"
-      ]
+      ],
+      "tempo": 161
     },
     {
       "id": "1766250007951-0.4120254181759089",
@@ -3461,7 +3460,6 @@
       "durationFormatted": "4:16",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/may/30%20-%20Negonnas%20Stop%20Loving%20You.mp3",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/may/30%20-%20Negonnas%20Stop%20Loving%20You.jpg",
-      "bpm": 144,
       "key": "C major",
       "genre": [
         "Alternative",
@@ -3471,7 +3469,8 @@
         "passionate",
         "determined",
         "Alternative"
-      ]
+      ],
+      "tempo": 144
     },
     {
       "id": "1766249967114-0.8242362074612092",
@@ -3484,7 +3483,6 @@
       "durationFormatted": "3:45",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/may/29%20-%20Mikeym.mp3",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/may/29%20-%20Mikeym.jpg",
-      "bpm": 144,
       "key": "C major",
       "genre": [
         "Alternative",
@@ -3494,7 +3492,8 @@
         "playful",
         "frustrated",
         "Alternative"
-      ]
+      ],
+      "tempo": 144
     },
     {
       "id": "1766249945258-0.8244221651700645",
@@ -3507,7 +3506,6 @@
       "durationFormatted": "4:05",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/may/28%20-%20Sau.mp3",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/may/28%20-%20Sau.jpg",
-      "bpm": 70,
       "key": "C# minor",
       "genre": [
         "Ballad",
@@ -3517,7 +3515,8 @@
         "melancholic",
         "reflective",
         "Ballad"
-      ]
+      ],
+      "tempo": 70
     },
     {
       "id": "1766249925818-0.44361749312350185",
@@ -3530,7 +3529,6 @@
       "durationFormatted": "3:48",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/may/27%20-%20Live%20Forefeat%20Xzibit.mp3",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/may/27%20-%20Live%20Forefeat%20Xzibit.jpg",
-      "bpm": 106,
       "key": "C major",
       "genre": [
         "Alternative",
@@ -3540,7 +3538,8 @@
         "intense",
         "reflective",
         "Alternative"
-      ]
+      ],
+      "tempo": 106
     },
     {
       "id": "1766249832531-0.8036877174844829",
@@ -3553,7 +3552,6 @@
       "durationFormatted": "3:54",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/may/26%20-%20Johnny%20DEMON.mp3",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/may/26%20-%20Johnny%20DEMON.jpg",
-      "bpm": 65,
       "key": "B minor",
       "genre": [
         "Ballad",
@@ -3563,7 +3561,8 @@
         "melancholic",
         "dark",
         "Ballad"
-      ]
+      ],
+      "tempo": 65
     },
     {
       "id": "1766249795271-0.5335664946449583",
@@ -3576,7 +3575,6 @@
       "durationFormatted": "3:41",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/may/25%20-%20Grin%20Nada.mp3",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/may/25%20-%20Grin%20Nada.jpg",
-      "bpm": 88,
       "key": "C minor",
       "genre": [
         "Alternative",
@@ -3586,7 +3584,8 @@
         "intense",
         "passionate",
         "Alternative"
-      ]
+      ],
+      "tempo": 88
     },
     {
       "id": "1766249782139-0.09541765058258711",
@@ -3599,7 +3598,6 @@
       "durationFormatted": "3:35",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/may/24%20-%20Grenada.mp3",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/may/24%20-%20Grenada.jpg",
-      "bpm": 84,
       "key": "C major",
       "genre": [
         "Alternative",
@@ -3609,7 +3607,8 @@
         "introspective",
         "romantic",
         "Alternative"
-      ]
+      ],
+      "tempo": 84
     },
     {
       "id": "1766249769338-0.7290670720096554",
@@ -3622,7 +3621,6 @@
       "durationFormatted": "3:51",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/may/23%20-%20Hatedown.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/may/23%20-%20Hatedown.jpg",
-      "bpm": 85,
       "key": "C major",
       "genre": [
         "Alternative",
@@ -3632,7 +3630,8 @@
         "repetitive",
         "playful",
         "Alternative"
-      ]
+      ],
+      "tempo": 85
     },
     {
       "id": "1766249749370-0.9006657970195807",
@@ -3645,7 +3644,6 @@
       "durationFormatted": "3:11",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/may/22%20-%20Grave%20Robber.mp3",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/may/22%20-%20Grave%20Robber.jpg",
-      "bpm": 165,
       "key": "C# minor",
       "genre": [
         "Alternative",
@@ -3655,7 +3653,8 @@
         "reflective",
         "conflicted",
         "Alternative"
-      ]
+      ],
+      "tempo": 165
     },
     {
       "id": "1766249735803-0.5130845335263378",
@@ -3668,7 +3667,6 @@
       "durationFormatted": "3:22",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/may/21%20-%20Goods%204%20Me.mp3",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/may/21%20-%20Goods%204%20Me.jpg",
-      "bpm": 134,
       "key": "C# minor",
       "genre": [
         "Alternative",
@@ -3678,7 +3676,8 @@
         "reflective",
         "introspective",
         "Alternative"
-      ]
+      ],
+      "tempo": 134
     },
     {
       "id": "1766249718887-0.1665389082791252",
@@ -3691,7 +3690,6 @@
       "durationFormatted": "2:34",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/may/20%20-%20Go%20Get%20It.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/may/20%20-%20Go%20Get%20It.jpg",
-      "bpm": 80,
       "key": "D major",
       "genre": [
         "Alternative",
@@ -3701,7 +3699,8 @@
         "upbeat",
         "energetic",
         "Alternative"
-      ]
+      ],
+      "tempo": 80
     },
     {
       "id": "1766249657889-0.38023067849305814",
@@ -3714,7 +3713,6 @@
       "durationFormatted": "3:31",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/may/19%20-%20Fuck%20B.mp3",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/may/19%20-%20Fuck%20B.jpg",
-      "bpm": 69,
       "key": "A# major",
       "genre": [
         "Ballad",
@@ -3724,7 +3722,8 @@
         "melancholic",
         "frustrated",
         "Ballad"
-      ]
+      ],
+      "tempo": 69
     },
     {
       "id": "1766249640555-0.17058437754365396",
@@ -3737,7 +3736,6 @@
       "durationFormatted": "3:16",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/may/18%20-%20Footsteps.mp3",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/may/18%20-%20Footsteps.jpg",
-      "bpm": 161,
       "key": "C# minor",
       "genre": [
         "Alternative",
@@ -3747,7 +3745,8 @@
         "reflective",
         "melancholic",
         "Alternative"
-      ]
+      ],
+      "tempo": 161
     },
     {
       "id": "1766249627665-0.3377339284254006",
@@ -3760,7 +3759,6 @@
       "durationFormatted": "2:31",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/may/17%20-%20Falling%20Apart.mp3",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/may/17%20-%20Falling%20Apart.jpg",
-      "bpm": 91,
       "key": "C major",
       "genre": [
         "Alternative",
@@ -3770,7 +3768,8 @@
         "melancholic",
         "reflective",
         "Alternative"
-      ]
+      ],
+      "tempo": 91
     },
     {
       "id": "1766249597494-0.8530446922079337",
@@ -3783,7 +3782,6 @@
       "durationFormatted": "3:41",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/may/16%20-%20Emotuional%20Healing%20Mas.mp3",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/may/16%20-%20Emotuional%20Healing%20Mas.jpg",
-      "bpm": 120,
       "key": "C major",
       "genre": [
         "Alternative",
@@ -3793,7 +3791,8 @@
         "reflective",
         "emotional",
         "Alternative"
-      ]
+      ],
+      "tempo": 120
     },
     {
       "id": "1766249552054-0.7304037962626261",
@@ -3806,7 +3805,6 @@
       "durationFormatted": "3:41",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/may/15%20-%20Come%20on%20Dance.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/may/15%20-%20Come%20on%20Dance.jpg",
-      "bpm": 115,
       "key": "D major",
       "genre": [
         "Pop",
@@ -3816,7 +3814,8 @@
         "upbeat",
         "cheerful",
         "Pop"
-      ]
+      ],
+      "tempo": 115
     },
     {
       "id": "1766249525872-0.6606869693783433",
@@ -3829,7 +3828,6 @@
       "durationFormatted": "4:27",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/may/14%20-%20Cold%20As%20Ice.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/may/14%20-%20Cold%20As%20Ice.jpg",
-      "bpm": 91,
       "key": "D major",
       "genre": [
         "Pop",
@@ -3839,7 +3837,8 @@
         "intense",
         "defiant",
         "Pop"
-      ]
+      ],
+      "tempo": 91
     },
     {
       "id": "1766249510557-0.19995177745717752",
@@ -3852,7 +3851,6 @@
       "durationFormatted": "2:41",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/may/13%20-%20Climbing%202u.mp3",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/may/13%20-%20Climbing%202u.jpg",
-      "bpm": 87,
       "key": "C major",
       "genre": [
         "Alternative",
@@ -3862,7 +3860,8 @@
         "upbeat",
         "cheerful",
         "Alternative"
-      ]
+      ],
+      "tempo": 87
     },
     {
       "id": "1766249492477-0.39546485766873696",
@@ -3875,7 +3874,6 @@
       "durationFormatted": "3:52",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/may/12%20-%20Burning%20It%20Down%20Comd2.mp3",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/may/12%20-%20Burning%20It%20Down%20Comd2.jpg",
-      "bpm": 91,
       "key": "C major",
       "genre": [
         "Alternative",
@@ -3885,7 +3883,8 @@
         "upbeat",
         "romantic",
         "Alternative"
-      ]
+      ],
+      "tempo": 91
     },
     {
       "id": "1766249451878-0.25963428132183963",
@@ -3898,7 +3897,6 @@
       "durationFormatted": "4:33",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/may/11%20-%20Breaking%20M%20E.mp3",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/may/11%20-%20Breaking%20M%20E.jpg",
-      "bpm": 120,
       "key": "A# major",
       "genre": [
         "Alternative",
@@ -3908,7 +3906,8 @@
         "dark",
         "intense",
         "Alternative"
-      ]
+      ],
+      "tempo": 120
     },
     {
       "id": "1766249436738-0.5487353491807457",
@@ -3921,7 +3920,6 @@
       "durationFormatted": "3:35",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/may/10%20-%20Belong.mp3",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/may/10%20-%20Belong.jpg",
-      "bpm": 122,
       "key": "C# major",
       "genre": [
         "Alternative",
@@ -3931,7 +3929,8 @@
         "reflective",
         "hopeful",
         "Alternative"
-      ]
+      ],
+      "tempo": 122
     },
     {
       "id": "1766249424148-0.9827864531082061",
@@ -3944,7 +3943,6 @@
       "durationFormatted": "2:49",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/may/09%20-%20Be%20Nuter.mp3",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/may/09%20-%20Be%20Nuter.jpg",
-      "bpm": 108,
       "key": "C major",
       "genre": [
         "Alternative",
@@ -3954,7 +3952,8 @@
         "melancholic",
         "reflective",
         "Alternative"
-      ]
+      ],
+      "tempo": 108
     },
     {
       "id": "1766249405526-0.7915027939607246",
@@ -3967,7 +3966,6 @@
       "durationFormatted": "4:43",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/may/08%20-%20Away%20Goes.mp3",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/may/08%20-%20Away%20Goes.jpg",
-      "bpm": 122,
       "key": "C# major",
       "genre": [
         "Alternative",
@@ -3977,7 +3975,8 @@
         "desperate",
         "anguished",
         "Alternative"
-      ]
+      ],
+      "tempo": 122
     },
     {
       "id": "1766249363029-0.11501432012136237",
@@ -3990,7 +3989,6 @@
       "durationFormatted": "4:01",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/may/07%20-%20Alien%202nd%20Mix.mp3",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/may/07%20-%20Alien%202nd%20Mix.jpg",
-      "bpm": 156,
       "key": "C# major",
       "genre": [
         "Alternative",
@@ -4000,7 +3998,8 @@
         "mysterious",
         "dreamy",
         "Alternative"
-      ]
+      ],
+      "tempo": 156
     },
     {
       "id": "1766246707310-0.5031913931481468",
@@ -4013,7 +4012,6 @@
       "durationFormatted": "3:14",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/may/06%20-%20Alf.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/may/06%20-%20Alf.jpg",
-      "bpm": 92,
       "key": "D major",
       "genre": [
         "Alternative",
@@ -4023,7 +4021,8 @@
         "defiant",
         "dark",
         "Alternative"
-      ]
+      ],
+      "tempo": 92
     },
     {
       "id": "1766246659421-0.27082156082072883",
@@ -4036,7 +4035,6 @@
       "durationFormatted": "3:32",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/may/05%20-%20Were%20Going%20Crazy%20World.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/may/05%20-%20Were%20Going%20Crazy%20World.jpg",
-      "bpm": 161,
       "key": "G# major",
       "genre": [
         "Alternative",
@@ -4046,7 +4044,8 @@
         "chaotic",
         "hazy",
         "Alternative"
-      ]
+      ],
+      "tempo": 161
     },
     {
       "id": "1766246643993-0.13385492272145083",
@@ -4059,7 +4058,6 @@
       "durationFormatted": "2:49",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/may/04%20-%20What%20Is%20God%20Withoot%20Me.mp3",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/may/04%20-%20What%20Is%20God%20Withoot%20Me.jpg",
-      "bpm": 83,
       "key": "D minor",
       "genre": [
         "Alternative",
@@ -4069,7 +4067,8 @@
         "dark",
         "introspective",
         "Alternative"
-      ]
+      ],
+      "tempo": 83
     },
     {
       "id": "1766246624492-0.5564557401839207",
@@ -4082,7 +4081,6 @@
       "durationFormatted": "3:38",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/may/03%20-%20Xzibit%20Forever.mp3",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/may/03%20-%20Xzibit%20Forever.jpg",
-      "bpm": 91,
       "key": "A# minor",
       "genre": [
         "Alternative",
@@ -4092,7 +4090,8 @@
         "defiant",
         "introspective",
         "Alternative"
-      ]
+      ],
+      "tempo": 91
     },
     {
       "id": "1766246603252-0.8341099358225479",
@@ -4105,7 +4104,6 @@
       "durationFormatted": "4:20",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/may/02%20-%20You%20Got%20Me.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/may/02%20-%20You%20Got%20Me.jpg",
-      "bpm": 117,
       "key": "D minor",
       "genre": [
         "Alternative",
@@ -4115,7 +4113,8 @@
         "hopeful",
         "supportive",
         "Alternative"
-      ]
+      ],
+      "tempo": 117
     },
     {
       "id": "1766246555255-0.856485464924311",
@@ -4128,7 +4127,6 @@
       "durationFormatted": "6:26",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/may/01%20-%20Wysiwyg.mp3",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/may/01%20-%20Wysiwyg.jpg",
-      "bpm": 117,
       "key": "C# minor",
       "genre": [
         "Alternative",
@@ -4138,7 +4136,8 @@
         "upbeat",
         "playful",
         "Alternative"
-      ]
+      ],
+      "tempo": 117
     },
     {
       "id": "1766242160494-0.6989944816134178",
@@ -4151,7 +4150,6 @@
       "durationFormatted": "3:39",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/april/30%20-%20Getting%20Better.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/april/30%20-%20Getting%20Better.jpg",
-      "bpm": 137,
       "key": "A# minor",
       "genre": [
         "Alternative",
@@ -4161,7 +4159,8 @@
         "reflective",
         "melancholic",
         "Alternative"
-      ]
+      ],
+      "tempo": 137
     },
     {
       "id": "1766242137775-0.2745879037841359",
@@ -4174,7 +4173,6 @@
       "durationFormatted": "4:55",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/april/29%20-%20Spippin.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/april/29%20-%20Spippin.jpg",
-      "bpm": 104,
       "key": "C# minor",
       "genre": [
         "Alternative",
@@ -4184,7 +4182,8 @@
         "upbeat",
         "celebratory",
         "Alternative"
-      ]
+      ],
+      "tempo": 104
     },
     {
       "id": "1766242119304-0.28107761363424555",
@@ -4197,7 +4196,6 @@
       "durationFormatted": "3:25",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/april/28%20-%20Airwaves%20Feat%20Zillick.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/april/28%20-%20Airwaves%20Feat%20Zillick.jpg",
-      "bpm": 152,
       "key": "A# major",
       "genre": [
         "Alternative",
@@ -4207,7 +4205,8 @@
         "intense",
         "frustrated",
         "Alternative"
-      ]
+      ],
+      "tempo": 152
     },
     {
       "id": "1766242094327-0.2849038301966862",
@@ -4220,7 +4219,6 @@
       "durationFormatted": "3:30",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/april/27%20-%20Trip.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/april/27%20-%20Trip.jpg",
-      "bpm": 99,
       "key": "B minor",
       "genre": [
         "Alternative",
@@ -4230,7 +4228,8 @@
         "romantic",
         "hopeful",
         "Alternative"
-      ]
+      ],
+      "tempo": 99
     },
     {
       "id": "1766242080225-0.8906651546499026",
@@ -4243,7 +4242,6 @@
       "durationFormatted": "2:59",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/april/26%20-%20Flowers%20of%20Us.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/april/26%20-%20Flowers%20of%20Us.jpg",
-      "bpm": 122,
       "key": "B minor",
       "genre": [
         "Alternative",
@@ -4253,7 +4251,8 @@
         "melancholic",
         "dark",
         "Alternative"
-      ]
+      ],
+      "tempo": 122
     },
     {
       "id": "1766242058461-0.12677197459634648",
@@ -4266,7 +4265,6 @@
       "durationFormatted": "3:18",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/april/25%20-%20Purple%20Sky.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/april/25%20-%20Purple%20Sky.jpg",
-      "bpm": 100,
       "key": "B minor",
       "genre": [
         "Alternative",
@@ -4276,7 +4274,8 @@
         "melancholic",
         "reflective",
         "Alternative"
-      ]
+      ],
+      "tempo": 100
     },
     {
       "id": "1766242039598-0.40965337112331424",
@@ -4289,7 +4288,6 @@
       "durationFormatted": "3:13",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/april/24%20-%20Why%20U%20Lie.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/april/24%20-%20Why%20U%20Lie.jpg",
-      "bpm": 102,
       "key": "C# minor",
       "genre": [
         "Alternative",
@@ -4299,7 +4297,8 @@
         "anxious",
         "frustrated",
         "Alternative"
-      ]
+      ],
+      "tempo": 102
     },
     {
       "id": "1766242012543-0.5188582533137391",
@@ -4312,7 +4311,6 @@
       "durationFormatted": "4:19",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/april/23%20-%20When%20I%20Say%20Forever.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/april/23%20-%20When%20I%20Say%20Forever.jpg",
-      "bpm": 63,
       "key": "A# minor",
       "genre": [
         "Ballad",
@@ -4322,7 +4320,8 @@
         "romantic",
         "hopeful",
         "Ballad"
-      ]
+      ],
+      "tempo": 63
     },
     {
       "id": "1766241990746-0.4056588414340958",
@@ -4335,7 +4334,6 @@
       "durationFormatted": "3:16",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/april/22%20-%20My%20Past.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/april/22%20-%20My%20Past.jpg",
-      "bpm": 92,
       "key": "C# major",
       "genre": [
         "Alternative",
@@ -4345,7 +4343,8 @@
         "reflective",
         "determined",
         "Alternative"
-      ]
+      ],
+      "tempo": 92
     },
     {
       "id": "1766241971721-0.6155679192314473",
@@ -4358,7 +4357,6 @@
       "durationFormatted": "3:51",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/april/21%20-%20One%20Bye%20One.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/april/21%20-%20One%20Bye%20One.jpg",
-      "bpm": 128,
       "key": "C# major",
       "genre": [
         "Alternative",
@@ -4368,7 +4366,8 @@
         "hopeful",
         "reflective",
         "Alternative"
-      ]
+      ],
+      "tempo": 128
     },
     {
       "id": "1766241953343-0.980130940920124",
@@ -4381,7 +4380,6 @@
       "durationFormatted": "3:01",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/april/20%20-%20Feel%20It.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/april/20%20-%20Feel%20It.jpg",
-      "bpm": 64,
       "key": "D major",
       "genre": [
         "Ballad",
@@ -4391,7 +4389,8 @@
         "melancholic",
         "dark",
         "Ballad"
-      ]
+      ],
+      "tempo": 64
     },
     {
       "id": "1766241933152-0.6238456176631875",
@@ -4404,7 +4403,6 @@
       "durationFormatted": "2:58",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/april/19%20-%20Mythical.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/april/19%20-%20Mythical.jpg",
-      "bpm": 104,
       "key": "C# minor",
       "genre": [
         "Pop",
@@ -4414,7 +4412,8 @@
         "cheerful",
         "uplifting",
         "Pop"
-      ]
+      ],
+      "tempo": 104
     },
     {
       "id": "1766241918771-0.14788077017825063",
@@ -4427,7 +4426,6 @@
       "durationFormatted": "3:16",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/april/18%20-%20What%20Bryan%20Was%20Working%20on%20Last.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/april/18%20-%20What%20Bryan%20Was%20Working%20on%20Last.jpg",
-      "bpm": 106,
       "key": "C# major",
       "genre": [
         "Alternative",
@@ -4437,7 +4435,8 @@
         "reflective",
         "melancholic",
         "Alternative"
-      ]
+      ],
+      "tempo": 106
     },
     {
       "id": "1766241900997-0.9243371943868134",
@@ -4450,7 +4449,6 @@
       "durationFormatted": "2:55",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/april/17%20-%20Low%20Life.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/april/17%20-%20Low%20Life.jpg",
-      "bpm": 85,
       "key": "C# minor",
       "genre": [
         "Alternative",
@@ -4460,7 +4458,8 @@
         "melancholic",
         "frustrated",
         "Alternative"
-      ]
+      ],
+      "tempo": 85
     },
     {
       "id": "1766241885458-0.02620029943951796",
@@ -4473,7 +4472,6 @@
       "durationFormatted": "3:29",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/april/16%20-%20Blackout.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/april/16%20-%20Blackout.jpg",
-      "bpm": 71,
       "key": "C major",
       "genre": [
         "Ballad",
@@ -4483,7 +4481,8 @@
         "dark",
         "melancholic",
         "Ballad"
-      ]
+      ],
+      "tempo": 71
     },
     {
       "id": "1766241867255-0.5321517668673423",
@@ -4496,7 +4495,6 @@
       "durationFormatted": "3:20",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/april/15%20-%20Reality.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/april/15%20-%20Reality.jpg",
-      "bpm": 170,
       "key": "C major",
       "genre": [
         "Alternative",
@@ -4506,7 +4504,8 @@
         "melancholic",
         "reflective",
         "Alternative"
-      ]
+      ],
+      "tempo": 170
     },
     {
       "id": "1766241852751-0.5158760714554907",
@@ -4519,7 +4518,6 @@
       "durationFormatted": "2:38",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/april/14%20-%20Beauty.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/april/14%20-%20Beauty.jpg",
-      "bpm": 148,
       "key": "A# minor",
       "genre": [
         "Alternative",
@@ -4529,7 +4527,8 @@
         "reflective",
         "hopeful",
         "Alternative"
-      ]
+      ],
+      "tempo": 148
     },
     {
       "id": "1766241834671-0.6159891052729937",
@@ -4542,7 +4541,6 @@
       "durationFormatted": "3:01",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/april/13%20-%20Complicated%20S.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/april/13%20-%20Complicated%20S.jpg",
-      "bpm": 120,
       "key": "C major",
       "genre": [
         "Alternative",
@@ -4552,7 +4550,8 @@
         "reflective",
         "melancholic",
         "Alternative"
-      ]
+      ],
+      "tempo": 120
     },
     {
       "id": "1766241814565-0.22840945337206497",
@@ -4565,7 +4564,6 @@
       "durationFormatted": "4:14",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/april/12%20-%20Eco%20N%20Time.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/april/12%20-%20Eco%20N%20Time.jpg",
-      "bpm": 85,
       "key": "A# major",
       "genre": [
         "Alternative",
@@ -4575,7 +4573,8 @@
         "melancholic",
         "reflective",
         "Alternative"
-      ]
+      ],
+      "tempo": 85
     },
     {
       "id": "1766241799620-0.520070882104819",
@@ -4588,7 +4587,6 @@
       "durationFormatted": "2:44",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/april/11%20-%20Climb%20to%20You.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/april/11%20-%20Climb%20to%20You.jpg",
-      "bpm": 91,
       "key": "C major",
       "genre": [
         "Alternative",
@@ -4598,7 +4596,8 @@
         "upbeat",
         "nostalgic",
         "Alternative"
-      ]
+      ],
+      "tempo": 91
     },
     {
       "id": "1766241782956-0.8806171950978462",
@@ -4611,7 +4610,6 @@
       "durationFormatted": "2:58",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/april/10%20-%20Midnight%20Piano.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/april/10%20-%20Midnight%20Piano.jpg",
-      "bpm": 128,
       "key": "C# major",
       "genre": [
         "Alternative",
@@ -4621,7 +4619,8 @@
         "melancholic",
         "reflective",
         "Alternative"
-      ]
+      ],
+      "tempo": 128
     },
     {
       "id": "1765986078385-0.267888587326946",
@@ -4634,7 +4633,6 @@
       "durationFormatted": "3:31",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/april/09%20-%20Through%20the%20Ringer.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/april/09%20-%20Through%20the%20Ringer.jpg",
-      "bpm": 99,
       "key": "D major",
       "genre": [
         "Alternative",
@@ -4644,7 +4642,8 @@
         "defiant",
         "intense",
         "Alternative"
-      ]
+      ],
+      "tempo": 99
     },
     {
       "id": "1765986049822-0.302062773701228",
@@ -4657,7 +4656,6 @@
       "durationFormatted": "3:31",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/april/08%20-%20Through%20the%20Ringer.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/april/08%20-%20Through%20the%20Ringer.jpg",
-      "bpm": 99,
       "key": "D major",
       "genre": [
         "Alternative",
@@ -4667,7 +4665,8 @@
         "defiant",
         "intense",
         "Alternative"
-      ]
+      ],
+      "tempo": 99
     },
     {
       "id": "1765986029402-0.3164454533195963",
@@ -4680,7 +4679,6 @@
       "durationFormatted": "3:20",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/april/07%20-%20The%20Light.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/april/07%20-%20The%20Light.jpg",
-      "bpm": 71,
       "key": "C# minor",
       "genre": [
         "Ballad",
@@ -4690,7 +4688,8 @@
         "reflective",
         "introspective",
         "Ballad"
-      ]
+      ],
+      "tempo": 71
     },
     {
       "id": "1765986013921-0.18506147431136954",
@@ -4703,7 +4702,6 @@
       "durationFormatted": "3:20",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/april/06%20-%20The%20Light.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/april/06%20-%20The%20Light.jpg",
-      "bpm": 115,
       "key": "C major",
       "genre": [
         "Alternative",
@@ -4713,7 +4711,8 @@
         "reflective",
         "introspective",
         "Alternative"
-      ]
+      ],
+      "tempo": 115
     },
     {
       "id": "1765985973301-0.6427511848517253",
@@ -4726,7 +4725,6 @@
       "durationFormatted": "5:39",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/april/05%20-%20Speed%20of%20Pain.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/april/05%20-%20Speed%20of%20Pain.jpg",
-      "bpm": 100,
       "key": "C major",
       "genre": [
         "Alternative",
@@ -4736,7 +4734,8 @@
         "dark",
         "melancholic",
         "Alternative"
-      ]
+      ],
+      "tempo": 100
     },
     {
       "id": "1765985927102-0.12973360202451223",
@@ -4749,7 +4748,6 @@
       "durationFormatted": "3:41",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/april/04%20-%20Sometimes.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/april/04%20-%20Sometimes.jpg",
-      "bpm": 62,
       "key": "C major",
       "genre": [
         "Ballad",
@@ -4759,7 +4757,8 @@
         "melancholic",
         "reflective",
         "Ballad"
-      ]
+      ],
+      "tempo": 62
     },
     {
       "id": "1765985829604-0.5412458307520182",
@@ -4772,7 +4771,6 @@
       "durationFormatted": "3:39",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/april/03%20-%20Only%20Time%20Will%20Tell.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/april/03%20-%20Only%20Time%20Will%20Tell.jpg",
-      "bpm": 75,
       "key": "C# minor",
       "genre": [
         "Ballad",
@@ -4782,7 +4780,8 @@
         "dark",
         "tense",
         "Ballad"
-      ]
+      ],
+      "tempo": 75
     },
     {
       "id": "1765985452599-0.4907613387139095",
@@ -4795,7 +4794,6 @@
       "durationFormatted": "3:08",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/april/02%20-%20No%20Service.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/april/02%20-%20No%20Service.jpg",
-      "bpm": 77,
       "key": "C major",
       "genre": [
         "Ballad",
@@ -4805,7 +4803,8 @@
         "uplifting",
         "reflective",
         "Ballad"
-      ]
+      ],
+      "tempo": 77
     },
     {
       "id": "1765985375933-0.021816274642562417",
@@ -4818,7 +4817,6 @@
       "durationFormatted": "3:54",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/april/01%20-%20It's%20Gonna%20Be%20Alright.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/april/01%20-%20It's%20Gonna%20Be%20Alright.jpg",
-      "bpm": 122,
       "key": "C# minor",
       "genre": [
         "Alternative",
@@ -4828,7 +4826,8 @@
         "upbeat",
         "cheerful",
         "Alternative"
-      ]
+      ],
+      "tempo": 122
     },
     {
       "id": "1765985318687-0.5236189490408968",
@@ -4841,7 +4840,6 @@
       "durationFormatted": "3:41",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/march/31%20-%20Hhhhhhhhhhhhh.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/march/31%20-%20Hhhhhhhhhhhhh.jpg",
-      "bpm": 131,
       "key": "C# minor",
       "genre": [
         "Alternative",
@@ -4851,7 +4849,8 @@
         "Neutral",
         "Contemplative",
         "Alternative"
-      ]
+      ],
+      "tempo": 131
     },
     {
       "id": "1765985294294-0.44943020689708535",
@@ -4864,7 +4863,6 @@
       "durationFormatted": "3:02",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/march/30%20-%20Filthy.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/march/30%20-%20Filthy.jpg",
-      "bpm": 91,
       "key": "C major",
       "genre": [
         "Pop",
@@ -4874,7 +4872,8 @@
         "intimate",
         "energetic",
         "Pop"
-      ]
+      ],
+      "tempo": 91
     },
     {
       "id": "1765985192002-0.4409564823487204",
@@ -4887,7 +4886,6 @@
       "durationFormatted": "2:40",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/march/29%20-%20Dashboard%20of%20Life.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/march/29%20-%20Dashboard%20of%20Life.jpg",
-      "bpm": 99,
       "key": "C major",
       "genre": [
         "Alternative",
@@ -4897,7 +4895,8 @@
         "reflective",
         "introspective",
         "Alternative"
-      ]
+      ],
+      "tempo": 99
     },
     {
       "id": "1765984439398-0.47888518166622795",
@@ -4910,7 +4909,6 @@
       "durationFormatted": "3:12",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/march/28%20-%20Adrift.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/march/28%20-%20Adrift.jpg",
-      "bpm": 73,
       "key": "B minor",
       "genre": [
         "Ballad",
@@ -4920,7 +4918,8 @@
         "Calm",
         "Peaceful",
         "Ballad"
-      ]
+      ],
+      "tempo": 73
     },
     {
       "id": "1765984421565-0.2838079598602068",
@@ -4933,7 +4932,6 @@
       "durationFormatted": "5:12",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/march/27%20-%20Adrift.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/march/27%20-%20Adrift.jpg",
-      "bpm": 73,
       "key": "D minor",
       "genre": [
         "Ballad",
@@ -4943,7 +4941,8 @@
         "reflective",
         "anxious",
         "Ballad"
-      ]
+      ],
+      "tempo": 73
     },
     {
       "id": "1765984387187-0.8223488061918823",
@@ -4956,7 +4955,6 @@
       "durationFormatted": "2:50",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/march/26%20-%2080s%20Stack.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/march/26%20-%2080s%20Stack.jpg",
-      "bpm": 100,
       "key": "C# minor",
       "genre": [
         "Alternative",
@@ -4966,7 +4964,8 @@
         "upbeat",
         "nostalgic",
         "Alternative"
-      ]
+      ],
+      "tempo": 100
     },
     {
       "id": "1765980193055-0.014159092455637956",
@@ -4979,7 +4978,6 @@
       "durationFormatted": "3:14",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/march/25%20-%20You're%20Alwats%20on%20My%20Mind.mp3",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/march/25%20-%20You're%20Alwats%20on%20My%20Mind.jpg",
-      "bpm": 68,
       "key": "C major",
       "genre": [
         "Ballad",
@@ -4989,7 +4987,8 @@
         "melancholic",
         "reflective",
         "Ballad"
-      ]
+      ],
+      "tempo": 68
     },
     {
       "id": "1765980145007-0.7330081994049723",
@@ -5002,7 +5001,6 @@
       "durationFormatted": "2:13",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/march/24%20-%20So%20Done.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/march/24%20-%20So%20Done.jpg",
-      "bpm": 165,
       "key": "C major",
       "genre": [
         "Alternative",
@@ -5012,7 +5010,8 @@
         "mysterious",
         "introspective",
         "Alternative"
-      ]
+      ],
+      "tempo": 165
     },
     {
       "id": "1765980105648-0.3829523671839957",
@@ -5025,7 +5024,6 @@
       "durationFormatted": "3:37",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/march/23%20-%20Sirens.mp3",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/march/23%20-%20Sirens.jpg",
-      "bpm": 144,
       "key": "C# minor",
       "genre": [
         "Alternative",
@@ -5035,7 +5033,8 @@
         "melancholic",
         "introspective",
         "Alternative"
-      ]
+      ],
+      "tempo": 144
     },
     {
       "id": "1765980084799-0.08921413257625732",
@@ -5048,7 +5047,6 @@
       "durationFormatted": "4:18",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/march/22%20-%20OLB%20Remix.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/march/22%20-%20OLB%20Remix.jpg",
-      "bpm": 134,
       "key": "D minor",
       "genre": [
         "Rock",
@@ -5058,7 +5056,8 @@
         "melancholic",
         "dark",
         "Rock"
-      ]
+      ],
+      "tempo": 134
     },
     {
       "id": "1765980064843-0.2446604091707929",
@@ -5071,7 +5070,6 @@
       "durationFormatted": "4:18",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/march/21%20-%20OLB%20Remix%202.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/march/21%20-%20OLB%20Remix%202.jpg",
-      "bpm": 122,
       "key": "D minor",
       "genre": [
         "Alternative",
@@ -5081,7 +5079,8 @@
         "melancholic",
         "desperate",
         "Alternative"
-      ]
+      ],
+      "tempo": 122
     },
     {
       "id": "1765980051255-0.2913258033941535",
@@ -5094,7 +5093,6 @@
       "durationFormatted": "2:35",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/march/20%20-%20Never%20Ends.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/march/20%20-%20Never%20Ends.jpg",
-      "bpm": 91,
       "key": "C# minor",
       "genre": [
         "Alternative",
@@ -5104,7 +5102,8 @@
         "reflective",
         "introspective",
         "Alternative"
-      ]
+      ],
+      "tempo": 91
     },
     {
       "id": "1765980030463-0.18834891323720293",
@@ -5117,7 +5116,6 @@
       "durationFormatted": "3:41",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/march/19%20-%20Maybe%20Baby.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/march/19%20-%20Maybe%20Baby.jpg",
-      "bpm": 117,
       "key": "C major",
       "genre": [
         "Alternative",
@@ -5127,7 +5125,8 @@
         "nostalgic",
         "reflective",
         "Alternative"
-      ]
+      ],
+      "tempo": 117
     },
     {
       "id": "1765979996812-0.5579858120384394",
@@ -5140,7 +5139,6 @@
       "durationFormatted": "3:47",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/march/18%20-%20Maybe%20Baby%20Itts%20on%20Me.mp3",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/march/18%20-%20Maybe%20Baby%20Itts%20on%20Me.jpg",
-      "bpm": 106,
       "key": "C major",
       "genre": [
         "Alternative",
@@ -5150,7 +5148,8 @@
         "nostalgic",
         "reflective",
         "Alternative"
-      ]
+      ],
+      "tempo": 106
     },
     {
       "id": "1765979918547-0.8651544116614822",
@@ -5163,7 +5162,6 @@
       "durationFormatted": "4:55",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/march/17%20-%20Flicker%20Like%20Fire.mp3",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/march/17%20-%20Flicker%20Like%20Fire.jpg",
-      "bpm": 131,
       "key": "D major",
       "genre": [
         "Alternative",
@@ -5173,7 +5171,8 @@
         "melancholic",
         "reflective",
         "Alternative"
-      ]
+      ],
+      "tempo": 131
     },
     {
       "id": "1765979763216-0.6746793698459552",
@@ -5186,7 +5185,6 @@
       "durationFormatted": "5:08",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/march/16%20-%20Demon%20Soul.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/march/16%20-%20Demon%20Soul.jpg",
-      "bpm": 106,
       "key": "C major",
       "genre": [
         "Pop",
@@ -5196,7 +5194,8 @@
         "melancholic",
         "dark",
         "Pop"
-      ]
+      ],
+      "tempo": 106
     },
     {
       "id": "1765979744851-0.04453395659618564",
@@ -5209,7 +5208,6 @@
       "durationFormatted": "2:56",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/march/15%20-%20Come%20Along%20with%20Me.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/march/15%20-%20Come%20Along%20with%20Me.jpg",
-      "bpm": 99,
       "key": "D minor",
       "genre": [
         "Pop",
@@ -5219,7 +5217,8 @@
         "uplifting",
         "hopeful",
         "Pop"
-      ]
+      ],
+      "tempo": 99
     },
     {
       "id": "1765979703284-0.5362341388636827",
@@ -5232,7 +5231,6 @@
       "durationFormatted": "3:42",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/march/14%20-%20A%20Stop%20in%20Time.mp3",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/march/14%20-%20A%20Stop%20in%20Time.jpg",
-      "bpm": 161,
       "key": "C major",
       "genre": [
         "Alternative",
@@ -5242,7 +5240,8 @@
         "dark",
         "introspective",
         "Alternative"
-      ]
+      ],
+      "tempo": 161
     },
     {
       "id": "1765977611609-0.7412139838128945",
@@ -5255,7 +5254,6 @@
       "durationFormatted": "3:57",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/march/13%20-%20Surrender%20to%20U.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/march/13%20-%20Surrender%20to%20U.jpg",
-      "bpm": 62,
       "key": "C major",
       "genre": [
         "Ballad",
@@ -5265,7 +5263,8 @@
         "surrendered",
         "reflective",
         "Ballad"
-      ]
+      ],
+      "tempo": 62
     },
     {
       "id": "1765977599563-0.4071730771637705",
@@ -5278,7 +5277,6 @@
       "durationFormatted": "3:30",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/march/12%20-%20Malibu.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/march/12%20-%20Malibu.jpg",
-      "bpm": 115,
       "key": "C major",
       "genre": [
         "Pop",
@@ -5288,7 +5286,8 @@
         "upbeat",
         "cheerful",
         "Pop"
-      ]
+      ],
+      "tempo": 115
     },
     {
       "id": "1765977494168-0.9826374352529724",
@@ -5301,7 +5300,6 @@
       "durationFormatted": "5:57",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/march/11%20-%20Haert%20N%20Soul%20Collide.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/march/11%20-%20Haert%20N%20Soul%20Collide.jpg",
-      "bpm": 176,
       "key": "A# minor",
       "genre": [
         "Alternative",
@@ -5311,7 +5309,8 @@
         "reflective",
         "longing",
         "Alternative"
-      ]
+      ],
+      "tempo": 176
     },
     {
       "id": "1765977500111-0.02791890668593544",
@@ -5324,7 +5323,6 @@
       "durationFormatted": "2:49",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/march/10%20-%20Fundrip.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/march/10%20-%20Fundrip.jpg",
-      "bpm": 125,
       "key": "B minor",
       "genre": [
         "Alternative",
@@ -5334,7 +5332,8 @@
         "melancholic",
         "hopeful",
         "Alternative"
-      ]
+      ],
+      "tempo": 125
     },
     {
       "id": "1765977472741-0.24694908918921388",
@@ -5347,7 +5346,6 @@
       "durationFormatted": "4:59",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/march/09%20-%20Nostic%20Heresy.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/march/09%20-%20Nostic%20Heresy.jpg",
-      "bpm": 89,
       "key": "B minor",
       "genre": [
         "Alternative",
@@ -5357,7 +5355,8 @@
         "melancholic",
         "introspective",
         "Alternative"
-      ]
+      ],
+      "tempo": 89
     },
     {
       "id": "1765977461580-0.5181906162743636",
@@ -5370,7 +5369,6 @@
       "durationFormatted": "5:02",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/march/08%20-%20Tainted%20Gospal.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/march/08%20-%20Tainted%20Gospal.jpg",
-      "bpm": 176,
       "key": "A# minor",
       "genre": [
         "Alternative",
@@ -5380,7 +5378,8 @@
         "aggressive",
         "frustrated",
         "Alternative"
-      ]
+      ],
+      "tempo": 176
     },
     {
       "id": "1765977414282-0.6308004119699397",
@@ -5393,7 +5392,6 @@
       "durationFormatted": "5:02",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/march/07%20-%20Unifying.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/march/07%20-%20Unifying.jpg",
-      "bpm": 176,
       "key": "C# minor",
       "genre": [
         "Alternative",
@@ -5403,7 +5401,8 @@
         "agitated",
         "defiant",
         "Alternative"
-      ]
+      ],
+      "tempo": 176
     },
     {
       "id": "1765977393442-0.8405029383557165",
@@ -5416,7 +5415,6 @@
       "durationFormatted": "3:42",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/march/06%20-%20Lightburst.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/march/06%20-%20Lightburst.jpg",
-      "bpm": 131,
       "key": "C major",
       "genre": [
         "Alternative",
@@ -5426,7 +5424,8 @@
         "melancholic",
         "frustrated",
         "Alternative"
-      ]
+      ],
+      "tempo": 131
     },
     {
       "id": "1765977374547-0.09198155966462751",
@@ -5439,7 +5438,6 @@
       "durationFormatted": "3:14",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/march/05%20-%20Bright%20Day.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/march/05%20-%20Bright%20Day.jpg",
-      "bpm": 131,
       "key": "D major",
       "genre": [
         "Rock",
@@ -5449,7 +5447,8 @@
         "upbeat",
         "cheerful",
         "Rock"
-      ]
+      ],
+      "tempo": 131
     },
     {
       "id": "1765977347064-0.4240734612365039",
@@ -5462,7 +5461,6 @@
       "durationFormatted": "3:16",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/march/04%20-%20Loss.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/march/04%20-%20Loss.jpg",
-      "bpm": 115,
       "key": "C major",
       "genre": [
         "Pop",
@@ -5472,7 +5470,8 @@
         "melancholic",
         "intense",
         "Pop"
-      ]
+      ],
+      "tempo": 115
     },
     {
       "id": "1765977333452-0.2668461442280784",
@@ -5485,7 +5484,6 @@
       "durationFormatted": "2:35",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/march/03%20-%20Far%20Away.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/march/03%20-%20Far%20Away.jpg",
-      "bpm": 110,
       "key": "A minor",
       "genre": [
         "Alternative",
@@ -5495,7 +5493,8 @@
         "melancholic",
         "dark",
         "Alternative"
-      ]
+      ],
+      "tempo": 110
     },
     {
       "id": "1765977322169-0.1847881623132248",
@@ -5508,7 +5507,6 @@
       "durationFormatted": "2:42",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/march/02%20-%20Highup.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/march/02%20-%20Highup.jpg",
-      "bpm": 108,
       "key": "C# major",
       "genre": [
         "Alternative",
@@ -5518,7 +5516,8 @@
         "intense",
         "reflective",
         "Alternative"
-      ]
+      ],
+      "tempo": 108
     },
     {
       "id": "1765977310282-0.5155633495512807",
@@ -5532,7 +5531,6 @@
       "durationFormatted": "3:01",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/february/29%20-%20Nostalgic%20Energby.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/february/29%20-%20Nostalgic%20Energby.jpg",
-      "bpm": 91,
       "key": "D major",
       "genre": [
         "Alternative",
@@ -5542,7 +5540,8 @@
         "melancholic",
         "nostalgic",
         "Alternative"
-      ]
+      ],
+      "tempo": 91
     },
     {
       "id": "1765977301575-0.9506443953575824",
@@ -5556,7 +5555,6 @@
       "durationFormatted": "4:12",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/february/28%20-%20Isolkated.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/february/28%20-%20Isolkated.jpg",
-      "bpm": 73,
       "key": "C# major",
       "genre": [
         "Ballad",
@@ -5566,7 +5564,8 @@
         "dark",
         "isolated",
         "Ballad"
-      ]
+      ],
+      "tempo": 73
     },
     {
       "id": "1765977294052-0.648648389263909",
@@ -5580,7 +5579,6 @@
       "durationFormatted": "2:22",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/february/27%20-%20Addicted.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/february/27%20-%20Addicted.jpg",
-      "bpm": 87,
       "key": "C major",
       "genre": [
         "Rock",
@@ -5590,7 +5588,8 @@
         "intense",
         "conflicted",
         "Rock"
-      ]
+      ],
+      "tempo": 87
     },
     {
       "id": "1765977282010-0.48155292264024974",
@@ -5604,7 +5603,6 @@
       "durationFormatted": "2:50",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/february/26%20-%20Believing%20in%20Just.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/february/26%20-%20Believing%20in%20Just.jpg",
-      "bpm": 152,
       "key": "B minor",
       "genre": [
         "Alternative",
@@ -5614,7 +5612,8 @@
         "angry",
         "frustrated",
         "Alternative"
-      ]
+      ],
+      "tempo": 152
     },
     {
       "id": "1765977272067-0.7986516599100073",
@@ -5628,7 +5627,6 @@
       "durationFormatted": "4:25",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/february/25%20-%20Faint%20Copy.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/february/25%20-%20Faint%20Copy.jpg",
-      "bpm": 131,
       "key": "C# major",
       "genre": [
         "Alternative",
@@ -5638,7 +5636,8 @@
         "melancholic",
         "reflective",
         "Alternative"
-      ]
+      ],
+      "tempo": 131
     },
     {
       "id": "1765977265280-0.01646770838562006",
@@ -5652,7 +5651,6 @@
       "durationFormatted": "3:44",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/february/24%20-%20Unforgettable.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/february/24%20-%20Unforgettable.jpg",
-      "bpm": 141,
       "key": "D major",
       "genre": [
         "Alternative",
@@ -5662,7 +5660,8 @@
         "introspective",
         "upbeat",
         "Alternative"
-      ]
+      ],
+      "tempo": 141
     },
     {
       "id": "1765977248914-0.48574430335795793",
@@ -5676,7 +5675,6 @@
       "durationFormatted": "5:13",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/february/23%20-%20Were%20Only%20Humanmd7.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/february/23%20-%20Were%20Only%20Humanmd7.jpg",
-      "bpm": 62,
       "key": "D major",
       "genre": [
         "Ballad",
@@ -5686,7 +5684,8 @@
         "melancholic",
         "reflective",
         "Ballad"
-      ]
+      ],
+      "tempo": 62
     },
     {
       "id": "1765977235423-0.36750783298207634",
@@ -5700,7 +5699,6 @@
       "durationFormatted": "6:41",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/february/22%20-%20Killing%20Me.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/february/22%20-%20Killing%20Me.jpg",
-      "bpm": 141,
       "key": "C# minor",
       "genre": [
         "Alternative",
@@ -5710,7 +5708,8 @@
         "dark",
         "melancholic",
         "Alternative"
-      ]
+      ],
+      "tempo": 141
     },
     {
       "id": "1765977214578-0.6830935862530916",
@@ -5724,7 +5723,6 @@
       "durationFormatted": "5:49",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/february/21%20-%20Cant%20Have.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/february/21%20-%20Cant%20Have.jpg",
-      "bpm": 91,
       "key": "C# minor",
       "genre": [
         "Alternative",
@@ -5734,7 +5732,8 @@
         "angry",
         "defiant",
         "Alternative"
-      ]
+      ],
+      "tempo": 91
     },
     {
       "id": "1765977207823-0.8324698155088129",
@@ -5749,7 +5748,6 @@
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/february/20%20-%20A%20Girl.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/february/20%20-%20A%20Girl.jpg",
       "videoUrl": "https://youtu.be/7awHFphrsvs?si=lHLrt7TYrsJ09rYG",
-      "bpm": 70,
       "key": "C# minor",
       "genre": [
         "Ballad",
@@ -5759,7 +5757,8 @@
         "frustrated",
         "introspective",
         "Ballad"
-      ]
+      ],
+      "tempo": 70
     },
     {
       "id": "1765977200243-0.16131251551644732",
@@ -5773,7 +5772,6 @@
       "durationFormatted": "3:12",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/february/19%20-%20Say%20It%20Up.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/february/19%20-%20Say%20It%20Up.jpg",
-      "bpm": 100,
       "key": "B minor",
       "genre": [
         "Alternative",
@@ -5783,7 +5781,8 @@
         "reflective",
         "introspective",
         "Alternative"
-      ]
+      ],
+      "tempo": 100
     },
     {
       "id": "1765977194306-0.03157557403671141",
@@ -5797,7 +5796,6 @@
       "durationFormatted": "2:21",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/february/18%20-%20Spaces.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/february/18%20-%20Spaces.jpg",
-      "bpm": 95,
       "key": "C major",
       "genre": [
         "Alternative",
@@ -5807,7 +5805,8 @@
         "Neutral",
         "Contemplative",
         "Alternative"
-      ]
+      ],
+      "tempo": 95
     },
     {
       "id": "1765977181243-0.328440576518257",
@@ -5821,7 +5820,6 @@
       "durationFormatted": "3:27",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/february/17%20-%20Not%20Good%20Enough.mp3",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/february/17%20-%20Not%20Good%20Enough.jpg",
-      "bpm": 128,
       "key": "C# minor",
       "genre": [
         "Alternative",
@@ -5831,7 +5829,8 @@
         "frustrated",
         "reflective",
         "Alternative"
-      ]
+      ],
+      "tempo": 128
     },
     {
       "id": "1765977174297-0.25357784841058995",
@@ -5846,7 +5845,6 @@
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/february/16%20-%20Unloved.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/february/16%20-%20Unloved.jpg",
       "videoUrl": "https://youtu.be/UbsU0BRX-N4?si=gomFP0uO1aPeoM7I",
-      "bpm": 102,
       "key": "G# major",
       "genre": [
         "Alternative",
@@ -5856,7 +5854,8 @@
         "reflective",
         "melancholic",
         "Alternative"
-      ]
+      ],
+      "tempo": 102
     },
     {
       "id": "1765977129090-0.778037088142783",
@@ -5870,7 +5869,6 @@
       "durationFormatted": "3:42",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/february/15%20-%20Wasted%20by%20What.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/february/15%20-%20Wasted%20by%20What.jpg",
-      "bpm": 141,
       "key": "C major",
       "genre": [
         "Alternative",
@@ -5880,7 +5878,8 @@
         "melancholic",
         "despairing",
         "Alternative"
-      ]
+      ],
+      "tempo": 141
     },
     {
       "id": "1765977120806-0.8977926359311293",
@@ -5894,7 +5893,6 @@
       "durationFormatted": "3:17",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/february/14%20-%20Purpose.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/february/14%20-%20Purpose.jpg",
-      "bpm": 78,
       "key": "D major",
       "genre": [
         "Ballad",
@@ -5904,7 +5902,8 @@
         "dark",
         "angry",
         "Ballad"
-      ]
+      ],
+      "tempo": 78
     },
     {
       "id": "1765977101603-0.026035371009003105",
@@ -5918,7 +5917,6 @@
       "durationFormatted": "4:09",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/february/13%20-%20Talkin%20Nody.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/february/13%20-%20Talkin%20Nody.jpg",
-      "bpm": 120,
       "key": "D minor",
       "genre": [
         "Pop",
@@ -5928,7 +5926,8 @@
         "upbeat",
         "sensual",
         "Pop"
-      ]
+      ],
+      "tempo": 120
     },
     {
       "id": "1765977088252-0.6232191283566216",
@@ -5942,7 +5941,6 @@
       "durationFormatted": "3:34",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/february/12%20-%20Tried%20N%20True.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/february/12%20-%20Tried%20N%20True.jpg",
-      "bpm": 106,
       "key": "D major",
       "genre": [
         "Alternative",
@@ -5952,7 +5950,8 @@
         "nostalgic",
         "romantic",
         "Alternative"
-      ]
+      ],
+      "tempo": 106
     },
     {
       "id": "1765977084280-0.11187216250761034",
@@ -5966,7 +5965,6 @@
       "durationFormatted": "3:55",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/february/11%20-%20Too%20Late%20Fawy.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/february/11%20-%20Too%20Late%20Fawy.jpg",
-      "bpm": 99,
       "key": "D minor",
       "genre": [
         "Alternative",
@@ -5976,7 +5974,8 @@
         "frustrated",
         "melancholic",
         "Alternative"
-      ]
+      ],
+      "tempo": 99
     },
     {
       "id": "1765977069892-0.4547820886198922",
@@ -5990,7 +5989,6 @@
       "durationFormatted": "2:26",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/february/10%20-%20Tightrope%2B.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/february/10%20-%20Tightrope%2B.jpg",
-      "bpm": 144,
       "key": "D minor",
       "genre": [
         "Alternative",
@@ -6000,7 +5998,8 @@
         "upbeat",
         "anxious",
         "Alternative"
-      ]
+      ],
+      "tempo": 144
     },
     {
       "id": "1765977065801-0.8727056703594526",
@@ -6014,7 +6013,6 @@
       "durationFormatted": "3:26",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/february/09%20-%20Isitthathard.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/february/09%20-%20Isitthathard.jpg",
-      "bpm": 67,
       "key": "C# major",
       "genre": [
         "Ballad",
@@ -6024,7 +6022,8 @@
         "reflective",
         "melancholic",
         "Ballad"
-      ]
+      ],
+      "tempo": 67
     },
     {
       "id": "1765977050644-0.006648797671227835",
@@ -6038,7 +6037,6 @@
       "durationFormatted": "3:26",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/february/08%20-%20Hades.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/february/08%20-%20Hades.jpg",
-      "bpm": 80,
       "key": "D major",
       "genre": [
         "Alternative",
@@ -6048,7 +6046,8 @@
         "dark",
         "melancholic",
         "Alternative"
-      ]
+      ],
+      "tempo": 80
     },
     {
       "id": "1765977048327-0.1026487381866662",
@@ -6062,7 +6061,6 @@
       "durationFormatted": "5:17",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/february/07%20-%20Wish%20I%20Was%20Dead.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/february/07%20-%20Wish%20I%20Was%20Dead.jpg",
-      "bpm": 161,
       "key": "C# minor",
       "genre": [
         "Electronic",
@@ -6072,7 +6070,8 @@
         "dark",
         "despairing",
         "Electronic"
-      ]
+      ],
+      "tempo": 161
     },
     {
       "id": "1765977034249-0.20195817886105805",
@@ -6086,7 +6085,6 @@
       "durationFormatted": "2:23",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/february/06%20-%20Starshining.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/february/06%20-%20Starshining.jpg",
-      "bpm": 156,
       "key": "C major",
       "genre": [
         "Electronic",
@@ -6096,7 +6094,8 @@
         "upbeat",
         "cheerful",
         "Electronic"
-      ]
+      ],
+      "tempo": 156
     },
     {
       "id": "1765977017092-0.18473592756988955",
@@ -6110,7 +6109,6 @@
       "durationFormatted": "4:01",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/february/05%20-%20Come%20Together.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/february/05%20-%20Come%20Together.jpg",
-      "bpm": 122,
       "key": "C# minor",
       "genre": [
         "Rock",
@@ -6120,7 +6118,8 @@
         "upbeat",
         "reflective",
         "Rock"
-      ]
+      ],
+      "tempo": 122
     },
     {
       "id": "1765977011691-0.8841268191543885",
@@ -6134,7 +6133,6 @@
       "durationFormatted": "3:23",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/february/04%20-%20Monday%20Ta%20Wenday%20Ta%20Friday.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/february/04%20-%20Monday%20Ta%20Wenday%20Ta%20Friday.jpg",
-      "bpm": 63,
       "key": "C# major",
       "genre": [
         "Rock",
@@ -6144,7 +6142,8 @@
         "upbeat",
         "defiant",
         "Rock"
-      ]
+      ],
+      "tempo": 63
     },
     {
       "id": "1765976994629-0.5419200853034705",
@@ -6158,7 +6157,6 @@
       "durationFormatted": "5:45",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/february/03%20-%20Long%20Haul.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/february/03%20-%20Long%20Haul.jpg",
-      "bpm": 92,
       "key": "C major",
       "genre": [
         "Pop",
@@ -6168,7 +6166,8 @@
         "reflective",
         "determined",
         "Pop"
-      ]
+      ],
+      "tempo": 92
     },
     {
       "id": "1765976971897-0.003422496928251806",
@@ -6182,7 +6181,6 @@
       "durationFormatted": "2:08",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/february/02%20-%20Feel%20Good.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/february/02%20-%20Feel%20Good.jpg",
-      "bpm": 104,
       "key": "C major",
       "genre": [
         "Alternative",
@@ -6192,7 +6190,8 @@
         "upbeat",
         "cheerful",
         "Alternative"
-      ]
+      ],
+      "tempo": 104
     },
     {
       "id": "1765976930724-0.3623134578667443",
@@ -6206,7 +6205,6 @@
       "durationFormatted": "3:46",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/february/01%20-%20Get%20High%20with%20Me.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/february/01%20-%20Get%20High%20with%20Me.jpg",
-      "bpm": 65,
       "key": "C# major",
       "genre": [
         "Ballad",
@@ -6216,7 +6214,8 @@
         "dark",
         "reflective",
         "Ballad"
-      ]
+      ],
+      "tempo": 65
     },
     {
       "id": "1765976939089-0.9397259465445211",
@@ -6230,7 +6229,6 @@
       "durationFormatted": "3:52",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/january/31%20-%20Wishingwell.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/january/31%20-%20Wishingwell.jpg",
-      "bpm": 83,
       "key": "C# minor",
       "genre": [
         "Alternative",
@@ -6240,7 +6238,8 @@
         "melancholic",
         "dark",
         "Alternative"
-      ]
+      ],
+      "tempo": 83
     },
     {
       "id": "1765976912001-0.23289493113006032",
@@ -6254,7 +6253,6 @@
       "durationFormatted": "3:10",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/january/30%20-%20Luckyland%20Reprise.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/january/30%20-%20Luckyland%20Reprise.jpg",
-      "bpm": 100,
       "key": "C# minor",
       "genre": [
         "Alternative",
@@ -6264,7 +6262,8 @@
         "upbeat",
         "cheerful",
         "Alternative"
-      ]
+      ],
+      "tempo": 100
     },
     {
       "id": "1765976900408-0.958617167990913",
@@ -6279,7 +6278,6 @@
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/january/29%20-%20Luckyland.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/january/29%20-%20Luckyland.jpg",
       "videoUrl": "https://youtu.be/QeLdhZeMASM?si=j4Jiwtf5dF0rMEp2",
-      "bpm": 69,
       "key": "C# minor",
       "genre": [
         "Ballad",
@@ -6289,7 +6287,8 @@
         "upbeat",
         "hopeful",
         "Ballad"
-      ]
+      ],
+      "tempo": 69
     },
     {
       "id": "1765976887962-0.5262011157087314",
@@ -6303,7 +6302,6 @@
       "durationFormatted": "3:57",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/january/28%20-%20Left%20on%20Red.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/january/28%20-%20Left%20on%20Red.jpg",
-      "bpm": 67,
       "key": "D major",
       "genre": [
         "Ballad",
@@ -6313,7 +6311,8 @@
         "melancholic",
         "frustrated",
         "Ballad"
-      ]
+      ],
+      "tempo": 67
     },
     {
       "id": "1765976867330-0.695786809669462",
@@ -6327,7 +6326,6 @@
       "durationFormatted": "3:41",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/january/27%20-%20Swooped%20COUPE.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/january/27%20-%20Swooped%20COUPE.jpg",
-      "bpm": 70,
       "key": "C# major",
       "genre": [
         "Ballad",
@@ -6337,7 +6335,8 @@
         "upbeat",
         "confident",
         "Ballad"
-      ]
+      ],
+      "tempo": 70
     },
     {
       "id": "1765976853745-0.02976935388710611",
@@ -6351,7 +6350,6 @@
       "durationFormatted": "3:13",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/january/26%20-%20Choppmed%20of%20F%20Ya%20Feel%20Rough'.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/january/26%20-%20Choppmed%20of%20F%20Ya%20Feel%20Rough'.jpg",
-      "bpm": 156,
       "key": "D major",
       "genre": [
         "Alternative",
@@ -6361,7 +6359,8 @@
         "aggressive",
         "defiant",
         "Alternative"
-      ]
+      ],
+      "tempo": 156
     },
     {
       "id": "1765976846387-0.4756395168127021",
@@ -6375,7 +6374,6 @@
       "durationFormatted": "3:19",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/january/25%20-%20D%20and%20D.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/january/25%20-%20D%20and%20D.jpg",
-      "bpm": 91,
       "key": "C major",
       "genre": [
         "Alternative",
@@ -6385,7 +6383,8 @@
         "melancholic",
         "reflective",
         "Alternative"
-      ]
+      ],
+      "tempo": 91
     },
     {
       "id": "1765976827600-0.058386784732296526",
@@ -6399,7 +6398,6 @@
       "durationFormatted": "3:02",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/january/24%20-%20Come%20Around%20Persiuin.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/january/24%20-%20Come%20Around%20Persiuin.jpg",
-      "bpm": 176,
       "key": "D major",
       "genre": [
         "Electronic",
@@ -6409,7 +6407,8 @@
         "intense",
         "agitated",
         "Electronic"
-      ]
+      ],
+      "tempo": 176
     },
     {
       "id": "1765976786717-0.9030782883859569",
@@ -6423,7 +6422,6 @@
       "durationFormatted": "3:29",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/january/23%20-%20Gasp.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/january/23%20-%20Gasp.jpg",
-      "bpm": 115,
       "key": "D major",
       "genre": [
         "Rock",
@@ -6433,7 +6431,8 @@
         "upbeat",
         "energetic",
         "Rock"
-      ]
+      ],
+      "tempo": 115
     },
     {
       "id": "1765976768972-0.4123724800334827",
@@ -6447,7 +6446,6 @@
       "durationFormatted": "2:37",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/january/22%20-%20Get%20It%20in.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/january/22%20-%20Get%20It%20in.jpg",
-      "bpm": 70,
       "key": "C# minor",
       "genre": [
         "Rock",
@@ -6457,7 +6455,8 @@
         "upbeat",
         "confident",
         "Rock"
-      ]
+      ],
+      "tempo": 70
     },
     {
       "id": "1765976749749-0.8319917762370322",
@@ -6471,7 +6470,6 @@
       "durationFormatted": "2:49",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/january/21%20-%20Get%20Ghost.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/january/21%20-%20Get%20Ghost.jpg",
-      "bpm": 120,
       "key": "A# major",
       "genre": [
         "Alternative",
@@ -6481,7 +6479,8 @@
         "dark",
         "aggressive",
         "Alternative"
-      ]
+      ],
+      "tempo": 120
     },
     {
       "id": "1765976728132-0.9408386039950392",
@@ -6495,7 +6494,6 @@
       "durationFormatted": "2:54",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/january/20%20-%20Get%20Naughty.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/january/20%20-%20Get%20Naughty.jpg",
-      "bpm": 63,
       "key": "D major",
       "genre": [
         "Ballad",
@@ -6505,7 +6503,8 @@
         "upbeat",
         "party",
         "Ballad"
-      ]
+      ],
+      "tempo": 63
     },
     {
       "id": "1765976634684-0.9789266077542356",
@@ -6519,7 +6518,6 @@
       "durationFormatted": "4:40",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/january/19%20-%20If%20You%20Come%20Along.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/january/19%20-%20If%20You%20Come%20Along.jpg",
-      "bpm": 128,
       "key": "B minor",
       "genre": [
         "Rock",
@@ -6529,7 +6527,8 @@
         "romantic",
         "dreamy",
         "Rock"
-      ]
+      ],
+      "tempo": 128
     },
     {
       "id": "1765976606165-0.21577163498248564",
@@ -6543,7 +6542,6 @@
       "durationFormatted": "9:46",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/january/18%20-%20Jacy%20B.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/january/18%20-%20Jacy%20B.jpg",
-      "bpm": 144,
       "key": "C# minor",
       "genre": [
         "Alternative",
@@ -6553,7 +6551,8 @@
         "conflicted",
         "introspective",
         "Alternative"
-      ]
+      ],
+      "tempo": 144
     },
     {
       "id": "1765976588586-0.7576850373451379",
@@ -6567,7 +6566,6 @@
       "durationFormatted": "2:01",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/january/17%20-%20Kurtcobain.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/january/17%20-%20Kurtcobain.jpg",
-      "bpm": 87,
       "key": "A# minor",
       "genre": [
         "Alternative",
@@ -6577,7 +6575,8 @@
         "introspective",
         "ecstatic",
         "Alternative"
-      ]
+      ],
+      "tempo": 87
     },
     {
       "id": "1765976471316-0.1757117507996354",
@@ -6591,7 +6590,6 @@
       "durationFormatted": "3:54",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/january/16%20-%20On%20Sight.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/january/16%20-%20On%20Sight.jpg",
-      "bpm": 176,
       "key": "B minor",
       "genre": [
         "Electronic",
@@ -6601,7 +6599,8 @@
         "dark",
         "aggressive",
         "Electronic"
-      ]
+      ],
+      "tempo": 176
     },
     {
       "id": "1765976568759-0.5874009755516286",
@@ -6615,7 +6614,6 @@
       "durationFormatted": "3:47",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/january/15%20-%20Little%20Light.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/january/15%20-%20Little%20Light.jpg",
-      "bpm": 72,
       "key": "C# minor",
       "genre": [
         "Ballad",
@@ -6625,7 +6623,8 @@
         "intense",
         "reflective",
         "Ballad"
-      ]
+      ],
+      "tempo": 72
     },
     {
       "id": "1765976547649-0.576662168902505",
@@ -6639,7 +6638,6 @@
       "durationFormatted": "2:21",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/january/14%20-%20Monetary.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/january/14%20-%20Monetary.jpg",
-      "bpm": 65,
       "key": "C major",
       "genre": [
         "Ballad",
@@ -6649,7 +6647,8 @@
         "dark",
         "intense",
         "Ballad"
-      ]
+      ],
+      "tempo": 65
     },
     {
       "id": "1765976530158-0.5007207713237596",
@@ -6663,7 +6662,6 @@
       "durationFormatted": "2:22",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/january/13%20-%20Monetary%20T.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/january/13%20-%20Monetary%20T.jpg",
-      "bpm": 161,
       "key": "C# minor",
       "genre": [
         "Alternative",
@@ -6673,7 +6671,8 @@
         "dark",
         "intense",
         "Alternative"
-      ]
+      ],
+      "tempo": 161
     },
     {
       "id": "1765976507000-0.9440355191283883",
@@ -6687,7 +6686,6 @@
       "durationFormatted": "6:46",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/january/12%20-%20Natural%20Disaster.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/january/12%20-%20Natural%20Disaster.jpg",
-      "bpm": 64,
       "key": "C# major",
       "genre": [
         "Ballad",
@@ -6697,7 +6695,8 @@
         "anxious",
         "frustrated",
         "Ballad"
-      ]
+      ],
+      "tempo": 64
     },
     {
       "id": "1765976483323-0.20756014307123727",
@@ -6711,7 +6710,6 @@
       "durationFormatted": "2:06",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/january/11%20-%20Ngbt1.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/january/11%20-%20Ngbt1.jpg",
-      "bpm": 79,
       "key": "B minor",
       "genre": [
         "Ballad",
@@ -6721,7 +6719,8 @@
         "melancholic",
         "defiant",
         "Ballad"
-      ]
+      ],
+      "tempo": 79
     },
     {
       "id": "1765976459926-0.7065622120512218",
@@ -6735,7 +6734,6 @@
       "durationFormatted": "3:45",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/january/10%20-%20Open%20All%20Night.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/january/10%20-%20Open%20All%20Night.jpg",
-      "bpm": 97,
       "key": "C# major",
       "genre": [
         "Alternative",
@@ -6745,7 +6743,8 @@
         "hopeful",
         "inviting",
         "Alternative"
-      ]
+      ],
+      "tempo": 97
     },
     {
       "id": "1765976439886-0.7492258556574567",
@@ -6759,7 +6758,6 @@
       "durationFormatted": "4:41",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/january/09%20-%20Peacefullypeace.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/january/09%20-%20Peacefullypeace.jpg",
-      "bpm": 165,
       "key": "A# minor",
       "genre": [
         "Electronic",
@@ -6769,7 +6767,8 @@
         "defiant",
         "frustrated",
         "Electronic"
-      ]
+      ],
+      "tempo": 165
     },
     {
       "id": "1765976442508-0.4043094682221592",
@@ -6783,7 +6782,6 @@
       "durationFormatted": "4:16",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/january/08%20-%20Open%20Wide.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/january/08%20-%20Open%20Wide.jpg",
-      "bpm": 71,
       "key": "A minor",
       "genre": [
         "Ballad",
@@ -6793,7 +6791,8 @@
         "open",
         "introspective",
         "Ballad"
-      ]
+      ],
+      "tempo": 71
     },
     {
       "id": "1765976403480-0.48414501767543994",
@@ -6807,7 +6806,6 @@
       "durationFormatted": "4:07",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/january/07%20-%20Te%20Amo.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/january/07%20-%20Te%20Amo.jpg",
-      "bpm": 131,
       "key": "C minor",
       "genre": [
         "Rock",
@@ -6817,7 +6815,8 @@
         "romantic",
         "upbeat",
         "Rock"
-      ]
+      ],
+      "tempo": 131
     },
     {
       "id": "1765976361684-0.07005316509733495",
@@ -6831,7 +6830,6 @@
       "durationFormatted": "2:46",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/january/06%20-%20Whatuwant.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/january/06%20-%20Whatuwant.jpg",
-      "bpm": 115,
       "key": "C major",
       "genre": [
         "Alternative",
@@ -6841,7 +6839,8 @@
         "introspective",
         "conflicted",
         "Alternative"
-      ]
+      ],
+      "tempo": 115
     },
     {
       "id": "1765976371126-0.47980273038380905",
@@ -6855,7 +6854,6 @@
       "durationFormatted": "3:24",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/january/05%20-%20Your%20Choice.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/january/05%20-%20Your%20Choice.jpg",
-      "bpm": 148,
       "key": "C major",
       "genre": [
         "Electronic",
@@ -6865,7 +6863,8 @@
         "uplifting",
         "reflective",
         "Electronic"
-      ]
+      ],
+      "tempo": 148
     },
     {
       "id": "1765976344509-0.9594493975884948",
@@ -6879,7 +6878,6 @@
       "durationFormatted": "5:57",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/january/04%20-%20What%20It%20Is.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/january/04%20-%20What%20It%20Is.jpg",
-      "bpm": 63,
       "key": "C major",
       "genre": [
         "Ballad",
@@ -6889,7 +6887,8 @@
         "uplifting",
         "determined",
         "Ballad"
-      ]
+      ],
+      "tempo": 63
     },
     {
       "id": "1765976348405-0.43348225792403483",
@@ -6903,7 +6902,6 @@
       "durationFormatted": "2:43",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/january/03%20-%20What%20You%20Know.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/january/03%20-%20What%20You%20Know.jpg",
-      "bpm": 156,
       "key": "A# major",
       "genre": [
         "Alternative",
@@ -6913,7 +6911,8 @@
         "melancholic",
         "reflective",
         "Alternative"
-      ]
+      ],
+      "tempo": 156
     },
     {
       "id": "1765976322686-0.15603116846805187",
@@ -6927,7 +6926,6 @@
       "durationFormatted": "3:21",
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/january/02%20-%20Dream.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/january/02%20-%20Dream.jpg",
-      "bpm": 83,
       "key": "C major",
       "genre": [
         "Rock",
@@ -6937,7 +6935,8 @@
         "hopeful",
         "introspective",
         "Rock"
-      ]
+      ],
+      "tempo": 83
     },
     {
       "id": "1765975956514-0.23132915597003734",
@@ -6952,7 +6951,6 @@
       "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/january/01%20-%20Chunky.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/january/01%20-%20Chunky.jpg",
       "videoUrl": "https://youtu.be/gI8gbvXZy8A",
-      "bpm": 91,
       "key": "D major",
       "genre": [
         "Alternative",
@@ -6962,7 +6960,8 @@
         "confident",
         "defiant",
         "Alternative"
-      ]
+      ],
+      "tempo": 91
     }
   ]
 }
