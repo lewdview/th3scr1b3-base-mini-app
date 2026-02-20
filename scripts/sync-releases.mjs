@@ -5,52 +5,77 @@ import path from 'path';
 const PROJECT_ROOT = process.cwd();
 const SOURCE_RELEASE_PATH = path.join(PROJECT_ROOT, 'public/releases.local.json');
 const SOURCE_OVERRIDES_PATH = path.join(PROJECT_ROOT, 'public/content-overrides.json');
+const SOURCE_MANIFEST_PATH = path.join(PROJECT_ROOT, 'public/release-manifest.json');
 const DEST_PATH = path.join(process.cwd(), 'public/releases.json');
 
-// Supabase URL pattern from releases.local.json:
-// https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/january/01%20-%20Chunky.wav
-const SUPABASE_BASE = 'https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready';
+// Override with RELEASE_STORAGE_BASE_URL if needed.
+const STORAGE_BASE_URL =
+    process.env.RELEASE_STORAGE_BASE_URL ||
+    'https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready';
 
-function transformRelease(release, overrides = {}) {
-    // 1. Construct artwork URL
-    // Assumption: Co-located with audio but in 'covers' folder and with .jpg extension
-    let artworkUrl = null;
-    if (release.storedAudioUrl) {
-        artworkUrl = release.storedAudioUrl
-            .replace('/audio/', '/covers/')
-            .replace('.wav', '.jpg')
-            .replace('.mp3', '.jpg');
-    }
+function toAbsoluteStorageUrl(storagePath) {
+    if (!storagePath) return null;
+    const normalizedPath = String(storagePath).replace(/^\/+/, '');
+    return `${STORAGE_BASE_URL}/${normalizedPath}`;
+}
 
-    // 2. Apply Overrides
-    const override = overrides[String(release.day)] || overrides[release.day];
-    const title = override?.title || release.title;
-    const description = override?.info ? stripHtml(override.info) : release.description; // Strip HTML for description preview
-    const videoUrl = override?.videoUrl || release.videoUrl;
-    const customInfo = override?.info || release.customInfo;
+function toDerivedCoverPath(audioPath) {
+    if (!audioPath) return null;
+    return audioPath
+        .replace('/audio/', '/covers/')
+        .replace(/\.[^./]+$/, '.jpg');
+}
 
-    // 3. Minify / Clean up
-    const cleanRelease = {
+function buildManifestByDay(manifestItems = []) {
+    const manifestByDay = new Map();
+    manifestItems.forEach((item, idx) => {
+        manifestByDay.set(idx + 1, item);
+    });
+    return manifestByDay;
+}
+
+function transformRelease(release, manifestByDay, overrides = {}) {
+    const day = Number(release.day);
+    const manifestItem = manifestByDay.get(day);
+
+    const manifestAudioPath = manifestItem?.audioPath || null;
+    const manifestCoverPath = manifestItem?.coverPath || toDerivedCoverPath(manifestAudioPath);
+
+    // Use release-manifest as source of truth for storage URLs.
+    const storedAudioUrl = manifestAudioPath
+        ? toAbsoluteStorageUrl(manifestAudioPath)
+        : release.storedAudioUrl || null;
+    const artworkUrl = manifestCoverPath
+        ? toAbsoluteStorageUrl(manifestCoverPath)
+        : null;
+
+    // Use content-overrides for editorial info.
+    const override = overrides[String(day)] || overrides[day];
+    const title = override?.title || release.title || manifestItem?.storageTitle;
+    const description = override?.info ? stripHtml(override.info) : release.description;
+    const customInfo = override?.info || release.customInfo || null;
+    const videoUrl = override?.videoUrl || release.videoUrl || null;
+
+    return {
         id: release.id,
-        day: release.day,
+        day,
         date: release.date,
-        title: title,
+        title,
         mood: release.mood,
-        description: description,
-        customInfo: customInfo, // Keep full HTML info if needed
+        description,
+        customInfo,
         duration: release.duration,
         durationFormatted: release.durationFormatted || formatDuration(release.duration),
-        storedAudioUrl: release.storedAudioUrl,
-        artworkUrl: artworkUrl,
-        videoUrl: videoUrl,
+        storedAudioUrl,
+        artworkUrl,
+        videoUrl,
         // Keep essential metadata
         bpm: release.tempo,
         key: release.key,
         genre: release.genre,
-        tags: release.tags
+        tags: release.tags,
+        manifestAudioPath
     };
-
-    return cleanRelease;
 }
 
 function stripHtml(html) {
@@ -85,13 +110,26 @@ async function sync() {
         console.warn(`No overrides found at ${SOURCE_OVERRIDES_PATH}`);
     }
 
-    const transformedReleases = data.releases.map(r => transformRelease(r, overrides));
+    let manifestItems = [];
+    if (fs.existsSync(SOURCE_MANIFEST_PATH)) {
+        console.log(`Reading release manifest: ${SOURCE_MANIFEST_PATH}`);
+        const rawManifest = fs.readFileSync(SOURCE_MANIFEST_PATH, 'utf-8');
+        const manifest = JSON.parse(rawManifest);
+        manifestItems = Array.isArray(manifest.items) ? manifest.items : [];
+        console.log(`Found ${manifestItems.length} manifest items.`);
+    } else {
+        console.warn(`No release manifest found at ${SOURCE_MANIFEST_PATH}`);
+    }
+
+    const manifestByDay = buildManifestByDay(manifestItems);
+    const transformedReleases = data.releases.map(r => transformRelease(r, manifestByDay, overrides));
 
     // Sort by day descending
     transformedReleases.sort((a, b) => b.day - a.day);
 
     const output = {
         generatedAt: new Date().toISOString(),
+        storageBaseUrl: STORAGE_BASE_URL,
         releases: transformedReleases
     };
 
