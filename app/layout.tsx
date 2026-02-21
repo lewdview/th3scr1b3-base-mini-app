@@ -3,8 +3,8 @@ import './globals.css';
 import { Providers } from './providers';
 
 export const metadata: Metadata = {
-  title: 'th3scr1b3 · Base Mini App',
-  description: 'Now playing and recent releases from th3scr1b3, inside Base.',
+  title: '365 Days of Light and Dark · Base Mini App',
+  description: 'Daily releases by th3scr1b3, inside Base.',
 };
 
 function readEnv(key: string, fallback = '') {
@@ -14,7 +14,7 @@ function readEnv(key: string, fallback = '') {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   const appUrl = readEnv('NEXT_PUBLIC_URL', 'https://base.th3scr1b3.art').replace(/\/+$/, '');
-  const appName = readEnv('NEXT_PUBLIC_FRAME_NAME', 'th3scr1b3');
+  const appName = readEnv('NEXT_PUBLIC_FRAME_NAME', '365 Days of Light and Dark');
   const imageUrl = readEnv('NEXT_PUBLIC_APP_HERO_IMAGE', `${appUrl}/image.png`);
   const splashImageUrl = readEnv('NEXT_PUBLIC_SPLASH_IMAGE', `${appUrl}/splash.png`);
   const splashBackgroundColor = readEnv('NEXT_PUBLIC_SPLASH_BG', '#eeccff');
