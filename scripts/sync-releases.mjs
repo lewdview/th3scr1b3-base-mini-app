@@ -21,9 +21,12 @@ function toAbsoluteStorageUrl(storagePath) {
 
 function toDerivedCoverPath(audioPath) {
     if (!audioPath) return null;
-    return audioPath
-        .replace('/audio/', '/covers/')
-        .replace(/\.[^./]+$/, '.jpg');
+    const normalizedPath = String(audioPath).replace(/^\/+/, '');
+    const coverPath = normalizedPath.startsWith('audio/')
+        ? `covers/${normalizedPath.slice('audio/'.length)}`
+        : normalizedPath.replace('/audio/', '/covers/');
+
+    return coverPath.replace(/\.[^./]+$/, '.png');
 }
 
 function buildManifestByDay(manifestItems = []) {
