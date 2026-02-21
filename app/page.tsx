@@ -110,7 +110,10 @@ export default function HomePage() {
         <div className="container">
           {/* Top Bar */}
           <div className="top-bar">
-            <div className="app-title">th3scr1b3</div>
+            <div className="app-brand">
+              <div className="app-title">th3scr1b3</div>
+              <div className="app-subtitle">365 Days of Light and Dark</div>
+            </div>
             <WalletButton />
           </div>
 

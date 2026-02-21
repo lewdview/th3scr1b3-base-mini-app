@@ -69,6 +69,12 @@ main {
   margin-bottom: 20px;
 }
 
+.top-bar .app-brand {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
 .top-bar .app-title {
   font-size: 18px;
   font-weight: 700;
@@ -77,6 +83,14 @@ main {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+
+.top-bar .app-subtitle {
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-family: 'JetBrains Mono', monospace;
 }
 
 .top-bar .ock-wallet-button,

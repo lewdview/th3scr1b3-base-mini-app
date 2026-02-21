@@ -19,15 +19,19 @@ NEXT_PUBLIC_URL=http://localhost:3000
 NEXT_PUBLIC_MAIN_APP_URL=https://th3scr1b3.com
 NEXT_PUBLIC_ONCHAINKIT_API_KEY=your_onchainkit_key
 NEXT_PUBLIC_ONCHAINKIT_PROJECT_NAME=th3scr1b3
-NEXT_PUBLIC_ICON_URL=http://localhost:3000/icon.svg
-NEXT_PUBLIC_APP_HERO_IMAGE=http://localhost:3000/hero.svg
-NEXT_PUBLIC_SPLASH_IMAGE=http://localhost:3000/splash.svg
-NEXT_PUBLIC_SPLASH_BG=#0a0a0b
+NEXT_PUBLIC_DAILY_MUSE_CONTRACT_ADDRESS=0xYourDeployedDailyMuseContract
+NEXT_PUBLIC_MINT_PRICE_ETH=0.001
+NEXT_PUBLIC_ICON_URL=http://localhost:3000/icon.png
+NEXT_PUBLIC_APP_HERO_IMAGE=http://localhost:3000/image.png
+NEXT_PUBLIC_SPLASH_IMAGE=http://localhost:3000/splash.png
+NEXT_PUBLIC_SPLASH_BG=#eeccff
 NEXT_PUBLIC_WEBHOOK_URL=http://localhost:3000/api/webhook
 NEXT_PUBLIC_FARCASTER_HEADER=
 NEXT_PUBLIC_FARCASTER_PAYLOAD=
 NEXT_PUBLIC_FARCASTER_SIGNATURE=
 ```
+
+`NEXT_PUBLIC_DAILY_MUSE_CONTRACT_ADDRESS` must point to your deployed `DailyMuse` ERC-1155 contract on Base for minting to work.
 
 ## Data Source
 

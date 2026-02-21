@@ -15,7 +15,7 @@ contract DailyMuse is ERC1155, Ownable {
     bool public mintingOpen = true;
 
     constructor(address initialOwner) 
-        ERC1155("https://th3scr1b3-base-mini-app.vercel.app/api/metadata/{id}") 
+        ERC1155("https://base.th3scr1b3.art/api/metadata/{id}") 
         Ownable(initialOwner) 
     {}
 
