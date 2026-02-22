@@ -10,7 +10,11 @@ import {
 } from 'wagmi';
 import { base } from 'wagmi/chains';
 import { isAddress, parseEther } from 'viem';
-import { DONATION_ADDRESS, DONATION_PRESET_AMOUNTS } from '../constants';
+import {
+  DONATION_ADDRESS,
+  DONATION_PRESET_AMOUNTS,
+  DONATION_RECIPIENT_LABEL,
+} from '../constants';
 
 const ZERO_ADDRESS = '0x0000000000000000000000000000000000000000';
 
@@ -49,8 +53,7 @@ export function DonationCard() {
   });
 
   const hasDonationAddress =
-    isAddress(DONATION_ADDRESS) &&
-    DONATION_ADDRESS !== ZERO_ADDRESS;
+    isAddress(DONATION_ADDRESS) && DONATION_ADDRESS !== ZERO_ADDRESS;
   const isBusy = isSwitchingChain || isSending || isConfirming;
 
   const helperText = useMemo(() => {
@@ -58,7 +61,8 @@ export function DonationCard() {
     if (!isConnected) return 'Connect your wallet to donate.';
     if (isConfirmed) return 'Donation confirmed. Thank you.';
     if (isBusy) return 'Processing donation...';
-    return `Recipient: ${shortenAddress(DONATION_ADDRESS)}`;
+    const recipientLabel = DONATION_RECIPIENT_LABEL || shortenAddress(DONATION_ADDRESS);
+    return `Recipient: ${recipientLabel}`;
   }, [hasDonationAddress, isConnected, isConfirmed, isBusy]);
 
   useEffect(() => {
@@ -82,14 +86,13 @@ export function DonationCard() {
       }
 
       const value = parseEther(donationAmount);
-      if (chainId !== base.id) {
+      if (typeof chainId === 'number' && chainId !== base.id) {
         await switchChainAsync({ chainId: base.id });
       }
 
       const hash = await sendTransactionAsync({
         to: DONATION_ADDRESS as `0x${string}`,
         value,
-        chainId: base.id,
       });
       setTxHash(hash);
     } catch (error) {

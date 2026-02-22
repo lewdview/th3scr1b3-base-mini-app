@@ -75,7 +75,7 @@ function toDerivedCoverPath(audioPath?: string | null) {
     ? `covers/${normalizedPath.slice('audio/'.length)}`
     : normalizedPath.replace('/audio/', '/covers/');
 
-  return coverPath.replace(/\.[^./]+$/, '.jpg');
+  return coverPath.replace(/\.[^./]+$/, '.png');
 }
 
 function getAbsoluteDay(item: ReleaseManifestItem) {
