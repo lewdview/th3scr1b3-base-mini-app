@@ -8,6 +8,8 @@ import { AudioPlayer } from './components/AudioPlayer';
 import { ReleaseCard } from './components/ReleaseCard';
 import { MintButton } from './components/MintButton';
 import { WalletButton } from './components/WalletButton';
+import { DonationCard } from './components/DonationCard';
+import { ManifestoCard } from './components/ManifestoCard';
 import { MAIN_APP_URL } from './constants';
 import {
   buildReleasesFromManifest,
@@ -141,6 +143,11 @@ export default function HomePage() {
               </div>
             </div>
           </section>
+
+          <div className="support-grid">
+            <ManifestoCard />
+            <DonationCard />
+          </div>
 
           <div className="section-header">
             <h2>All Releases</h2>
