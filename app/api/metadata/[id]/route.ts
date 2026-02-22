@@ -1,24 +1,19 @@
 import fs from 'fs/promises';
 import path from 'path';
+import {
+  buildReleasesFromManifest,
+  type ContentOverrideMap,
+  type Release,
+  type ReleaseManifestItem,
+} from '../../../lib/release-data';
 import { MAIN_APP_URL } from '../../../constants';
 
-type Release = {
-  day: number;
-  title?: string;
-  description?: string;
-  customInfo?: string;
-  mood?: string;
-  durationFormatted?: string;
-  storedAudioUrl?: string;
-  artworkUrl?: string;
-  videoUrl?: string;
+type ManifestData = {
+  items?: ReleaseManifestItem[];
 };
 
-type ReleaseData = {
-  releases?: Release[];
-};
-
-const RELEASES_PATH = path.join(process.cwd(), 'public/releases.json');
+const MANIFEST_PATH = path.join(process.cwd(), 'public/release-manifest.json');
+const OVERRIDES_PATH = path.join(process.cwd(), 'public/content-overrides.json');
 
 let cachedReleases: Release[] | null = null;
 
@@ -51,12 +46,24 @@ function parseTokenId(rawId: string) {
   return null;
 }
 
+async function readJsonIfExists<T>(filePath: string, fallback: T): Promise<T> {
+  try {
+    await fs.access(filePath);
+    const raw = await fs.readFile(filePath, 'utf-8');
+    return JSON.parse(raw) as T;
+  } catch {
+    return fallback;
+  }
+}
+
 async function readReleases() {
   if (cachedReleases) return cachedReleases;
 
-  const raw = await fs.readFile(RELEASES_PATH, 'utf-8');
-  const data = JSON.parse(raw) as ReleaseData;
-  cachedReleases = Array.isArray(data.releases) ? data.releases : [];
+  const manifestRaw = await fs.readFile(MANIFEST_PATH, 'utf-8');
+  const manifestData = JSON.parse(manifestRaw) as ManifestData;
+  const overrides = await readJsonIfExists<ContentOverrideMap>(OVERRIDES_PATH, {});
+
+  cachedReleases = buildReleasesFromManifest(manifestData.items || [], overrides);
   return cachedReleases;
 }
 

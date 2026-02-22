@@ -5,22 +5,23 @@ A lightweight Base mini app that surfaces "Now Playing" and recent releases from
 ## Quick Start
 
 ```bash
-cd base-mini-app
+cd th3scr1b3-base-mini-app
 npm install
 npm run dev
 ```
 
 ## Environment
 
-Create a `.env.local` in `base-mini-app/` and set:
+Create a `.env.local` in `th3scr1b3-base-mini-app/` and set:
 
-```
+```bash
 NEXT_PUBLIC_URL=http://localhost:3000
-NEXT_PUBLIC_MAIN_APP_URL=https://th3scr1b3.com
-NEXT_PUBLIC_ONCHAINKIT_API_KEY=your_onchainkit_key
+NEXT_PUBLIC_MAIN_APP_URL=https://th3scr1b3.art
+NEXT_PUBLIC_ONCHAINKIT_API_KEY=
 NEXT_PUBLIC_ONCHAINKIT_PROJECT_NAME=th3scr1b3
-NEXT_PUBLIC_DAILY_MUSE_CONTRACT_ADDRESS=0xYourDeployedDailyMuseContract
+NEXT_PUBLIC_DAILY_MUSE_CONTRACT_ADDRESS=0x0000000000000000000000000000000000000000
 NEXT_PUBLIC_MINT_PRICE_ETH=0.001
+NEXT_PUBLIC_RELEASE_STORAGE_BASE_URL=https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready
 NEXT_PUBLIC_ICON_URL=http://localhost:3000/icon.png
 NEXT_PUBLIC_APP_HERO_IMAGE=http://localhost:3000/image.png
 NEXT_PUBLIC_SPLASH_IMAGE=http://localhost:3000/splash.png
@@ -31,10 +32,25 @@ NEXT_PUBLIC_FARCASTER_PAYLOAD=
 NEXT_PUBLIC_FARCASTER_SIGNATURE=
 ```
 
-`NEXT_PUBLIC_DAILY_MUSE_CONTRACT_ADDRESS` must point to your deployed `DailyMuse` ERC-1155 contract on Base for minting to work.
+## Data Source (Definitive)
 
-## Data Source
+This mini app now uses only:
 
-This mini app reads `public/releases.json` and `public/content-overrides.json`.
-A copy is included in `base-mini-app/public/` for both files.
-If you update the main dataset, re-copy them into this folder.
+- `public/release-manifest.json` (authoritative release order and storage paths)
+- `public/content-overrides.json` (day-specific title/info/video overrides)
+
+It no longer depends on `public/releases.json` or `public/releases.local.json`.
+
+## Sync From Main App
+
+From the main app repo (`th3scr1b3-365-warp`), run:
+
+```bash
+npm run mini:sync
+```
+
+This copies the two definitive source files into this mini app's `public/` directory.
+
+## Archive
+
+Legacy release JSON files and scripts were moved to `old_nfo/`.

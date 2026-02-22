@@ -8,34 +8,13 @@ import { AudioPlayer } from './components/AudioPlayer';
 import { ReleaseCard } from './components/ReleaseCard';
 import { MintButton } from './components/MintButton';
 import { WalletButton } from './components/WalletButton';
-
-type Release = {
-  id: string;
-  day: number;
-  date: string;
-  title: string;
-  mood?: string;
-  description?: string;
-  durationFormatted?: string;
-  customInfo?: string;
-  videoUrl?: string;
-  storedAudioUrl?: string;
-  artworkUrl?: string;
-};
-
-type ReleaseData = {
-  releases?: Release[];
-};
-
-type ContentOverride = {
-  title?: string;
-  info?: string;
-  videoUrl?: string;
-};
-
-type ContentOverrideMap = Record<string, ContentOverride>;
-
 import { MAIN_APP_URL } from './constants';
+import {
+  buildReleasesFromManifest,
+  type ContentOverrideMap,
+  type Release,
+  type ReleaseManifestItem,
+} from './lib/release-data';
 
 const PlayIcon = () => (
   <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
@@ -61,23 +40,32 @@ export default function HomePage() {
 
   useEffect(() => {
     let isMounted = true;
+
     const load = async () => {
       try {
-        const res = await fetch('/releases.json');
-        if (!res.ok) throw new Error('Failed to load releases');
-        const data = (await res.json()) as ReleaseData;
+        const manifestRes = await fetch('/release-manifest.json');
+        if (!manifestRes.ok) throw new Error('Failed to load release-manifest.json');
 
-        // Data is already merged and transformed by sync script
+        const manifestData = (await manifestRes.json()) as { items?: ReleaseManifestItem[] };
+
+        let overrides: ContentOverrideMap = {};
+        try {
+          const overridesRes = await fetch('/content-overrides.json');
+          if (overridesRes.ok) {
+            overrides = (await overridesRes.json()) as ContentOverrideMap;
+          }
+        } catch (error) {
+          console.warn('[MiniApp] content-overrides load failed', error);
+        }
+
+        const allReleases = buildReleasesFromManifest(manifestData.items || [], overrides);
+
         if (isMounted) {
-          const allReleases = data.releases || [];
-
-          // Gating: Only show releases released on or before today
           const today = new Date();
-          today.setHours(23, 59, 59, 999); // Include all of today
+          today.setHours(23, 59, 59, 999);
 
-          const visibleReleases = allReleases.filter(release => {
+          const visibleReleases = allReleases.filter((release) => {
             const releaseDate = new Date(release.date);
-            // Parse "YYYY-MM-DD" if needed, but new Date() usually handles ISO strings well
             return releaseDate <= today;
           });
 
@@ -91,7 +79,9 @@ export default function HomePage() {
     };
 
     void load();
-    return () => { isMounted = false; };
+    return () => {
+      isMounted = false;
+    };
   }, []);
 
   const sorted = useMemo(() => {
@@ -108,7 +98,6 @@ export default function HomePage() {
     <div className="safe-area">
       <main>
         <div className="container">
-          {/* Top Bar */}
           <div className="top-bar">
             <div className="app-brand">
               <div className="app-title">th3scr1b3</div>
@@ -117,7 +106,6 @@ export default function HomePage() {
             <WalletButton />
           </div>
 
-          {/* Hero */}
           <section className="hero animate-in">
             <div className="hero-art-wrapper">
               {latest && (
@@ -154,7 +142,6 @@ export default function HomePage() {
             </div>
           </section>
 
-          {/* Release Grid */}
           <div className="section-header">
             <h2>All Releases</h2>
             <span className="count">{sorted.length} tracks</span>
@@ -173,12 +160,14 @@ export default function HomePage() {
           </div>
 
           <div className="footer">
-            Powered by OnchainKit + MiniKit on Base · <a href={MAIN_APP_URL} target="_blank" rel="noreferrer" style={{ color: 'var(--accent)' }}>Full Experience →</a>
+            Powered by OnchainKit + MiniKit on Base ·{' '}
+            <a href={MAIN_APP_URL} target="_blank" rel="noreferrer" style={{ color: 'var(--accent)' }}>
+              Full Experience →
+            </a>
           </div>
         </div>
       </main>
 
-      {/* Sticky Bottom Player */}
       <AudioPlayer />
     </div>
   );

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-02-20T16:55:48.756Z",
+  "generatedAt": "2026-02-22T05:23:15.803Z",
   "storageBaseUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready",
   "releases": [
     {
@@ -6433,7 +6433,7 @@
       "customInfo": "<div class=\"p-4 border border-[var(--color-neon-yellow)]/30 bg-[var(--color-neon-yellow)]/10 rounded mb-4\">\n  <h4 class=\"font-bold text-[var(--color-neon-yellow)] mb-2 font-mono\">PRODUCTION INFO</h4>\n  <p>ONE TAKE FREESTYLE by KVON (RIP) - ONE TAKE AD-LIB by th3scr1b3</p>\n</div>\n<div class=\"p-4 border border-[var(--color-neon-red)]/30 bg-[var(--color-neon-red)]/10 rounded mb-4\">\n  <h4 class=\"font-bold text-[var(--color-neon-red)] mb-2 font-mono\">SONOTELLER.AI lyrical Analysis</h4>\n  <p>The lyrics convey a sense of frustration and defiance, reflecting on personal struggles and confrontations with others. The narrator grapples with feelings of betrayal and anger, questioning the worth of past relationships while asserting their own self-worth. The aggressive tone and explicit language emphasize a desire for liberation from negativity and a rejection of superficial connections. Emotions range from anger to confidence, showcasing a complex interplay of vulnerability and bravado. Ultimately, the lyrics depict a tumultuous journey of self-assertion amidst chaos and conflict.</p>\n</div>",
       "duration": 401.4971458333333,
       "durationFormatted": "6:41",
-      "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/february/22%20-%20The%20End.mp3",
+      "storedAudioUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/audio/february/22%20-%20The%20End.wav",
       "artworkUrl": "https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready/covers/february/22%20-%20The%20End.png",
       "videoUrl": null,
       "bpm": 141,
@@ -6447,7 +6447,7 @@
         "melancholic",
         "Alternative"
       ],
-      "manifestAudioPath": "audio/february/22%20-%20The%20End.mp3"
+      "manifestAudioPath": "audio/february/22%20-%20The%20End.wav"
     },
     {
       "id": "1765977214578-0.6830935862530916",
