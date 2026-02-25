@@ -1,3 +1,7 @@
+import { DAY_DURATION_FORMATTED } from './day-durations';
+import { DATABASE_DAY_MOODS } from './database-day-moods';
+import { LEGACY_DAY_MOODS } from './legacy-day-moods';
+
 export type ReleaseManifestItem = {
   month: string;
   index: number;
@@ -5,12 +9,14 @@ export type ReleaseManifestItem = {
   ext: string;
   audioPath?: string | null;
   coverPath?: string | null;
+  mood?: 'light' | 'dark' | null;
 };
 
 export type ContentOverride = {
   title?: string;
   info?: string;
   videoUrl?: string;
+  mood?: 'light' | 'dark';
 };
 
 export type ContentOverrideMap = Record<string, ContentOverride>;
@@ -88,6 +94,27 @@ function getIsoDate(day: number) {
   return utcDate.toISOString().slice(0, 10);
 }
 
+function isValidMood(value?: string | null): value is 'light' | 'dark' {
+  return value === 'light' || value === 'dark';
+}
+
+function resolveMood(
+  day: number,
+  manifestMood?: string | null,
+  overrideMood?: string
+): 'light' | 'dark' {
+  if (isValidMood(overrideMood)) return overrideMood;
+  if (isValidMood(manifestMood)) return manifestMood;
+
+  const databaseMood = DATABASE_DAY_MOODS[day];
+  if (isValidMood(databaseMood)) return databaseMood;
+
+  const legacyMood = LEGACY_DAY_MOODS[day];
+  if (isValidMood(legacyMood)) return legacyMood;
+
+  return day % 2 === 0 ? 'light' : 'dark';
+}
+
 function buildReleaseFromManifestItem(
   item: ReleaseManifestItem,
   overrides: ContentOverrideMap,
@@ -102,15 +129,16 @@ function buildReleaseFromManifestItem(
   const description = override?.info
     ? stripHtml(override.info)
     : `Day ${day} from the 365 Days of Light and Dark collection.`;
+  const mood = resolveMood(day, item.mood, override?.mood);
 
   return {
     id: `${item.month}-${item.index}`,
     day,
     date: getIsoDate(day),
     title: override?.title || item.storageTitle,
-    mood: 'light',
+    mood,
     description,
-    durationFormatted: '3:00',
+    durationFormatted: DAY_DURATION_FORMATTED[day],
     customInfo: override?.info || undefined,
     videoUrl: override?.videoUrl || undefined,
     storedAudioUrl: toAbsoluteStorageUrl(audioPath, storageBaseUrl) || undefined,
