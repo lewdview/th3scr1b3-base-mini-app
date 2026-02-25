@@ -42,7 +42,7 @@ export function AudioPlayer() {
 
             <div className="player-bar-art">
                 {currentTrack && (
-                    <AlbumArt day={currentTrack.day} mood={currentTrack.mood} />
+                    <AlbumArt day={currentTrack.day} mood={currentTrack.mood} artworkUrl={currentTrack.artworkUrl} />
                 )}
             </div>
 

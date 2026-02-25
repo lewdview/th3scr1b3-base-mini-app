@@ -4,6 +4,7 @@ import { MiniKitProvider } from '@coinbase/onchainkit/minikit';
 import { base } from 'wagmi/chains';
 import type { ReactNode } from 'react';
 import { AudioProvider } from './components/AudioProvider';
+import { AudioPlayer } from './components/AudioPlayer';
 
 const apiKey = process.env.NEXT_PUBLIC_ONCHAINKIT_API_KEY || '';
 const projectName = process.env.NEXT_PUBLIC_ONCHAINKIT_PROJECT_NAME || 'th3scr1b3';
@@ -22,7 +23,10 @@ export function Providers({ children }: { children: ReactNode }) {
         },
       }}
     >
-      <AudioProvider>{children}</AudioProvider>
+      <AudioProvider>
+        {children}
+        <AudioPlayer />
+      </AudioProvider>
     </MiniKitProvider>
   );
 }

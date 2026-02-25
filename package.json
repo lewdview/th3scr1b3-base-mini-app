@@ -7,7 +7,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "lyrics:build": "node scripts/build-lyrics-map.mjs"
   },
   "dependencies": {
     "@coinbase/onchainkit": "^0.37.8",

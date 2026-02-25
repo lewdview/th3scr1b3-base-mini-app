@@ -5,7 +5,6 @@ import { useRouter } from 'next/navigation';
 import { useMiniKit } from '@coinbase/onchainkit/minikit';
 import { useAudio } from './components/AudioProvider';
 import { AlbumArt } from './components/AlbumArt';
-import { AudioPlayer } from './components/AudioPlayer';
 import { ReleaseCard } from './components/ReleaseCard';
 import { MintButton } from './components/MintButton';
 import { WalletButton } from './components/WalletButton';
@@ -181,7 +180,6 @@ export default function HomePage() {
         </div>
       </main>
 
-      <AudioPlayer />
     </div>
   );
 }

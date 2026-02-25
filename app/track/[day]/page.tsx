@@ -2,11 +2,18 @@
 
 import Link from 'next/link';
 import { useParams } from 'next/navigation';
-import { useEffect, useMemo, useState } from 'react';
-import { useAccount, useChainId, useSendTransaction, useSwitchChain, useWaitForTransactionReceipt } from 'wagmi';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import {
+  useAccount,
+  useChainId,
+  useSendTransaction,
+  useSwitchChain,
+  useWaitForTransactionReceipt,
+} from 'wagmi';
 import { base } from 'wagmi/chains';
 import { isAddress, parseEther } from 'viem';
 import { AlbumArt } from '../../components/AlbumArt';
+import { useAudio } from '../../components/AudioProvider';
 import { MintButton } from '../../components/MintButton';
 import {
   COMMENT_FEE_ETH,
@@ -21,6 +28,17 @@ import {
   type Release,
   type ReleaseManifestItem,
 } from '../../lib/release-data';
+import {
+  exportTrackStatsJson,
+  readTrackStatsEntry,
+  recordTrackComment,
+  recordTrackLoadMetrics,
+  recordTrackPlay,
+  recordTrackTheme,
+  recordTrackView,
+  type TrackLoadMetrics,
+  type TrackStatsEntry,
+} from '../../lib/track-stats';
 
 type LocalComment = {
   id: string;
@@ -32,8 +50,93 @@ type LocalComment = {
   createdAt: string;
 };
 
+type LyricsSource = 'database' | 'overrides' | 'none';
+
+type LyricsApiResponse = {
+  day: number;
+  source?: LyricsSource;
+  lyrics?: string | null;
+};
+
+type LoadStepKey = 'manifest' | 'lyrics' | 'cover' | 'audio';
+type LoadStepStatus = 'pending' | 'loading' | 'ready' | 'error' | 'skipped';
+
+type LoadStep = {
+  status: LoadStepStatus;
+  detail?: string;
+  startedAt?: number;
+  finishedAt?: number;
+};
+
+type LoadStepState = Record<LoadStepKey, LoadStep>;
+
+type PoetryTheme = {
+  id: string;
+  label: string;
+};
+
 const COMMENT_STORAGE_KEY = 'th3scr1b3_paid_comments_v1';
 const ZERO_ADDRESS = '0x0000000000000000000000000000000000000000';
+
+const POETRY_THEMES: PoetryTheme[] = [
+  { id: 'noir', label: 'Noir' },
+  { id: 'paper', label: 'Paper' },
+  { id: 'gold', label: 'Gold' },
+  { id: 'ocean', label: 'Ocean' },
+  { id: 'sage', label: 'Sage' },
+  { id: 'ember', label: 'Ember' },
+  { id: 'slate', label: 'Slate' },
+  { id: 'rose', label: 'Rose' },
+  { id: 'sand', label: 'Sand' },
+  { id: 'neon', label: 'Neon' },
+];
+
+const LOAD_STEP_LABELS: Record<LoadStepKey, string> = {
+  manifest: 'Manifest',
+  lyrics: 'Lyrics',
+  cover: 'Cover',
+  audio: 'Audio',
+};
+
+const LOAD_STEP_STATUS_TEXT: Record<LoadStepStatus, string> = {
+  pending: 'Pending',
+  loading: 'Loading',
+  ready: 'Ready',
+  error: 'Failed',
+  skipped: 'Skipped',
+};
+
+const PlayIcon = () => (
+  <svg viewBox="0 0 24 24" fill="currentColor">
+    <path d="M8 5v14l11-7z" />
+  </svg>
+);
+
+const PauseIcon = () => (
+  <svg viewBox="0 0 24 24" fill="currentColor">
+    <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" />
+  </svg>
+);
+
+function createInitialLoadSteps(): LoadStepState {
+  return {
+    manifest: { status: 'pending' },
+    lyrics: { status: 'pending' },
+    cover: { status: 'pending' },
+    audio: { status: 'pending' },
+  };
+}
+
+function formatMs(ms: number) {
+  if (!Number.isFinite(ms) || ms < 0) return '0.0s';
+  return `${(ms / 1000).toFixed(1)}s`;
+}
+
+function getStepDuration(step: LoadStep, nowMs: number) {
+  if (!step.startedAt) return null;
+  const end = step.finishedAt || nowMs;
+  return Math.max(0, end - step.startedAt);
+}
 
 function toErrorMessage(error: unknown) {
   if (!error) return 'Request failed.';
@@ -75,17 +178,55 @@ function formatDate(value: string) {
   return parsed.toLocaleString();
 }
 
+function toLoadMetrics(loadSteps: LoadStepState, totalMs: number): TrackLoadMetrics {
+  const manifestMs = getStepDuration(loadSteps.manifest, Date.now()) || undefined;
+  const lyricsMs = getStepDuration(loadSteps.lyrics, Date.now()) || undefined;
+  const coverMs = getStepDuration(loadSteps.cover, Date.now()) || undefined;
+  const audioMs = getStepDuration(loadSteps.audio, Date.now()) || undefined;
+
+  return {
+    manifestMs,
+    lyricsMs,
+    coverMs,
+    audioMs,
+    totalMs,
+  };
+}
+
+function formatLyricsSource(source: LyricsSource) {
+  if (source === 'database') return 'Database lyrics';
+  if (source === 'overrides') return 'Fallback lyrics';
+  return 'No lyrics source';
+}
+
 export default function TrackDetailsPage() {
   const params = useParams<{ day: string }>();
   const day = Number(params.day);
+  const { currentTrack, isPlaying, toggle } = useAudio();
 
   const [releases, setReleases] = useState<Release[]>([]);
   const [loading, setLoading] = useState(true);
+
+  const [lyrics, setLyrics] = useState('');
+  const [lyricsSource, setLyricsSource] = useState<LyricsSource>('none');
+  const [lyricsError, setLyricsError] = useState<string | null>(null);
+  const [poetryTheme, setPoetryTheme] = useState(POETRY_THEMES[0].id);
+
+  const [loadSteps, setLoadSteps] = useState<LoadStepState>(createInitialLoadSteps());
+  const [elapsedMs, setElapsedMs] = useState(0);
+  const [showLoadPanel, setShowLoadPanel] = useState(true);
+
   const [comments, setComments] = useState<LocalComment[]>([]);
   const [commentText, setCommentText] = useState('');
   const [pendingComment, setPendingComment] = useState<string | null>(null);
   const [commentError, setCommentError] = useState<string | null>(null);
   const [txHash, setTxHash] = useState<`0x${string}` | undefined>();
+
+  const [statsSnapshot, setStatsSnapshot] = useState<TrackStatsEntry | null>(null);
+  const [statsMessage, setStatsMessage] = useState<string | null>(null);
+
+  const pageStartRef = useRef(Date.now());
+  const metricsRecordedRef = useRef(false);
 
   const { address, isConnected } = useAccount();
   const chainId = useChainId();
@@ -101,13 +242,71 @@ export default function TrackDetailsPage() {
     hash: txHash,
   });
 
+  const refreshStats = useCallback(() => {
+    if (!Number.isFinite(day) || day <= 0) {
+      setStatsSnapshot(null);
+      return;
+    }
+    setStatsSnapshot(readTrackStatsEntry(day));
+  }, [day]);
+
+  const setLoadStep = useCallback((key: LoadStepKey, status: LoadStepStatus, detail?: string) => {
+    setLoadSteps((prev) => {
+      const existing = prev[key];
+      const now = Date.now();
+      const startedAt =
+        status === 'loading'
+          ? existing.startedAt || now
+          : existing.startedAt || (status === 'pending' ? undefined : now);
+      const finishedAt =
+        status === 'ready' || status === 'error' || status === 'skipped'
+          ? now
+          : undefined;
+
+      return {
+        ...prev,
+        [key]: {
+          status,
+          detail,
+          startedAt,
+          finishedAt,
+        },
+      };
+    });
+  }, []);
+
   useEffect(() => {
+    pageStartRef.current = Date.now();
+    metricsRecordedRef.current = false;
+    setElapsedMs(0);
+    setShowLoadPanel(true);
+    setLoadSteps(createInitialLoadSteps());
+    setStatsMessage(null);
+  }, [day]);
+
+  useEffect(() => {
+    const timer = window.setInterval(() => {
+      setElapsedMs(Date.now() - pageStartRef.current);
+    }, 150);
+
+    return () => window.clearInterval(timer);
+  }, []);
+
+  useEffect(() => {
+    if (!Number.isFinite(day) || day <= 0) return;
+
     let isMounted = true;
+    setLoading(true);
+    setLoadStep('manifest', 'loading', 'Loading release catalog');
+
+    recordTrackView(day);
+    refreshStats();
 
     const load = async () => {
       try {
         const manifestRes = await fetch('/release-manifest.json');
         if (!manifestRes.ok) throw new Error('Failed to load release manifest.');
+
         const manifestData = (await manifestRes.json()) as { items?: ReleaseManifestItem[] };
 
         let overrides: ContentOverrideMap = {};
@@ -121,8 +320,14 @@ export default function TrackDetailsPage() {
         }
 
         const built = buildReleasesFromManifest(manifestData.items || [], overrides);
-        if (isMounted) setReleases(built);
+        if (isMounted) {
+          setReleases(built);
+          setLoadStep('manifest', 'ready', `Loaded ${built.length} tracks`);
+        }
       } catch (error) {
+        if (isMounted) {
+          setLoadStep('manifest', 'error', toErrorMessage(error));
+        }
         console.warn('[TrackDetails] release load failed', error);
       } finally {
         if (isMounted) setLoading(false);
@@ -133,7 +338,73 @@ export default function TrackDetailsPage() {
     return () => {
       isMounted = false;
     };
-  }, []);
+  }, [day, refreshStats, setLoadStep]);
+
+  useEffect(() => {
+    if (!Number.isFinite(day) || day <= 0) return;
+
+    let isMounted = true;
+    setLyrics('');
+    setLyricsSource('none');
+    setLyricsError(null);
+    setLoadStep('lyrics', 'loading', 'Fetching lyrics');
+
+    const loadLyrics = async () => {
+      try {
+        const response = await fetch(`/api/lyrics/${day}`, { cache: 'no-store' });
+        if (!response.ok) {
+          throw new Error(`Lyrics request failed (${response.status})`);
+        }
+
+        const payload = (await response.json()) as LyricsApiResponse;
+        const nextLyrics = (payload.lyrics || '').trim();
+        const source = payload.source || 'none';
+
+        if (!isMounted) return;
+
+        setLyrics(nextLyrics);
+        setLyricsSource(source);
+
+        if (nextLyrics) {
+          const lines = nextLyrics.split(/\n+/).filter(Boolean).length;
+          setLoadStep('lyrics', 'ready', `${lines} lines ready`);
+        } else {
+          setLoadStep('lyrics', 'skipped', 'No lyrics found');
+        }
+      } catch (error) {
+        if (!isMounted) return;
+        setLyricsError(toErrorMessage(error));
+        setLoadStep('lyrics', 'error', toErrorMessage(error));
+      }
+    };
+
+    void loadLyrics();
+    return () => {
+      isMounted = false;
+    };
+  }, [day, setLoadStep]);
+
+  useEffect(() => {
+    if (!Number.isFinite(day) || day <= 0 || typeof window === 'undefined') return;
+
+    const key = `th3scr1b3_poetry_theme_day_${day}`;
+    const stored = window.localStorage.getItem(key);
+    if (stored && POETRY_THEMES.some((theme) => theme.id === stored)) {
+      setPoetryTheme(stored);
+      return;
+    }
+
+    setPoetryTheme(POETRY_THEMES[0].id);
+  }, [day]);
+
+  useEffect(() => {
+    if (!Number.isFinite(day) || day <= 0 || typeof window === 'undefined') return;
+
+    const key = `th3scr1b3_poetry_theme_day_${day}`;
+    window.localStorage.setItem(key, poetryTheme);
+    recordTrackTheme(day, poetryTheme);
+    refreshStats();
+  }, [day, poetryTheme, refreshStats]);
 
   useEffect(() => {
     if (!Number.isFinite(day) || day <= 0) return;
@@ -165,17 +436,155 @@ export default function TrackDetailsPage() {
     setPendingComment(null);
     setTxHash(undefined);
     setCommentError(null);
-  }, [address, day, isCommentPaid, pendingComment, txHash]);
+
+    recordTrackComment(day);
+    refreshStats();
+  }, [address, day, isCommentPaid, pendingComment, refreshStats, txHash]);
 
   const release = useMemo(
     () => releases.find((item) => item.day === day),
     [releases, day]
   );
 
+  useEffect(() => {
+    if (loading || release) return;
+    setLoadStep('cover', 'skipped', 'No track cover');
+    setLoadStep('audio', 'skipped', 'No track audio');
+  }, [loading, release, setLoadStep]);
+
+  useEffect(() => {
+    if (!release) return;
+
+    if (!release.artworkUrl) {
+      setLoadStep('cover', 'skipped', 'No cover URL');
+      return;
+    }
+
+    let cancelled = false;
+    setLoadStep('cover', 'loading', 'Loading cover art');
+
+    const image = new Image();
+    image.onload = () => {
+      if (cancelled) return;
+      setLoadStep('cover', 'ready', 'Cover loaded');
+    };
+    image.onerror = () => {
+      if (cancelled) return;
+      setLoadStep('cover', 'error', 'Cover load failed');
+    };
+    image.src = release.artworkUrl;
+
+    return () => {
+      cancelled = true;
+      image.onload = null;
+      image.onerror = null;
+    };
+  }, [release?.artworkUrl, release?.day, setLoadStep]);
+
+  useEffect(() => {
+    if (!release) return;
+
+    if (!release.storedAudioUrl) {
+      setLoadStep('audio', 'skipped', 'No audio URL');
+      return;
+    }
+
+    let cancelled = false;
+    setLoadStep('audio', 'loading', 'Loading audio metadata');
+
+    const audio = new Audio();
+    audio.preload = 'metadata';
+
+    const onLoaded = () => {
+      if (cancelled) return;
+      setLoadStep('audio', 'ready', 'Audio ready');
+    };
+
+    const onError = () => {
+      if (cancelled) return;
+      setLoadStep('audio', 'error', 'Audio load failed');
+    };
+
+    audio.addEventListener('loadedmetadata', onLoaded);
+    audio.addEventListener('canplaythrough', onLoaded);
+    audio.addEventListener('error', onError);
+    audio.src = release.storedAudioUrl;
+    audio.load();
+
+    return () => {
+      cancelled = true;
+      audio.removeEventListener('loadedmetadata', onLoaded);
+      audio.removeEventListener('canplaythrough', onLoaded);
+      audio.removeEventListener('error', onError);
+      audio.pause();
+      audio.src = '';
+    };
+  }, [release?.storedAudioUrl, release?.day, setLoadStep]);
+
+  const loadStatus = useMemo(() => {
+    const now = Date.now();
+    const keys = Object.keys(LOAD_STEP_LABELS) as LoadStepKey[];
+    const items = keys.map((key) => {
+      const step = loadSteps[key];
+      return {
+        key,
+        label: LOAD_STEP_LABELS[key],
+        status: step.status,
+        detail: step.detail,
+        durationMs: getStepDuration(step, now),
+      };
+    });
+
+    const hasPending = items.some((item) => item.status === 'pending' || item.status === 'loading');
+    const hasErrors = items.some((item) => item.status === 'error');
+
+    return {
+      items,
+      isLoading: hasPending,
+      hasErrors,
+      isDone: !hasPending,
+    };
+  }, [loadSteps, elapsedMs]);
+
+  useEffect(() => {
+    if (!loadStatus.isDone) {
+      setShowLoadPanel(true);
+      return;
+    }
+
+    if (!metricsRecordedRef.current && Number.isFinite(day) && day > 0) {
+      const totalMs = Date.now() - pageStartRef.current;
+      recordTrackLoadMetrics(day, toLoadMetrics(loadSteps, totalMs));
+      refreshStats();
+      metricsRecordedRef.current = true;
+    }
+
+    const timer = window.setTimeout(() => setShowLoadPanel(false), 900);
+    return () => window.clearTimeout(timer);
+  }, [day, loadStatus.isDone, loadSteps, refreshStats]);
+
+  const isTrackPlaying = Boolean(
+    release &&
+      currentTrack?.id === release.id &&
+      currentTrack?.day === release.day &&
+      isPlaying
+  );
+
   const hasCommentReceiver =
     isAddress(COMMENT_RECEIVER) && COMMENT_RECEIVER !== ZERO_ADDRESS;
   const isCommentBusy = isSwitchingChain || isSendingCommentTx || isConfirmingComment;
   const commentCount = comments.length;
+
+  const handleToggleTrack = () => {
+    if (!release) return;
+
+    if (!isTrackPlaying && Number.isFinite(day) && day > 0) {
+      recordTrackPlay(day);
+      refreshStats();
+    }
+
+    toggle(release);
+  };
 
   const submitComment = async () => {
     if (isCommentBusy) return;
@@ -209,6 +618,33 @@ export default function TrackDetailsPage() {
     }
   };
 
+  const exportStats = () => {
+    try {
+      const payload = exportTrackStatsJson();
+      const blob = new Blob([payload], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      const datePart = new Date().toISOString().slice(0, 10);
+
+      link.href = url;
+      link.download = `th3scr1b3-miniapp-stats-${datePart}.json`;
+      document.body.appendChild(link);
+      link.click();
+      link.remove();
+      URL.revokeObjectURL(url);
+
+      setStatsMessage('Stats exported. Import this JSON into the main site.');
+    } catch (error) {
+      setStatsMessage(toErrorMessage(error));
+    }
+  };
+
+  useEffect(() => {
+    if (!statsMessage) return;
+    const timer = window.setTimeout(() => setStatsMessage(null), 4200);
+    return () => window.clearTimeout(timer);
+  }, [statsMessage]);
+
   if (!Number.isFinite(day) || day <= 0) {
     return (
       <main className="track-page">
@@ -223,10 +659,73 @@ export default function TrackDetailsPage() {
     );
   }
 
+  const lyricLineCount = lyrics ? lyrics.split(/\n+/).filter(Boolean).length : 0;
+
   return (
     <main className="track-page">
       <div className="container track-page-inner">
         <Link href="/" className="track-back-link">← Back to releases</Link>
+
+        {showLoadPanel && (
+          <section className="support-card load-status-card animate-in">
+            <div className="load-status-head">
+              <div className="support-card-title">Loading Track Assets</div>
+              <div className="load-status-runtime">{formatMs(elapsedMs)}</div>
+            </div>
+            <p className="support-card-copy">
+              {loadStatus.isLoading
+                ? 'Checking and loading cover, lyrics, and audio in real time.'
+                : loadStatus.hasErrors
+                ? 'Load completed with warnings. Some assets may be missing.'
+                : 'All assets are loaded and ready.'}
+            </p>
+
+            <div className="load-status-list">
+              {loadStatus.items.map((item) => (
+                <div key={item.key} className={`load-status-item status-${item.status}`}>
+                  <span className="load-status-dot" />
+                  <span className="load-status-label">{item.label}</span>
+                  <span className="load-status-meta">
+                    {item.detail || LOAD_STEP_STATUS_TEXT[item.status]}
+                    {item.durationMs != null ? ` · ${formatMs(item.durationMs)}` : ''}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
+
+        <section className={`support-card poetry-card poetry-theme-${poetryTheme} animate-in`}>
+          <div className="poetry-card-head">
+            <div>
+              <div className="support-card-title">Poetry in Motion</div>
+              <div className="poetry-source">
+                {formatLyricsSource(lyricsSource)}
+                {lyricLineCount > 0 ? ` · ${lyricLineCount} lines` : ''}
+              </div>
+            </div>
+            <label className="poetry-theme-picker" htmlFor="poetry-theme-select">
+              <span className="sr-only">Poetry theme</span>
+              <select
+                id="poetry-theme-select"
+                value={poetryTheme}
+                onChange={(event) => setPoetryTheme(event.target.value)}
+              >
+                {POETRY_THEMES.map((theme) => (
+                  <option key={theme.id} value={theme.id}>{theme.label}</option>
+                ))}
+              </select>
+            </label>
+          </div>
+
+          {lyricsError ? (
+            <p className="support-card-copy wallet-status-error">{lyricsError}</p>
+          ) : lyrics ? (
+            <pre className="poetry-text">{lyrics}</pre>
+          ) : (
+            <p className="support-card-copy">No lyrics available for this day yet.</p>
+          )}
+        </section>
 
         {loading && (
           <section className="support-card">
@@ -258,7 +757,14 @@ export default function TrackDetailsPage() {
                 <h1>Day {release.day}: {release.title}</h1>
                 <p>{release.description}</p>
                 {release.storedAudioUrl && (
-                  <audio className="track-audio" controls preload="none" src={release.storedAudioUrl} />
+                  <button
+                    type="button"
+                    className={`play-btn track-play-btn ${isTrackPlaying ? 'playing' : ''}`}
+                    onClick={handleToggleTrack}
+                    aria-label={isTrackPlaying ? 'Pause track' : 'Play track'}
+                  >
+                    {isTrackPlaying ? <PauseIcon /> : <PlayIcon />}
+                  </button>
                 )}
               </div>
             </section>
@@ -304,6 +810,7 @@ export default function TrackDetailsPage() {
                     onChange={(event) => setCommentText(event.target.value)}
                     maxLength={280}
                     placeholder="Write your comment (max 280 chars)"
+                    enterKeyHint="send"
                   />
                   <button
                     type="button"
@@ -345,6 +852,25 @@ export default function TrackDetailsPage() {
                       </a>
                     </article>
                   ))}
+                </div>
+              </section>
+
+              <section className="support-card animate-in">
+                <div className="support-card-title">Session Stats</div>
+                <div className="track-info-list">
+                  <div><span>Views</span><strong>{statsSnapshot?.viewCount ?? 0}</strong></div>
+                  <div><span>Play Taps</span><strong>{statsSnapshot?.playCount ?? 0}</strong></div>
+                  <div><span>Paid Comments</span><strong>{statsSnapshot?.paidCommentCount ?? 0}</strong></div>
+                  <div><span>Theme</span><strong>{statsSnapshot?.selectedTheme || poetryTheme}</strong></div>
+                  <div><span>Last Seen</span><strong>{statsSnapshot?.lastViewedAt ? formatDate(statsSnapshot.lastViewedAt) : 'Now'}</strong></div>
+                </div>
+
+                <button type="button" className="track-export-btn" onClick={exportStats}>
+                  Export Stats JSON
+                </button>
+
+                <div className="support-card-helper">
+                  {statsMessage || 'Export and import this JSON into the main site analytics flow.'}
                 </div>
               </section>
             </div>

@@ -14,12 +14,16 @@ Base + Farcaster mini app for the **365 Days of Light and Dark** project.
 - Supports wallet connect in-frame (OnchainKit MiniKit + wagmi on Base).
 - Supports per-track onchain minting (`mintingOpen`, `getPrice`, then `mint`).
 - Supports ETH donations with preset amounts + custom amount.
-- Supports track details page at `/track/[day]` (open by long-pressing a card).
+- Supports track details page at `/track/[day]` (open via each card's `Details` button).
+- Shows `Poetry in Motion` first on track detail pages with 10 minimal visual themes.
+- Shows real-time asset loading status for manifest, lyrics, cover, and audio on track detail pages.
+- Supports local stats capture on detail pages (views, play taps, paid comments, load timing) with JSON export for main-site import.
 - Supports paid comments on track pages (comment requires ETH tx; tx hash is displayed).
 - Serves Farcaster manifest JSON from:
   - `/.well-known/farcaster.json`
   - `/api/.well-known/farcaster.json`
 - Serves token metadata at `/api/metadata/[id]`.
+- Serves per-day lyrics at `/api/lyrics/[day]`.
 
 ## Known Behavior / Limits
 
@@ -33,6 +37,7 @@ Base + Farcaster mini app for the **365 Days of Light and Dark** project.
 - `/.well-known/farcaster.json` - Farcaster manifest
 - `/api/.well-known/farcaster.json` - Farcaster manifest (API alias)
 - `/api/metadata/[id]` - NFT metadata JSON by token/day id
+- `/api/lyrics/[day]` - lyrics JSON by day (database-first with fallback)
 - `/api/webhook` - webhook health endpoint (`GET`/`POST` returns `{ ok: true }`)
 
 ## Data Sources (Definitive)
@@ -41,6 +46,7 @@ Only these files drive release content:
 
 - `public/release-manifest.json`
 - `public/content-overrides.json`
+- `public/lyrics-by-day.json`
 
 Release building logic lives in `app/lib/release-data.ts`:
 
@@ -72,6 +78,8 @@ NEXT_PUBLIC_ONCHAINKIT_PROJECT_NAME=th3scr1b3
 NEXT_PUBLIC_DAILY_MUSE_CONTRACT_ADDRESS=0x0000000000000000000000000000000000000000
 NEXT_PUBLIC_MINT_PRICE_ETH=0.001
 NEXT_PUBLIC_RELEASE_STORAGE_BASE_URL=https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready
+LYRICS_DATABASE_ENDPOINT=
+LYRICS_DATABASE_TOKEN=
 ```
 
 ### Donations + Comments
@@ -114,6 +122,14 @@ npm run build
 ```
 
 Deploys target Vercel; production domain is `base.th3scr1b3.art`.
+
+## Lyrics Sync
+
+Build `public/lyrics-by-day.json` from a database export:
+
+```bash
+node scripts/build-lyrics-map.mjs --db /path/to/database-complete-*.json
+```
 
 ## Archive
 

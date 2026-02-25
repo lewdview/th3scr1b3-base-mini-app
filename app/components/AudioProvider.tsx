@@ -8,6 +8,7 @@ type Release = {
     title: string;
     mood?: string;
     storedAudioUrl?: string;
+    artworkUrl?: string;
 };
 
 type AudioState = {
