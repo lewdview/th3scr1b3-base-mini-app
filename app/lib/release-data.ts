@@ -98,13 +98,27 @@ function isValidMood(value?: string | null): value is 'light' | 'dark' {
   return value === 'light' || value === 'dark';
 }
 
+function inferMoodFromText(value: string): 'light' | 'dark' | null {
+  const normalized = value.toLowerCase();
+
+  // Respect explicit mood words first when present in title/info text.
+  if (/\blight\b/.test(normalized)) return 'light';
+  if (/\bdark\b/.test(normalized)) return 'dark';
+
+  return null;
+}
+
 function resolveMood(
   day: number,
+  moodText: string,
   manifestMood?: string | null,
   overrideMood?: string
 ): 'light' | 'dark' {
   if (isValidMood(overrideMood)) return overrideMood;
   if (isValidMood(manifestMood)) return manifestMood;
+
+  const inferredMood = inferMoodFromText(moodText);
+  if (isValidMood(inferredMood)) return inferredMood;
 
   const databaseMood = DATABASE_DAY_MOODS[day];
   if (isValidMood(databaseMood)) return databaseMood;
@@ -129,7 +143,8 @@ function buildReleaseFromManifestItem(
   const description = override?.info
     ? stripHtml(override.info)
     : `Day ${day} from the 365 Days of Light and Dark collection.`;
-  const mood = resolveMood(day, item.mood, override?.mood);
+  const moodText = [override?.title, item.storageTitle, description].filter(Boolean).join(' ');
+  const mood = resolveMood(day, moodText, item.mood, override?.mood);
 
   return {
     id: `${item.month}-${item.index}`,

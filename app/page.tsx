@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useMemo, useState } from 'react';
+import { useRouter } from 'next/navigation';
 import { useMiniKit } from '@coinbase/onchainkit/minikit';
 import { useAudio } from './components/AudioProvider';
 import { AlbumArt } from './components/AlbumArt';
@@ -31,6 +32,7 @@ const PauseIcon = () => (
 );
 
 export default function HomePage() {
+  const router = useRouter();
   const { setFrameReady } = useMiniKit();
   const { currentTrack, isPlaying, toggle } = useAudio();
   const [releases, setReleases] = useState<Release[]>([]);
@@ -162,7 +164,11 @@ export default function HomePage() {
 
           <div className="release-grid">
             {sorted.map((release) => (
-              <ReleaseCard key={`${release.id}-${release.day}`} release={release} />
+              <ReleaseCard
+                key={`${release.id}-${release.day}`}
+                release={release}
+                onOpenDetails={(day) => router.push(`/track/${day}`)}
+              />
             ))}
           </div>
 
