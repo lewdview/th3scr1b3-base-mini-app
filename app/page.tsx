@@ -18,6 +18,38 @@ import {
   type ReleaseManifestItem,
 } from './lib/release-data';
 
+type StartupStepKey =
+  | 'manifest'
+  | 'overrides'
+  | 'lyrics'
+  | 'releaseBuild'
+  | 'mediaIndex';
+
+type StartupStepStatus = 'pending' | 'loading' | 'done' | 'error';
+
+type StartupStep = {
+  status: StartupStepStatus;
+  detail?: string;
+};
+
+const STARTUP_LABELS: Record<StartupStepKey, string> = {
+  manifest: 'Release Manifest',
+  overrides: 'Content Overrides',
+  lyrics: 'Lyrics Index',
+  releaseBuild: 'Release Build',
+  mediaIndex: 'Media Index',
+};
+
+function createStartupSteps(): Record<StartupStepKey, StartupStep> {
+  return {
+    manifest: { status: 'pending' },
+    overrides: { status: 'pending' },
+    lyrics: { status: 'pending' },
+    releaseBuild: { status: 'pending' },
+    mediaIndex: { status: 'pending' },
+  };
+}
+
 const PlayIcon = () => (
   <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
     <path d="M8 5v14l11-7z" />
@@ -36,6 +68,16 @@ export default function HomePage() {
   const { currentTrack, isPlaying, toggle } = useAudio();
   const [releases, setReleases] = useState<Release[]>([]);
   const [loading, setLoading] = useState(true);
+  const [startupProgress, setStartupProgress] = useState(0);
+  const [showStartupSplash, setShowStartupSplash] = useState(true);
+  const [startupSteps, setStartupSteps] = useState<Record<StartupStepKey, StartupStep>>(createStartupSteps());
+
+  const updateStartupStep = (key: StartupStepKey, status: StartupStepStatus, detail?: string) => {
+    setStartupSteps((prev) => ({
+      ...prev,
+      [key]: { status, detail },
+    }));
+  };
 
   useEffect(() => {
     setFrameReady();
@@ -46,22 +88,74 @@ export default function HomePage() {
 
     const load = async () => {
       try {
+        updateStartupStep('manifest', 'loading', 'Fetching manifest');
         const manifestRes = await fetch('/release-manifest.json');
         if (!manifestRes.ok) throw new Error('Failed to load release-manifest.json');
-
         const manifestData = (await manifestRes.json()) as { items?: ReleaseManifestItem[] };
+        if (!isMounted) return;
+        updateStartupStep('manifest', 'done', `${manifestData.items?.length || 0} entries`);
+        setStartupProgress(20);
 
+        updateStartupStep('overrides', 'loading', 'Fetching overrides');
         let overrides: ContentOverrideMap = {};
         try {
           const overridesRes = await fetch('/content-overrides.json');
           if (overridesRes.ok) {
             overrides = (await overridesRes.json()) as ContentOverrideMap;
+            if (isMounted) {
+              updateStartupStep('overrides', 'done', `${Object.keys(overrides).length} day overrides`);
+            }
+          } else if (isMounted) {
+            updateStartupStep('overrides', 'error', `HTTP ${overridesRes.status}`);
           }
         } catch (error) {
           console.warn('[MiniApp] content-overrides load failed', error);
+          if (isMounted) updateStartupStep('overrides', 'error', 'Unavailable');
         }
+        if (!isMounted) return;
+        setStartupProgress(40);
 
+        updateStartupStep('lyrics', 'loading', 'Fetching lyrics index');
+        try {
+          const lyricsRes = await fetch('/lyrics-by-day.json');
+          if (lyricsRes.ok) {
+            const lyricsData = (await lyricsRes.json()) as { mappedDays?: number; totalDays?: number };
+            updateStartupStep(
+              'lyrics',
+              'done',
+              `${lyricsData.mappedDays || 0}/${lyricsData.totalDays || 0} days`
+            );
+          } else {
+            updateStartupStep('lyrics', 'error', `HTTP ${lyricsRes.status}`);
+          }
+        } catch (error) {
+          console.warn('[MiniApp] lyrics index load failed', error);
+          updateStartupStep('lyrics', 'error', 'Unavailable');
+        }
+        if (!isMounted) return;
+        setStartupProgress(60);
+
+        updateStartupStep('releaseBuild', 'loading', 'Building release list');
         const allReleases = buildReleasesFromManifest(manifestData.items || [], overrides);
+        updateStartupStep('releaseBuild', 'done', `${allReleases.length} tracks prepared`);
+        setStartupProgress(80);
+
+        updateStartupStep('mediaIndex', 'loading', 'Indexing media');
+
+        let withAudio = 0;
+        let withCover = 0;
+        const total = allReleases.length || 1;
+        allReleases.forEach((release, index) => {
+          if (release.storedAudioUrl) withAudio += 1;
+          if (release.artworkUrl) withCover += 1;
+
+          if ((index + 1) % 40 === 0 || index === total - 1) {
+            const stepProgress = 80 + Math.round(((index + 1) / total) * 20);
+            setStartupProgress(Math.min(99, stepProgress));
+          }
+        });
+
+        updateStartupStep('mediaIndex', 'done', `${withAudio} audio · ${withCover} covers`);
 
         if (isMounted) {
           const today = new Date();
@@ -73,9 +167,17 @@ export default function HomePage() {
           });
 
           setReleases(visibleReleases);
+          setStartupProgress(100);
+          window.setTimeout(() => {
+            if (isMounted) setShowStartupSplash(false);
+          }, 420);
         }
       } catch (err) {
         console.warn('[MiniApp] Release load failed', err);
+        if (isMounted) {
+          updateStartupStep('manifest', 'error', 'Load failed');
+          updateStartupStep('releaseBuild', 'error', 'Load failed');
+        }
       } finally {
         if (isMounted) setLoading(false);
       }
@@ -99,6 +201,29 @@ export default function HomePage() {
 
   return (
     <div className="safe-area">
+      {showStartupSplash && (
+        <div className="initial-splash">
+          <div className="initial-splash-card">
+            <div className="initial-splash-title">th3scr1b3</div>
+            <div className="initial-splash-subtitle">Loading full archive data</div>
+            <div className="initial-progress-track">
+              <div className="initial-progress-fill" style={{ width: `${startupProgress}%` }} />
+            </div>
+            <div className="initial-progress-meta">{startupProgress}%</div>
+            <div className="initial-step-list">
+              {(Object.keys(STARTUP_LABELS) as StartupStepKey[]).map((key) => {
+                const step = startupSteps[key];
+                return (
+                  <div key={key} className={`initial-step-item status-${step.status}`}>
+                    <span>{STARTUP_LABELS[key]}</span>
+                    <span>{step.detail || step.status}</span>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </div>
+      )}
       <main>
         <div className="container">
           <div className="top-bar">

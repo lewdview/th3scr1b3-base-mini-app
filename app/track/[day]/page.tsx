@@ -52,10 +52,17 @@ type LocalComment = {
 
 type LyricsSource = 'database' | 'overrides' | 'none';
 
+type LyricsSegment = {
+  start: number;
+  end: number;
+  text: string;
+};
+
 type LyricsApiResponse = {
   day: number;
   source?: LyricsSource;
   lyrics?: string | null;
+  segments?: LyricsSegment[];
 };
 
 type LoadStepKey = 'manifest' | 'lyrics' | 'cover' | 'audio';
@@ -202,12 +209,13 @@ function formatLyricsSource(source: LyricsSource) {
 export default function TrackDetailsPage() {
   const params = useParams<{ day: string }>();
   const day = Number(params.day);
-  const { currentTrack, isPlaying, toggle } = useAudio();
+  const { currentTrack, isPlaying, currentTime, toggle } = useAudio();
 
   const [releases, setReleases] = useState<Release[]>([]);
   const [loading, setLoading] = useState(true);
 
   const [lyrics, setLyrics] = useState('');
+  const [lyricsSegments, setLyricsSegments] = useState<LyricsSegment[]>([]);
   const [lyricsSource, setLyricsSource] = useState<LyricsSource>('none');
   const [lyricsError, setLyricsError] = useState<string | null>(null);
   const [poetryTheme, setPoetryTheme] = useState(POETRY_THEMES[0].id);
@@ -227,6 +235,7 @@ export default function TrackDetailsPage() {
 
   const pageStartRef = useRef(Date.now());
   const metricsRecordedRef = useRef(false);
+  const lyricRefs = useRef<Record<number, HTMLDivElement | null>>({});
 
   const { address, isConnected } = useAccount();
   const chainId = useChainId();
@@ -345,6 +354,7 @@ export default function TrackDetailsPage() {
 
     let isMounted = true;
     setLyrics('');
+    setLyricsSegments([]);
     setLyricsSource('none');
     setLyricsError(null);
     setLoadStep('lyrics', 'loading', 'Fetching lyrics');
@@ -359,10 +369,20 @@ export default function TrackDetailsPage() {
         const payload = (await response.json()) as LyricsApiResponse;
         const nextLyrics = (payload.lyrics || '').trim();
         const source = payload.source || 'none';
+        const nextSegments = Array.isArray(payload.segments)
+          ? payload.segments
+              .map((segment) => ({
+                start: Number(segment.start),
+                end: Number(segment.end),
+                text: String(segment.text || '').trim(),
+              }))
+              .filter((segment) => Number.isFinite(segment.start) && Number.isFinite(segment.end) && segment.end > segment.start && segment.text)
+          : [];
 
         if (!isMounted) return;
 
         setLyrics(nextLyrics);
+        setLyricsSegments(nextSegments);
         setLyricsSource(source);
 
         if (nextLyrics) {
@@ -445,6 +465,24 @@ export default function TrackDetailsPage() {
     () => releases.find((item) => item.day === day),
     [releases, day]
   );
+
+  const isCurrentTrackInView = Boolean(
+    release &&
+      currentTrack?.id === release.id &&
+      currentTrack?.day === release.day
+  );
+
+  const activeLyricSegmentIndex = useMemo(() => {
+    if (!isCurrentTrackInView || lyricsSegments.length === 0) return -1;
+    return lyricsSegments.findIndex((segment) => currentTime >= segment.start && currentTime < segment.end);
+  }, [currentTime, isCurrentTrackInView, lyricsSegments]);
+
+  useEffect(() => {
+    if (activeLyricSegmentIndex < 0) return;
+    const node = lyricRefs.current[activeLyricSegmentIndex];
+    if (!node) return;
+    node.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+  }, [activeLyricSegmentIndex]);
 
   useEffect(() => {
     if (loading || release) return;
@@ -702,6 +740,7 @@ export default function TrackDetailsPage() {
               <div className="poetry-source">
                 {formatLyricsSource(lyricsSource)}
                 {lyricLineCount > 0 ? ` · ${lyricLineCount} lines` : ''}
+                {lyricsSegments.length > 0 ? ' · Karaoke ready' : ''}
               </div>
             </div>
             <label className="poetry-theme-picker" htmlFor="poetry-theme-select">
@@ -720,6 +759,24 @@ export default function TrackDetailsPage() {
 
           {lyricsError ? (
             <p className="support-card-copy wallet-status-error">{lyricsError}</p>
+          ) : lyricsSegments.length > 0 ? (
+            <div className="poetry-karaoke-list">
+              {lyricsSegments.map((segment, index) => {
+                const isActive = index === activeLyricSegmentIndex;
+                const isDone = isCurrentTrackInView && currentTime >= segment.end;
+                return (
+                  <div
+                    key={`${segment.start}-${segment.end}-${index}`}
+                    ref={(node) => {
+                      lyricRefs.current[index] = node;
+                    }}
+                    className={`poetry-karaoke-line ${isActive ? 'active' : ''} ${isDone ? 'done' : ''}`}
+                  >
+                    {segment.text}
+                  </div>
+                );
+              })}
+            </div>
           ) : lyrics ? (
             <pre className="poetry-text">{lyrics}</pre>
           ) : (

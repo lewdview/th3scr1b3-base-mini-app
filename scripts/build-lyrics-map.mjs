@@ -31,6 +31,27 @@ function ensureString(value, fallback = '') {
   return String(value);
 }
 
+function normalizeSegments(rawSegments) {
+  if (!Array.isArray(rawSegments)) return [];
+
+  return rawSegments
+    .map((segment) => {
+      if (!segment || typeof segment !== 'object') return null;
+      const start = Number(segment.start);
+      const end = Number(segment.end);
+      const text = ensureString(segment.text).trim();
+      if (!Number.isFinite(start) || !Number.isFinite(end) || !text) return null;
+      if (end <= start) return null;
+
+      return {
+        start: Number(start.toFixed(3)),
+        end: Number(end.toFixed(3)),
+        text,
+      };
+    })
+    .filter(Boolean);
+}
+
 function parseJson(raw, filePath) {
   try {
     return JSON.parse(raw);
@@ -107,9 +128,12 @@ async function main() {
       return;
     }
 
+    const segments = normalizeSegments(song?.lyricsSegments);
+
     items[String(day)] = {
       title: ensureString(song?.title, storageTitle || `Day ${day}`),
       lyrics,
+      segments,
       sourceSongId: ensureString(song?.id),
       sourceFileName: ensureString(song?.fileName),
     };

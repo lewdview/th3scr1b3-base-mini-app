@@ -60,6 +60,102 @@ main {
   margin: 0 auto;
 }
 
+.initial-splash {
+  position: fixed;
+  inset: 0;
+  z-index: 300;
+  background: radial-gradient(circle at 20% 20%, #1a1b2e 0%, rgba(6, 6, 10, 0.96) 55%, #050507 100%);
+  display: grid;
+  place-items: center;
+  padding: 20px;
+}
+
+.initial-splash-card {
+  width: min(520px, 100%);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(16, 16, 25, 0.88);
+  padding: 20px 18px;
+  box-shadow: 0 28px 80px rgba(0, 0, 0, 0.5);
+}
+
+.initial-splash-title {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.initial-splash-subtitle {
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 12px;
+  font-family: 'JetBrains Mono', monospace;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.initial-progress-track {
+  margin-top: 16px;
+  width: 100%;
+  height: 8px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.12);
+  overflow: hidden;
+}
+
+.initial-progress-fill {
+  height: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  transition: width 0.35s ease;
+}
+
+.initial-progress-meta {
+  margin-top: 8px;
+  color: var(--accent-2);
+  font-size: 11px;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.initial-step-list {
+  margin-top: 14px;
+  display: grid;
+  gap: 7px;
+}
+
+.initial-step-item {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  padding: 7px 9px;
+  font-size: 11px;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.initial-step-item span:last-child {
+  color: var(--muted);
+  text-align: right;
+}
+
+.initial-step-item.status-loading {
+  border-color: rgba(255, 214, 10, 0.4);
+}
+
+.initial-step-item.status-done {
+  border-color: rgba(48, 209, 88, 0.36);
+}
+
+.initial-step-item.status-error {
+  border-color: rgba(255, 45, 85, 0.45);
+}
+
 /* ─── Top Bar ────────────────────────────────────────────────── */
 .top-bar {
   display: flex;
@@ -709,6 +805,36 @@ main {
   max-height: 380px;
   overflow: auto;
   padding-right: 6px;
+}
+
+.poetry-karaoke-list {
+  margin-top: 12px;
+  max-height: 380px;
+  overflow: auto;
+  display: grid;
+  gap: 6px;
+  padding-right: 6px;
+}
+
+.poetry-karaoke-line {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 10px;
+  padding: 8px 10px;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--poetry-text);
+  transition: all var(--transition);
+}
+
+.poetry-karaoke-line.active {
+  border-color: rgba(255, 214, 10, 0.6);
+  background: rgba(255, 214, 10, 0.14);
+  box-shadow: 0 0 0 1px rgba(255, 214, 10, 0.24) inset;
+}
+
+.poetry-karaoke-line.done {
+  opacity: 0.72;
 }
 
 .poetry-theme-noir {

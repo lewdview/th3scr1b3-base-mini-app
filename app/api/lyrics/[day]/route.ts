@@ -11,10 +11,17 @@ type ManifestData = {
   items?: ReleaseManifestItem[];
 };
 
+type LyricsSegment = {
+  start: number;
+  end: number;
+  text: string;
+};
+
 type LyricsApiResponse = {
   day: number;
   source: 'database' | 'overrides' | 'none';
   lyrics: string | null;
+  segments?: LyricsSegment[];
   loadedAt: string;
 };
 
@@ -23,7 +30,10 @@ const OVERRIDES_PATH = path.join(process.cwd(), 'public/content-overrides.json')
 const LYRICS_BY_DAY_PATH = path.join(process.cwd(), 'public/lyrics-by-day.json');
 
 let cachedReleases: Release[] | null = null;
-let cachedLyricsByDay: Record<string, { lyrics?: string; title?: string }> | null = null;
+let cachedLyricsByDay: Record<
+  string,
+  { lyrics?: string; title?: string; segments?: LyricsSegment[] }
+> | null = null;
 
 export const runtime = 'nodejs';
 export const dynamic = 'force-dynamic';
@@ -49,6 +59,57 @@ function stripHtml(html?: string) {
     .replace(/\n{3,}/g, '\n\n')
     .replace(/[ \t]{2,}/g, ' ')
     .trim();
+}
+
+function normalizeLyricsSegments(payload: unknown): LyricsSegment[] {
+  if (!Array.isArray(payload)) return [];
+
+  return payload
+    .map((segment) => {
+      if (!segment || typeof segment !== 'object') return null;
+      const record = segment as Record<string, unknown>;
+      const start = Number(record.start);
+      const end = Number(record.end);
+      const text = typeof record.text === 'string' ? record.text.trim() : '';
+
+      if (!Number.isFinite(start) || !Number.isFinite(end) || !text) return null;
+      if (end <= start) return null;
+
+      return {
+        start: Number(start.toFixed(3)),
+        end: Number(end.toFixed(3)),
+        text,
+      };
+    })
+    .filter((segment): segment is LyricsSegment => Boolean(segment));
+}
+
+function findSegmentsFromPayload(payload: unknown, depth = 0): LyricsSegment[] {
+  if (depth > 4 || payload == null) return [];
+
+  if (Array.isArray(payload)) {
+    const directSegments = normalizeLyricsSegments(payload);
+    if (directSegments.length > 0) return directSegments;
+
+    for (const item of payload) {
+      const nested = findSegmentsFromPayload(item, depth + 1);
+      if (nested.length > 0) return nested;
+    }
+
+    return [];
+  }
+
+  if (typeof payload === 'object') {
+    const record = payload as Record<string, unknown>;
+    const keys = ['segments', 'lyricsSegments', 'lines', 'data', 'result', 'record'];
+    for (const key of keys) {
+      if (!(key in record)) continue;
+      const nested = findSegmentsFromPayload(record[key], depth + 1);
+      if (nested.length > 0) return nested;
+    }
+  }
+
+  return [];
 }
 
 function normalizeLyricsFromPayload(payload: unknown, depth = 0): string | null {
@@ -135,7 +196,9 @@ async function readLyricsByDay() {
 
   try {
     const raw = await fs.readFile(LYRICS_BY_DAY_PATH, 'utf-8');
-    const parsed = JSON.parse(raw) as { items?: Record<string, { lyrics?: string; title?: string }> };
+    const parsed = JSON.parse(raw) as {
+      items?: Record<string, { lyrics?: string; title?: string; segments?: LyricsSegment[] }>;
+    };
     cachedLyricsByDay = parsed.items || {};
     return cachedLyricsByDay;
   } catch {
@@ -181,11 +244,17 @@ async function fetchLyricsFromDatabase(day: number) {
     const contentType = response.headers.get('content-type') || '';
     if (contentType.includes('application/json')) {
       const payload = (await response.json()) as unknown;
-      return normalizeLyricsFromPayload(payload);
+      return {
+        lyrics: normalizeLyricsFromPayload(payload),
+        segments: findSegmentsFromPayload(payload),
+      };
     }
 
     const payload = await response.text();
-    return normalizeLyricsFromPayload(payload);
+    return {
+      lyrics: normalizeLyricsFromPayload(payload),
+      segments: [],
+    };
   } catch {
     return null;
   }
@@ -209,10 +278,12 @@ export async function GET(
   const lyricsByDay = await readLyricsByDay();
   const localLyrics = lyricsByDay[String(day)]?.lyrics?.trim();
   if (localLyrics) {
+    const localSegments = normalizeLyricsSegments(lyricsByDay[String(day)]?.segments);
     const payload: LyricsApiResponse = {
       day,
       source: 'database',
       lyrics: localLyrics,
+      segments: localSegments,
       loadedAt: new Date().toISOString(),
     };
     return Response.json(payload, {
@@ -223,11 +294,12 @@ export async function GET(
   }
 
   const dbLyrics = await fetchLyricsFromDatabase(day);
-  if (dbLyrics) {
+  if (dbLyrics?.lyrics) {
     const payload: LyricsApiResponse = {
       day,
       source: 'database',
-      lyrics: dbLyrics,
+      lyrics: dbLyrics.lyrics,
+      segments: dbLyrics.segments,
       loadedAt: new Date().toISOString(),
     };
     return Response.json(payload, {
