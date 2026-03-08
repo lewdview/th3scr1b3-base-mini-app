@@ -22,6 +22,12 @@
   --radius-xs: 8px;
   --player-h: 80px;
   --transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  --app-card-bg: var(--panel);
+  --app-card-border: rgba(255, 255, 255, 0.08);
+  --app-card-text: var(--text);
+  --app-card-text-secondary: var(--text-secondary);
+  --app-card-muted: var(--muted);
+  --app-card-title: var(--accent-2);
 }
 
 * {
@@ -38,6 +44,82 @@ body {
   font-family: 'Space Grotesk', system-ui, -apple-system, sans-serif;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
+}
+
+body[data-app-theme='noir'],
+.app-theme-noir {
+  --app-card-bg: rgba(18, 18, 24, 0.94);
+  --app-card-border: rgba(255, 255, 255, 0.12);
+  --app-card-text: #faffd8;
+  --app-card-text-secondary: #c5c7d4;
+  --app-card-muted: #8c8fa3;
+  --app-card-title: #ffd60a;
+}
+
+body[data-app-theme='paper'],
+.app-theme-paper {
+  --app-card-bg: rgba(237, 233, 226, 0.95);
+  --app-card-border: rgba(181, 166, 144, 0.7);
+  --app-card-text: #2e2621;
+  --app-card-text-secondary: #5f5245;
+  --app-card-muted: #817362;
+  --app-card-title: #8e5f1f;
+}
+
+body[data-app-theme='gold'],
+.app-theme-gold {
+  --app-card-bg: linear-gradient(135deg, rgba(55, 42, 12, 0.94), rgba(35, 24, 6, 0.98));
+  --app-card-border: rgba(255, 214, 10, 0.5);
+  --app-card-title: #ffd60a;
+}
+
+body[data-app-theme='ocean'],
+.app-theme-ocean {
+  --app-card-bg: linear-gradient(135deg, rgba(8, 27, 44, 0.95), rgba(14, 49, 74, 0.92));
+  --app-card-border: rgba(58, 186, 252, 0.4);
+  --app-card-title: #7ad8ff;
+}
+
+body[data-app-theme='sage'],
+.app-theme-sage {
+  --app-card-bg: linear-gradient(135deg, rgba(22, 43, 32, 0.96), rgba(14, 29, 22, 0.95));
+  --app-card-border: rgba(80, 190, 125, 0.38);
+  --app-card-title: #8df3b7;
+}
+
+body[data-app-theme='ember'],
+.app-theme-ember {
+  --app-card-bg: linear-gradient(135deg, rgba(47, 17, 12, 0.96), rgba(26, 10, 9, 0.94));
+  --app-card-border: rgba(255, 116, 67, 0.42);
+  --app-card-title: #ff9b6a;
+}
+
+body[data-app-theme='slate'],
+.app-theme-slate {
+  --app-card-bg: linear-gradient(135deg, rgba(29, 33, 43, 0.97), rgba(17, 18, 26, 0.95));
+  --app-card-border: rgba(144, 166, 199, 0.34);
+  --app-card-title: #b8caeb;
+}
+
+body[data-app-theme='rose'],
+.app-theme-rose {
+  --app-card-bg: linear-gradient(135deg, rgba(58, 19, 39, 0.96), rgba(32, 12, 29, 0.95));
+  --app-card-border: rgba(255, 108, 171, 0.35);
+  --app-card-title: #ff8dc4;
+}
+
+body[data-app-theme='sand'],
+.app-theme-sand {
+  --app-card-bg: linear-gradient(135deg, rgba(68, 56, 35, 0.96), rgba(43, 35, 21, 0.97));
+  --app-card-border: rgba(218, 186, 133, 0.34);
+  --app-card-title: #e8cb94;
+}
+
+body[data-app-theme='neon'],
+.app-theme-neon {
+  --app-card-bg: linear-gradient(140deg, rgba(21, 4, 38, 0.95), rgba(6, 24, 41, 0.94));
+  --app-card-border: rgba(72, 224, 255, 0.35);
+  --app-card-title: #5de6ff;
 }
 
 .safe-area {
@@ -452,37 +534,38 @@ main {
 }
 
 .support-card {
-  background: var(--panel);
+  background: var(--app-card-bg);
   border-radius: var(--radius);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--app-card-border);
   padding: 16px;
+  color: var(--app-card-text);
 }
 
 .support-card-title {
   font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 0.12em;
-  color: var(--accent-2);
+  color: var(--app-card-title);
   font-family: 'JetBrains Mono', monospace;
   margin-bottom: 10px;
 }
 
 .support-card-copy {
-  color: var(--text-secondary);
+  color: var(--app-card-text-secondary);
   font-size: 13px;
   line-height: 1.5;
 }
 
 .support-card-helper {
   margin-top: 10px;
-  color: var(--muted);
+  color: var(--app-card-muted);
   font-size: 11px;
   font-family: 'JetBrains Mono', monospace;
 }
 
 .manifesto-points {
   margin: 12px 0 0 16px;
-  color: var(--text-secondary);
+  color: var(--app-card-text-secondary);
   font-size: 12px;
   line-height: 1.5;
 }
@@ -537,7 +620,7 @@ main {
 .donation-input {
   border: 1px solid rgba(255, 255, 255, 0.14);
   background: rgba(255, 255, 255, 0.04);
-  color: var(--text);
+  color: var(--app-card-text);
   border-radius: 10px;
   padding: 10px 12px;
   font-size: 13px;
@@ -733,13 +816,13 @@ main {
 .load-status-label {
   font-size: 11px;
   font-family: 'JetBrains Mono', monospace;
-  color: var(--text);
+  color: var(--app-card-text);
 }
 
 .load-status-meta {
   justify-self: end;
   text-align: right;
-  color: var(--muted);
+  color: var(--app-card-muted);
   font-size: 10px;
   font-family: 'JetBrains Mono', monospace;
 }
@@ -762,16 +845,20 @@ main {
 }
 
 .poetry-card {
-  --poetry-bg: rgba(255, 255, 255, 0.02);
-  --poetry-border: rgba(255, 255, 255, 0.12);
-  --poetry-text: var(--text);
-  background: var(--poetry-bg);
-  border-color: var(--poetry-border);
+  background: var(--app-card-bg);
+  border-color: var(--app-card-border);
+}
+
+.theme-control-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
 }
 
 .poetry-card-head {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: flex-start;
   gap: 10px;
 }
@@ -781,15 +868,15 @@ main {
   font-size: 10px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--muted);
+  color: var(--app-card-muted);
   font-family: 'JetBrains Mono', monospace;
 }
 
-.poetry-theme-picker select {
+.app-theme-picker select {
   border-radius: 9px;
   border: 1px solid rgba(255, 255, 255, 0.14);
   background: rgba(0, 0, 0, 0.24);
-  color: var(--text);
+  color: var(--app-card-text);
   padding: 7px 8px;
   font-size: 11px;
   font-family: 'JetBrains Mono', monospace;
@@ -798,7 +885,7 @@ main {
 .poetry-text {
   margin-top: 12px;
   white-space: pre-wrap;
-  color: var(--poetry-text);
+  color: var(--app-card-text);
   line-height: 1.55;
   font-size: 13px;
   font-family: 'JetBrains Mono', monospace;
@@ -811,6 +898,7 @@ main {
   margin-top: 12px;
   max-height: 380px;
   overflow: auto;
+  overscroll-behavior: contain;
   display: grid;
   gap: 6px;
   padding-right: 6px;
@@ -823,7 +911,7 @@ main {
   padding: 8px 10px;
   font-size: 13px;
   line-height: 1.5;
-  color: var(--poetry-text);
+  color: var(--app-card-text);
   transition: all var(--transition);
 }
 
@@ -835,57 +923,6 @@ main {
 
 .poetry-karaoke-line.done {
   opacity: 0.72;
-}
-
-.poetry-theme-noir {
-  --poetry-bg: rgba(18, 18, 24, 0.94);
-  --poetry-border: rgba(255, 255, 255, 0.12);
-}
-
-.poetry-theme-paper {
-  --poetry-bg: rgba(237, 233, 226, 0.95);
-  --poetry-border: rgba(181, 166, 144, 0.7);
-  --poetry-text: #2e2621;
-}
-
-.poetry-theme-gold {
-  --poetry-bg: linear-gradient(135deg, rgba(55, 42, 12, 0.94), rgba(35, 24, 6, 0.98));
-  --poetry-border: rgba(255, 214, 10, 0.5);
-}
-
-.poetry-theme-ocean {
-  --poetry-bg: linear-gradient(135deg, rgba(8, 27, 44, 0.95), rgba(14, 49, 74, 0.92));
-  --poetry-border: rgba(58, 186, 252, 0.4);
-}
-
-.poetry-theme-sage {
-  --poetry-bg: linear-gradient(135deg, rgba(22, 43, 32, 0.96), rgba(14, 29, 22, 0.95));
-  --poetry-border: rgba(80, 190, 125, 0.38);
-}
-
-.poetry-theme-ember {
-  --poetry-bg: linear-gradient(135deg, rgba(47, 17, 12, 0.96), rgba(26, 10, 9, 0.94));
-  --poetry-border: rgba(255, 116, 67, 0.42);
-}
-
-.poetry-theme-slate {
-  --poetry-bg: linear-gradient(135deg, rgba(29, 33, 43, 0.97), rgba(17, 18, 26, 0.95));
-  --poetry-border: rgba(144, 166, 199, 0.34);
-}
-
-.poetry-theme-rose {
-  --poetry-bg: linear-gradient(135deg, rgba(58, 19, 39, 0.96), rgba(32, 12, 29, 0.95));
-  --poetry-border: rgba(255, 108, 171, 0.35);
-}
-
-.poetry-theme-sand {
-  --poetry-bg: linear-gradient(135deg, rgba(68, 56, 35, 0.96), rgba(43, 35, 21, 0.97));
-  --poetry-border: rgba(218, 186, 133, 0.34);
-}
-
-.poetry-theme-neon {
-  --poetry-bg: linear-gradient(140deg, rgba(21, 4, 38, 0.95), rgba(6, 24, 41, 0.94));
-  --poetry-border: rgba(72, 224, 255, 0.35);
 }
 
 .track-back-link {
@@ -927,7 +964,7 @@ main {
 }
 
 .track-hero-copy p {
-  color: var(--text-secondary);
+  color: var(--app-card-text-secondary);
   font-size: 14px;
   line-height: 1.5;
 }
@@ -957,7 +994,7 @@ main {
 }
 
 .track-info-list span {
-  color: var(--muted);
+  color: var(--app-card-muted);
   font-size: 11px;
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -966,7 +1003,7 @@ main {
 
 .track-info-list strong,
 .track-info-list a {
-  color: var(--text);
+  color: var(--app-card-text);
   font-size: 12px;
   font-family: 'JetBrains Mono', monospace;
 }
@@ -1020,7 +1057,7 @@ main {
   resize: vertical;
   border: 1px solid rgba(255, 255, 255, 0.14);
   background: rgba(255, 255, 255, 0.04);
-  color: var(--text);
+  color: var(--app-card-text);
   border-radius: 12px;
   padding: 10px 12px;
   font-size: 13px;
@@ -1058,7 +1095,7 @@ main {
 }
 
 .comment-empty {
-  color: var(--muted);
+  color: var(--app-card-muted);
   font-size: 12px;
 }
 
@@ -1073,14 +1110,14 @@ main {
   display: flex;
   justify-content: space-between;
   gap: 10px;
-  color: var(--muted);
+  color: var(--app-card-muted);
   font-size: 10px;
   font-family: 'JetBrains Mono', monospace;
   margin-bottom: 6px;
 }
 
 .comment-item p {
-  color: var(--text);
+  color: var(--app-card-text);
   font-size: 13px;
   line-height: 1.45;
   white-space: pre-wrap;

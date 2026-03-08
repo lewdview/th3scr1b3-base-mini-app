@@ -39,6 +39,13 @@ import {
   type TrackLoadMetrics,
   type TrackStatsEntry,
 } from '../../lib/track-stats';
+import { fetchUniversalPlayCounter, type UniversalPlayCounter } from '../../lib/play-events';
+import {
+  APP_THEME_OPTIONS,
+  APP_THEME_STORAGE_KEY,
+  DEFAULT_APP_THEME_ID,
+  isAppThemeId,
+} from '../../lib/app-theme';
 
 type LocalComment = {
   id: string;
@@ -77,26 +84,8 @@ type LoadStep = {
 
 type LoadStepState = Record<LoadStepKey, LoadStep>;
 
-type PoetryTheme = {
-  id: string;
-  label: string;
-};
-
 const COMMENT_STORAGE_KEY = 'th3scr1b3_paid_comments_v1';
 const ZERO_ADDRESS = '0x0000000000000000000000000000000000000000';
-
-const POETRY_THEMES: PoetryTheme[] = [
-  { id: 'noir', label: 'Noir' },
-  { id: 'paper', label: 'Paper' },
-  { id: 'gold', label: 'Gold' },
-  { id: 'ocean', label: 'Ocean' },
-  { id: 'sage', label: 'Sage' },
-  { id: 'ember', label: 'Ember' },
-  { id: 'slate', label: 'Slate' },
-  { id: 'rose', label: 'Rose' },
-  { id: 'sand', label: 'Sand' },
-  { id: 'neon', label: 'Neon' },
-];
 
 const LOAD_STEP_LABELS: Record<LoadStepKey, string> = {
   manifest: 'Manifest',
@@ -185,6 +174,11 @@ function formatDate(value: string) {
   return parsed.toLocaleString();
 }
 
+function formatPlayCount(value: number | null | undefined) {
+  if (!Number.isFinite(value)) return '0';
+  return Number(value).toLocaleString();
+}
+
 function toLoadMetrics(loadSteps: LoadStepState, totalMs: number): TrackLoadMetrics {
   const manifestMs = getStepDuration(loadSteps.manifest, Date.now()) || undefined;
   const lyricsMs = getStepDuration(loadSteps.lyrics, Date.now()) || undefined;
@@ -218,7 +212,7 @@ export default function TrackDetailsPage() {
   const [lyricsSegments, setLyricsSegments] = useState<LyricsSegment[]>([]);
   const [lyricsSource, setLyricsSource] = useState<LyricsSource>('none');
   const [lyricsError, setLyricsError] = useState<string | null>(null);
-  const [poetryTheme, setPoetryTheme] = useState(POETRY_THEMES[0].id);
+  const [appTheme, setAppTheme] = useState(DEFAULT_APP_THEME_ID);
 
   const [loadSteps, setLoadSteps] = useState<LoadStepState>(createInitialLoadSteps());
   const [elapsedMs, setElapsedMs] = useState(0);
@@ -232,9 +226,13 @@ export default function TrackDetailsPage() {
 
   const [statsSnapshot, setStatsSnapshot] = useState<TrackStatsEntry | null>(null);
   const [statsMessage, setStatsMessage] = useState<string | null>(null);
+  const [universalCounter, setUniversalCounter] = useState<UniversalPlayCounter | null>(null);
+  const [universalCounterError, setUniversalCounterError] = useState<string | null>(null);
+  const [isLoadingUniversalCounter, setIsLoadingUniversalCounter] = useState(false);
 
   const pageStartRef = useRef(Date.now());
   const metricsRecordedRef = useRef(false);
+  const lyricListRef = useRef<HTMLDivElement | null>(null);
   const lyricRefs = useRef<Record<number, HTMLDivElement | null>>({});
 
   const { address, isConnected } = useAccount();
@@ -405,26 +403,25 @@ export default function TrackDetailsPage() {
   }, [day, setLoadStep]);
 
   useEffect(() => {
-    if (!Number.isFinite(day) || day <= 0 || typeof window === 'undefined') return;
+    if (typeof window === 'undefined') return;
 
-    const key = `th3scr1b3_poetry_theme_day_${day}`;
-    const stored = window.localStorage.getItem(key);
-    if (stored && POETRY_THEMES.some((theme) => theme.id === stored)) {
-      setPoetryTheme(stored);
-      return;
-    }
-
-    setPoetryTheme(POETRY_THEMES[0].id);
-  }, [day]);
+    const stored = window.localStorage.getItem(APP_THEME_STORAGE_KEY);
+    const nextTheme = isAppThemeId(stored) ? stored : DEFAULT_APP_THEME_ID;
+    setAppTheme(nextTheme);
+    document.body.dataset.appTheme = nextTheme;
+  }, []);
 
   useEffect(() => {
-    if (!Number.isFinite(day) || day <= 0 || typeof window === 'undefined') return;
+    if (typeof window === 'undefined') return;
 
-    const key = `th3scr1b3_poetry_theme_day_${day}`;
-    window.localStorage.setItem(key, poetryTheme);
-    recordTrackTheme(day, poetryTheme);
-    refreshStats();
-  }, [day, poetryTheme, refreshStats]);
+    window.localStorage.setItem(APP_THEME_STORAGE_KEY, appTheme);
+    document.body.dataset.appTheme = appTheme;
+
+    if (Number.isFinite(day) && day > 0) {
+      recordTrackTheme(day, appTheme);
+      refreshStats();
+    }
+  }, [appTheme, day, refreshStats]);
 
   useEffect(() => {
     if (!Number.isFinite(day) || day <= 0) return;
@@ -466,6 +463,37 @@ export default function TrackDetailsPage() {
     [releases, day]
   );
 
+  useEffect(() => {
+    if (!release) {
+      setUniversalCounter(null);
+      setUniversalCounterError(null);
+      setIsLoadingUniversalCounter(false);
+      return;
+    }
+
+    let cancelled = false;
+    setUniversalCounterError(null);
+    setIsLoadingUniversalCounter(true);
+
+    void fetchUniversalPlayCounter(release.id, release.day)
+      .then((payload) => {
+        if (cancelled) return;
+        setUniversalCounter(payload);
+      })
+      .catch((error) => {
+        if (cancelled) return;
+        setUniversalCounterError(toErrorMessage(error));
+      })
+      .finally(() => {
+        if (cancelled) return;
+        setIsLoadingUniversalCounter(false);
+      });
+
+    return () => {
+      cancelled = true;
+    };
+  }, [release?.day, release?.id]);
+
   const isCurrentTrackInView = Boolean(
     release &&
       currentTrack?.id === release.id &&
@@ -479,9 +507,23 @@ export default function TrackDetailsPage() {
 
   useEffect(() => {
     if (activeLyricSegmentIndex < 0) return;
+    const container = lyricListRef.current;
     const node = lyricRefs.current[activeLyricSegmentIndex];
-    if (!node) return;
-    node.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+    if (!container || !node) return;
+
+    const containerRect = container.getBoundingClientRect();
+    const nodeRect = node.getBoundingClientRect();
+    const edgePadding = 12;
+    const isAbove = nodeRect.top < containerRect.top + edgePadding;
+    const isBelow = nodeRect.bottom > containerRect.bottom - edgePadding;
+
+    if (!isAbove && !isBelow) return;
+
+    const targetTop = node.offsetTop - container.clientHeight / 2 + node.offsetHeight / 2;
+    const maxTop = Math.max(0, container.scrollHeight - container.clientHeight);
+    const nextTop = Math.min(maxTop, Math.max(0, targetTop));
+
+    container.scrollTo({ top: nextTop, behavior: 'smooth' });
   }, [activeLyricSegmentIndex]);
 
   useEffect(() => {
@@ -622,6 +664,17 @@ export default function TrackDetailsPage() {
     }
 
     toggle(release);
+
+    if (!isTrackPlaying) {
+      window.setTimeout(() => {
+        void fetchUniversalPlayCounter(release.id, release.day)
+          .then((payload) => {
+            setUniversalCounter(payload);
+            setUniversalCounterError(null);
+          })
+          .catch(() => {});
+      }, 1400);
+    }
   };
 
   const submitComment = async () => {
@@ -685,7 +738,7 @@ export default function TrackDetailsPage() {
 
   if (!Number.isFinite(day) || day <= 0) {
     return (
-      <main className="track-page">
+      <main className={`track-page app-theme-${appTheme}`}>
         <div className="container track-page-inner">
           <Link href="/" className="track-back-link">← Back to releases</Link>
           <section className="support-card">
@@ -700,7 +753,7 @@ export default function TrackDetailsPage() {
   const lyricLineCount = lyrics ? lyrics.split(/\n+/).filter(Boolean).length : 0;
 
   return (
-    <main className="track-page">
+    <main className={`track-page app-theme-${appTheme}`}>
       <div className="container track-page-inner">
         <Link href="/" className="track-back-link">← Back to releases</Link>
 
@@ -733,7 +786,32 @@ export default function TrackDetailsPage() {
           </section>
         )}
 
-        <section className={`support-card poetry-card poetry-theme-${poetryTheme} animate-in`}>
+        <section className="support-card theme-control-card animate-in">
+          <div>
+            <div className="support-card-title">App Theme</div>
+            <p className="support-card-copy">
+              Applies across app containers, not just lyrics.
+            </p>
+          </div>
+          <label className="app-theme-picker" htmlFor="app-theme-select">
+            <span className="sr-only">App theme</span>
+            <select
+              id="app-theme-select"
+              value={appTheme}
+              onChange={(event) => {
+                if (isAppThemeId(event.target.value)) {
+                  setAppTheme(event.target.value);
+                }
+              }}
+            >
+              {APP_THEME_OPTIONS.map((theme) => (
+                <option key={theme.id} value={theme.id}>{theme.label}</option>
+              ))}
+            </select>
+          </label>
+        </section>
+
+        <section className="support-card poetry-card animate-in">
           <div className="poetry-card-head">
             <div>
               <div className="support-card-title">Poetry in Motion</div>
@@ -743,24 +821,12 @@ export default function TrackDetailsPage() {
                 {lyricsSegments.length > 0 ? ' · Karaoke ready' : ''}
               </div>
             </div>
-            <label className="poetry-theme-picker" htmlFor="poetry-theme-select">
-              <span className="sr-only">Poetry theme</span>
-              <select
-                id="poetry-theme-select"
-                value={poetryTheme}
-                onChange={(event) => setPoetryTheme(event.target.value)}
-              >
-                {POETRY_THEMES.map((theme) => (
-                  <option key={theme.id} value={theme.id}>{theme.label}</option>
-                ))}
-              </select>
-            </label>
           </div>
 
           {lyricsError ? (
             <p className="support-card-copy wallet-status-error">{lyricsError}</p>
           ) : lyricsSegments.length > 0 ? (
-            <div className="poetry-karaoke-list">
+            <div className="poetry-karaoke-list" ref={lyricListRef}>
               {lyricsSegments.map((segment, index) => {
                 const isActive = index === activeLyricSegmentIndex;
                 const isDone = isCurrentTrackInView && currentTime >= segment.end;
@@ -915,19 +981,35 @@ export default function TrackDetailsPage() {
               <section className="support-card animate-in">
                 <div className="support-card-title">Session Stats</div>
                 <div className="track-info-list">
-                  <div><span>Views</span><strong>{statsSnapshot?.viewCount ?? 0}</strong></div>
-                  <div><span>Play Taps</span><strong>{statsSnapshot?.playCount ?? 0}</strong></div>
-                  <div><span>Paid Comments</span><strong>{statsSnapshot?.paidCommentCount ?? 0}</strong></div>
-                  <div><span>Theme</span><strong>{statsSnapshot?.selectedTheme || poetryTheme}</strong></div>
-                  <div><span>Last Seen</span><strong>{statsSnapshot?.lastViewedAt ? formatDate(statsSnapshot.lastViewedAt) : 'Now'}</strong></div>
+                  <div><span>Views (local)</span><strong>{statsSnapshot?.viewCount ?? 0}</strong></div>
+                  <div><span>Play Taps (local)</span><strong>{statsSnapshot?.playCount ?? 0}</strong></div>
+                  <div><span>Paid Comments (local)</span><strong>{statsSnapshot?.paidCommentCount ?? 0}</strong></div>
+                  <div><span>Theme (local)</span><strong>{statsSnapshot?.selectedTheme || appTheme}</strong></div>
+                  <div><span>Last Seen (local)</span><strong>{statsSnapshot?.lastViewedAt ? formatDate(statsSnapshot.lastViewedAt) : 'Now'}</strong></div>
                 </div>
 
                 <button type="button" className="track-export-btn" onClick={exportStats}>
                   Export Stats JSON
                 </button>
 
+                <div className="support-card-title" style={{ marginTop: '16px' }}>Universal Plays</div>
+                {isLoadingUniversalCounter ? (
+                  <div className="support-card-helper">Loading universal play counters...</div>
+                ) : universalCounterError ? (
+                  <div className="support-card-helper wallet-status-error">{universalCounterError}</div>
+                ) : (
+                  <div className="track-info-list">
+                    <div><span>Song Plays (all-time)</span><strong>{formatPlayCount(universalCounter?.releaseTotal)}</strong></div>
+                    <div><span>Song Plays (today)</span><strong>{formatPlayCount(universalCounter?.releaseToday)}</strong></div>
+                    <div><span>Song Plays (7d)</span><strong>{formatPlayCount(universalCounter?.releaseLast7d)}</strong></div>
+                    <div><span>Global Plays (all-time)</span><strong>{formatPlayCount(universalCounter?.globalTotal)}</strong></div>
+                    <div><span>Global Plays (today)</span><strong>{formatPlayCount(universalCounter?.globalToday)}</strong></div>
+                    <div><span>Global Plays (7d)</span><strong>{formatPlayCount(universalCounter?.globalLast7d)}</strong></div>
+                  </div>
+                )}
+
                 <div className="support-card-helper">
-                  {statsMessage || 'Export and import this JSON into the main site analytics flow.'}
+                  {statsMessage || 'Local session stats stay on this device and are separate from universal counts.'}
                 </div>
               </section>
             </div>

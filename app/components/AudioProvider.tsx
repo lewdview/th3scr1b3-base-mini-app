@@ -1,6 +1,7 @@
 'use client';
 
 import { createContext, useContext, useRef, useState, useCallback, useEffect, type ReactNode } from 'react';
+import { recordUniversalPlayEvent } from '../lib/play-events';
 
 type Release = {
     id: string;
@@ -37,6 +38,9 @@ export function useAudio() {
 
 export function AudioProvider({ children }: { children: ReactNode }) {
     const audioRef = useRef<HTMLAudioElement | null>(null);
+    const currentTrackRef = useRef<Release | null>(null);
+    const lastLoggedRef = useRef<{ releaseId: string; at: number } | null>(null);
+
     const [state, setState] = useState<AudioState>({
         currentTrack: null,
         isPlaying: false,
@@ -67,7 +71,29 @@ export function AudioProvider({ children }: { children: ReactNode }) {
             setState((prev) => ({ ...prev, isPlaying: false, progress: 0, currentTime: 0 }));
         };
 
-        const onPlay = () => setState((prev) => ({ ...prev, isPlaying: true, error: null }));
+        const onPlay = () => {
+            setState((prev) => ({ ...prev, isPlaying: true, error: null }));
+
+            const track = currentTrackRef.current;
+            if (!track) return;
+            if (audio.currentTime > 3) return;
+
+            const now = Date.now();
+            const last = lastLoggedRef.current;
+            if (last && last.releaseId === track.id && now - last.at < 60_000) return;
+
+            lastLoggedRef.current = { releaseId: track.id, at: now };
+            void recordUniversalPlayEvent({
+                releaseId: track.id,
+                day: track.day,
+                source: 'mini_audio_player',
+                platform: 'base_mini_app',
+                positionSeconds: Math.floor(audio.currentTime),
+            }).catch((error) => {
+                console.warn('[PlayEvents] Failed to log mini-app play event:', error);
+            });
+        };
+
         const onPause = () => setState((prev) => ({ ...prev, isPlaying: false }));
 
         const onError = (e: Event) => {
@@ -100,6 +126,7 @@ export function AudioProvider({ children }: { children: ReactNode }) {
             audio.removeEventListener('error', onError);
             audio.pause();
             audio.src = '';
+            currentTrackRef.current = null;
         };
     }, []);
 
@@ -111,6 +138,7 @@ export function AudioProvider({ children }: { children: ReactNode }) {
         setState(prev => ({ ...prev, error: null }));
 
         if (state.currentTrack?.id === release.id && state.currentTrack?.day === release.day) {
+            currentTrackRef.current = release;
             audio.play().catch(err => {
                 console.error('Playback failed:', err);
                 setState(prev => ({ ...prev, isPlaying: false, error: 'Playback failed' }));
@@ -120,6 +148,8 @@ export function AudioProvider({ children }: { children: ReactNode }) {
 
         audio.src = release.storedAudioUrl;
         audio.load();
+        currentTrackRef.current = release;
+
         setState((prev) => ({
             ...prev,
             currentTrack: release,
