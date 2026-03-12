@@ -49,6 +49,7 @@ export function ReleaseCard({ release, onOpenDetails }: ReleaseCardProps) {
                     day={release.day}
                     mood={release.mood}
                     artworkUrl={release.artworkUrl}
+                    className="release-cover-art"
                 />
                 <button
                     className={`play-btn sm ${isCurrentlyPlaying ? 'playing' : ''}`}

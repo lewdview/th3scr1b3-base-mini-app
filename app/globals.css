@@ -654,15 +654,9 @@ main {
 
 /* ─── Release Grid ───────────────────────────────────────────── */
 .release-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-direction: column;
   gap: 14px;
-}
-
-@media (max-width: 360px) {
-  .release-grid {
-    grid-template-columns: 1fr;
-  }
 }
 
 /* ─── Release Card ───────────────────────────────────────────── */
@@ -687,6 +681,19 @@ main {
 
 .release-card-art {
   position: relative;
+}
+
+.release-cover-art {
+  aspect-ratio: 16 / 9;
+}
+
+.release-cover-art .album-art-image {
+  object-fit: contain;
+  background: #050507;
+}
+
+.release-cover-art .album-art-day {
+  font-size: 40px;
 }
 
 .release-card-art .play-btn {
