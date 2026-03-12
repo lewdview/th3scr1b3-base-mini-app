@@ -10,6 +10,7 @@ export const DAILY_MUSE_CONTRACT_ADDRESS =
 export const MAIN_APP_URL = 'https://th3scr1b3.art';
 export const PROJECT_NAME = '365 Days of Light and Dark';
 export const MINT_PRICE_ETH = readEnvValue('NEXT_PUBLIC_MINT_PRICE_ETH', '0.001');
+export const BASE_BUILDER_CODE = readEnvValue('NEXT_PUBLIC_BASE_BUILDER_CODE', 'bc_l65c1w0q');
 
 export const DONATION_ADDRESS =
   readEnvValue('NEXT_PUBLIC_DONATION_ADDRESS', DEFAULT_DONATION_ADDRESS);

@@ -15,6 +15,7 @@ import {
   DONATION_PRESET_AMOUNTS,
   DONATION_RECIPIENT_LABEL,
 } from '../constants';
+import { BASE_BUILDER_DATA_SUFFIX } from '../lib/builder-code';
 
 const ZERO_ADDRESS = '0x0000000000000000000000000000000000000000';
 
@@ -93,6 +94,10 @@ export function DonationCard() {
       const hash = await sendTransactionAsync({
         to: DONATION_ADDRESS as `0x${string}`,
         value,
+        data: '0x',
+        ...(BASE_BUILDER_DATA_SUFFIX
+          ? { dataSuffix: BASE_BUILDER_DATA_SUFFIX }
+          : {}),
       });
       setTxHash(hash);
     } catch (error) {

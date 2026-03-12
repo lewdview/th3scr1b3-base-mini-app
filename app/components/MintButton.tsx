@@ -5,6 +5,7 @@ import { useAccount, useChainId, usePublicClient, useSwitchChain, useWaitForTran
 import { base } from 'wagmi/chains';
 import { isAddress, parseEther } from 'viem';
 import { DAILY_MUSE_CONTRACT_ADDRESS, MINT_PRICE_ETH } from '../constants';
+import { BASE_BUILDER_DATA_SUFFIX } from '../lib/builder-code';
 
 type MintButtonProps = {
     day: number;
@@ -155,6 +156,9 @@ export function MintButton({ day, disabled = false }: MintButtonProps) {
                 args: [tokenId, 1n, '0x'],
                 value: mintPrice,
                 chainId: base.id,
+                ...(BASE_BUILDER_DATA_SUFFIX
+                    ? { dataSuffix: BASE_BUILDER_DATA_SUFFIX }
+                    : {}),
             });
 
             setTxHash(hash);

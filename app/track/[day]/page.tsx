@@ -46,6 +46,7 @@ import {
   DEFAULT_APP_THEME_ID,
   isAppThemeId,
 } from '../../lib/app-theme';
+import { BASE_BUILDER_DATA_SUFFIX } from '../../lib/builder-code';
 
 type LocalComment = {
   id: string;
@@ -699,6 +700,10 @@ export default function TrackDetailsPage() {
       const hash = await sendTransactionAsync({
         to: COMMENT_RECEIVER as `0x${string}`,
         value: parseEther(COMMENT_FEE_ETH),
+        data: '0x',
+        ...(BASE_BUILDER_DATA_SUFFIX
+          ? { dataSuffix: BASE_BUILDER_DATA_SUFFIX }
+          : {}),
       });
 
       setPendingComment(message);
