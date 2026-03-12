@@ -5,6 +5,9 @@ import { Providers } from './providers';
 export const metadata: Metadata = {
   title: '365 Days of Light and Dark · Base Mini App',
   description: 'Daily releases by th3scr1b3, inside Base.',
+  other: {
+    'base:app_id': '69b2bda392ef0e3b7e7f76ed',
+  },
 };
 
 function readEnv(key: string, fallback = '') {
