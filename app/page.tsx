@@ -237,7 +237,12 @@ export default function HomePage() {
           <section className="hero animate-in">
             <div className="hero-art-wrapper">
               {latest && (
-                <AlbumArt day={latest.day} mood={latest.mood} artworkUrl={latest.artworkUrl} />
+                <AlbumArt
+                  day={latest.day}
+                  mood={latest.mood}
+                  artworkUrl={latest.artworkUrl}
+                  artworkSources={latest.artworkSources}
+                />
               )}
               <div className="hero-art-overlay" />
               {latest?.storedAudioUrl && (

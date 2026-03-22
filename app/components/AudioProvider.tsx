@@ -10,6 +10,7 @@ type Release = {
     mood?: string;
     storedAudioUrl?: string;
     artworkUrl?: string;
+    audioSources?: string[];
 };
 
 type AudioState = {
@@ -40,6 +41,7 @@ export function AudioProvider({ children }: { children: ReactNode }) {
     const audioRef = useRef<HTMLAudioElement | null>(null);
     const currentTrackRef = useRef<Release | null>(null);
     const lastLoggedRef = useRef<{ releaseId: string; at: number } | null>(null);
+    const currentSourceIndexRef = useRef(0);
 
     const [state, setState] = useState<AudioState>({
         currentTrack: null,
@@ -54,6 +56,12 @@ export function AudioProvider({ children }: { children: ReactNode }) {
         const audio = new Audio();
         audio.preload = 'metadata';
         audioRef.current = audio;
+
+        const getAudioSources = () => {
+            const track = currentTrackRef.current;
+            if (!track) return [] as string[];
+            return Array.from(new Set([track.storedAudioUrl, ...(track.audioSources || [])].filter(Boolean))) as string[];
+        };
 
         const onTimeUpdate = () => {
             setState((prev) => ({
@@ -98,6 +106,20 @@ export function AudioProvider({ children }: { children: ReactNode }) {
 
         const onError = (e: Event) => {
             const target = e.target as HTMLAudioElement;
+            const sources = getAudioSources();
+            const nextSourceIndex = currentSourceIndexRef.current + 1;
+
+            if (sources[nextSourceIndex]) {
+                currentSourceIndexRef.current = nextSourceIndex;
+                target.src = sources[nextSourceIndex];
+                target.load();
+                target.play().catch(err => {
+                    console.error('Fallback playback failed:', err);
+                    setState(prev => ({ ...prev, isPlaying: false, error: 'Playback failed' }));
+                });
+                return;
+            }
+
             console.error('Audio error:', target.error);
             let errorMessage = 'Error playing audio';
             if (target.error?.code === MediaError.MEDIA_ERR_SRC_NOT_SUPPORTED) {
@@ -132,7 +154,10 @@ export function AudioProvider({ children }: { children: ReactNode }) {
 
     const play = useCallback((release: Release) => {
         const audio = audioRef.current;
-        if (!audio || !release.storedAudioUrl) return;
+        const audioSources = Array.from(
+            new Set([release.storedAudioUrl, ...(release.audioSources || [])].filter(Boolean))
+        ) as string[];
+        if (!audio || audioSources.length === 0) return;
 
         // Reset error on new play attempt
         setState(prev => ({ ...prev, error: null }));
@@ -146,7 +171,8 @@ export function AudioProvider({ children }: { children: ReactNode }) {
             return;
         }
 
-        audio.src = release.storedAudioUrl;
+        currentSourceIndexRef.current = 0;
+        audio.src = audioSources[0];
         audio.load();
         currentTrackRef.current = release;
 

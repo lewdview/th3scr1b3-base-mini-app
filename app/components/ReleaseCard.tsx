@@ -14,6 +14,7 @@ type Release = {
     durationFormatted?: string;
     storedAudioUrl?: string;
     artworkUrl?: string;
+    artworkSources?: string[];
 };
 
 type ReleaseCardProps = {
@@ -49,6 +50,7 @@ export function ReleaseCard({ release, onOpenDetails }: ReleaseCardProps) {
                     day={release.day}
                     mood={release.mood}
                     artworkUrl={release.artworkUrl}
+                    artworkSources={release.artworkSources}
                     className="release-cover-art"
                 />
                 <button

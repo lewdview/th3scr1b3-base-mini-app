@@ -33,6 +33,8 @@ export type Release = {
   videoUrl?: string;
   storedAudioUrl?: string;
   artworkUrl?: string;
+  audioSources?: string[];
+  artworkSources?: string[];
 };
 
 export const DEFAULT_STORAGE_BASE_URL =
@@ -67,10 +69,67 @@ function toAbsoluteStorageUrl(storagePath?: string | null, baseUrl = DEFAULT_STO
   return `${baseUrl}/${normalizedPath}`;
 }
 
+function uniqueNonEmpty(values: Array<string | null | undefined>) {
+  const seen = new Set<string>();
+  const output: string[] = [];
+
+  values.forEach((value) => {
+    const normalized = value?.trim();
+    if (!normalized || seen.has(normalized)) return;
+    seen.add(normalized);
+    output.push(normalized);
+  });
+
+  return output;
+}
+
+function capitalizeFirst(value: string) {
+  if (!value) return value;
+  return `${value.charAt(0).toUpperCase()}${value.slice(1)}`;
+}
+
+function toCompactTitle(value: string) {
+  return value.replace(/[^a-zA-Z0-9]+/g, '');
+}
+
+function toPascalTitle(value: string) {
+  const words = value.match(/[a-zA-Z0-9]+/g) || [];
+  return words
+    .map((word) => capitalizeFirst(word.toLowerCase()))
+    .join('');
+}
+
+function buildStorageTitleCandidates(...values: Array<string | null | undefined>) {
+  const variants: Array<string | null> = [];
+
+  values.forEach((value) => {
+    const trimmed = value?.trim();
+    if (!trimmed) return;
+
+    const compact = toCompactTitle(trimmed);
+    const compactLower = compact.toLowerCase();
+    const pascal = toPascalTitle(trimmed);
+
+    variants.push(trimmed);
+    variants.push(compactLower || null);
+    variants.push(compactLower ? capitalizeFirst(compactLower) : null);
+    variants.push(pascal || null);
+  });
+
+  return uniqueNonEmpty(variants);
+}
+
 function toDerivedAudioPath(item: ReleaseManifestItem) {
   const ext = item.ext || 'wav';
   const relDay = String(item.index).padStart(2, '0');
   const encodedFile = encodeURIComponent(`${relDay} - ${item.storageTitle}.${ext}`);
+  return `audio/${item.month}/${encodedFile}`;
+}
+
+function toDerivedAudioPathForTitle(item: ReleaseManifestItem, title: string) {
+  const ext = item.ext || 'wav';
+  const relDay = String(item.index).padStart(2, '0');
+  const encodedFile = encodeURIComponent(`${relDay} - ${title}.${ext}`);
   return `audio/${item.month}/${encodedFile}`;
 }
 
@@ -82,6 +141,22 @@ function toDerivedCoverPath(audioPath?: string | null) {
     : normalizedPath.replace('/audio/', '/covers/');
 
   return coverPath.replace(/\.[^./]+$/, '.png');
+}
+
+function buildAudioPathCandidates(item: ReleaseManifestItem, overrideTitle?: string) {
+  const explicitAudioPath = item.audioPath?.replace(/^\/+/, '') || null;
+  const titleCandidates = buildStorageTitleCandidates(item.storageTitle, overrideTitle);
+  const derivedAudioPaths = titleCandidates.map((title) => toDerivedAudioPathForTitle(item, title));
+
+  return uniqueNonEmpty([explicitAudioPath, ...derivedAudioPaths]);
+}
+
+function buildCoverPathCandidates(item: ReleaseManifestItem, overrideTitle?: string) {
+  const explicitCoverPath = item.coverPath?.replace(/^\/+/, '') || null;
+  const audioPathCandidates = buildAudioPathCandidates(item, overrideTitle);
+  const derivedCoverPaths = audioPathCandidates.map((audioPath) => toDerivedCoverPath(audioPath));
+
+  return uniqueNonEmpty([explicitCoverPath, ...derivedCoverPaths]);
 }
 
 function getAbsoluteDay(item: ReleaseManifestItem) {
@@ -136,9 +211,16 @@ function buildReleaseFromManifestItem(
 ): Release {
   const day = getAbsoluteDay(item);
   const override = overrides[String(day)] || overrides[day as unknown as keyof ContentOverrideMap];
-
-  const audioPath = item.audioPath || toDerivedAudioPath(item);
-  const coverPath = item.coverPath || toDerivedCoverPath(audioPath);
+  const audioPathCandidates = buildAudioPathCandidates(item, override?.title);
+  const coverPathCandidates = buildCoverPathCandidates(item, override?.title);
+  const audioPath = audioPathCandidates[0] || toDerivedAudioPath(item);
+  const coverPath = coverPathCandidates[0] || toDerivedCoverPath(audioPath);
+  const audioSources = audioPathCandidates
+    .map((path) => toAbsoluteStorageUrl(path, storageBaseUrl))
+    .filter((value): value is string => Boolean(value));
+  const artworkSources = coverPathCandidates
+    .map((path) => toAbsoluteStorageUrl(path, storageBaseUrl))
+    .filter((value): value is string => Boolean(value));
 
   const description = override?.info
     ? stripHtml(override.info)
@@ -158,6 +240,8 @@ function buildReleaseFromManifestItem(
     videoUrl: override?.videoUrl || undefined,
     storedAudioUrl: toAbsoluteStorageUrl(audioPath, storageBaseUrl) || undefined,
     artworkUrl: toAbsoluteStorageUrl(coverPath, storageBaseUrl) || undefined,
+    audioSources: audioSources.length > 0 ? audioSources : undefined,
+    artworkSources: artworkSources.length > 0 ? artworkSources : undefined,
   };
 }
 

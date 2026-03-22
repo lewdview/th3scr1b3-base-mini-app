@@ -536,12 +536,17 @@ export default function TrackDetailsPage() {
   useEffect(() => {
     if (!release) return;
 
-    if (!release.artworkUrl) {
+    const coverCandidates = Array.from(
+      new Set([release.artworkUrl, ...(release.artworkSources || [])].filter(Boolean))
+    ) as string[];
+
+    if (coverCandidates.length === 0) {
       setLoadStep('cover', 'skipped', 'No cover URL');
       return;
     }
 
     let cancelled = false;
+    let candidateIndex = 0;
     setLoadStep('cover', 'loading', 'Loading cover art');
 
     const image = new Image();
@@ -551,26 +556,36 @@ export default function TrackDetailsPage() {
     };
     image.onerror = () => {
       if (cancelled) return;
+      candidateIndex += 1;
+      if (coverCandidates[candidateIndex]) {
+        image.src = coverCandidates[candidateIndex];
+        return;
+      }
       setLoadStep('cover', 'error', 'Cover load failed');
     };
-    image.src = release.artworkUrl;
+    image.src = coverCandidates[candidateIndex];
 
     return () => {
       cancelled = true;
       image.onload = null;
       image.onerror = null;
     };
-  }, [release?.artworkUrl, release?.day, setLoadStep]);
+  }, [release?.artworkSources, release?.artworkUrl, release?.day, setLoadStep]);
 
   useEffect(() => {
     if (!release) return;
 
-    if (!release.storedAudioUrl) {
+    const audioCandidates = Array.from(
+      new Set([release.storedAudioUrl, ...(release.audioSources || [])].filter(Boolean))
+    ) as string[];
+
+    if (audioCandidates.length === 0) {
       setLoadStep('audio', 'skipped', 'No audio URL');
       return;
     }
 
     let cancelled = false;
+    let candidateIndex = 0;
     setLoadStep('audio', 'loading', 'Loading audio metadata');
 
     const audio = new Audio();
@@ -583,13 +598,19 @@ export default function TrackDetailsPage() {
 
     const onError = () => {
       if (cancelled) return;
+      candidateIndex += 1;
+      if (audioCandidates[candidateIndex]) {
+        audio.src = audioCandidates[candidateIndex];
+        audio.load();
+        return;
+      }
       setLoadStep('audio', 'error', 'Audio load failed');
     };
 
     audio.addEventListener('loadedmetadata', onLoaded);
     audio.addEventListener('canplaythrough', onLoaded);
     audio.addEventListener('error', onError);
-    audio.src = release.storedAudioUrl;
+    audio.src = audioCandidates[candidateIndex];
     audio.load();
 
     return () => {
@@ -600,7 +621,7 @@ export default function TrackDetailsPage() {
       audio.pause();
       audio.src = '';
     };
-  }, [release?.storedAudioUrl, release?.day, setLoadStep]);
+  }, [release?.audioSources, release?.storedAudioUrl, release?.day, setLoadStep]);
 
   const loadStatus = useMemo(() => {
     const now = Date.now();
@@ -875,7 +896,12 @@ export default function TrackDetailsPage() {
           <>
             <section className="track-hero support-card animate-in">
               <div className="track-hero-art">
-                <AlbumArt day={release.day} mood={release.mood} artworkUrl={release.artworkUrl} />
+                <AlbumArt
+                  day={release.day}
+                  mood={release.mood}
+                  artworkUrl={release.artworkUrl}
+                  artworkSources={release.artworkSources}
+                />
               </div>
               <div className="track-hero-copy">
                 <div className="track-hero-top">
