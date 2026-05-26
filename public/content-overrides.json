@@ -237,7 +237,7 @@
   },
   "59": {
     "title": "Reality",
-    "info": "<div class=\"p-4 border border-[var(--color-neon-yellow)]/30 bg-[var(--color-neon-yellow)]/10 rounded mb-4\">\n  <h4 class=\"font-bold text-[var(--color-neon-yellow)] mb-2 font-mono\">PRODUCTION INFO</h4>\n  <p>ONE TAKE FREESTYLE - From the album: Afterlife</p>\n</div>\n<div class=\"p-4 border border-[var(--color-neon-red)]/30 bg-[var(--color-neon-red)]/10 rounded mb-4\">\n  <h4 class=\"font-bold text-[var(--color-neon-red)] mb-2 font-mono\">SONOTELLER.AI lyrical Analysis</h4>\n  <p>NEEDSSONO TELLER</p>\n</div>"
+    "info": "<div class=\"p-4 border border-[var(--color-neon-yellow)]/30 bg-[var(--color-neon-yellow)]/10 rounded mb-4\">\n  <h4 class=\"font-bold text-[var(--color-neon-yellow)] mb-2 font-mono\">PRODUCTION INFO</h4>\n  <p>ONE TAKE FREESTYLE - From the album: Afterlife</p>\n</div>\n<div class=\"p-4 border border-[var(--color-neon-red)]/30 bg-[var(--color-neon-red)]/10 rounded mb-4\">\n  <h4 class=\"font-bold text-[var(--color-neon-red)] mb-2 font-mono\">SONOTELLER.AI lyrical Analysis</h4>\n  <p>NEEDS SONO TELLER</p>\n</div>"
   },
   "60": {
     "title": "Moment of EX-STACY by Brainie (reprise)",
@@ -457,7 +457,7 @@
     "title": "get down with the negative"
   },
   "132": {
-    "title": "Godenside of You"
+    "title": "Goldenside of You"
   },
   "133": {
     "title": "Softer Side"
@@ -469,13 +469,13 @@
     "title": "Chill Out"
   },
   "136": {
-    "title": "Get Naughty fet. TheSoloist"
+    "title": "Get Naughty feat. TheSoloist"
   },
   "137": {
     "title": "Little Light"
   },
   "138": {
-    "title": "Oone Last Breath (reprise)"
+    "title": "One Last Breath (reprise)"
   },
   "139": {
     "title": "Believing in Just"
@@ -487,19 +487,19 @@
     "title": "Nostic Heresy"
   },
   "142": {
-    "title": "If You Come Along"
+    "title": "If You Come Along @P"
   },
   "143": {
     "title": "Come Together"
   },
   "144": {
-    "title": "First Impressions Fet.Blue"
+    "title": "First Impressions Feat.Blue"
   },
   "145": {
     "title": "Miss U 4"
   },
   "146": {
-    "title": "GrinNada"
+    "title": "Best Thing"
   },
   "147": {
     "title": "Get It in"
@@ -553,7 +553,7 @@
     "title": "World Ending"
   },
   "164": {
-    "title": "One Last Bteath"
+    "title": "[-]"
   },
   "165": {
     "title": "This Holiday"
@@ -562,16 +562,16 @@
     "title": "Bright Day"
   },
   "167": {
-    "title": "Natural Disasterby The SNwflowers"
+    "title": "Natural Disaster by The Snowflowers"
   },
   "168": {
     "title": "Abandon"
   },
   "169": {
-    "title": "echoes.of.the.abyss fet. Zillick"
+    "title": "echoes of the abyss feat. Zillick"
   },
   "170": {
-    "title": "i used my lover by Haos1"
+    "title": "i used my lover by Halos1"
   },
   "171": {
     "title": "Addicted"
@@ -592,7 +592,7 @@
     "title": "Dirt Road"
   },
   "177": {
-    "title": "Leave Me Dead"
+      "title": "Leave Me Dead Feat. Halos1, Phloeasy, and Knuckles"
   },
   "178": {
     "title": "Rookie Year by Halos1"
@@ -613,10 +613,10 @@
     "title": "Against the Grain"
   },
   "184": {
-    "title": "You re  Always on My Mind by Zillick"
+    "title": "You're Always on My Mind by Zillick"
   },
   "185": {
-    "title": "Trippie fet. Rittz"
+    "title": "Trippie feat. Rittz"
   },
   "186": {
     "title": "Life Succubus feat. Halos1"
@@ -658,7 +658,7 @@
     "title": "Hhhhhhhhhhhhh"
   },
   "199": {
-    "title": "Surrender to U"
+    "title": "Surrender to U feat. Phloeasy"
   },
   "200": {
     "title": "The Ones by Halos1"
@@ -667,7 +667,7 @@
     "title": "Backroads"
   },
   "202": {
-    "title": "Take Me Away Take"
+    "title": "Take Me Away"
   },
   "203": {
     "title": "Missing You"
@@ -688,7 +688,7 @@
     "title": "Away Goes"
   },
   "209": {
-    "title": "Emotuional Healing"
+    "title": "Emotional Healing"
   },
   "210": {
     "title": "Feel It"
@@ -697,7 +697,7 @@
     "title": "spongebobby by Halos1"
   },
   "212": {
-    "title": "Nostalgic Enerby"
+    "title": "Nostalgic Energy"
   },
   "213": {
     "title": "Snuff by Zillick"
@@ -727,16 +727,16 @@
     "title": "Footsteps"
   },
   "222": {
-    "title": "dont_fuck_up_rotation by Halos1"
+    "title": "dont fuck up rotation by Halos1"
   },
   "223": {
-    "title": "Who You Love"
+    "title": "John Myer's Who You Love"
   },
   "224": {
     "title": "Complicated S"
   },
   "225": {
-    "title": "Speed of Pain"
+    "title": "Marilyn Manson Speed of Pain"
   },
   "226": {
     "title": "Unloved"
@@ -748,16 +748,16 @@
     "title": "Faint"
   },
   "229": {
-    "title": "house of hope "
+    "title": "house of hope"
   },
   "230": {
-    "title": "Live Forever Xzibit"
+      "title": "Live Forever Xzibit (reprise)"
   },
   "231": {
     "title": "sexy in the air"
   },
   "232": {
-    "title": "Never Gonn Be The One"
+    "title": "Never Gonna Be The One"
   },
   "233": {
     "title": "Dreams Shattered"
@@ -793,13 +793,13 @@
     "title": "Mystery"
   },
   "244": {
-    "title": "Message 4 K by BRainie"
+    "title": "Message 4 K by Brainie"
   },
   "245": {
     "title": "Vice"
   },
   "246": {
-    "title": "Hemmorage"
+    "title": "Message2Me"
   },
   "247": {
     "title": "Monetary T"
@@ -823,7 +823,7 @@
     "title": "Get Over You feat. TheSoloist"
   },
   "254": {
-    "title": "Only Time Will Tellby Zillick"
+    "title": "Only Time Will Tell by Zillick"
   },
   "255": {
     "title": "Far Away"
@@ -862,7 +862,7 @@
     "title": "Clever Bit"
   },
   "267": {
-    "title": " Hemmorage"
+    "title": "Hemmorage"
   },
   "268": {
     "title": "Sweater"
@@ -895,7 +895,7 @@
     "title": "Starlight"
   },
   "278": {
-    "title": "Preva0il"
+    "title": "You Just Don't Know"
   },
   "279": {
     "title": "Hate down"
@@ -904,7 +904,7 @@
     "title": "Fallin"
   },
   "281": {
-    "title": "Heart N Soul Collideby Zillick"
+    "title": "Heart N Soul Collide by Zillick feat. th3scr1b3"
   },
   "282": {
     "title": "Exhale"
@@ -931,7 +931,7 @@
     "title": "Beat 2 O"
   },
   "290": {
-    "title": "No Place 2 Hide"
+      "title": "Light Goes In (Reprise)"
   },
   "291": {
     "title": "Chunky"
@@ -955,7 +955,7 @@
     "title": "Trip"
   },
   "298": {
-    "title": "Burning It Down Cover"
+    "title": "On a Positive Note"
   },
   "299": {
     "title": "It Wont Take Me Long"
@@ -967,7 +967,7 @@
     "title": "eros"
   },
   "302": {
-    "title": "Sweet You Warm"
+    "title": "Sweet You"
   },
   "303": {
     "title": "frozen"
@@ -1018,13 +1018,13 @@
     "title": "Go Get It"
   },
   "319": {
-    "title": "Come Along with Me AP"
+    "title": "Quiet Fortress"
   },
   "320": {
-    "title": "She Said Lil Richard Where Da Fux U"
+    "title": "She Said Lil Richard Where Da Fux U @"
   },
   "321": {
-    "title": "Dont Blame U"
+    "title": "Dont Blame U by The SnowFlowers"
   },
   "322": {
     "title": "Your body"
@@ -1108,19 +1108,19 @@
     "title": "Alf"
   },
   "349": {
-    "title": "__ SYSTEM_CRASH [LOG_349]"
+    "title": "Two Lanes"
   },
   "350": {
-    "title": "__ MEMORY_OVERFLOW [LOG_350]"
+    "title":  "Butterfly"
   },
   "351": {
-    "title": "__ RECURSIVE_LOOP [LOG_351]"
+    "title": "Stuck_w_u"
   },
   "352": {
-    "title": "__ STACK_TRACE [LOG_352]"
+    "title": "Eden's Drugs"
   },
   "353": {
-    "title": "__ NULL_POINTER [LOG_353]"
+    "title": "Better Days"
   },
   "354": {
     "title": "__ SEGMENTATION_FAULT [LOG_354]"

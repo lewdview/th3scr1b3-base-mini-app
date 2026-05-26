@@ -1,13 +1,13 @@
 {
   "version": 1,
-  "generatedAt": "2026-01-10T22:51:22.428Z",
+  "generatedAt": "2026-05-26T08:46:19.674Z",
   "items": [
     {
       "month": "january",
       "index": 1,
       "storageTitle": "Were Going Crazy World",
       "ext": "wav",
-      "audioPath": "audio/january/01%20-%20Were%20Going%20Crazy%20World.wav",
+      "audioPath": "audio/january/were%20going%20crazy%20world.wav",
       "coverPath": null
     },
     {
@@ -15,7 +15,7 @@
       "index": 2,
       "storageTitle": "Shhh Bitch",
       "ext": "wav",
-      "audioPath": "audio/january/02%20-%20Shhh%20Bitch.wav",
+      "audioPath": "audio/january/shhh%20bitch.wav",
       "coverPath": null
     },
     {
@@ -23,7 +23,7 @@
       "index": 3,
       "storageTitle": "You Like Steve Earle",
       "ext": "wav",
-      "audioPath": "audio/january/03%20-%20You%20Like%20Steve%20Earle.wav",
+      "audioPath": "audio/january/you%20like%20steve%20earle_mastered%20(1).wav",
       "coverPath": null
     },
     {
@@ -31,7 +31,7 @@
       "index": 4,
       "storageTitle": "Were Only Humanmd7",
       "ext": "wav",
-      "audioPath": "audio/january/04%20-%20Were%20Only%20Humanmd7.wav",
+      "audioPath": "audio/january/were%20only%20humanmd7.wav",
       "coverPath": null
     },
     {
@@ -39,7 +39,7 @@
       "index": 5,
       "storageTitle": "Swooped COUPE",
       "ext": "wav",
-      "audioPath": "audio/january/05%20-%20Swooped%20COUPE.wav",
+      "audioPath": "audio/january/SWOOPED%20COUPE.wav",
       "coverPath": null
     },
     {
@@ -47,7 +47,7 @@
       "index": 6,
       "storageTitle": "Ss Take One",
       "ext": "wav",
-      "audioPath": "audio/january/06%20-%20Ss%20Take%20One.wav",
+      "audioPath": "audio/january/ss_take%20one.wav",
       "coverPath": null
     },
     {
@@ -55,7 +55,7 @@
       "index": 7,
       "storageTitle": "Devour",
       "ext": "wav",
-      "audioPath": "audio/january/07%20-%20Devour.wav",
+      "audioPath": "audio/january/devour.wav",
       "coverPath": null
     },
     {
@@ -63,15 +63,15 @@
       "index": 8,
       "storageTitle": "Poetry",
       "ext": "mp3",
-      "audioPath": "audio/january/08%20-%20Poetry.mp3",
+      "audioPath": "audio/january/poetry.mp3",
       "coverPath": null
     },
     {
       "month": "january",
       "index": 9,
-      "storageTitle": "Without You",
+      "storageTitle": "without_you_cyro",
       "ext": "wav",
-      "audioPath": "audio/january/09%20-%20Without%20You.wav",
+      "audioPath": "audio/january/without_you_cyro.wav",
       "coverPath": null
     },
     {
@@ -79,7 +79,7 @@
       "index": 10,
       "storageTitle": "Long Haul",
       "ext": "wav",
-      "audioPath": "audio/january/10%20-%20Long%20Haul.wav",
+      "audioPath": "audio/january/long%20haul.wav",
       "coverPath": null
     },
     {
@@ -87,7 +87,7 @@
       "index": 11,
       "storageTitle": "Getting Better",
       "ext": "wav",
-      "audioPath": "audio/january/11%20-%20Getting%20Better.wav",
+      "audioPath": "audio/january/12-getting-better_th3scr1b3_afterlife.wav",
       "coverPath": null
     },
     {
@@ -95,7 +95,7 @@
       "index": 12,
       "storageTitle": "LANDR Want It Any Other Way Open Low",
       "ext": "mp3",
-      "audioPath": "audio/january/12%20-%20LANDR%20Want%20It%20Any%20Other%20Way%20Open%20Low.mp3",
+      "audioPath": "audio/january/LANDR-want%20it%20any%20other%20way-Open-Low.mp3",
       "coverPath": null
     },
     {
@@ -103,7 +103,7 @@
       "index": 13,
       "storageTitle": "Dashboard of Life",
       "ext": "wav",
-      "audioPath": "audio/january/13%20-%20Dashboard%20of%20Life.wav",
+      "audioPath": "audio/january/dashboardoflife.wav",
       "coverPath": null
     },
     {
@@ -111,7 +111,7 @@
       "index": 14,
       "storageTitle": "Undercoa 4",
       "ext": "wav",
-      "audioPath": "audio/january/14%20-%20Undercoa%204.wav",
+      "audioPath": "audio/january/undercover_a_4%20(Mastered%20with%20Clear%20Sky%20at%20100pct).wav",
       "coverPath": null
     },
     {
@@ -119,15 +119,15 @@
       "index": 15,
       "storageTitle": "What Bryan Was Working on Last",
       "ext": "wav",
-      "audioPath": "audio/january/15%20-%20What%20Bryan%20Was%20Working%20on%20Last.wav",
+      "audioPath": "audio/january/17-what-bryan-was-working-on-last_th3scr1b3_afterlife.wav",
       "coverPath": null
     },
     {
       "month": "january",
       "index": 16,
-      "storageTitle": "Prevail Scriber",
+      "storageTitle": "Prevail",
       "ext": "mp3",
-      "audioPath": "audio/january/16%20-%20Prevail%20Scriber.mp3",
+      "audioPath": "audio/january/prevail.mp3",
       "coverPath": null
     },
     {
@@ -135,7 +135,7 @@
       "index": 17,
       "storageTitle": "What It Is",
       "ext": "wav",
-      "audioPath": "audio/january/17%20-%20What%20It%20Is.wav",
+      "audioPath": "audio/january/what%20it%20is.wav",
       "coverPath": null
     },
     {
@@ -143,7 +143,7 @@
       "index": 18,
       "storageTitle": "Goods 4 Me",
       "ext": "mp3",
-      "audioPath": "audio/january/18%20-%20Goods%204%20Me.mp3",
+      "audioPath": "audio/january/goods_4_me_mastered.mp3",
       "coverPath": null
     },
     {
@@ -151,7 +151,7 @@
       "index": 19,
       "storageTitle": "Through the Ringer",
       "ext": "wav",
-      "audioPath": "audio/january/19%20-%20Through%20the%20Ringer.wav",
+      "audioPath": "audio/january/through%20the%20ringer_2.wav",
       "coverPath": null
     },
     {
@@ -159,7 +159,7 @@
       "index": 20,
       "storageTitle": "Figures",
       "ext": "wav",
-      "audioPath": "audio/january/20%20-%20Figures.wav",
+      "audioPath": "audio/january/figures.wav",
       "coverPath": null
     },
     {
@@ -167,7 +167,7 @@
       "index": 21,
       "storageTitle": "Highup",
       "ext": "wav",
-      "audioPath": "audio/january/21%20-%20Highup.wav",
+      "audioPath": "audio/january/highup.wav",
       "coverPath": null
     },
     {
@@ -175,7 +175,7 @@
       "index": 22,
       "storageTitle": "Tightrope+",
       "ext": "wav",
-      "audioPath": "audio/january/22%20-%20Tightrope+.wav",
+      "audioPath": "audio/january/tightrope%2B_2_mastered.wav",
       "coverPath": null
     },
     {
@@ -183,7 +183,7 @@
       "index": 23,
       "storageTitle": "Come on Dance",
       "ext": "wav",
-      "audioPath": "audio/january/23%20-%20Come%20on%20Dance.wav",
+      "audioPath": "audio/january/comeondance.wav",
       "coverPath": null
     },
     {
@@ -191,23 +191,23 @@
       "index": 24,
       "storageTitle": "Be Here Boo",
       "ext": "mp3",
-      "audioPath": "audio/january/24%20-%20Be%20Here%20Boo.mp3",
+      "audioPath": "audio/january/be%20here%20boo.mp3",
       "coverPath": null
     },
     {
       "month": "january",
       "index": 25,
       "storageTitle": "Grenada",
-      "ext": "wav",
-      "audioPath": "audio/january/25%20-%20Grenada.wav",
+      "ext": "mp3",
+      "audioPath": "audio/january/grenada_sr.mp3",
       "coverPath": null
     },
     {
       "month": "january",
       "index": 26,
       "storageTitle": "Brave",
-      "ext": "mp3",
-      "audioPath": "audio/january/26%20-%20Brave.mp3",
+      "ext": "wav",
+      "audioPath": "audio/january/brave.wav",
       "coverPath": null
     },
     {
@@ -215,7 +215,7 @@
       "index": 27,
       "storageTitle": "Talkin Nody",
       "ext": "wav",
-      "audioPath": "audio/january/27%20-%20Talkin%20Nody.wav",
+      "audioPath": "audio/january/talkin%20nody%20cover.wav",
       "coverPath": null
     },
     {
@@ -223,7 +223,7 @@
       "index": 28,
       "storageTitle": "LANDR Smoothie Balanced Medium",
       "ext": "mp3",
-      "audioPath": "audio/january/28%20-%20LANDR%20Smoothie%20Balanced%20Medium.mp3",
+      "audioPath": "audio/january/LANDR-smoothie-Balanced-Medium.mp3",
       "coverPath": null
     },
     {
@@ -231,7 +231,7 @@
       "index": 29,
       "storageTitle": "Cursed 2ndmix",
       "ext": "wav",
-      "audioPath": "audio/january/29%20-%20Cursed%202ndmix.wav",
+      "audioPath": "audio/january/cursed_2ndmix.wav",
       "coverPath": null
     },
     {
@@ -239,15 +239,15 @@
       "index": 30,
       "storageTitle": "To Be a Man",
       "ext": "mp3",
-      "audioPath": "audio/january/30%20-%20To%20Be%20a%20Man.mp3",
+      "audioPath": "audio/january/to%20be%20a%20man.mp3",
       "coverPath": null
     },
     {
       "month": "january",
       "index": 31,
       "storageTitle": "Scars in My Mind",
-      "ext": "mp3",
-      "audioPath": "audio/january/31%20-%20Scars%20in%20My%20Mind.mp3",
+      "ext": "wav",
+      "audioPath": "audio/january/scars%20in%20my%20mind%20_%20m.wav",
       "coverPath": null
     },
     {
@@ -255,7 +255,7 @@
       "index": 1,
       "storageTitle": "Whatuwant",
       "ext": "wav",
-      "audioPath": "audio/february/01%20-%20Whatuwant.wav",
+      "audioPath": "audio/february/whatUwant.wav",
       "coverPath": null
     },
     {
@@ -263,7 +263,7 @@
       "index": 2,
       "storageTitle": "Bettersion of Me",
       "ext": "wav",
-      "audioPath": "audio/february/02%20-%20Bettersion%20of%20Me.wav",
+      "audioPath": "audio/february/better%20version%20of%20me.wav",
       "coverPath": null
     },
     {
@@ -271,7 +271,7 @@
       "index": 3,
       "storageTitle": "Consation W",
       "ext": "wav",
-      "audioPath": "audio/february/03%20-%20Consation%20W.wav",
+      "audioPath": "audio/february/conversation_w_m.wav",
       "coverPath": null
     },
     {
@@ -279,7 +279,7 @@
       "index": 4,
       "storageTitle": "The Light",
       "ext": "wav",
-      "audioPath": "audio/february/04%20-%20The%20Light.wav",
+      "audioPath": "audio/february/thelight_abby_road_mastered.wav",
       "coverPath": null
     },
     {
@@ -287,7 +287,7 @@
       "index": 5,
       "storageTitle": "St America",
       "ext": "wav",
-      "audioPath": "audio/february/05%20-%20St%20America.wav",
+      "audioPath": "audio/february/stamerica_mixdown.wav",
       "coverPath": null
     },
     {
@@ -295,7 +295,7 @@
       "index": 6,
       "storageTitle": "Camebackaroudnd",
       "ext": "mp3",
-      "audioPath": "audio/february/06%20-%20Camebackaroudnd.mp3",
+      "audioPath": "audio/february/camebackaroudnd.mp3",
       "coverPath": null
     },
     {
@@ -303,15 +303,15 @@
       "index": 7,
       "storageTitle": "Eco N Time",
       "ext": "wav",
-      "audioPath": "audio/february/07%20-%20Eco%20N%20Time.wav",
+      "audioPath": "audio/february/05-eco-n-time_%20th3scr1b3%20_afterlife.wav",
       "coverPath": null
     },
     {
       "month": "february",
       "index": 8,
-      "storageTitle": "Up All Night",
+      "storageTitle": "09 - up all night",
       "ext": "wav",
-      "audioPath": "audio/february/08%20-%20Up%20All%20Night.wav",
+      "audioPath": "audio/february/09%20-%20up%20all%20night.wav",
       "coverPath": null
     },
     {
@@ -319,7 +319,7 @@
       "index": 9,
       "storageTitle": "Way Eight Fore Dat Storm Level",
       "ext": "wav",
-      "audioPath": "audio/february/09%20-%20Way%20Eight%20Fore%20Dat%20Storm%20Level.wav",
+      "audioPath": "audio/february/way%20eight%20fore%20dat%20storm_level_2.wav",
       "coverPath": null
     },
     {
@@ -327,7 +327,7 @@
       "index": 10,
       "storageTitle": "Be Nuter",
       "ext": "mp3",
-      "audioPath": "audio/february/10%20-%20Be%20Nuter.mp3",
+      "audioPath": "audio/february/be_nuter_m.mp3",
       "coverPath": null
     },
     {
@@ -335,7 +335,7 @@
       "index": 11,
       "storageTitle": "Xzibit Forever",
       "ext": "mp3",
-      "audioPath": "audio/february/11%20-%20Xzibit%20Forever.mp3",
+      "audioPath": "audio/february/xzinbit-%20forever.mp3",
       "coverPath": null
     },
     {
@@ -343,7 +343,7 @@
       "index": 12,
       "storageTitle": "Pit What I Got",
       "ext": "mp3",
-      "audioPath": "audio/february/12%20-%20Pit%20What%20I%20Got.mp3",
+      "audioPath": "audio/february/pit_what_i_got.mp3",
       "coverPath": null
     },
     {
@@ -351,7 +351,7 @@
       "index": 13,
       "storageTitle": "Not Good Enough",
       "ext": "mp3",
-      "audioPath": "audio/february/13%20-%20Not%20Good%20Enough.mp3",
+      "audioPath": "audio/february/not%20good%20enough.mp3",
       "coverPath": null
     },
     {
@@ -359,7 +359,7 @@
       "index": 14,
       "storageTitle": "LANDR a Way Out Mas Balanced Medium",
       "ext": "mp3",
-      "audioPath": "audio/february/14%20-%20LANDR%20a%20Way%20Out%20Mas%20Balanced%20Medium.mp3",
+      "audioPath": "audio/february/LANDR-a%20way%20out%20_%20mas-Balanced-Medium.mp3",
       "coverPath": null
     },
     {
@@ -367,7 +367,7 @@
       "index": 15,
       "storageTitle": "Mikeym",
       "ext": "mp3",
-      "audioPath": "audio/february/15%20-%20Mikeym.mp3",
+      "audioPath": "audio/february/mikeyM.mp3",
       "coverPath": null
     },
     {
@@ -375,7 +375,7 @@
       "index": 16,
       "storageTitle": "Filthy",
       "ext": "wav",
-      "audioPath": "audio/february/16%20-%20Filthy.wav",
+      "audioPath": "audio/february/FILTHY.wav",
       "coverPath": null
     },
     {
@@ -383,7 +383,7 @@
       "index": 17,
       "storageTitle": "Unforgettable",
       "ext": "wav",
-      "audioPath": "audio/february/17%20-%20Unforgettable.wav",
+      "audioPath": "audio/february/unforgettable.wav",
       "coverPath": null
     },
     {
@@ -391,7 +391,7 @@
       "index": 18,
       "storageTitle": "Dreams Again",
       "ext": "wav",
-      "audioPath": "audio/february/18%20-%20Dreams%20Again.wav",
+      "audioPath": "audio/february/dreams%20again.wav",
       "coverPath": null
     },
     {
@@ -399,7 +399,7 @@
       "index": 19,
       "storageTitle": "Belong",
       "ext": "mp3",
-      "audioPath": "audio/february/19%20-%20Belong.mp3",
+      "audioPath": "audio/february/belong_m.mp3",
       "coverPath": null
     },
     {
@@ -407,7 +407,7 @@
       "index": 20,
       "storageTitle": "Change Perception",
       "ext": "wav",
-      "audioPath": "audio/february/20%20-%20Change%20Perception.wav",
+      "audioPath": "audio/february/change%20perception_m.wav",
       "coverPath": null
     },
     {
@@ -415,15 +415,15 @@
       "index": 21,
       "storageTitle": "Bitter Better",
       "ext": "wav",
-      "audioPath": "audio/february/21%20-%20Bitter%20Better.wav",
+      "audioPath": "audio/february/bitter_better.wav",
       "coverPath": null
     },
     {
       "month": "february",
       "index": 22,
       "storageTitle": "The End",
-      "ext": "wav",
-      "audioPath": "audio/february/22%20-%20The%20End.wav",
+      "ext": "mp3",
+      "audioPath": "audio/february/the_end_FEAT_KVON.mp3",
       "coverPath": null
     },
     {
@@ -431,7 +431,7 @@
       "index": 23,
       "storageTitle": "Tryied",
       "ext": "mp3",
-      "audioPath": "audio/february/23%20-%20Tryied.mp3",
+      "audioPath": "audio/february/tryied.mp3",
       "coverPath": null
     },
     {
@@ -439,7 +439,7 @@
       "index": 24,
       "storageTitle": "Tried N True",
       "ext": "wav",
-      "audioPath": "audio/february/24%20-%20Tried%20N%20True.wav",
+      "audioPath": "audio/february/tried_n_true.wav",
       "coverPath": null
     },
     {
@@ -447,23 +447,23 @@
       "index": 25,
       "storageTitle": "Can't Go Back",
       "ext": "wav",
-      "audioPath": "audio/february/25%20-%20Can't%20Go%20Back.wav",
+      "audioPath": "audio/february/can't%20go%20back.wav",
       "coverPath": null
     },
     {
       "month": "february",
       "index": 26,
-      "storageTitle": "Momentofexctasy",
-      "ext": "wav",
-      "audioPath": "audio/february/26%20-%20Momentofexctasy.wav",
+      "storageTitle": "Moment of Exctasy",
+      "ext": "mp3",
+      "audioPath": "audio/february/moment_of_exctasy_320.mp3",
       "coverPath": null
     },
     {
       "month": "february",
       "index": 27,
       "storageTitle": "Awaits",
-      "ext": "mp3",
-      "audioPath": "audio/february/27%20-%20Awaits.mp3",
+      "ext": "wav",
+      "audioPath": "audio/february/awaits.wav",
       "coverPath": null
     },
     {
@@ -471,15 +471,15 @@
       "index": 28,
       "storageTitle": "Reality",
       "ext": "wav",
-      "audioPath": "audio/february/28%20-%20Reality.wav",
+      "audioPath": "audio/february/11-reality_th3scr1b3_afterlife.wav",
       "coverPath": null
     },
     {
       "month": "february",
       "index": 29,
-      "storageTitle": "Moment of Exctasy",
-      "ext": "mp3",
-      "audioPath": "audio/february/29%20-%20Moment%20of%20Exctasy.mp3",
+      "storageTitle": "Momentofexctasy",
+      "ext": "wav",
+      "audioPath": "audio/february/momentofexctasy.wav",
       "coverPath": null
     },
     {
@@ -487,7 +487,7 @@
       "index": 2,
       "storageTitle": "Re",
       "ext": "wav",
-      "audioPath": "audio/march/02%20-%20Re.wav",
+      "audioPath": "audio/march/re(place).wav",
       "coverPath": null
     },
     {
@@ -495,7 +495,7 @@
       "index": 3,
       "storageTitle": "Friendzone",
       "ext": "wav",
-      "audioPath": "audio/march/03%20-%20Friendzone.wav",
+      "audioPath": "audio/march/friendzone.wav",
       "coverPath": null
     },
     {
@@ -503,7 +503,7 @@
       "index": 4,
       "storageTitle": "Never Ends",
       "ext": "wav",
-      "audioPath": "audio/march/04%20-%20Never%20Ends.wav",
+      "audioPath": "audio/march/never%20ends.wav",
       "coverPath": null
     },
     {
@@ -511,15 +511,15 @@
       "index": 5,
       "storageTitle": "Mythical",
       "ext": "wav",
-      "audioPath": "audio/march/05%20-%20Mythical.wav",
+      "audioPath": "audio/march/14-mythical_th3scr1b3_afterlife.wav",
       "coverPath": null
     },
     {
       "month": "march",
       "index": 6,
       "storageTitle": "Untied",
-      "ext": "mp3",
-      "audioPath": "audio/march/06%20-%20Untied.mp3",
+      "ext": "wav",
+      "audioPath": "audio/march/untied.wav",
       "coverPath": null
     },
     {
@@ -527,7 +527,7 @@
       "index": 7,
       "storageTitle": "Luckyland",
       "ext": "wav",
-      "audioPath": "audio/march/07%20-%20Luckyland.wav",
+      "audioPath": "audio/march/luckyland.wav",
       "coverPath": null
     },
     {
@@ -535,7 +535,7 @@
       "index": 8,
       "storageTitle": "Letitgo",
       "ext": "mp3",
-      "audioPath": "audio/march/08%20-%20Letitgo.mp3",
+      "audioPath": "audio/march/letitgo.mp3",
       "coverPath": null
     },
     {
@@ -543,7 +543,7 @@
       "index": 9,
       "storageTitle": "From the Earth to the Sea Flipped Mask",
       "ext": "wav",
-      "audioPath": "audio/march/09%20-%20From%20the%20Earth%20to%20the%20Sea%20Flipped%20Mask.wav",
+      "audioPath": "audio/march/from%20the%20earth%20to%20the%20sea_flipped_mask_mastered.wav",
       "coverPath": null
     },
     {
@@ -551,7 +551,7 @@
       "index": 10,
       "storageTitle": "Save Tonight",
       "ext": "mp3",
-      "audioPath": "audio/march/10%20-%20Save%20Tonight.mp3",
+      "audioPath": "audio/march/save_tonight.mp3",
       "coverPath": null
     },
     {
@@ -559,7 +559,7 @@
       "index": 11,
       "storageTitle": "Sau",
       "ext": "mp3",
-      "audioPath": "audio/march/11%20-%20Sau.mp3",
+      "audioPath": "audio/march/Master%20Sau.mp3",
       "coverPath": null
     },
     {
@@ -567,7 +567,7 @@
       "index": 12,
       "storageTitle": "A Girl",
       "ext": "wav",
-      "audioPath": "audio/march/12%20-%20A%20Girl.wav",
+      "audioPath": "audio/march/a%20girl.wav",
       "coverPath": null
     },
     {
@@ -575,7 +575,7 @@
       "index": 13,
       "storageTitle": "Isitthathard",
       "ext": "wav",
-      "audioPath": "audio/march/13%20-%20Isitthathard.wav",
+      "audioPath": "audio/march/isitthathard_cyro_m.wav",
       "coverPath": null
     },
     {
@@ -583,7 +583,7 @@
       "index": 14,
       "storageTitle": "Kurtcobain",
       "ext": "wav",
-      "audioPath": "audio/march/14%20-%20Kurtcobain.wav",
+      "audioPath": "audio/march/kurtcobain.wav",
       "coverPath": null
     },
     {
@@ -591,7 +591,7 @@
       "index": 15,
       "storageTitle": "Low Life",
       "ext": "wav",
-      "audioPath": "audio/march/15%20-%20Low%20Life.wav",
+      "audioPath": "audio/march/08-low-life_%20th3scr1b3%20_afterlife..wav",
       "coverPath": null
     },
     {
@@ -599,15 +599,15 @@
       "index": 16,
       "storageTitle": "fml",
       "ext": "wav",
-      "audioPath": "audio/march/16%20-%20fml.wav",
+      "audioPath": "audio/march/fml.wav",
       "coverPath": null
     },
     {
       "month": "march",
       "index": 17,
       "storageTitle": "Benefits Me",
-      "ext": "mp3",
-      "audioPath": "audio/march/17%20-%20Benefits%20Me.mp3",
+      "ext": "wav",
+      "audioPath": "audio/march/benefits%20me.wav",
       "coverPath": null
     },
     {
@@ -615,7 +615,7 @@
       "index": 18,
       "storageTitle": "Rabbit Hole",
       "ext": "wav",
-      "audioPath": "audio/march/18%20-%20Rabbit%20Hole.wav",
+      "audioPath": "audio/march/rabbit_hole.wav",
       "coverPath": null
     },
     {
@@ -623,7 +623,7 @@
       "index": 19,
       "storageTitle": "Choppmed of F Ya Feel Rough'",
       "ext": "wav",
-      "audioPath": "audio/march/19%20-%20Choppmed%20of%20F%20Ya%20Feel%20Rough'.wav",
+      "audioPath": "audio/march/choppmed%20of%20f%20ya%20feel_ROUGH'.wav",
       "coverPath": null
     },
     {
@@ -631,7 +631,7 @@
       "index": 20,
       "storageTitle": "Lightburst",
       "ext": "wav",
-      "audioPath": "audio/march/20%20-%20Lightburst.wav",
+      "audioPath": "audio/march/LIGHTBURST_mastered.wav",
       "coverPath": null
     },
     {
@@ -639,7 +639,7 @@
       "index": 21,
       "storageTitle": "Monetary",
       "ext": "wav",
-      "audioPath": "audio/march/21%20-%20Monetary.wav",
+      "audioPath": "audio/march/monetary_2121.wav",
       "coverPath": null
     },
     {
@@ -647,7 +647,7 @@
       "index": 22,
       "storageTitle": "Get Ghost",
       "ext": "wav",
-      "audioPath": "audio/march/22%20-%20Get%20Ghost.wav",
+      "audioPath": "audio/march/GETGHOST.wav",
       "coverPath": null
     },
     {
@@ -655,7 +655,7 @@
       "index": 23,
       "storageTitle": "lightgoesin",
       "ext": "wav",
-      "audioPath": "audio/march/23%20-%20lightgoesin.wav",
+      "audioPath": "audio/march/lightgoesin.wav",
       "coverPath": null
     },
     {
@@ -663,15 +663,15 @@
       "index": 24,
       "storageTitle": "Jacy B",
       "ext": "wav",
-      "audioPath": "audio/march/24%20-%20Jacy%20B.wav",
+      "audioPath": "audio/march/jacy-24b.wav",
       "coverPath": null
     },
     {
       "month": "march",
       "index": 25,
-      "storageTitle": "LANDR Self Dick Mas Balanced Medium",
-      "ext": "mp3",
-      "audioPath": "audio/march/25%20-%20LANDR%20Self%20Dick%20Mas%20Balanced%20Medium.mp3",
+      "storageTitle": "Self Dick",
+      "ext": "wav",
+      "audioPath": "audio/march/self_dick_mas.wav",
       "coverPath": null
     },
     {
@@ -679,7 +679,7 @@
       "index": 26,
       "storageTitle": "Odosed",
       "ext": "wav",
-      "audioPath": "audio/march/26%20-%20Odosed.wav",
+      "audioPath": "audio/march/overdosed_mas.wav",
       "coverPath": null
     },
     {
@@ -687,7 +687,7 @@
       "index": 27,
       "storageTitle": "Your Choice",
       "ext": "wav",
-      "audioPath": "audio/march/27%20-%20Your%20Choice.wav",
+      "audioPath": "audio/march/your_choice.wav",
       "coverPath": null
     },
     {
@@ -695,7 +695,7 @@
       "index": 28,
       "storageTitle": "LANDR Scars in My Mind M Balanced Medium",
       "ext": "mp3",
-      "audioPath": "audio/march/28%20-%20LANDR%20Scars%20in%20My%20Mind%20M%20Balanced%20Medium.mp3",
+      "audioPath": "audio/march/LANDR-scars%20in%20my%20mind%20_%20m-Balanced-Medium.mp3",
       "coverPath": null
     },
     {
@@ -703,7 +703,7 @@
       "index": 29,
       "storageTitle": "Cheat Code",
       "ext": "wav",
-      "audioPath": "audio/march/29%20-%20Cheat%20Code.wav",
+      "audioPath": "audio/march/cheat%20code%202.wav",
       "coverPath": null
     },
     {
@@ -711,7 +711,7 @@
       "index": 30,
       "storageTitle": "Peacefullypeace",
       "ext": "wav",
-      "audioPath": "audio/march/30%20-%20Peacefullypeace.wav",
+      "audioPath": "audio/march/peacefullypeace_2.wav",
       "coverPath": null
     },
     {
@@ -719,7 +719,7 @@
       "index": 31,
       "storageTitle": "Killing Me",
       "ext": "wav",
-      "audioPath": "audio/march/31%20-%20Killing%20Me.wav",
+      "audioPath": "audio/march/killing%20me.wav",
       "coverPath": null
     },
     {
@@ -727,7 +727,7 @@
       "index": 1,
       "storageTitle": "mylight",
       "ext": "mp3",
-      "audioPath": "audio/april/01%20-%20mylight.mp3",
+      "audioPath": "audio/april/mylight.mp3",
       "coverPath": null
     },
     {
@@ -735,7 +735,7 @@
       "index": 2,
       "storageTitle": "mylight",
       "ext": "wav",
-      "audioPath": "audio/april/02%20-%20mylight.wav",
+      "audioPath": "audio/april/mylight.wav",
       "coverPath": null
     },
     {
@@ -743,15 +743,15 @@
       "index": 3,
       "storageTitle": "love_carries",
       "ext": "wav",
-      "audioPath": "audio/april/03%20-%20love_carries.wav",
+      "audioPath": "audio/april/love_carries.wav",
       "coverPath": null
     },
     {
       "month": "april",
       "index": 4,
       "storageTitle": "Pop",
-      "ext": "mp3",
-      "audioPath": "audio/april/04%20-%20Pop.mp3",
+      "ext": "wav",
+      "audioPath": "audio/april/Pop_1.wav",
       "coverPath": null
     },
     {
@@ -759,7 +759,7 @@
       "index": 5,
       "storageTitle": "hanging_around",
       "ext": "wav",
-      "audioPath": "audio/april/05%20-%20hanging_around.wav",
+      "audioPath": "audio/april/hanging_around.wav",
       "coverPath": null
     },
     {
@@ -767,7 +767,7 @@
       "index": 6,
       "storageTitle": "Dream",
       "ext": "wav",
-      "audioPath": "audio/april/06%20-%20Dream.wav",
+      "audioPath": "audio/april/dream_mastered.wav",
       "coverPath": null
     },
     {
@@ -775,7 +775,7 @@
       "index": 7,
       "storageTitle": "Cold As Ice",
       "ext": "wav",
-      "audioPath": "audio/april/07%20-%20Cold%20As%20Ice.wav",
+      "audioPath": "audio/april/cold_as_ice_m.wav",
       "coverPath": null
     },
     {
@@ -783,7 +783,7 @@
       "index": 8,
       "storageTitle": "Unifying",
       "ext": "wav",
-      "audioPath": "audio/april/08%20-%20Unifying.wav",
+      "audioPath": "audio/april/Unifying_mastered.wav",
       "coverPath": null
     },
     {
@@ -791,15 +791,15 @@
       "index": 9,
       "storageTitle": "problems",
       "ext": "wav",
-      "audioPath": "audio/april/09%20-%20problems.wav",
+      "audioPath": "audio/april/problems.wav",
       "coverPath": null
     },
     {
       "month": "april",
       "index": 10,
-      "storageTitle": "LANDR Here I Go Again 1 Warm High",
-      "ext": "mp3",
-      "audioPath": "audio/april/10%20-%20LANDR%20Here%20I%20Go%20Again%201%20Warm%20High.mp3",
+      "storageTitle": "i go",
+      "ext": "wav",
+      "audioPath": "audio/april/i%20go.wav",
       "coverPath": null
     },
     {
@@ -807,7 +807,7 @@
       "index": 11,
       "storageTitle": "Demon Soul",
       "ext": "wav",
-      "audioPath": "audio/april/11%20-%20Demon%20Soul.wav",
+      "audioPath": "audio/april/demon%20soul.wav",
       "coverPath": null
     },
     {
@@ -815,15 +815,15 @@
       "index": 12,
       "storageTitle": "getthrfuck_outa_ml",
       "ext": "wav",
-      "audioPath": "audio/april/12%20-%20getthrfuck_outa_ml.wav",
+      "audioPath": "audio/april/getthrfuck_outa_ml.wav",
       "coverPath": null
     },
     {
       "month": "april",
       "index": 13,
       "storageTitle": "My Way",
-      "ext": "wav",
-      "audioPath": "audio/april/13%20-%20My%20Way.wav",
+      "ext": "mp3",
+      "audioPath": "audio/april/my%20way_relay_m_mastered.mp3",
       "coverPath": null
     },
     {
@@ -831,7 +831,7 @@
       "index": 14,
       "storageTitle": "LANDR Dance Floor Balanced Medium",
       "ext": "mp3",
-      "audioPath": "audio/april/14%20-%20LANDR%20Dance%20Floor%20Balanced%20Medium.mp3",
+      "audioPath": "audio/april/LANDR-dance%20floor-Balanced-Medium.mp3",
       "coverPath": null
     },
     {
@@ -839,7 +839,7 @@
       "index": 15,
       "storageTitle": "Gasp",
       "ext": "wav",
-      "audioPath": "audio/april/15%20-%20Gasp.wav",
+      "audioPath": "audio/april/gasp%20(download).wav",
       "coverPath": null
     },
     {
@@ -847,7 +847,7 @@
       "index": 16,
       "storageTitle": "No Matter the Pain",
       "ext": "wav",
-      "audioPath": "audio/april/16%20-%20No%20Matter%20the%20Pain.wav",
+      "audioPath": "audio/april/no%20matter%20the%20pain_2.wav",
       "coverPath": null
     },
     {
@@ -855,7 +855,7 @@
       "index": 17,
       "storageTitle": "ihadsomehelp",
       "ext": "wav",
-      "audioPath": "audio/april/17%20-%20ihadsomehelp.wav",
+      "audioPath": "audio/april/ihadsomehelp.wav",
       "coverPath": null
     },
     {
@@ -863,7 +863,7 @@
       "index": 18,
       "storageTitle": "letitflow_0",
       "ext": "wav",
-      "audioPath": "audio/april/18%20-%20letitflow_0.wav",
+      "audioPath": "audio/april/letitflow_0.wav",
       "coverPath": null
     },
     {
@@ -871,15 +871,15 @@
       "index": 19,
       "storageTitle": "Wish I Was Dead",
       "ext": "wav",
-      "audioPath": "audio/april/19%20-%20Wish%20I%20Was%20Dead.wav",
+      "audioPath": "audio/april/wish%20i%20was%20dead.wav",
       "coverPath": null
     },
     {
       "month": "april",
       "index": 20,
       "storageTitle": "LANDR-stay and i go-Balanced-Medium",
-      "ext": "mp3",
-      "audioPath": "audio/april/20%20-%20LANDR-stay%20and%20i%20go-Balanced-Medium.mp3",
+      "ext": "wav",
+      "audioPath": "audio/april/LANDR-stay%20and%20i%20go-Balanced-Medium.wav",
       "coverPath": null
     },
     {
@@ -887,15 +887,15 @@
       "index": 21,
       "storageTitle": "hopeand faith",
       "ext": "wav",
-      "audioPath": "audio/april/21%20-%20hopeand%20faith.wav",
+      "audioPath": "audio/april/hopeand%20faith.wav",
       "coverPath": null
     },
     {
       "month": "april",
       "index": 22,
       "storageTitle": "Double Agent",
-      "ext": "mp3",
-      "audioPath": "audio/april/22%20-%20Double%20Agent.mp3",
+      "ext": "wav",
+      "audioPath": "audio/april/double%20agent.wav",
       "coverPath": null
     },
     {
@@ -903,7 +903,7 @@
       "index": 23,
       "storageTitle": "One Bye One",
       "ext": "wav",
-      "audioPath": "audio/april/23%20-%20One%20Bye%20One.wav",
+      "audioPath": "audio/april/18-one-bye-one_th3scr1b3_afterlife.wav",
       "coverPath": null
     },
     {
@@ -911,7 +911,7 @@
       "index": 24,
       "storageTitle": "rain_isitthathard_intro",
       "ext": "wav",
-      "audioPath": "audio/april/24%20-%20rain_isitthathard_intro.wav",
+      "audioPath": "audio/april/rain_isitthathard_intro.wav",
       "coverPath": null
     },
     {
@@ -919,7 +919,7 @@
       "index": 25,
       "storageTitle": "A Fine Sin Remix",
       "ext": "wav",
-      "audioPath": "audio/april/25%20-%20A%20Fine%20Sin%20Remix.wav",
+      "audioPath": "audio/april/a%20fine%20sin%20remix%203.wav",
       "coverPath": null
     },
     {
@@ -927,15 +927,15 @@
       "index": 26,
       "storageTitle": "Quite the Lie 1",
       "ext": "wav",
-      "audioPath": "audio/april/26%20-%20Quite%20the%20Lie%201.wav",
+      "audioPath": "audio/april/quite%20the%20lie_1%20(Mastered%20with%20Sunroof%20at%20100pct).wav",
       "coverPath": null
     },
     {
       "month": "april",
       "index": 27,
-      "storageTitle": "LANDR Finding HOME Neut Balanced Medium",
-      "ext": "mp3",
-      "audioPath": "audio/april/27%20-%20LANDR%20Finding%20HOME%20Neut%20Balanced%20Medium.mp3",
+      "storageTitle": "fi",
+      "ext": "wav",
+      "audioPath": "audio/april/fi.wav",
       "coverPath": null
     },
     {
@@ -943,7 +943,7 @@
       "index": 28,
       "storageTitle": "Get High with Me",
       "ext": "wav",
-      "audioPath": "audio/april/28%20-%20Get%20High%20with%20Me.wav",
+      "audioPath": "audio/april/gethighwME_mixdown.wav",
       "coverPath": null
     },
     {
@@ -951,7 +951,7 @@
       "index": 29,
       "storageTitle": "fucking wit me",
       "ext": "wav",
-      "audioPath": "audio/april/29%20-%20fucking%20wit%20me.wav",
+      "audioPath": "audio/april/fucking%20wit%20me.wav",
       "coverPath": null
     },
     {
@@ -959,7 +959,7 @@
       "index": 30,
       "storageTitle": "Self Dick",
       "ext": "wav",
-      "audioPath": "audio/april/30%20-%20Self%20Dick.wav",
+      "audioPath": "audio/april/self_dick_mas.wav",
       "coverPath": null
     },
     {
@@ -967,7 +967,7 @@
       "index": 1,
       "storageTitle": "Tainted Gospal",
       "ext": "wav",
-      "audioPath": "audio/may/01%20-%20Tainted%20Gospal.wav",
+      "audioPath": "audio/may/G%20Chauvin%20FLoyd%20-%20Tainted%20Gospal%20(W%20SIde)_mastered.wav",
       "coverPath": null
     },
     {
@@ -975,7 +975,7 @@
       "index": 2,
       "storageTitle": "searching for free",
       "ext": "wav",
-      "audioPath": "audio/may/02%20-%20searching%20for%20free.wav",
+      "audioPath": "audio/may/searching%20for%20free.wav",
       "coverPath": null
     },
     {
@@ -983,7 +983,7 @@
       "index": 3,
       "storageTitle": "Burn It to the Ground Gapless",
       "ext": "wav",
-      "audioPath": "audio/may/03%20-%20Burn%20It%20to%20the%20Ground%20Gapless.wav",
+      "audioPath": "audio/may/burn%20it%20to%20the%20ground%20master%20gapless.wav",
       "coverPath": null
     },
     {
@@ -991,7 +991,7 @@
       "index": 4,
       "storageTitle": "Te Amo",
       "ext": "wav",
-      "audioPath": "audio/may/04%20-%20Te%20Amo.wav",
+      "audioPath": "audio/may/te_amo.wav",
       "coverPath": null
     },
     {
@@ -999,23 +999,23 @@
       "index": 5,
       "storageTitle": "without_you_cyro",
       "ext": "wav",
-      "audioPath": "audio/may/05%20-%20without_you_cyro.wav",
+      "audioPath": "audio/may/without_you_cyro.wav",
       "coverPath": null
     },
     {
       "month": "may",
       "index": 6,
       "storageTitle": "Why U Lie",
-      "ext": "mp3",
-      "audioPath": "audio/may/06%20-%20Why%20U%20Lie.mp3",
+      "ext": "wav",
+      "audioPath": "audio/may/02-why-u-lie_%20th3scr1b3%20_afterlife.wav",
       "coverPath": null
     },
     {
       "month": "may",
       "index": 7,
       "storageTitle": "Pure Popped",
-      "ext": "wav",
-      "audioPath": "audio/may/07%20-%20Pure%20Popped.wav",
+      "ext": "mp3",
+      "audioPath": "audio/may/Copy%20of%20pure%20popped.mp3",
       "coverPath": null
     },
     {
@@ -1023,7 +1023,7 @@
       "index": 8,
       "storageTitle": "2croissroads",
       "ext": "wav",
-      "audioPath": "audio/may/08%20-%202croissroads.wav",
+      "audioPath": "audio/may/2croissroads.wav",
       "coverPath": null
     },
     {
@@ -1031,7 +1031,7 @@
       "index": 9,
       "storageTitle": "Cant Escape Mas",
       "ext": "wav",
-      "audioPath": "audio/may/09%20-%20Cant%20Escape%20Mas.wav",
+      "audioPath": "audio/may/cant%20escape%20_%20mas_Precise_Depth_Presence_4824.wav",
       "coverPath": null
     },
     {
@@ -1039,7 +1039,7 @@
       "index": 10,
       "storageTitle": "Airwaves Feat Zillick",
       "ext": "wav",
-      "audioPath": "audio/may/10%20-%20Airwaves%20Feat%20Zillick.wav",
+      "audioPath": "audio/may/03-airwaves_feat-zillick_%20th3scr1b3%20_afterlife..wav",
       "coverPath": null
     },
     {
@@ -1047,7 +1047,7 @@
       "index": 11,
       "storageTitle": "get down with the negative",
       "ext": "wav",
-      "audioPath": "audio/may/11%20-%20get%20down%20with%20the%20negative.wav",
+      "audioPath": "audio/may/get%20down%20with%20the%20negative.wav",
       "coverPath": null
     },
     {
@@ -1055,7 +1055,7 @@
       "index": 12,
       "storageTitle": "Oldenside of You",
       "ext": "mp3",
-      "audioPath": "audio/may/12%20-%20Oldenside%20of%20You.mp3",
+      "audioPath": "audio/may/oldenside%20of%20you.mp3",
       "coverPath": null
     },
     {
@@ -1063,7 +1063,7 @@
       "index": 13,
       "storageTitle": "softer_side_mas",
       "ext": "wav",
-      "audioPath": "audio/may/13%20-%20softer_side_mas.wav",
+      "audioPath": "audio/may/softer_side_mas.wav",
       "coverPath": null
     },
     {
@@ -1071,7 +1071,7 @@
       "index": 14,
       "storageTitle": "Bye Bi",
       "ext": "wav",
-      "audioPath": "audio/may/14%20-%20Bye%20Bi.wav",
+      "audioPath": "audio/may/bye-bi%202_mastered.wav",
       "coverPath": null
     },
     {
@@ -1079,7 +1079,7 @@
       "index": 15,
       "storageTitle": "chill_ouT",
       "ext": "wav",
-      "audioPath": "audio/may/15%20-%20chill_ouT.wav",
+      "audioPath": "audio/may/chill_ouT.wav",
       "coverPath": null
     },
     {
@@ -1087,7 +1087,7 @@
       "index": 16,
       "storageTitle": "Get Naughty",
       "ext": "wav",
-      "audioPath": "audio/may/16%20-%20Get%20Naughty.wav",
+      "audioPath": "audio/may/getnaughty.wav",
       "coverPath": null
     },
     {
@@ -1095,7 +1095,7 @@
       "index": 17,
       "storageTitle": "Little Light",
       "ext": "wav",
-      "audioPath": "audio/may/17%20-%20Little%20Light.wav",
+      "audioPath": "audio/may/little%20light.wav",
       "coverPath": null
     },
     {
@@ -1103,7 +1103,7 @@
       "index": 18,
       "storageTitle": "OLB Remix 2",
       "ext": "wav",
-      "audioPath": "audio/may/18%20-%20OLB%20Remix%202.wav",
+      "audioPath": "audio/may/olb_remix_untitled12_mastered-2.wav",
       "coverPath": null
     },
     {
@@ -1111,7 +1111,7 @@
       "index": 19,
       "storageTitle": "Believing in Just",
       "ext": "wav",
-      "audioPath": "audio/may/19%20-%20Believing%20in%20Just.wav",
+      "audioPath": "audio/may/believing%20in%20just.wav",
       "coverPath": null
     },
     {
@@ -1119,7 +1119,7 @@
       "index": 20,
       "storageTitle": "Come Around Persiuin",
       "ext": "wav",
-      "audioPath": "audio/may/20%20-%20Come%20Around%20Persiuin.wav",
+      "audioPath": "audio/may/ds%20bangerz%20-%204%20-%20come%20around%20persiuin.wav",
       "coverPath": null
     },
     {
@@ -1127,7 +1127,7 @@
       "index": 21,
       "storageTitle": "Nostic Heresy",
       "ext": "wav",
-      "audioPath": "audio/may/21%20-%20Nostic%20Heresy.wav",
+      "audioPath": "audio/may/G%20Chauvin%20FLoyd%20-Nostic%20Heresy%20(B%20Side)_mastered.wav",
       "coverPath": null
     },
     {
@@ -1135,7 +1135,7 @@
       "index": 22,
       "storageTitle": "If You Come Along",
       "ext": "wav",
-      "audioPath": "audio/may/22%20-%20If%20You%20Come%20Along.wav",
+      "audioPath": "audio/may/if%20you%20come%20along.wav",
       "coverPath": null
     },
     {
@@ -1143,7 +1143,7 @@
       "index": 23,
       "storageTitle": "Come Together",
       "ext": "wav",
-      "audioPath": "audio/may/23%20-%20Come%20Together.wav",
+      "audioPath": "audio/may/come%20together.wav",
       "coverPath": null
     },
     {
@@ -1151,7 +1151,7 @@
       "index": 24,
       "storageTitle": "fi",
       "ext": "wav",
-      "audioPath": "audio/may/24%20-%20fi.wav",
+      "audioPath": "audio/may/fi.wav",
       "coverPath": null
     },
     {
@@ -1159,15 +1159,15 @@
       "index": 25,
       "storageTitle": "miss_u_4_video",
       "ext": "mp3",
-      "audioPath": "audio/may/25%20-%20miss_u_4_video.mp3",
+      "audioPath": "audio/may/miss_u_4_video.mp3",
       "coverPath": null
     },
     {
       "month": "may",
       "index": 26,
-      "storageTitle": "Grin Nada",
+      "storageTitle": "best thing",
       "ext": "mp3",
-      "audioPath": "audio/may/26%20-%20Grin%20Nada.mp3",
+      "audioPath": "audio/may/best%20thing.mp3",
       "coverPath": null
     },
     {
@@ -1175,7 +1175,7 @@
       "index": 27,
       "storageTitle": "Get It in",
       "ext": "wav",
-      "audioPath": "audio/may/27%20-%20Get%20It%20in.wav",
+      "audioPath": "audio/may/get%20it%20in.wav",
       "coverPath": null
     },
     {
@@ -1183,15 +1183,15 @@
       "index": 28,
       "storageTitle": "Breaking M E",
       "ext": "mp3",
-      "audioPath": "audio/may/28%20-%20Breaking%20M%20E.mp3",
+      "audioPath": "audio/may/breaking%20m%20e%20_%20m.mp3",
       "coverPath": null
     },
     {
       "month": "may",
       "index": 29,
-      "storageTitle": "LANDR Burning It Down Co Balanced Medium",
+      "storageTitle": "Burning It Down Comd2",
       "ext": "mp3",
-      "audioPath": "audio/may/29%20-%20LANDR%20Burning%20It%20Down%20Co%20Balanced%20Medium.mp3",
+      "audioPath": "audio/may/burning%20it%20down%20covermd2.mp3",
       "coverPath": null
     },
     {
@@ -1199,7 +1199,7 @@
       "index": 30,
       "storageTitle": "i_thought_you_should_know",
       "ext": "wav",
-      "audioPath": "audio/may/30%20-%20i_thought_you_should_know.wav",
+      "audioPath": "audio/may/i_thought_you_should_know.wav",
       "coverPath": null
     },
     {
@@ -1207,7 +1207,7 @@
       "index": 31,
       "storageTitle": "seemslikeyesterday_ma",
       "ext": "wav",
-      "audioPath": "audio/may/31%20-%20seemslikeyesterday_ma.wav",
+      "audioPath": "audio/may/seemslikeyesterday_ma.wav",
       "coverPath": null
     },
     {
@@ -1215,7 +1215,7 @@
       "index": 1,
       "storageTitle": "Aborted",
       "ext": "wav",
-      "audioPath": "audio/june/01%20-%20Aborted.wav",
+      "audioPath": "audio/june/d'ss%20bangerz%20-%202%20-%20aborted.wav",
       "coverPath": null
     },
     {
@@ -1223,7 +1223,7 @@
       "index": 2,
       "storageTitle": "cant look in the mirror",
       "ext": "wav",
-      "audioPath": "audio/june/02%20-%20cant%20look%20in%20the%20mirror.wav",
+      "audioPath": "audio/june/cant%20look%20in%20the%20mirror.wav",
       "coverPath": null
     },
     {
@@ -1231,7 +1231,7 @@
       "index": 3,
       "storageTitle": "LANDR-promised land-Balanced-Medium",
       "ext": "wav",
-      "audioPath": "audio/june/03%20-%20LANDR-promised%20land-Balanced-Medium.wav",
+      "audioPath": "audio/june/LANDR-promised%20land-Balanced-Medium.wav",
       "coverPath": null
     },
     {
@@ -1239,7 +1239,7 @@
       "index": 4,
       "storageTitle": "Fast Life",
       "ext": "wav",
-      "audioPath": "audio/june/04%20-%20Fast%20Life.wav",
+      "audioPath": "audio/june/fast_life.2.wav",
       "coverPath": null
     },
     {
@@ -1247,7 +1247,7 @@
       "index": 5,
       "storageTitle": "Shawty Not a Hottie",
       "ext": "wav",
-      "audioPath": "audio/june/05%20-%20Shawty%20Not%20a%20Hottie.wav",
+      "audioPath": "audio/june/shawty-not-a-hottie%20(freesyle%20%2B%20adlib).wav",
       "coverPath": null
     },
     {
@@ -1255,7 +1255,7 @@
       "index": 6,
       "storageTitle": "wake_up",
       "ext": "wav",
-      "audioPath": "audio/june/06%20-%20wake_up.wav",
+      "audioPath": "audio/june/wake_up.wav",
       "coverPath": null
     },
     {
@@ -1263,7 +1263,7 @@
       "index": 7,
       "storageTitle": "Starshining",
       "ext": "wav",
-      "audioPath": "audio/june/07%20-%20Starshining.wav",
+      "audioPath": "audio/june/starshining.wav",
       "coverPath": null
     },
     {
@@ -1271,7 +1271,7 @@
       "index": 8,
       "storageTitle": "On Sight",
       "ext": "wav",
-      "audioPath": "audio/june/08%20-%20On%20Sight.wav",
+      "audioPath": "audio/june/on%20sight.wav",
       "coverPath": null
     },
     {
@@ -1279,7 +1279,7 @@
       "index": 9,
       "storageTitle": "miracle",
       "ext": "wav",
-      "audioPath": "audio/june/09%20-%20miracle.wav",
+      "audioPath": "audio/june/miracle.wav",
       "coverPath": null
     },
     {
@@ -1287,7 +1287,7 @@
       "index": 10,
       "storageTitle": "Wishingwell",
       "ext": "wav",
-      "audioPath": "audio/june/10%20-%20Wishingwell.wav",
+      "audioPath": "audio/june/wishingwell_23_mixdown.wav",
       "coverPath": null
     },
     {
@@ -1295,7 +1295,7 @@
       "index": 11,
       "storageTitle": "bye felica",
       "ext": "wav",
-      "audioPath": "audio/june/11%20-%20bye%20felica.wav",
+      "audioPath": "audio/june/bye%20felica.wav",
       "coverPath": null
     },
     {
@@ -1303,7 +1303,7 @@
       "index": 12,
       "storageTitle": "World Ending",
       "ext": "mp3",
-      "audioPath": "audio/june/12%20-%20World%20Ending.mp3",
+      "audioPath": "audio/june/world%20ending.mp3",
       "coverPath": null
     },
     {
@@ -1311,15 +1311,15 @@
       "index": 13,
       "storageTitle": "OLB Remix",
       "ext": "wav",
-      "audioPath": "audio/june/13%20-%20OLB%20Remix.wav",
+      "audioPath": "audio/june/olb_remix_untitled12_mastered.wav",
       "coverPath": null
     },
     {
       "month": "june",
       "index": 14,
-      "storageTitle": "LANDR This H Balanced Medium",
+      "storageTitle": "This Holiday",
       "ext": "mp3",
-      "audioPath": "audio/june/14%20-%20LANDR%20This%20H%20Balanced%20Medium.mp3",
+      "audioPath": "audio/june/LANDR-this_h-Balanced-Medium.mp3",
       "coverPath": null
     },
     {
@@ -1327,7 +1327,7 @@
       "index": 15,
       "storageTitle": "Bright Day",
       "ext": "wav",
-      "audioPath": "audio/june/15%20-%20Bright%20Day.wav",
+      "audioPath": "audio/june/bright%20day_mastered.wav",
       "coverPath": null
     },
     {
@@ -1335,23 +1335,23 @@
       "index": 16,
       "storageTitle": "Natural Disaster",
       "ext": "wav",
-      "audioPath": "audio/june/16%20-%20Natural%20Disaster.wav",
+      "audioPath": "audio/june/natural%20disaster.wav",
       "coverPath": null
     },
     {
       "month": "june",
       "index": 17,
       "storageTitle": "Abandon",
-      "ext": "mp3",
-      "audioPath": "audio/june/17%20-%20Abandon.mp3",
+      "ext": "wav",
+      "audioPath": "audio/june/abandon.wav",
       "coverPath": null
     },
     {
       "month": "june",
       "index": 18,
       "storageTitle": "echoes.of.the.abyss.votd",
-      "ext": "mp3",
-      "audioPath": "audio/june/18%20-%20echoes.of.the.abyss.votd.mp3",
+      "ext": "wav",
+      "audioPath": "audio/june/echoes.of.the.abyss.votd.wav",
       "coverPath": null
     },
     {
@@ -1359,7 +1359,7 @@
       "index": 19,
       "storageTitle": "i used my lover (vintage master)",
       "ext": "wav",
-      "audioPath": "audio/june/19%20-%20i%20used%20my%20lover%20(vintage%20master).wav",
+      "audioPath": "audio/june/i%20used%20my%20lover%20(vintage%20master).wav",
       "coverPath": null
     },
     {
@@ -1367,7 +1367,7 @@
       "index": 20,
       "storageTitle": "Addicted",
       "ext": "wav",
-      "audioPath": "audio/june/20%20-%20Addicted.wav",
+      "audioPath": "audio/june/addicted.wav",
       "coverPath": null
     },
     {
@@ -1375,7 +1375,7 @@
       "index": 21,
       "storageTitle": "Left on Red",
       "ext": "wav",
-      "audioPath": "audio/june/21%20-%20Left%20on%20Red.wav",
+      "audioPath": "audio/june/left%20on%20red.wav",
       "coverPath": null
     },
     {
@@ -1383,15 +1383,15 @@
       "index": 22,
       "storageTitle": "lurplegend",
       "ext": "wav",
-      "audioPath": "audio/june/22%20-%20lurplegend.wav",
+      "audioPath": "audio/june/lurplegend.wav",
       "coverPath": null
     },
     {
       "month": "june",
       "index": 23,
-      "storageTitle": "LANDR Crying Lil Bitch Balanced Medium REV",
-      "ext": "mp3",
-      "audioPath": "audio/june/23%20-%20LANDR%20Crying%20Lil%20Bitch%20Balanced%20Medium%20REV.mp3",
+      "storageTitle": "Re",
+      "ext": "wav",
+      "audioPath": "audio/june/re(place).wav",
       "coverPath": null
     },
     {
@@ -1399,7 +1399,7 @@
       "index": 24,
       "storageTitle": "Monday Ta Wenday Ta Friday",
       "ext": "wav",
-      "audioPath": "audio/june/24%20-%20Monday%20Ta%20Wenday%20Ta%20Friday.wav",
+      "audioPath": "audio/june/Monday%20ta%20wenday%20ta%20friday_relay.wav",
       "coverPath": null
     },
     {
@@ -1407,7 +1407,7 @@
       "index": 25,
       "storageTitle": "Dirt Road",
       "ext": "wav",
-      "audioPath": "audio/june/25%20-%20Dirt%20Road.wav",
+      "audioPath": "audio/june/dirt%20road.wav",
       "coverPath": null
     },
     {
@@ -1415,7 +1415,7 @@
       "index": 26,
       "storageTitle": "Leave Me Dead",
       "ext": "mp3",
-      "audioPath": "audio/june/26%20-%20Leave%20Me%20Dead.mp3",
+      "audioPath": "audio/june/leave_me_dead_48000.mp3",
       "coverPath": null
     },
     {
@@ -1423,7 +1423,7 @@
       "index": 27,
       "storageTitle": "rookie year",
       "ext": "wav",
-      "audioPath": "audio/june/27%20-%20rookie%20year.wav",
+      "audioPath": "audio/june/rookie%20year.wav",
       "coverPath": null
     },
     {
@@ -1431,7 +1431,7 @@
       "index": 28,
       "storageTitle": "Fly Away Again",
       "ext": "wav",
-      "audioPath": "audio/june/28%20-%20Fly%20Away%20Again.wav",
+      "audioPath": "audio/june/fly%20away%20again_mixdown.wav",
       "coverPath": null
     },
     {
@@ -1439,7 +1439,7 @@
       "index": 29,
       "storageTitle": "Malibu",
       "ext": "wav",
-      "audioPath": "audio/june/29%20-%20Malibu.wav",
+      "audioPath": "audio/june/malibu.wav",
       "coverPath": null
     },
     {
@@ -1447,7 +1447,7 @@
       "index": 30,
       "storageTitle": "Loss",
       "ext": "wav",
-      "audioPath": "audio/june/30%20-%20Loss.wav",
+      "audioPath": "audio/june/loss.wav",
       "coverPath": null
     },
     {
@@ -1455,7 +1455,7 @@
       "index": 1,
       "storageTitle": "ONE LAST Breath 3",
       "ext": "wav",
-      "audioPath": "audio/july/01%20-%20ONE%20LAST%20Breath%203.wav",
+      "audioPath": "audio/july/ONE%20LAST%20BREATH_mastered-3.wav",
       "coverPath": null
     },
     {
@@ -1463,7 +1463,7 @@
       "index": 2,
       "storageTitle": "Against the Grain",
       "ext": "wav",
-      "audioPath": "audio/july/02%20-%20Against%20the%20Grain.wav",
+      "audioPath": "audio/july/against%20the%20grain_2.wav",
       "coverPath": null
     },
     {
@@ -1471,7 +1471,7 @@
       "index": 3,
       "storageTitle": "You're Alwats on My Mind",
       "ext": "mp3",
-      "audioPath": "audio/july/03%20-%20You're%20Alwats%20on%20My%20Mind.mp3",
+      "audioPath": "audio/july/you're%20alwats%20on%20my%20mind.mp3",
       "coverPath": null
     },
     {
@@ -1479,7 +1479,7 @@
       "index": 4,
       "storageTitle": "Trippie",
       "ext": "mp3",
-      "audioPath": "audio/july/04%20-%20Trippie.mp3",
+      "audioPath": "audio/july/Trippie%20feat%20Rittz.mp3",
       "coverPath": null
     },
     {
@@ -1487,7 +1487,7 @@
       "index": 5,
       "storageTitle": "Life Succubus",
       "ext": "wav",
-      "audioPath": "audio/july/05%20-%20Life%20Succubus.wav",
+      "audioPath": "audio/july/life%20succubus.wav",
       "coverPath": null
     },
     {
@@ -1495,7 +1495,7 @@
       "index": 6,
       "storageTitle": "Afinesin",
       "ext": "mp3",
-      "audioPath": "audio/july/06%20-%20Afinesin.mp3",
+      "audioPath": "audio/july/afinesin.mp3",
       "coverPath": null
     },
     {
@@ -1503,7 +1503,7 @@
       "index": 7,
       "storageTitle": "Flicker Like Fire",
       "ext": "mp3",
-      "audioPath": "audio/july/07%20-%20Flicker%20Like%20Fire.mp3",
+      "audioPath": "audio/july/flicker%20like%20fire.mp3",
       "coverPath": null
     },
     {
@@ -1511,7 +1511,7 @@
       "index": 8,
       "storageTitle": "Fundrip",
       "ext": "wav",
-      "audioPath": "audio/july/08%20-%20Fundrip.wav",
+      "audioPath": "audio/july/fundrip_exhale.wav",
       "coverPath": null
     },
     {
@@ -1519,7 +1519,7 @@
       "index": 9,
       "storageTitle": "Sometimes",
       "ext": "wav",
-      "audioPath": "audio/july/09%20-%20Sometimes.wav",
+      "audioPath": "audio/july/sometimes_splitter_mas.wav",
       "coverPath": null
     },
     {
@@ -1527,7 +1527,7 @@
       "index": 10,
       "storageTitle": "keeping it a band",
       "ext": "wav",
-      "audioPath": "audio/july/10%20-%20keeping%20it%20a%20band.wav",
+      "audioPath": "audio/july/keeping%20it%20a%20band.wav",
       "coverPath": null
     },
     {
@@ -1535,7 +1535,7 @@
       "index": 11,
       "storageTitle": "Isolkated",
       "ext": "wav",
-      "audioPath": "audio/july/11%20-%20Isolkated.wav",
+      "audioPath": "audio/july/isolkated.wav",
       "coverPath": null
     },
     {
@@ -1543,7 +1543,7 @@
       "index": 12,
       "storageTitle": "Spaces",
       "ext": "wav",
-      "audioPath": "audio/july/12%20-%20Spaces.wav",
+      "audioPath": "audio/july/spaces.wav",
       "coverPath": null
     },
     {
@@ -1551,7 +1551,7 @@
       "index": 13,
       "storageTitle": "To Myself",
       "ext": "wav",
-      "audioPath": "audio/july/13%20-%20To%20Myself.wav",
+      "audioPath": "audio/july/to%20myself.wav",
       "coverPath": null
     },
     {
@@ -1559,7 +1559,7 @@
       "index": 14,
       "storageTitle": "Standing on E",
       "ext": "wav",
-      "audioPath": "audio/july/14%20-%20Standing%20on%20E.wav",
+      "audioPath": "audio/july/standing%20on%20e.wav",
       "coverPath": null
     },
     {
@@ -1567,7 +1567,7 @@
       "index": 15,
       "storageTitle": "Buck Im Here Yto Fuck",
       "ext": "wav",
-      "audioPath": "audio/july/15%20-%20Buck%20Im%20Here%20Yto%20Fuck.wav",
+      "audioPath": "audio/july/buck%20im%20here%20yto%20fuck.wav",
       "coverPath": null
     },
     {
@@ -1575,7 +1575,7 @@
       "index": 16,
       "storageTitle": "Riddle",
       "ext": "mp3",
-      "audioPath": "audio/july/16%20-%20Riddle.mp3",
+      "audioPath": "audio/july/riddle.mp3",
       "coverPath": null
     },
     {
@@ -1583,7 +1583,7 @@
       "index": 17,
       "storageTitle": "Hhhhhhhhhhhhh",
       "ext": "wav",
-      "audioPath": "audio/july/17%20-%20Hhhhhhhhhhhhh.wav",
+      "audioPath": "audio/july/hhhhhhhhhhhhh.wav",
       "coverPath": null
     },
     {
@@ -1591,7 +1591,7 @@
       "index": 18,
       "storageTitle": "Surrender to U",
       "ext": "wav",
-      "audioPath": "audio/july/18%20-%20Surrender%20to%20U.wav",
+      "audioPath": "audio/july/surrender_to_u%202.wav",
       "coverPath": null
     },
     {
@@ -1599,7 +1599,7 @@
       "index": 19,
       "storageTitle": "halos1_theones",
       "ext": "wav",
-      "audioPath": "audio/july/19%20-%20halos1_theones.wav",
+      "audioPath": "audio/july/halos1_theones.wav",
       "coverPath": null
     },
     {
@@ -1607,23 +1607,23 @@
       "index": 20,
       "storageTitle": "Backroads",
       "ext": "wav",
-      "audioPath": "audio/july/20%20-%20Backroads.wav",
+      "audioPath": "audio/july/backroads.wav",
       "coverPath": null
     },
     {
       "month": "july",
       "index": 21,
-      "storageTitle": "LANDR Take Me Away Take Blenmd Warm Low",
+      "storageTitle": "Take Me Away",
       "ext": "mp3",
-      "audioPath": "audio/july/21%20-%20LANDR%20Take%20Me%20Away%20Take%20Blenmd%20Warm%20Low.mp3",
+      "audioPath": "audio/july/LANDR-take_me_away-Take-Blenmd-Warm-Low.mp3",
       "coverPath": null
     },
     {
       "month": "july",
       "index": 22,
       "storageTitle": "Missing You",
-      "ext": "mp3",
-      "audioPath": "audio/july/22%20-%20Missing%20You.mp3",
+      "ext": "wav",
+      "audioPath": "audio/july/missing%20you.wav",
       "coverPath": null
     },
     {
@@ -1631,7 +1631,7 @@
       "index": 23,
       "storageTitle": "Maybe Baby Itts on Me",
       "ext": "mp3",
-      "audioPath": "audio/july/23%20-%20Maybe%20Baby%20Itts%20on%20Me.mp3",
+      "audioPath": "audio/july/maybe%20baby%20itts%20on%20me.mp3",
       "coverPath": null
     },
     {
@@ -1639,7 +1639,7 @@
       "index": 24,
       "storageTitle": "True Lies",
       "ext": "mp3",
-      "audioPath": "audio/july/24%20-%20True%20Lies.mp3",
+      "audioPath": "audio/july/true%20lies.mp3",
       "coverPath": null
     },
     {
@@ -1647,7 +1647,7 @@
       "index": 25,
       "storageTitle": "Find Her Demo Entire Mix",
       "ext": "wav",
-      "audioPath": "audio/july/25%20-%20Find%20Her%20Demo%20Entire%20Mix.wav",
+      "audioPath": "audio/july/find_her_demo-Master-Entire%20Mix%20(Bounced).wav",
       "coverPath": null
     },
     {
@@ -1655,7 +1655,7 @@
       "index": 26,
       "storageTitle": "4u",
       "ext": "wav",
-      "audioPath": "audio/july/26%20-%204u.wav",
+      "audioPath": "audio/july/4u.wav",
       "coverPath": null
     },
     {
@@ -1663,7 +1663,7 @@
       "index": 27,
       "storageTitle": "Away Goes",
       "ext": "mp3",
-      "audioPath": "audio/july/27%20-%20Away%20Goes.mp3",
+      "audioPath": "audio/july/away_goes.mp3",
       "coverPath": null
     },
     {
@@ -1671,7 +1671,7 @@
       "index": 28,
       "storageTitle": "Emotuional Healing Mas",
       "ext": "mp3",
-      "audioPath": "audio/july/28%20-%20Emotuional%20Healing%20Mas.mp3",
+      "audioPath": "audio/july/emotuional_healing-mas.mp3",
       "coverPath": null
     },
     {
@@ -1679,7 +1679,7 @@
       "index": 29,
       "storageTitle": "Feel It",
       "ext": "wav",
-      "audioPath": "audio/july/29%20-%20Feel%20It.wav",
+      "audioPath": "audio/july/01-feel-it_%20th3scr1b3%20_afterlife.wav",
       "coverPath": null
     },
     {
@@ -1687,7 +1687,7 @@
       "index": 30,
       "storageTitle": "spongebobby",
       "ext": "wav",
-      "audioPath": "audio/july/30%20-%20spongebobby.wav",
+      "audioPath": "audio/july/spongebobby.wav",
       "coverPath": null
     },
     {
@@ -1695,7 +1695,7 @@
       "index": 31,
       "storageTitle": "Nostalgic Energby",
       "ext": "wav",
-      "audioPath": "audio/july/31%20-%20Nostalgic%20Energby.wav",
+      "audioPath": "audio/july/nostalgic%20energby.wav",
       "coverPath": null
     },
     {
@@ -1703,7 +1703,7 @@
       "index": 1,
       "storageTitle": "Nick Snuff M3",
       "ext": "mp3",
-      "audioPath": "audio/august/01%20-%20Nick%20Snuff%20M3.mp3",
+      "audioPath": "audio/august/nick_snuff_m3.mp3",
       "coverPath": null
     },
     {
@@ -1711,7 +1711,7 @@
       "index": 2,
       "storageTitle": "Wasted by What",
       "ext": "wav",
-      "audioPath": "audio/august/02%20-%20Wasted%20by%20What.wav",
+      "audioPath": "audio/august/wasted%20by%20what.wav",
       "coverPath": null
     },
     {
@@ -1719,7 +1719,7 @@
       "index": 3,
       "storageTitle": "What Is God Withoot Me",
       "ext": "mp3",
-      "audioPath": "audio/august/03%20-%20What%20Is%20God%20Withoot%20Me.mp3",
+      "audioPath": "audio/august/what%20is%20god%20withoot%20me.mp3",
       "coverPath": null
     },
     {
@@ -1727,15 +1727,15 @@
       "index": 4,
       "storageTitle": "Paid the World Back Beat",
       "ext": "wav",
-      "audioPath": "audio/august/04%20-%20Paid%20the%20World%20Back%20Beat.wav",
+      "audioPath": "audio/august/paid_the_world_back-beat.wav",
       "coverPath": null
     },
     {
       "month": "august",
       "index": 5,
-      "storageTitle": "LANDR If You Leave0 Open Low",
+      "storageTitle": "If you Leave",
       "ext": "mp3",
-      "audioPath": "audio/august/05%20-%20LANDR%20If%20You%20Leave0%20Open%20Low.mp3",
+      "audioPath": "audio/august/LANDR-if_you_leave-Open-Low.mp3",
       "coverPath": null
     },
     {
@@ -1743,7 +1743,7 @@
       "index": 6,
       "storageTitle": "i go",
       "ext": "wav",
-      "audioPath": "audio/august/06%20-%20i%20go.wav",
+      "audioPath": "audio/august/i%20go.wav",
       "coverPath": null
     },
     {
@@ -1751,7 +1751,7 @@
       "index": 7,
       "storageTitle": "Flowers of Us",
       "ext": "wav",
-      "audioPath": "audio/august/07%20-%20Flowers%20of%20Us.wav",
+      "audioPath": "audio/august/09-flowers-of-us_th3scr1b3_afterlife.wav",
       "coverPath": null
     },
     {
@@ -1759,7 +1759,7 @@
       "index": 8,
       "storageTitle": "Cant Have",
       "ext": "wav",
-      "audioPath": "audio/august/08%20-%20Cant%20Have.wav",
+      "audioPath": "audio/august/cant%20have%20(my%20balls).wav",
       "coverPath": null
     },
     {
@@ -1767,7 +1767,7 @@
       "index": 9,
       "storageTitle": "Footsteps",
       "ext": "mp3",
-      "audioPath": "audio/august/09%20-%20Footsteps.mp3",
+      "audioPath": "audio/august/footsteps_mas.mp3",
       "coverPath": null
     },
     {
@@ -1775,7 +1775,7 @@
       "index": 10,
       "storageTitle": "dont_fuck_up_rotation",
       "ext": "wav",
-      "audioPath": "audio/august/10%20-%20dont_fuck_up_rotation.wav",
+      "audioPath": "audio/august/dont_fuck_up_rotation.wav",
       "coverPath": null
     },
     {
@@ -1783,7 +1783,7 @@
       "index": 11,
       "storageTitle": "who you love",
       "ext": "mp3",
-      "audioPath": "audio/august/11%20-%20who%20you%20love.mp3",
+      "audioPath": "audio/august/who%20you%20love.mp3",
       "coverPath": null
     },
     {
@@ -1791,7 +1791,7 @@
       "index": 12,
       "storageTitle": "Complicated S",
       "ext": "wav",
-      "audioPath": "audio/august/12%20-%20Complicated%20S.wav",
+      "audioPath": "audio/august/15-complicated-s_th3scr1b3_afterlife.wav",
       "coverPath": null
     },
     {
@@ -1799,7 +1799,7 @@
       "index": 13,
       "storageTitle": "Speed of Pain",
       "ext": "wav",
-      "audioPath": "audio/august/13%20-%20Speed%20of%20Pain.wav",
+      "audioPath": "audio/august/speedofpain.wav",
       "coverPath": null
     },
     {
@@ -1807,7 +1807,7 @@
       "index": 14,
       "storageTitle": "Unloved",
       "ext": "wav",
-      "audioPath": "audio/august/14%20-%20Unloved.wav",
+      "audioPath": "audio/august/unloved.wav",
       "coverPath": null
     },
     {
@@ -1815,7 +1815,7 @@
       "index": 15,
       "storageTitle": "09 - up all night",
       "ext": "wav",
-      "audioPath": "audio/august/15%20-%2009%20-%20up%20all%20night.wav",
+      "audioPath": "audio/august/09%20-%20up%20all%20night.wav",
       "coverPath": null
     },
     {
@@ -1823,7 +1823,7 @@
       "index": 16,
       "storageTitle": "Faint Copy",
       "ext": "wav",
-      "audioPath": "audio/august/16%20-%20Faint%20Copy.wav",
+      "audioPath": "audio/august/faint%20copy.wav",
       "coverPath": null
     },
     {
@@ -1831,15 +1831,15 @@
       "index": 17,
       "storageTitle": "house of hope 2",
       "ext": "wav",
-      "audioPath": "audio/august/17%20-%20house%20of%20hope%202.wav",
+      "audioPath": "audio/august/house%20of%20hope%202.wav",
       "coverPath": null
     },
     {
       "month": "august",
       "index": 18,
       "storageTitle": "Live Forefeat Xzibit",
-      "ext": "wav",
-      "audioPath": "audio/august/18%20-%20Live%20Forefeat%20Xzibit.wav",
+      "ext": "mp3",
+      "audioPath": "audio/august/live%20forever%20feat%20xzibit.mp3",
       "coverPath": null
     },
     {
@@ -1847,7 +1847,7 @@
       "index": 19,
       "storageTitle": "01 - sexy in the air",
       "ext": "wav",
-      "audioPath": "audio/august/19%20-%2001%20-%20sexy%20in%20the%20air.wav",
+      "audioPath": "audio/august/01%20-%20sexy%20in%20the%20air.wav",
       "coverPath": null
     },
     {
@@ -1855,7 +1855,7 @@
       "index": 20,
       "storageTitle": "Ngbt1",
       "ext": "wav",
-      "audioPath": "audio/august/20%20-%20Ngbt1.wav",
+      "audioPath": "audio/august/ngbt1_2.wav",
       "coverPath": null
     },
     {
@@ -1863,23 +1863,23 @@
       "index": 21,
       "storageTitle": "Dreams Shattered",
       "ext": "mp3",
-      "audioPath": "audio/august/21%20-%20Dreams%20Shattered.mp3",
+      "audioPath": "audio/august/dreams%20shattered.mp3",
       "coverPath": null
     },
     {
       "month": "august",
       "index": 22,
       "storageTitle": "Maybe Baby",
-      "ext": "mp3",
-      "audioPath": "audio/august/22%20-%20Maybe%20Baby.mp3",
+      "ext": "wav",
+      "audioPath": "audio/august/maybe%20baby.wav",
       "coverPath": null
     },
     {
       "month": "august",
       "index": 23,
       "storageTitle": "Diamond Death",
-      "ext": "mp3",
-      "audioPath": "audio/august/23%20-%20Diamond%20Death.mp3",
+      "ext": "wav",
+      "audioPath": "audio/august/diamond%20death.wav",
       "coverPath": null
     },
     {
@@ -1887,7 +1887,7 @@
       "index": 24,
       "storageTitle": "A Stop in Time",
       "ext": "mp3",
-      "audioPath": "audio/august/24%20-%20A%20Stop%20in%20Time.mp3",
+      "audioPath": "audio/august/a%20stop%20in%20time.mp3",
       "coverPath": null
     },
     {
@@ -1895,7 +1895,7 @@
       "index": 25,
       "storageTitle": "Dont Ghost Me",
       "ext": "mp3",
-      "audioPath": "audio/august/25%20-%20Dont%20Ghost%20Me.mp3",
+      "audioPath": "audio/august/dont%20ghost%20me.mp3",
       "coverPath": null
     },
     {
@@ -1903,7 +1903,7 @@
       "index": 26,
       "storageTitle": "02 - midknight vibe feat karl kase",
       "ext": "wav",
-      "audioPath": "audio/august/26%20-%2002%20-%20midknight%20vibe%20feat%20karl%20kase.wav",
+      "audioPath": "audio/august/02%20-%20midknight%20vibe%20feat%20karl%20kase.wav",
       "coverPath": null
     },
     {
@@ -1911,7 +1911,7 @@
       "index": 27,
       "storageTitle": "Poth",
       "ext": "mp3",
-      "audioPath": "audio/august/27%20-%20Poth.mp3",
+      "audioPath": "audio/august/poth.mp3",
       "coverPath": null
     },
     {
@@ -1919,7 +1919,7 @@
       "index": 28,
       "storageTitle": "Sicko",
       "ext": "wav",
-      "audioPath": "audio/august/28%20-%20Sicko.wav",
+      "audioPath": "audio/august/sicko.wav",
       "coverPath": null
     },
     {
@@ -1927,7 +1927,7 @@
       "index": 29,
       "storageTitle": "Adrift",
       "ext": "wav",
-      "audioPath": "audio/august/29%20-%20Adrift.wav",
+      "audioPath": "audio/august/adrift.wav",
       "coverPath": null
     },
     {
@@ -1935,7 +1935,7 @@
       "index": 30,
       "storageTitle": "Dark Thoughts",
       "ext": "mp3",
-      "audioPath": "audio/august/30%20-%20Dark%20Thoughts.mp3",
+      "audioPath": "audio/august/dark_thoughts.mp3",
       "coverPath": null
     },
     {
@@ -1943,7 +1943,7 @@
       "index": 31,
       "storageTitle": "Mystery",
       "ext": "mp3",
-      "audioPath": "audio/august/31%20-%20Mystery.mp3",
+      "audioPath": "audio/august/mystery.mp3",
       "coverPath": null
     },
     {
@@ -1951,7 +1951,7 @@
       "index": 1,
       "storageTitle": "Message 4 K Comp M1",
       "ext": "wav",
-      "audioPath": "audio/september/01%20-%20Message%204%20K%20Comp%20M1.wav",
+      "audioPath": "audio/september/message_4_k_comp_m1.wav",
       "coverPath": null
     },
     {
@@ -1959,15 +1959,15 @@
       "index": 2,
       "storageTitle": "03 - vice",
       "ext": "wav",
-      "audioPath": "audio/september/02%20-%2003%20-%20vice.wav",
+      "audioPath": "audio/september/03%20-%20vice.wav",
       "coverPath": null
     },
     {
       "month": "september",
       "index": 3,
       "storageTitle": "Hemmorage",
-      "ext": "mp3",
-      "audioPath": "audio/september/03%20-%20Hemmorage.mp3",
+      "ext": "wav",
+      "audioPath": "audio/september/hemmorage_1.wav",
       "coverPath": null
     },
     {
@@ -1975,7 +1975,7 @@
       "index": 4,
       "storageTitle": "Monetary T",
       "ext": "wav",
-      "audioPath": "audio/september/04%20-%20Monetary%20T.wav",
+      "audioPath": "audio/september/monetary_t.wav",
       "coverPath": null
     },
     {
@@ -1983,7 +1983,7 @@
       "index": 5,
       "storageTitle": "D and D",
       "ext": "wav",
-      "audioPath": "audio/september/05%20-%20D%20and%20D.wav",
+      "audioPath": "audio/september/D%20AND%20D.wav",
       "coverPath": null
     },
     {
@@ -1991,7 +1991,7 @@
       "index": 6,
       "storageTitle": "Blackout",
       "ext": "wav",
-      "audioPath": "audio/september/06%20-%20Blackout.wav",
+      "audioPath": "audio/september/04-blackout_%20th3scr1b3%20_afterlife.wav",
       "coverPath": null
     },
     {
@@ -1999,15 +1999,15 @@
       "index": 7,
       "storageTitle": "Sirens",
       "ext": "mp3",
-      "audioPath": "audio/september/07%20-%20Sirens.mp3",
+      "audioPath": "audio/september/sirens.mp3",
       "coverPath": null
     },
     {
       "month": "september",
       "index": 8,
       "storageTitle": "Running",
-      "ext": "mp3",
-      "audioPath": "audio/september/08%20-%20Running.mp3",
+      "ext": "wav",
+      "audioPath": "audio/september/running_mas.wav",
       "coverPath": null
     },
     {
@@ -2015,7 +2015,7 @@
       "index": 9,
       "storageTitle": "Fuck B",
       "ext": "mp3",
-      "audioPath": "audio/september/09%20-%20Fuck%20B.mp3",
+      "audioPath": "audio/september/fuck_b_m.mp3",
       "coverPath": null
     },
     {
@@ -2023,7 +2023,7 @@
       "index": 10,
       "storageTitle": "Get Oyou",
       "ext": "wav",
-      "audioPath": "audio/september/10%20-%20Get%20Oyou.wav",
+      "audioPath": "audio/september/get%20over%20you%20(I%20need)%20-%20master.wav",
       "coverPath": null
     },
     {
@@ -2031,7 +2031,7 @@
       "index": 11,
       "storageTitle": "Only Time Will Tell",
       "ext": "wav",
-      "audioPath": "audio/september/11%20-%20Only%20Time%20Will%20Tell.wav",
+      "audioPath": "audio/september/otwt_real_scr1b3_mix.wav",
       "coverPath": null
     },
     {
@@ -2039,15 +2039,15 @@
       "index": 12,
       "storageTitle": "Far Away",
       "ext": "wav",
-      "audioPath": "audio/september/12%20-%20Far%20Away.wav",
+      "audioPath": "audio/september/far%20away.wav",
       "coverPath": null
     },
     {
       "month": "september",
       "index": 13,
       "storageTitle": "Hades",
-      "ext": "mp3",
-      "audioPath": "audio/september/13%20-%20Hades.mp3",
+      "ext": "wav",
+      "audioPath": "audio/september/hades.wav",
       "coverPath": null
     },
     {
@@ -2055,7 +2055,7 @@
       "index": 14,
       "storageTitle": "Midnight Piano",
       "ext": "wav",
-      "audioPath": "audio/september/14%20-%20Midnight%20Piano.wav",
+      "audioPath": "audio/september/07-midnight-piano_%20th3scr1b3%20_afterlife.wav",
       "coverPath": null
     },
     {
@@ -2063,7 +2063,7 @@
       "index": 15,
       "storageTitle": "Johnny DEMON",
       "ext": "mp3",
-      "audioPath": "audio/september/15%20-%20Johnny%20DEMON.mp3",
+      "audioPath": "audio/september/JOHNNY_DEMON_M.mp3",
       "coverPath": null
     },
     {
@@ -2071,7 +2071,7 @@
       "index": 16,
       "storageTitle": "Sunset",
       "ext": "mp3",
-      "audioPath": "audio/september/16%20-%20Sunset.mp3",
+      "audioPath": "audio/september/sunset.mp3",
       "coverPath": null
     },
     {
@@ -2079,7 +2079,7 @@
       "index": 17,
       "storageTitle": "Purple Sky",
       "ext": "wav",
-      "audioPath": "audio/september/17%20-%20Purple%20Sky.wav",
+      "audioPath": "audio/september/06-purple-sky_%20th3scr1b3%20_afterlife.wav",
       "coverPath": null
     },
     {
@@ -2087,7 +2087,7 @@
       "index": 18,
       "storageTitle": "Darewell",
       "ext": "mp3",
-      "audioPath": "audio/september/18%20-%20Darewell.mp3",
+      "audioPath": "audio/september/darewell.mp3",
       "coverPath": null
     },
     {
@@ -2095,15 +2095,15 @@
       "index": 19,
       "storageTitle": "Alien 2nd Mix",
       "ext": "mp3",
-      "audioPath": "audio/september/19%20-%20Alien%202nd%20Mix.mp3",
+      "audioPath": "audio/september/alien_2nd%20mix.mp3",
       "coverPath": null
     },
     {
       "month": "september",
       "index": 20,
       "storageTitle": "Purpose",
-      "ext": "mp3",
-      "audioPath": "audio/september/20%20-%20Purpose.mp3",
+      "ext": "wav",
+      "audioPath": "audio/september/purpose.wav",
       "coverPath": null
     },
     {
@@ -2111,7 +2111,7 @@
       "index": 21,
       "storageTitle": "Grave Robber",
       "ext": "mp3",
-      "audioPath": "audio/september/21%20-%20Grave%20Robber.mp3",
+      "audioPath": "audio/september/grave%20robber.mp3",
       "coverPath": null
     },
     {
@@ -2119,7 +2119,7 @@
       "index": 22,
       "storageTitle": "Too Late Fawy",
       "ext": "wav",
-      "audioPath": "audio/september/22%20-%20Too%20Late%20Fawy.wav",
+      "audioPath": "audio/september/too%20late%20fawy_mastered.wav",
       "coverPath": null
     },
     {
@@ -2127,23 +2127,23 @@
       "index": 23,
       "storageTitle": "Clebit",
       "ext": "wav",
-      "audioPath": "audio/september/23%20-%20Clebit.wav",
+      "audioPath": "audio/september/clever_bit.wav",
       "coverPath": null
     },
     {
       "month": "september",
       "index": 24,
       "storageTitle": "LANDR Hemmorage 1 Open Medium",
-      "ext": "wav",
-      "audioPath": "audio/september/24%20-%20LANDR%20Hemmorage%201%20Open%20Medium.wav",
+      "ext": "mp3",
+      "audioPath": "audio/september/LANDR-hemmorage_1-Open-Medium.mp3",
       "coverPath": null
     },
     {
       "month": "september",
       "index": 25,
       "storageTitle": "Sweater",
-      "ext": "mp3",
-      "audioPath": "audio/september/25%20-%20Sweater.mp3",
+      "ext": "wav",
+      "audioPath": "audio/september/sweater.wav",
       "coverPath": null
     },
     {
@@ -2151,7 +2151,7 @@
       "index": 26,
       "storageTitle": "What You Know",
       "ext": "wav",
-      "audioPath": "audio/september/26%20-%20What%20You%20Know.wav",
+      "audioPath": "audio/september/what%20you%20know.wav",
       "coverPath": null
     },
     {
@@ -2159,7 +2159,7 @@
       "index": 27,
       "storageTitle": "Falling Apart",
       "ext": "mp3",
-      "audioPath": "audio/september/27%20-%20Falling%20Apart.mp3",
+      "audioPath": "audio/september/FALLING%20Apart_m.mp3",
       "coverPath": null
     },
     {
@@ -2167,7 +2167,7 @@
       "index": 28,
       "storageTitle": "PULSE",
       "ext": "mp3",
-      "audioPath": "audio/september/28%20-%20PULSE.mp3",
+      "audioPath": "audio/september/PULSE.mp3",
       "coverPath": null
     },
     {
@@ -2175,7 +2175,7 @@
       "index": 29,
       "storageTitle": "Say It Up",
       "ext": "wav",
-      "audioPath": "audio/september/29%20-%20Say%20It%20Up.wav",
+      "audioPath": "audio/september/say%20it_up.wav",
       "coverPath": null
     },
     {
@@ -2183,7 +2183,7 @@
       "index": 30,
       "storageTitle": "Awe Ofu",
       "ext": "wav",
-      "audioPath": "audio/september/30%20-%20Awe%20Ofu.wav",
+      "audioPath": "audio/september/awe_ofU.wav",
       "coverPath": null
     },
     {
@@ -2191,7 +2191,7 @@
       "index": 1,
       "storageTitle": "Outlast",
       "ext": "mp3",
-      "audioPath": "audio/october/01%20-%20Outlast.mp3",
+      "audioPath": "audio/october/outlast_mas.mp3",
       "coverPath": null
     },
     {
@@ -2199,7 +2199,7 @@
       "index": 2,
       "storageTitle": "04 - cocamowav",
       "ext": "wav",
-      "audioPath": "audio/october/02%20-%2004%20-%20cocamowav.wav",
+      "audioPath": "audio/october/04%20-%20cocamowav.wav",
       "coverPath": null
     },
     {
@@ -2207,7 +2207,7 @@
       "index": 3,
       "storageTitle": "06 - roll to me",
       "ext": "wav",
-      "audioPath": "audio/october/03%20-%2006%20-%20roll%20to%20me.wav",
+      "audioPath": "audio/october/06%20-%20roll%20to%20me.wav",
       "coverPath": null
     },
     {
@@ -2215,7 +2215,7 @@
       "index": 4,
       "storageTitle": "Starlight",
       "ext": "mp3",
-      "audioPath": "audio/october/04%20-%20Starlight.mp3",
+      "audioPath": "audio/october/starlight.mp3",
       "coverPath": null
     },
     {
@@ -2223,7 +2223,7 @@
       "index": 5,
       "storageTitle": "Prevail",
       "ext": "mp3",
-      "audioPath": "audio/october/05%20-%20Prevail.mp3",
+      "audioPath": "audio/october/prevail.mp3",
       "coverPath": null
     },
     {
@@ -2231,7 +2231,7 @@
       "index": 6,
       "storageTitle": "Hatedown",
       "ext": "wav",
-      "audioPath": "audio/october/06%20-%20Hatedown.wav",
+      "audioPath": "audio/october/hate_mix_down.wav",
       "coverPath": null
     },
     {
@@ -2239,7 +2239,7 @@
       "index": 7,
       "storageTitle": "Falllin",
       "ext": "wav",
-      "audioPath": "audio/october/07%20-%20Falllin.wav",
+      "audioPath": "audio/october/falllin.wav",
       "coverPath": null
     },
     {
@@ -2247,7 +2247,7 @@
       "index": 8,
       "storageTitle": "Haert N Soul Collide",
       "ext": "wav",
-      "audioPath": "audio/october/08%20-%20Haert%20N%20Soul%20Collide.wav",
+      "audioPath": "audio/october/haert_n_soul_collide.wav",
       "coverPath": null
     },
     {
@@ -2255,7 +2255,7 @@
       "index": 9,
       "storageTitle": "Exhale",
       "ext": "wav",
-      "audioPath": "audio/october/09%20-%20Exhale.wav",
+      "audioPath": "audio/october/exhale.wav",
       "coverPath": null
     },
     {
@@ -2263,7 +2263,7 @@
       "index": 10,
       "storageTitle": "08 - rude timing",
       "ext": "wav",
-      "audioPath": "audio/october/10%20-%2008%20-%20rude%20timing.wav",
+      "audioPath": "audio/october/08%20-%20rude%20timing.wav",
       "coverPath": null
     },
     {
@@ -2271,7 +2271,7 @@
       "index": 11,
       "storageTitle": "My Sacrifices",
       "ext": "mp3",
-      "audioPath": "audio/october/11%20-%20My%20Sacrifices.mp3",
+      "audioPath": "audio/october/my%20sacrifices.mp3",
       "coverPath": null
     },
     {
@@ -2279,7 +2279,7 @@
       "index": 12,
       "storageTitle": "10 - never coming down",
       "ext": "wav",
-      "audioPath": "audio/october/12%20-%2010%20-%20never%20coming%20down.wav",
+      "audioPath": "audio/october/10%20-%20never%20coming%20down.wav",
       "coverPath": null
     },
     {
@@ -2287,7 +2287,7 @@
       "index": 13,
       "storageTitle": "11 - colors you tell yourself",
       "ext": "wav",
-      "audioPath": "audio/october/13%20-%2011%20-%20colors%20you%20tell%20yourself.wav",
+      "audioPath": "audio/october/11%20-%20colors%20you%20tell%20yourself.wav",
       "coverPath": null
     },
     {
@@ -2295,7 +2295,7 @@
       "index": 14,
       "storageTitle": "13 - erode again feat karl kase",
       "ext": "wav",
-      "audioPath": "audio/october/14%20-%2013%20-%20erode%20again%20feat%20karl%20kase.wav",
+      "audioPath": "audio/october/13%20-%20erode%20again%20feat%20karl%20kase.wav",
       "coverPath": null
     },
     {
@@ -2303,7 +2303,7 @@
       "index": 15,
       "storageTitle": "LANDR Love for You Balanced Medium",
       "ext": "mp3",
-      "audioPath": "audio/october/15%20-%20LANDR%20Love%20for%20You%20Balanced%20Medium.mp3",
+      "audioPath": "audio/october/LANDR-love%20for%20you-Balanced-Medium.mp3",
       "coverPath": null
     },
     {
@@ -2311,15 +2311,15 @@
       "index": 16,
       "storageTitle": "Beat 2 O",
       "ext": "wav",
-      "audioPath": "audio/october/16%20-%20Beat%202%20O.wav",
+      "audioPath": "audio/october/Beat%202%20O.wav",
       "coverPath": null
     },
     {
       "month": "october",
       "index": 17,
-      "storageTitle": "No Place 2 Hide",
+      "storageTitle": "lightgoesin(reprise)",
       "ext": "mp3",
-      "audioPath": "audio/october/17%20-%20No%20Place%202%20Hide.mp3",
+      "audioPath": "audio/october/lightgoesin(reprise).mp3",
       "coverPath": null
     },
     {
@@ -2327,7 +2327,7 @@
       "index": 18,
       "storageTitle": "Chunky",
       "ext": "wav",
-      "audioPath": "audio/october/18%20-%20Chunky.wav",
+      "audioPath": "audio/october/chunky_newm.wav",
       "coverPath": null
     },
     {
@@ -2335,7 +2335,7 @@
       "index": 19,
       "storageTitle": "14 - attention",
       "ext": "wav",
-      "audioPath": "audio/october/19%20-%2014%20-%20attention.wav",
+      "audioPath": "audio/october/14%20-%20attention.wav",
       "coverPath": null
     },
     {
@@ -2343,7 +2343,7 @@
       "index": 20,
       "storageTitle": "You Know You 2e",
       "ext": "wav",
-      "audioPath": "audio/october/20%20-%20You%20Know%20You%202e.wav",
+      "audioPath": "audio/october/you%20know%20you_2e.wav",
       "coverPath": null
     },
     {
@@ -2351,7 +2351,7 @@
       "index": 21,
       "storageTitle": "Wysiwyg",
       "ext": "mp3",
-      "audioPath": "audio/october/21%20-%20Wysiwyg.mp3",
+      "audioPath": "audio/october/wysiwyg_mas.mp3",
       "coverPath": null
     },
     {
@@ -2359,7 +2359,7 @@
       "index": 22,
       "storageTitle": "Sing to Me",
       "ext": "mp3",
-      "audioPath": "audio/october/22%20-%20Sing%20to%20Me.mp3",
+      "audioPath": "audio/october/sing%20to%20me.mp3",
       "coverPath": null
     },
     {
@@ -2367,7 +2367,7 @@
       "index": 23,
       "storageTitle": "Open All Night",
       "ext": "wav",
-      "audioPath": "audio/october/23%20-%20Open%20All%20Night.wav",
+      "audioPath": "audio/october/open%20all%20night_ver_2.wav",
       "coverPath": null
     },
     {
@@ -2375,23 +2375,23 @@
       "index": 24,
       "storageTitle": "Trip",
       "ext": "wav",
-      "audioPath": "audio/october/24%20-%20Trip.wav",
+      "audioPath": "audio/october/16-trip_th3scr1b3_afterlife.wav",
       "coverPath": null
     },
     {
       "month": "october",
       "index": 25,
-      "storageTitle": "Burning It Down Comd2",
+      "storageTitle": "onapositive note",
       "ext": "mp3",
-      "audioPath": "audio/october/25%20-%20Burning%20It%20Down%20Comd2.mp3",
+      "audioPath": "audio/october/onapositive%20note.mp3",
       "coverPath": null
     },
     {
       "month": "october",
       "index": 26,
       "storageTitle": "It Wont Take Lolng",
-      "ext": "mp3",
-      "audioPath": "audio/october/26%20-%20It%20Wont%20Take%20Lolng.mp3",
+      "ext": "wav",
+      "audioPath": "audio/october/it%20wont%20take%20lolng.wav",
       "coverPath": null
     },
     {
@@ -2399,7 +2399,7 @@
       "index": 27,
       "storageTitle": "15 - controlW",
       "ext": "wav",
-      "audioPath": "audio/october/27%20-%2015%20-%20controlW.wav",
+      "audioPath": "audio/october/15%20-%20controlW.wav",
       "coverPath": null
     },
     {
@@ -2407,7 +2407,7 @@
       "index": 28,
       "storageTitle": "16 - eros",
       "ext": "wav",
-      "audioPath": "audio/october/28%20-%2016%20-%20eros.wav",
+      "audioPath": "audio/october/16%20-%20eros.wav",
       "coverPath": null
     },
     {
@@ -2415,7 +2415,7 @@
       "index": 29,
       "storageTitle": "LANDR Sweet You Warm Medium",
       "ext": "mp3",
-      "audioPath": "audio/october/29%20-%20LANDR%20Sweet%20You%20Warm%20Medium.mp3",
+      "audioPath": "audio/october/LANDR-sweet%20you-Warm-Medium.mp3",
       "coverPath": null
     },
     {
@@ -2423,7 +2423,7 @@
       "index": 30,
       "storageTitle": "17 - frozen",
       "ext": "wav",
-      "audioPath": "audio/october/30%20-%2017%20-%20frozen.wav",
+      "audioPath": "audio/october/17%20-%20frozen.wav",
       "coverPath": null
     },
     {
@@ -2431,7 +2431,7 @@
       "index": 31,
       "storageTitle": "Locked Up",
       "ext": "wav",
-      "audioPath": "audio/october/31%20-%20Locked%20Up.wav",
+      "audioPath": "audio/october/locked%20up%20(Mastered%20with%20Sunroof%20at%2065pct).wav",
       "coverPath": null
     },
     {
@@ -2439,7 +2439,7 @@
       "index": 1,
       "storageTitle": "Negonnas Stop Loving You",
       "ext": "mp3",
-      "audioPath": "audio/november/01%20-%20Negonnas%20Stop%20Loving%20You.mp3",
+      "audioPath": "audio/november/never%20gonnas%20stop%20loving%20you.mp3",
       "coverPath": null
     },
     {
@@ -2447,7 +2447,7 @@
       "index": 2,
       "storageTitle": "18 - don't go",
       "ext": "wav",
-      "audioPath": "audio/november/02%20-%2018%20-%20don't%20go.wav",
+      "audioPath": "audio/november/18%20-%20don't%20go.wav",
       "coverPath": null
     },
     {
@@ -2455,7 +2455,7 @@
       "index": 3,
       "storageTitle": "Hard to Ignore",
       "ext": "wav",
-      "audioPath": "audio/november/03%20-%20Hard%20to%20Ignore.wav",
+      "audioPath": "audio/november/hard2ignore.wav",
       "coverPath": null
     },
     {
@@ -2463,7 +2463,7 @@
       "index": 4,
       "storageTitle": "Open Wide",
       "ext": "wav",
-      "audioPath": "audio/november/04%20-%20Open%20Wide.wav",
+      "audioPath": "audio/november/open_wide.wav",
       "coverPath": null
     },
     {
@@ -2471,7 +2471,7 @@
       "index": 5,
       "storageTitle": "Be Altm",
       "ext": "wav",
-      "audioPath": "audio/november/05%20-%20Be%20Altm.wav",
+      "audioPath": "audio/november/be_altM.wav",
       "coverPath": null
     },
     {
@@ -2479,7 +2479,7 @@
       "index": 6,
       "storageTitle": "It's Gonna Be Alright",
       "ext": "wav",
-      "audioPath": "audio/november/06%20-%20It's%20Gonna%20Be%20Alright.wav",
+      "audioPath": "audio/november/itsgonnabealright_sat.wav",
       "coverPath": null
     },
     {
@@ -2487,7 +2487,7 @@
       "index": 7,
       "storageTitle": "19 - right where you left me",
       "ext": "wav",
-      "audioPath": "audio/november/07%20-%2019%20-%20right%20where%20you%20left%20me.wav",
+      "audioPath": "audio/november/19%20-%20right%20where%20you%20left%20me.wav",
       "coverPath": null
     },
     {
@@ -2495,7 +2495,7 @@
       "index": 8,
       "storageTitle": "Feel Good",
       "ext": "wav",
-      "audioPath": "audio/november/08%20-%20Feel%20Good.wav",
+      "audioPath": "audio/november/feelgood.wav",
       "coverPath": null
     },
     {
@@ -2503,7 +2503,7 @@
       "index": 9,
       "storageTitle": "Wrap That",
       "ext": "wav",
-      "audioPath": "audio/november/09%20-%20Wrap%20That.wav",
+      "audioPath": "audio/november/wrap%20that_m.wav",
       "coverPath": null
     },
     {
@@ -2511,7 +2511,7 @@
       "index": 10,
       "storageTitle": "20 - stopping the spin",
       "ext": "wav",
-      "audioPath": "audio/november/10%20-%2020%20-%20stopping%20the%20spin.wav",
+      "audioPath": "audio/november/20%20-%20stopping%20the%20spin.wav",
       "coverPath": null
     },
     {
@@ -2519,7 +2519,7 @@
       "index": 11,
       "storageTitle": "Trip Into Background",
       "ext": "wav",
-      "audioPath": "audio/november/11%20-%20Trip%20Into%20Background.wav",
+      "audioPath": "audio/november/Trip%20into%20Background.wav",
       "coverPath": null
     },
     {
@@ -2527,7 +2527,7 @@
       "index": 12,
       "storageTitle": "Entropy",
       "ext": "wav",
-      "audioPath": "audio/november/12%20-%20Entropy.wav",
+      "audioPath": "audio/november/entropy_normal2.wav",
       "coverPath": null
     },
     {
@@ -2535,7 +2535,7 @@
       "index": 13,
       "storageTitle": "Odds",
       "ext": "mp3",
-      "audioPath": "audio/november/13%20-%20Odds.mp3",
+      "audioPath": "audio/november/odds_mas.mp3",
       "coverPath": null
     },
     {
@@ -2543,15 +2543,15 @@
       "index": 14,
       "storageTitle": "Go Get It",
       "ext": "wav",
-      "audioPath": "audio/november/14%20-%20Go%20Get%20It.wav",
+      "audioPath": "audio/november/go%20get%20it.%20_m.wav",
       "coverPath": null
     },
     {
       "month": "november",
       "index": 15,
-      "storageTitle": "Come Along with Me",
-      "ext": "wav",
-      "audioPath": "audio/november/15%20-%20Come%20Along%20with%20Me.wav",
+      "storageTitle": "quietfortress",
+      "ext": "mp3",
+      "audioPath": "audio/november/quietfortress.mp3",
       "coverPath": null
     },
     {
@@ -2559,7 +2559,7 @@
       "index": 16,
       "storageTitle": "She Said Lil Richard Where Da Fux U",
       "ext": "wav",
-      "audioPath": "audio/november/16%20-%20She%20Said%20Lil%20Richard%20Where%20Da%20Fux%20U.wav",
+      "audioPath": "audio/november/she-said-lil-richard-where-da-fux-u-%40_mixdown.wav",
       "coverPath": null
     },
     {
@@ -2567,7 +2567,7 @@
       "index": 17,
       "storageTitle": "Dont Blame U",
       "ext": "wav",
-      "audioPath": "audio/november/17%20-%20Dont%20Blame%20U.wav",
+      "audioPath": "audio/november/dont%20blame%20u_mix_5%20(Mastered%20with%20Sunroof%20at%20100pct).wav",
       "coverPath": null
     },
     {
@@ -2575,7 +2575,7 @@
       "index": 18,
       "storageTitle": "Yourbody",
       "ext": "mp3",
-      "audioPath": "audio/november/18%20-%20Yourbody.mp3",
+      "audioPath": "audio/november/yourbody.mp3",
       "coverPath": null
     },
     {
@@ -2583,7 +2583,7 @@
       "index": 19,
       "storageTitle": "23 - break up",
       "ext": "wav",
-      "audioPath": "audio/november/19%20-%2023%20-%20break%20up.wav",
+      "audioPath": "audio/november/23%20-%20break%20up.wav",
       "coverPath": null
     },
     {
@@ -2591,7 +2591,7 @@
       "index": 20,
       "storageTitle": "Advice 2",
       "ext": "wav",
-      "audioPath": "audio/november/20%20-%20Advice%202.wav",
+      "audioPath": "audio/november/Copy%20of%20advice_2%20(Mastered%20with%20Aurora%20at%20100pct).wav",
       "coverPath": null
     },
     {
@@ -2599,7 +2599,7 @@
       "index": 21,
       "storageTitle": "Climax",
       "ext": "wav",
-      "audioPath": "audio/november/21%20-%20Climax.wav",
+      "audioPath": "audio/november/climax_mas.wav",
       "coverPath": null
     },
     {
@@ -2607,7 +2607,7 @@
       "index": 22,
       "storageTitle": "24 - from today",
       "ext": "wav",
-      "audioPath": "audio/november/22%20-%2024%20-%20from%20today.wav",
+      "audioPath": "audio/november/24%20-%20from%20today.wav",
       "coverPath": null
     },
     {
@@ -2615,7 +2615,7 @@
       "index": 23,
       "storageTitle": "Summers Ending",
       "ext": "wav",
-      "audioPath": "audio/november/23%20-%20Summers%20Ending.wav",
+      "audioPath": "audio/november/summers%20ending.wav",
       "coverPath": null
     },
     {
@@ -2623,7 +2623,7 @@
       "index": 24,
       "storageTitle": "26 - the moment at hand",
       "ext": "wav",
-      "audioPath": "audio/november/24%20-%2026%20-%20the%20moment%20at%20hand.wav",
+      "audioPath": "audio/november/26%20-%20the%20moment%20at%20hand%20.wav",
       "coverPath": null
     },
     {
@@ -2631,7 +2631,7 @@
       "index": 25,
       "storageTitle": "80s Stack",
       "ext": "wav",
-      "audioPath": "audio/november/25%20-%2080s%20Stack.wav",
+      "audioPath": "audio/november/80sstack_abbyroad.wav",
       "coverPath": null
     },
     {
@@ -2639,7 +2639,7 @@
       "index": 26,
       "storageTitle": "chin up_mastered",
       "ext": "wav",
-      "audioPath": "audio/november/26%20-%20chin%20up_mastered.wav",
+      "audioPath": "audio/november/chin%20up_mastered.wav",
       "coverPath": null
     },
     {
@@ -2647,7 +2647,7 @@
       "index": 27,
       "storageTitle": "So Done",
       "ext": "wav",
-      "audioPath": "audio/november/27%20-%20So%20Done.wav",
+      "audioPath": "audio/november/So%20Done%20-%20Template.wav",
       "coverPath": null
     },
     {
@@ -2655,7 +2655,7 @@
       "index": 28,
       "storageTitle": "dale_murphy_2",
       "ext": "wav",
-      "audioPath": "audio/november/28%20-%20dale_murphy_2.wav",
+      "audioPath": "audio/november/dale_murphy_2.wav",
       "coverPath": null
     },
     {
@@ -2663,7 +2663,7 @@
       "index": 29,
       "storageTitle": "My Past",
       "ext": "wav",
-      "audioPath": "audio/november/29%20-%20My%20Past.wav",
+      "audioPath": "audio/november/19-my-past_th3scr1b3_afterlife.wav",
       "coverPath": null
     },
     {
@@ -2671,15 +2671,15 @@
       "index": 30,
       "storageTitle": "You Got Me",
       "ext": "wav",
-      "audioPath": "audio/november/30%20-%20You%20Got%20Me.wav",
+      "audioPath": "audio/november/you%20got%20me%20m.wav",
       "coverPath": null
     },
     {
       "month": "december",
       "index": 1,
-      "storageTitle": "Bb",
+      "storageTitle": "Beauty",
       "ext": "wav",
-      "audioPath": "audio/december/01%20-%20Bb.wav",
+      "audioPath": "audio/december/13-beauty_th3scr1b3_afterlife.wav",
       "coverPath": null
     },
     {
@@ -2687,7 +2687,7 @@
       "index": 2,
       "storageTitle": "lighter v2 vbr vocal UP",
       "ext": "mp3",
-      "audioPath": "audio/december/02%20-%20lighter%20v2%20vbr%20vocal%20UP.mp3",
+      "audioPath": "audio/december/lighter%20v2%20vbr%20vocal%20UP.mp3",
       "coverPath": null
     },
     {
@@ -2695,7 +2695,7 @@
       "index": 3,
       "storageTitle": "Climb to You",
       "ext": "wav",
-      "audioPath": "audio/december/03%20-%20Climb%20to%20You.wav",
+      "audioPath": "audio/december/20-climb-to-you_th3scr1b3_afterlife.wav",
       "coverPath": null
     },
     {
@@ -2703,7 +2703,7 @@
       "index": 4,
       "storageTitle": "Basic",
       "ext": "wav",
-      "audioPath": "audio/december/04%20-%20Basic.wav",
+      "audioPath": "audio/december/basic_mas.wav",
       "coverPath": null
     },
     {
@@ -2711,7 +2711,7 @@
       "index": 5,
       "storageTitle": "No Service",
       "ext": "wav",
-      "audioPath": "audio/december/05%20-%20No%20Service.wav",
+      "audioPath": "audio/december/NOSERVICE.wav",
       "coverPath": null
     },
     {
@@ -2719,7 +2719,7 @@
       "index": 6,
       "storageTitle": "battle_os_2",
       "ext": "wav",
-      "audioPath": "audio/december/06%20-%20battle_os_2.wav",
+      "audioPath": "audio/december/battle_os_2.wav",
       "coverPath": null
     },
     {
@@ -2727,7 +2727,7 @@
       "index": 7,
       "storageTitle": "When I Say Forever",
       "ext": "wav",
-      "audioPath": "audio/december/07%20-%20When%20I%20Say%20Forever.wav",
+      "audioPath": "audio/december/21-when-i-say-forever_th3scr1b3_afterlife.wav",
       "coverPath": null
     },
     {
@@ -2735,7 +2735,7 @@
       "index": 8,
       "storageTitle": "LANDR Childhood Warm Low",
       "ext": "mp3",
-      "audioPath": "audio/december/08%20-%20LANDR%20Childhood%20Warm%20Low.mp3",
+      "audioPath": "audio/december/LANDR-childhood-Warm-Low.mp3",
       "coverPath": null
     },
     {
@@ -2743,7 +2743,7 @@
       "index": 9,
       "storageTitle": "ONLY SON",
       "ext": "wav",
-      "audioPath": "audio/december/09%20-%20ONLY%20SON.wav",
+      "audioPath": "audio/december/ONLY%20SON.wav",
       "coverPath": null
     },
     {
@@ -2751,7 +2751,7 @@
       "index": 10,
       "storageTitle": "Beauty",
       "ext": "wav",
-      "audioPath": "audio/december/10%20-%20Beauty.wav",
+      "audioPath": "audio/december/13-beauty_th3scr1b3_afterlife.wav",
       "coverPath": null
     },
     {
@@ -2759,7 +2759,7 @@
       "index": 11,
       "storageTitle": "Climbing 2u",
       "ext": "mp3",
-      "audioPath": "audio/december/11%20-%20Climbing%202u.mp3",
+      "audioPath": "audio/december/climbing_2u_neews.mp3",
       "coverPath": null
     },
     {
@@ -2767,7 +2767,7 @@
       "index": 12,
       "storageTitle": "Spippin",
       "ext": "wav",
-      "audioPath": "audio/december/12%20-%20Spippin.wav",
+      "audioPath": "audio/december/10-spippin_th3scr1b3_afterlife.wav",
       "coverPath": null
     },
     {
@@ -2775,7 +2775,7 @@
       "index": 13,
       "storageTitle": "Luckyland Reprise",
       "ext": "wav",
-      "audioPath": "audio/december/13%20-%20Luckyland%20Reprise.wav",
+      "audioPath": "audio/december/luckyland_reprise.wav",
       "coverPath": null
     },
     {
@@ -2783,87 +2783,87 @@
       "index": 14,
       "storageTitle": "Alf",
       "ext": "wav",
-      "audioPath": "audio/december/14%20-%20Alf.wav",
+      "audioPath": "audio/december/alf_m2.wav",
       "coverPath": null
     },
     {
       "month": "december",
       "index": 15,
-      "storageTitle": "__ SYSTEM_CRASH [LOG_349]",
-      "ext": "wav",
-      "audioPath": "audio/december/15%20-%20__%20SYSTEM_CRASH%20%5BLOG_349%5D.wav",
+      "storageTitle": "Two Lanes",
+      "ext": "mp3",
+      "audioPath": "audio/december/-%5B_1.mp3",
       "coverPath": null
     },
     {
       "month": "december",
       "index": 16,
-      "storageTitle": "__ MEMORY_OVERFLOW [LOG_350]",
-      "ext": "wav",
-      "audioPath": "audio/december/16%20-%20__%20MEMORY_OVERFLOW%20%5BLOG_350%5D.wav",
+      "storageTitle": "Butterfly",
+      "ext": "mp3",
+      "audioPath": "audio/december/timezone_kisses.mp3",
       "coverPath": null
     },
     {
       "month": "december",
       "index": 17,
-      "storageTitle": "__ RECURSIVE_LOOP [LOG_351]",
-      "ext": "wav",
-      "audioPath": "audio/december/17%20-%20__%20RECURSIVE_LOOP%20%5BLOG_351%5D.wav",
+      "storageTitle": "Stuck_w_u",
+      "ext": "mp3",
+      "audioPath": "audio/december/stuck_w_u.mp3",
       "coverPath": null
     },
     {
       "month": "december",
       "index": 18,
-      "storageTitle": "__ STACK_TRACE [LOG_352]",
-      "ext": "wav",
-      "audioPath": "audio/december/18%20-%20__%20STACK_TRACE%20%5BLOG_352%5D.wav",
+      "storageTitle": "Eden's Drugs",
+      "ext": "mp3",
+      "audioPath": "audio/december/eden_drugs.mp3",
       "coverPath": null
     },
     {
       "month": "december",
       "index": 19,
-      "storageTitle": "__ NULL_POINTER [LOG_353]",
-      "ext": "wav",
-      "audioPath": "audio/december/19%20-%20__%20NULL_POINTER%20%5BLOG_353%5D.wav",
+      "storageTitle": "Better Days",
+      "ext": "mp3",
+      "audioPath": "audio/december/better_days_441.mp3",
       "coverPath": null
     },
     {
       "month": "december",
       "index": 20,
-      "storageTitle": "__ SEGMENTATION_FAULT [LOG_354]",
+      "storageTitle": "sinsister_nation",
       "ext": "wav",
-      "audioPath": "audio/december/20%20-%20__%20SEGMENTATION_FAULT%20%5BLOG_354%5D.wav",
+      "audioPath": "audio/december/sinsister_nation.wav",
       "coverPath": null
     },
     {
       "month": "december",
       "index": 21,
-      "storageTitle": "__ BUFFER_OVERFLOW [LOG_355]",
+      "storageTitle": "trouble",
       "ext": "wav",
-      "audioPath": "audio/december/21%20-%20__%20BUFFER_OVERFLOW%20%5BLOG_355%5D.wav",
+      "audioPath": "audio/december/trouble.wav",
       "coverPath": null
     },
     {
       "month": "december",
       "index": 22,
-      "storageTitle": "__ THREAD_DEADLOCK [LOG_356]",
-      "ext": "wav",
-      "audioPath": "audio/december/22%20-%20__%20THREAD_DEADLOCK%20%5BLOG_356%5D.wav",
+      "storageTitle": "best thing",
+      "ext": "mp3",
+      "audioPath": "audio/december/best%20thing.mp3",
       "coverPath": null
     },
     {
       "month": "december",
       "index": 23,
-      "storageTitle": "__ HEAP_CORRUPTION [LOG_357]",
-      "ext": "wav",
-      "audioPath": "audio/december/23%20-%20__%20HEAP_CORRUPTION%20%5BLOG_357%5D.wav",
+      "storageTitle": "take you home",
+      "ext": "mp3",
+      "audioPath": "audio/december/take%20you%20home.mp3",
       "coverPath": null
     },
     {
       "month": "december",
       "index": 24,
-      "storageTitle": "__ INFINITE_RECURSION [LOG_358]",
-      "ext": "wav",
-      "audioPath": "audio/december/24%20-%20__%20INFINITE_RECURSION%20%5BLOG_358%5D.wav",
+      "storageTitle": "pixels on my phone",
+      "ext": "mp3",
+      "audioPath": "audio/december/pixels%20on%20my%20phone.mp3",
       "coverPath": null
     },
     {
@@ -2885,9 +2885,9 @@
     {
       "month": "december",
       "index": 27,
-      "storageTitle": "__ SIGNAL_ABORT [LOG_361]",
-      "ext": "wav",
-      "audioPath": "audio/december/27%20-%20__%20SIGNAL_ABORT%20%5BLOG_361%5D.wav",
+      "storageTitle": "-[_1",
+      "ext": "mp3",
+      "audioPath": "audio/december/-%5B_1.mp3",
       "coverPath": null
     },
     {
@@ -2909,17 +2909,17 @@
     {
       "month": "december",
       "index": 30,
-      "storageTitle": "__ SIGSEGV_RECEIVED [LOG_364]",
+      "storageTitle": "Re",
       "ext": "wav",
-      "audioPath": "audio/december/30%20-%20__%20SIGSEGV_RECEIVED%20%5BLOG_364%5D.wav",
+      "audioPath": "audio/december/re(place).wav",
       "coverPath": null
     },
     {
       "month": "december",
       "index": 31,
-      "storageTitle": "__ CORE_DUMPED [LOG_365]",
+      "storageTitle": "Re",
       "ext": "wav",
-      "audioPath": "audio/december/31%20-%20__%20CORE_DUMPED%20%5BLOG_365%5D.wav",
+      "audioPath": "audio/december/re(place).wav",
       "coverPath": null
     }
   ]
