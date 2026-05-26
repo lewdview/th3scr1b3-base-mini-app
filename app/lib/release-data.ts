@@ -140,7 +140,7 @@ function toDerivedCoverPath(audioPath?: string | null) {
     ? `covers/${normalizedPath.slice('audio/'.length)}`
     : normalizedPath.replace('/audio/', '/covers/');
 
-  return coverPath.replace(/\.[^./]+$/, '.png');
+  return coverPath.replace(/\.[^./]+$/, '.jpg');
 }
 
 function buildAudioPathCandidates(item: ReleaseManifestItem, overrideTitle?: string) {
