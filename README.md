@@ -10,7 +10,7 @@ Base + Farcaster mini app for the **365 Days of Light and Dark** project.
 - Loads daily releases from `release-manifest.json` + `content-overrides.json`.
 - Shows a "Now Playing" hero for the latest available day and a full release grid.
 - Streams audio from storage URLs and shows a global bottom player with seek + elapsed/total time.
-- Resolves cover art from `covers/.../*.png` paths; falls back to generated mood art if missing.
+- Resolves cover art from `covers/.../*.jpg` paths; falls back to generated mood art if missing.
 - Supports wallet connect in-frame (OnchainKit MiniKit + wagmi on Base).
 - Supports per-track onchain minting (`mintingOpen`, `getPrice`, then `mint`).
 - Supports ETH donations with preset amounts + custom amount.
@@ -52,7 +52,7 @@ Release building logic lives in `app/lib/release-data.ts`:
 
 - Derives absolute day number from `month + index`.
 - Builds audio URL from explicit `audioPath` or inferred fallback.
-- Builds cover URL from explicit `coverPath` or inferred `covers/... .png`.
+- Builds cover URL from explicit `coverPath` or inferred `covers/... .jpg`.
 - Resolves mood in order: override -> manifest -> inferred text -> database map -> legacy map -> day parity fallback.
 - Uses `app/lib/day-durations.ts` for displayed track durations.
 
