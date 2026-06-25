@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-06-25T20:37:19.738Z",
+  "generatedAt": "2026-06-25T20:41:54.889Z",
   "items": [
     {
       "month": "january",
@@ -2893,9 +2893,9 @@
     {
       "month": "december",
       "index": 21,
-      "storageTitle": "When I Say Forever",
-      "ext": "wav",
-      "audioPath": "audio/december/21-when-i-say-forever_th3scr1b3_afterlife.wav",
+      "storageTitle": "We're Gonna Be Fine by Ron Meason",
+      "ext": "flac",
+      "audioPath": "audio/december/02%20We're%20Gonna%20Be%20Fine.flac",
       "coverPath": "covers/december/21%20-%20__%20BUFFER_OVERFLOW%20%5BLOG_355%5D.jpg"
     },
     {
