@@ -337,7 +337,7 @@
     "title": "My light"
   },
   "92": {
-    "title": "My light"
+    "title": "Pixels on My Phone"
   },
   "93": {
     "title": "Love Carries"
@@ -421,7 +421,7 @@
     "title": "Fucking With Me"
   },
   "120": {
-    "title": "Self Dick"
+    "title": "Sinister Nation"
   },
   "121": {
     "title": "Tainted Gospal"
@@ -436,7 +436,7 @@
     "title": "Te Amo"
   },
   "125": {
-    "title": "Without You"
+    "title": "dowahh dum a die today"
   },
   "126": {
     "title": "Why U Lie"
@@ -700,7 +700,7 @@
     "title": "Nostalgic Energy"
   },
   "213": {
-    "title": "Snuff by Zillick"
+    "title": "Trouble by Ron Meason"
   },
   "214": {
     "title": "Wasted by What"
@@ -742,7 +742,7 @@
     "title": "Unloved"
   },
   "227": {
-    "title": "Up All Night"
+    "title": "Slowly"
   },
   "228": {
     "title": "Faint"
@@ -751,7 +751,7 @@
     "title": "house of hope"
   },
   "230": {
-      "title": "Live Forever Xzibit (reprise)"
+      "title": "Choices (Ketch up) by TheSoloist feat.th3scr1b3 & Andre"
   },
   "231": {
     "title": "sexy in the air"
@@ -1072,7 +1072,7 @@
     "title": "lighter"
   },
   "337": {
-    "title": "Climb to You"
+    "title": "The Climb"
   },
   "338": {
     "title": "Basic"
@@ -1093,7 +1093,7 @@
     "title": "ONLY SON"
   },
   "344": {
-    "title": "Beauty"
+    "title": "Rupert Holmes' Escape"
   },
   "345": {
     "title": "Climbing 2u"
@@ -1123,39 +1123,39 @@
     "title": "Better Days"
   },
   "354": {
-    "title": "__ SEGMENTATION_FAULT [LOG_354]"
+    "title": "Forget ABout Me by Ron Meason"
   },
   "355": {
-    "title": "__ BUFFER_OVERFLOW [LOG_355]"
+    "title": "We're Gonna Be Fine by Ron Meason"
   },
   "356": {
-    "title": "__ THREAD_DEADLOCK [LOG_356]"
+      "title": "Disclaimer by Ron Meason"
   },
   "357": {
-    "title": "__ HEAP_CORRUPTION [LOG_357]"
+    "title": "Next Time by Ron Meason"
   },
   "358": {
-    "title": "__ INFINITE_RECURSION [LOG_358]"
-  },
+      "title": "A Thousand Pieces of Blue by Ron Meason"
+},
   "359": {
-    "title": "__ MUTEX_POISONED [LOG_359]"
+      "title": "Memories Run Deep by Ron Meason"
   },
   "360": {
-    "title": "__ PIPE_BROKEN [LOG_360]"
+    "title": "Parent's Thunder by Ron Meason"
   },
   "361": {
-    "title": "__ SIGNAL_ABORT [LOG_361]"
+      "title": "You Like Steve Earle by Ron Meason"
   },
   "362": {
-    "title": "__ ACCESS_VIOLATION [LOG_362]"
+    "title": "Just a Dream by Ron Meason"
   },
   "363": {
-    "title": "__ PAGE_FAULT [LOG_363]"
+    "title": "The Emperical Approach by Ron Meason"
   },
   "364": {
-    "title": "__ SIGSEGV_RECEIVED [LOG_364]"
+    "title": "Take My Wheel"
   },
   "365": {
-    "title": "__ CORE_DUMPED [LOG_365]"
+    "title": "Dead Wait"
   }
 }
