@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-06-25T20:41:54.889Z",
+  "generatedAt": "2026-06-25T20:56:08.026Z",
   "items": [
     {
       "month": "january",
@@ -485,17 +485,9 @@
     {
       "month": "february",
       "index": 29,
-      "storageTitle": "Momentofexctasy",
+      "storageTitle": "Kept the Keep",
       "ext": "wav",
-      "audioPath": "audio/february/momentofexctasy.wav",
-      "coverPath": "covers/february/29%20-%20Moment%20of%20Exctasy.jpg"
-    },
-    {
-      "month": "february",
-      "index": 29,
-      "storageTitle": "Moment of Exctasy",
-      "ext": "mp3",
-      "audioPath": "audio/february/moment_of_exctasy_320.mp3",
+      "audioPath": "audio/february/kept_thekeep_mixdown.wav",
       "coverPath": "covers/february/29%20-%20Moment%20of%20Exctasy.jpg"
     },
     {
