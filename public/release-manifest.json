@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-06-25T20:17:03.333Z",
+  "generatedAt": "2026-06-25T20:28:05.552Z",
   "items": [
     {
       "month": "january",
@@ -688,7 +688,7 @@
       "storageTitle": "LANDR Self Dick Mas Balanced Medium",
       "ext": "mp3",
       "audioPath": "audio/march/25%20-%20LANDR%20Self%20Dick%20Mas%20Balanced%20Medium.mp3",
-      "coverPath": null
+      "coverPath": "covers/march/25%20-%20Self%20Dick.jpg"
     },
     {
       "month": "march",
@@ -984,7 +984,7 @@
       "storageTitle": "Frozen",
       "ext": "wav",
       "audioPath": "audio/april/30%20-%20Frozen.wav",
-      "coverPath": "covers/april/30%20-%20Self%20Dick.jpg"
+      "coverPath": null
     },
     {
       "month": "may",
