@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-06-27T03:11:35.157Z",
+  "generatedAt": "2026-06-27T21:09:18.468Z",
   "items": [
     {
       "month": "january",
@@ -480,7 +480,7 @@
       "storageTitle": "Kept the Keep",
       "ext": "wav",
       "audioPath": "audio/february/kept_thekeep_mixdown.wav",
-      "coverPath": "covers/february/29%20-%20Moment%20of%20Exctasy.jpg"
+      "coverPath": "covers/february/29%20-%20Kept%20the%20Keep.jpg"
     },
     {
       "month": "march",
@@ -736,7 +736,7 @@
       "storageTitle": "pixels on my phone",
       "ext": "mp3",
       "audioPath": "audio/april/pixels%20on%20my%20phone.mp3",
-      "coverPath": "covers/april/02%20-%20mylight.jpg"
+      "coverPath": "covers/april/02%20-%20Pixels%20on%20My%20Phone.jpg"
     },
     {
       "month": "april",
@@ -960,7 +960,7 @@
       "storageTitle": "sinsister_nation",
       "ext": "wav",
       "audioPath": "audio/april/sinsister_nation.wav",
-      "coverPath": "covers/april/30%20-%20sinsister_nation.jpg"
+      "coverPath": "covers/april/30%20-%20Sinister%20Nation.jpg"
     },
     {
       "month": "may",
@@ -1000,7 +1000,7 @@
       "storageTitle": "dowahh dum a die today_mastered",
       "ext": "wav",
       "audioPath": "audio/may/dowahh%20dum%20a%20die%20today_mastered.wav",
-      "coverPath": "covers/may/05%20-%20without_you_cyro.jpg"
+      "coverPath": "covers/may/05%20-%20dowahh%20dum%20a%20die%20today.jpg"
     },
     {
       "month": "may",
@@ -1584,7 +1584,7 @@
       "storageTitle": "bitchtookmygold",
       "ext": "wav",
       "audioPath": "audio/july/bitchtookmygold.wav",
-      "coverPath": "covers/july/17%20-%20Hhhhhhhhhhhhh.jpg"
+      "coverPath": "covers/july/17%20-%20bitchtookmygold.jpg"
     },
     {
       "month": "july",
@@ -1704,7 +1704,7 @@
       "storageTitle": "trouble",
       "ext": "wav",
       "audioPath": "audio/august/trouble.wav",
-      "coverPath": "covers/august/01%20-%20Nick%20Snuff%20M3.jpg"
+      "coverPath": "covers/august/01%20-%20Trouble.jpg"
     },
     {
       "month": "august",
@@ -1728,7 +1728,7 @@
       "storageTitle": "Ocean Clear",
       "ext": "wav",
       "audioPath": "audio/august/ocean%20clear_md2.wav",
-      "coverPath": "covers/august/04%20-%20Paid%20the%20World%20Back%20Beat.jpg"
+      "coverPath": "covers/august/04%20-%20Ocean%20Clear.jpg"
     },
     {
       "month": "august",
@@ -1872,7 +1872,7 @@
       "storageTitle": "Spark It",
       "ext": "wav",
       "audioPath": "audio/august/spark%20it.wav",
-      "coverPath": "covers/august/22%20-%20Maybe%20Baby.jpg"
+      "coverPath": "covers/august/22%20-%20Spark%20It.jpg"
     },
     {
       "month": "august",
@@ -2896,7 +2896,7 @@
       "storageTitle": "Just a Dream by Ron Meason]",
       "ext": "flac",
       "audioPath": "audio/december/09%20Just%20A%20Dream.flac",
-      "coverPath": "covers/december/28%20-%20__%20ACCESS_VIOLATION%20%5BLOG_362%5D.jpg"
+      "coverPath": "covers/december/28%20-%20Just%20a%20Dream.jpg"
     },
     {
       "month": "december",
@@ -2904,7 +2904,7 @@
       "storageTitle": "The Emperical Approach by Ron Meason",
       "ext": "flac",
       "audioPath": "audio/december/10%20The%20Empirical%20Approach.flac",
-      "coverPath": "covers/december/29%20-%20__%20PAGE_FAULT%20%5BLOG_363%5D.jpg"
+      "coverPath": "covers/december/29%20-%20The%20Empirical%20Approach.jpg"
     },
     {
       "month": "december",
@@ -2912,7 +2912,7 @@
       "storageTitle": "Take My Wheel",
       "ext": "wav",
       "audioPath": "audio/december/re(place).wav",
-      "coverPath": "covers/december/30%20-%20__%20SIGSEGV_RECEIVED%20%5BLOG_364%5D.jpg"
+      "coverPath": "covers/december/30%20-%20Take%20My%20Wheel.jpg"
     },
     {
       "month": "december",
@@ -2920,7 +2920,7 @@
       "storageTitle": "Dead Wait",
       "ext": "wav",
       "audioPath": "audio/december/dead%20wait.wav",
-      "coverPath": "covers/december/31%20-%20__%20CORE_DUMPED%20%5BLOG_365%5D.jpg"
+      "coverPath": "covers/december/31%20-%20Dead%20Wait.jpg"
     }
   ]
 }
