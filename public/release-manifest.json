@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-06-27T02:49:45.022Z",
+  "generatedAt": "2026-06-27T03:11:35.157Z",
   "items": [
     {
       "month": "january",
@@ -2832,7 +2832,7 @@
       "storageTitle": "Forget ABout Me by Ron Meason",
       "ext": "flac",
       "audioPath": "audio/december/01%20Forget%20About%20Me.flac",
-      "coverPath": "covers/december/20%20-%20__%20SEGMENTATION_FAULT%20%5BLOG_354%5D.jpg"
+      "coverPath": "covers/december/20%20-%20Forget%20ABout%20Me.jpg"
     },
     {
       "month": "december",
@@ -2840,7 +2840,7 @@
       "storageTitle": "We're Gonna Be Fine by Ron Meason",
       "ext": "flac",
       "audioPath": "audio/december/02%20We're%20Gonna%20Be%20Fine.flac",
-      "coverPath": "covers/december/21%20-%20__%20BUFFER_OVERFLOW%20%5BLOG_355%5D.jpg"
+      "coverPath": "covers/december/21%20-%20We're%20Gonna%20Be%20Fine.jpg"
     },
     {
       "month": "december",
@@ -2848,7 +2848,7 @@
       "storageTitle": "Disclaimer by Ron Meason",
       "ext": "flac",
       "audioPath": "audio/december/03%20Disclaimer.flac",
-      "coverPath": "covers/december/22%20-%20__%20THREAD_DEADLOCK%20%5BLOG_356%5D.jpg"
+      "coverPath": "covers/december/22%20-%20Disclaimer.jpg"
     },
     {
       "month": "december",
@@ -2856,7 +2856,7 @@
       "storageTitle": "Next Time by Ron Meason",
       "ext": "flac",
       "audioPath": "audio/december/04%20Next%20Time.flac",
-      "coverPath": "covers/december/23%20-%20__%20HEAP_CORRUPTION%20%5BLOG_357%5D.jpg"
+      "coverPath": "covers/december/23%20-%20Next%20Time.jpg"
     },
     {
       "month": "december",
@@ -2864,7 +2864,7 @@
       "storageTitle": "A Thousand Pieces of Blue by Ron Meason",
       "ext": "flac",
       "audioPath": "audio/december/05%20A%20Thousand%20Pieces%20of%20Blue.flac",
-      "coverPath": "covers/december/24%20-%20__%20INFINITE_RECURSION%20%5BLOG_358%5D.jpg"
+      "coverPath": "covers/december/24%20-%20A%20Thousand%20Pieces%20of%20Blue.jpg"
     },
     {
       "month": "december",
@@ -2872,7 +2872,7 @@
       "storageTitle": "Memories Run Deep by Ron Meason",
       "ext": "flac",
       "audioPath": "audio/december/06%20Memories%20Run%20Deep.flac",
-      "coverPath": "covers/december/25%20-%20__%20MUTEX_POISONED%20%5BLOG_359%5D.jpg"
+      "coverPath": "covers/december/25%20-%20Memories%20Run%20Deep.jpg"
     },
     {
       "month": "december",
@@ -2880,7 +2880,7 @@
       "storageTitle": "Parent's Thunder by Ron Meason",
       "ext": "flac",
       "audioPath": "audio/december/07%20Parent's%20Thunder.flac",
-      "coverPath": "covers/december/26%20-%20__%20PIPE_BROKEN%20%5BLOG_360%5D.jpg"
+      "coverPath": "covers/december/26%20-%20Parent's%20Thunder.jpg"
     },
     {
       "month": "december",
@@ -2888,7 +2888,7 @@
       "storageTitle": "You Like Steve Earle by Ron Meason",
       "ext": "flac",
       "audioPath": "audio/december/08%20You%20Like%20Steve%20Earle.flac",
-      "coverPath": "covers/december/27%20-%20__%20SIGNAL_ABORT%20%5BLOG_361%5D.jpg"
+      "coverPath": "covers/december/27%20-%20You%20Like%20Steve%20Earle.jpg"
     },
     {
       "month": "december",
