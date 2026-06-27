@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-06-25T22:05:16.334Z",
+  "generatedAt": "2026-06-27T00:53:45.793Z",
   "items": [
     {
       "month": "january",
@@ -321,14 +321,6 @@
       "ext": "wav",
       "audioPath": "audio/february/way%20eight%20fore%20dat%20storm_level_2.wav",
       "coverPath": "covers/february/09%20-%20Way%20Eight%20Fore%20Dat%20Storm%20Level.jpg"
-    },
-    {
-      "month": "february",
-      "index": 10,
-      "storageTitle": "Be Nuter",
-      "ext": "mp3",
-      "audioPath": "audio/february/be_nuter_m.mp3",
-      "coverPath": "covers/february/10%20-%20Be%20Nuter.jpg"
     },
     {
       "month": "february",
@@ -753,14 +745,6 @@
       "ext": "wav",
       "audioPath": "audio/april/love_carries.wav",
       "coverPath": "covers/april/03%20-%20love_carries.jpg"
-    },
-    {
-      "month": "april",
-      "index": 4,
-      "storageTitle": "Pop",
-      "ext": "wav",
-      "audioPath": "audio/april/Pop_1.wav",
-      "coverPath": "covers/april/04%20-%20Pop.jpg"
     },
     {
       "month": "april",
@@ -1201,22 +1185,6 @@
       "ext": "mp3",
       "audioPath": "audio/may/breaking%20m%20e%20_%20m.mp3",
       "coverPath": "covers/may/28%20-%20Breaking%20M%20E.jpg"
-    },
-    {
-      "month": "may",
-      "index": 28,
-      "storageTitle": "Breaking M E",
-      "ext": "mp3",
-      "audioPath": "audio/may/breaking%20m%20e%20_%20m.mp3",
-      "coverPath": "covers/may/28%20-%20Breaking%20M%20E.jpg"
-    },
-    {
-      "month": "may",
-      "index": 29,
-      "storageTitle": "Burning It Down Comd2",
-      "ext": "mp3",
-      "audioPath": "audio/may/burning%20it%20down%20covermd2.mp3",
-      "coverPath": "covers/may/29%20-%20Burning%20It%20Down%20Comd2.jpg"
     },
     {
       "month": "may",
@@ -1901,9 +1869,9 @@
     {
       "month": "august",
       "index": 22,
-      "storageTitle": "Maybe Baby",
+      "storageTitle": "Spark It",
       "ext": "wav",
-      "audioPath": "audio/august/maybe%20baby.wav",
+      "audioPath": "audio/august/spark%20it.wav",
       "coverPath": "covers/august/22%20-%20Maybe%20Baby.jpg"
     },
     {
@@ -2084,14 +2052,6 @@
     },
     {
       "month": "september",
-      "index": 13,
-      "storageTitle": "Hades",
-      "ext": "wav",
-      "audioPath": "audio/september/hades.wav",
-      "coverPath": "covers/september/13%20-%20Hades.jpg"
-    },
-    {
-      "month": "september",
       "index": 14,
       "storageTitle": "Midnight Piano",
       "ext": "wav",
@@ -2161,14 +2121,6 @@
       "ext": "wav",
       "audioPath": "audio/september/too%20late%20fawy_mastered.wav",
       "coverPath": "covers/september/22%20-%20Too%20Late%20(FAWY).jpg"
-    },
-    {
-      "month": "september",
-      "index": 23,
-      "storageTitle": "Clebit",
-      "ext": "wav",
-      "audioPath": "audio/september/clever_bit.wav",
-      "coverPath": "covers/september/23%20-%20Clever%20Bit.jpg"
     },
     {
       "month": "september",
