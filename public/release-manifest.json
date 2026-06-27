@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-06-27T00:53:45.793Z",
+  "generatedAt": "2026-06-27T01:42:36.005Z",
   "items": [
     {
       "month": "january",
@@ -1725,9 +1725,9 @@
     {
       "month": "august",
       "index": 4,
-      "storageTitle": "Paid the World Back Beat",
+      "storageTitle": "Ocean Clear",
       "ext": "wav",
-      "audioPath": "audio/august/paid_the_world_back-beat.wav",
+      "audioPath": "audio/august/ocean%20clear_md2.wav",
       "coverPath": "covers/august/04%20-%20Paid%20the%20World%20Back%20Beat.jpg"
     },
     {
