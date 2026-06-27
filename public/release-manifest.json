@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-06-27T01:42:36.005Z",
+  "generatedAt": "2026-06-27T01:57:20.340Z",
   "items": [
     {
       "month": "january",
@@ -960,7 +960,7 @@
       "storageTitle": "sinsister_nation",
       "ext": "wav",
       "audioPath": "audio/april/sinsister_nation.wav",
-      "coverPath": null
+      "coverPath": "covers/april/30%20-%20sinsister_nation.jpg"
     },
     {
       "month": "may",
