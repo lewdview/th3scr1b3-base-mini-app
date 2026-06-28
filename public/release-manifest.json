@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-06-28T01:23:33.528Z",
+  "generatedAt": "2026-06-28T06:03:02.757Z",
   "items": [
     {
       "month": "january",
@@ -1144,7 +1144,7 @@
       "storageTitle": "Come Together",
       "ext": "wav",
       "audioPath": "audio/may/come%20together.wav",
-      "coverPath": null
+      "coverPath": "covers/may/23%20-%20Come%20Together.jpg"
     },
     {
       "month": "may",
