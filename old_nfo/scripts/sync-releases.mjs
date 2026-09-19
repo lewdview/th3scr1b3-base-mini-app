@@ -11,7 +11,7 @@ const DEST_PATH = path.join(process.cwd(), 'public/releases.json');
 // Override with RELEASE_STORAGE_BASE_URL if needed.
 const STORAGE_BASE_URL =
     process.env.RELEASE_STORAGE_BASE_URL ||
-    'https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready';
+    'https://files.th3scr1b3.art';
 
 function toAbsoluteStorageUrl(storagePath) {
     if (!storagePath) return null;

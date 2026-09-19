@@ -39,7 +39,7 @@ export type Release = {
 
 export const DEFAULT_STORAGE_BASE_URL =
   process.env.NEXT_PUBLIC_RELEASE_STORAGE_BASE_URL?.trim() ||
-  'https://pznmptudgicrmljjafex.supabase.co/storage/v1/object/public/releaseready';
+  'https://files.th3scr1b3.art';
 
 const PROJECT_YEAR = 2026;
 
