@@ -12,8 +12,16 @@ function readList(key: string, fallback: string[]) {
     .filter(Boolean);
 }
 
-const appUrl = readEnv('NEXT_PUBLIC_URL', 'http://localhost:3000').replace(/\/+$/, '');
-const domain = appUrl.replace(/^https?:\/\//, '');
+function resolveAppUrl(req: Request) {
+  const configured = readEnv('NEXT_PUBLIC_URL', '').replace(/\/+$/, '');
+  // Never serve a localhost/dev URL from a public host — a leaked dev value
+  // breaks Base.dev verification. Fall back to the actual request origin,
+  // which is correct in both local dev and production.
+  if (configured && !/^(https?:\/\/)?(localhost|127\.0\.0\.1)(:\d+)?$/i.test(configured)) {
+    return configured;
+  }
+  return new URL(req.url).origin.replace(/\/+$/, '');
+}
 
 function resolveCastShareUrl(baseUrl: string) {
   const configured = readEnv('NEXT_PUBLIC_FRAME_CAST_SHARE_URL', baseUrl);
@@ -26,7 +34,9 @@ function resolveCastShareUrl(baseUrl: string) {
   }
 }
 
-export async function GET() {
+export async function GET(req: Request) {
+  const appUrl = resolveAppUrl(req);
+  const domain = appUrl.replace(/^https?:\/\//, '');
   const imageUrl = readEnv('NEXT_PUBLIC_APP_HERO_IMAGE', `${appUrl}/image.png`);
   const splashImageUrl = readEnv('NEXT_PUBLIC_SPLASH_IMAGE', `${appUrl}/splash.png`);
   const castShareUrl = resolveCastShareUrl(appUrl);
