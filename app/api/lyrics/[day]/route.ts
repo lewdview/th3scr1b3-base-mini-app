@@ -17,11 +17,18 @@ type LyricsSegment = {
   text: string;
 };
 
+type LyricsWord = {
+  start: number;
+  end: number;
+  word: string;
+};
+
 type LyricsApiResponse = {
   day: number;
-  source: 'database' | 'overrides' | 'none';
+  source: 'official' | 'database' | 'overrides' | 'none';
   lyrics: string | null;
   segments?: LyricsSegment[];
+  words?: LyricsWord[];
   loadedAt: string;
 };
 
@@ -207,6 +214,42 @@ async function readLyricsByDay() {
   }
 }
 
+/**
+ * Official lyrics and word timings, published per day by the LRC layer
+ * (lrc.th3scr1b3.art) to public.lyric_timings. They win over every other source.
+ */
+async function fetchOfficialLyrics(day: number) {
+  const base = process.env.NEXT_PUBLIC_SUPABASE_URL?.trim().replace(/\/+$/, '');
+  const key = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY?.trim();
+  if (!base || !key) return null;
+  try {
+    const response = await fetch(
+      `${base}/rest/v1/lyric_timings?day=eq.${day}&select=lyrics,words,segments`,
+      { headers: { apikey: key, Authorization: `Bearer ${key}`, Accept: 'application/json' }, cache: 'no-store' }
+    );
+    if (!response.ok) return null;
+    const rows = (await response.json()) as Array<{ lyrics?: unknown; words?: unknown; segments?: unknown }>;
+    const row = rows[0];
+    if (!row) return null;
+    const segments = normalizeLyricsSegments(row.segments);
+    const words: LyricsWord[] = (Array.isArray(row.words) ? row.words : [])
+      .map((w) => {
+        const r = (w || {}) as Record<string, unknown>;
+        const start = Number(r.start);
+        const end = Number(r.end);
+        const word = typeof r.word === 'string' ? r.word.trim() : '';
+        return Number.isFinite(start) && Number.isFinite(end) && word ? { start, end, word } : null;
+      })
+      .filter((w): w is LyricsWord => w !== null);
+    const lyrics = typeof row.lyrics === 'string' && row.lyrics.trim()
+      ? row.lyrics.trim()
+      : segments.map((s) => s.text).join('\n');
+    return lyrics ? { lyrics, segments, words } : null;
+  } catch {
+    return null;
+  }
+}
+
 function buildLyricsDatabaseUrl(day: number) {
   const template = process.env.LYRICS_DATABASE_ENDPOINT?.trim();
   if (!template) return null;
@@ -273,6 +316,23 @@ export async function GET(
   const release = releases.find((entry) => entry.day === day);
   if (!release) {
     return Response.json({ error: 'Track not found' }, { status: 404 });
+  }
+
+  const official = await fetchOfficialLyrics(day);
+  if (official) {
+    const payload: LyricsApiResponse = {
+      day,
+      source: 'official',
+      lyrics: official.lyrics,
+      segments: official.segments,
+      words: official.words,
+      loadedAt: new Date().toISOString(),
+    };
+    return Response.json(payload, {
+      headers: {
+        'Cache-Control': 'no-store',
+      },
+    });
   }
 
   const lyricsByDay = await readLyricsByDay();

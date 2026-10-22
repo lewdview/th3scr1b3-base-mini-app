@@ -58,7 +58,7 @@ type LocalComment = {
   createdAt: string;
 };
 
-type LyricsSource = 'database' | 'overrides' | 'none';
+type LyricsSource = 'official' | 'database' | 'overrides' | 'none';
 
 type LyricsSegment = {
   start: number;
@@ -196,6 +196,7 @@ function toLoadMetrics(loadSteps: LoadStepState, totalMs: number): TrackLoadMetr
 }
 
 function formatLyricsSource(source: LyricsSource) {
+  if (source === 'official') return 'Official lyrics · lrc.th3scr1b3.art';
   if (source === 'database') return 'Database lyrics';
   if (source === 'overrides') return 'Fallback lyrics';
   return 'No lyrics source';
